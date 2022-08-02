@@ -12,6 +12,10 @@
 		<data>
 		Ue+hP1YY9BJf9wXM7uvihqbE2sE=
 		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		iEtuUGCV6JM3gxS/pO33swhmpp8=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
@@ -27,18 +31,6 @@
 		<key>Resources/appicon.icns</key>
 		<data>
 		B4KsmCFROaxeh06URkMR6ym3goU=
-		</data>
-		<key>Resources/dotnet_bot.png</key>
-		<data>
-		hT68p03GDyQE7K2cUbiSf32gHFY=
-		</data>
-		<key>Resources/dotnet_bot@2x.png</key>
-		<data>
-		qGPwQVcG7NqBOp09qBhU+tMbpXk=
-		</data>
-		<key>Resources/dotnet_bot@3x.png</key>
-		<data>
-		hBT8Pm526xxzLtDpjk4f/WNZxKA=
 		</data>
 		<key>Resources/ilogo.png</key>
 		<data>
@@ -89,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UOnB+1ekvF5XJr0ttdEUxQq3IMYzd1+IQNEsAQn4yeg=
+			YidN5kxBWkWHEUEaN/ZmeINmB7ihOUlK4h3hURdzXfI=
 			</data>
 		</dict>
 		<key>MonoBundle/FireSignage.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/vJvoWCn7ctaqOQoypJH3c3kE/AS6J/KMDsxcgj/pDg=
+			wsuxDfDUBwlsczWJxuM2o/79OefowLi1QOxGadckDr4=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1562,6 +1554,13 @@
 			5oWiiUQgUJV7etDqQCZcYAyaPU1RhEYGOsRkSETE6kE=
 			</data>
 		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tx0KXqEC+DvcCGyogQTEQWHcCWJYYqH24NtPwhpQEjo=
+			</data>
+		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
@@ -1588,27 +1587,6 @@
 			<key>hash2</key>
 			<data>
 			NSlVKvdePBIB6S1FW2x0cJEDo5CUh9w8q6zNQQU4jmk=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			ebJ61QhKurlaZK50o1POFTQIodN4aInMKf7fJBBanTs=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot@2x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			xXn0rur3qfagwQb6enPARgs0DSiITTVw8Uk+ptgHg+E=
-			</data>
-		</dict>
-		<key>Resources/dotnet_bot@3x.png</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			4WOv67zjLV01qoTabAjKPANzApzvLyEhnLTF3xlhluk=
 			</data>
 		</dict>
 		<key>Resources/ilogo.png</key>

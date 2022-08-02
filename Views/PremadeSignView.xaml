@@ -21,7 +21,7 @@
 
         
 
-        <CollectionView ItemsSource="{Binding GetSigns}" ItemsLayout="VerticalGrid, 2" Grid.Row="0"  IsGrouped="True" >
+        <CollectionView ItemsSource="{Binding GetSigns}" ItemsLayout="VerticalGrid, 2" Grid.Row="0">
 
             <CollectionView.ItemTemplate>
 
@@ -59,7 +59,7 @@
 
             </CollectionView.ItemTemplate>
 
-            <CollectionView.GroupHeaderTemplate>
+            <!--<CollectionView.GroupHeaderTemplate>
                 <DataTemplate>
                     <Label VerticalOptions="Center" BackgroundColor="DarkGray"
                             FontSize="30" HorizontalTextAlignment="Center" 
@@ -81,7 +81,7 @@
 
                 </DataTemplate>
 
-            </CollectionView.GroupHeaderTemplate>
+            </CollectionView.GroupHeaderTemplate>-->
 
         </CollectionView>
 

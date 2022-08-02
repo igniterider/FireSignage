@@ -8,9 +8,20 @@
              xmlns:control="clr-namespace:FireSignage.Controls"
              
              Title="Login"
-             BackgroundColor="#4D687E">
+             >
     <Grid>
-        
+        <Frame>
+            <Frame.Background>
+        <!-- StartPoint defaults to (0,0) -->
+                <LinearGradientBrush>
+                    <GradientStop Color="#a6c0d4"
+                        />
+                    <GradientStop Color="#49687e"
+                        />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+        </Frame>
         
        
             <VerticalStackLayout x:DataType="viewModel:LoginViewModel" >
@@ -32,13 +43,13 @@
                                     <Entry
 
                                         PlaceholderColor="White"
-                                        BackgroundColor="Gray"
+                                        BackgroundColor="LightGray"
                                         Placeholder="Email"
                                         TextColor="White" Margin="0,0,0,16"/>
                                         <!--  Entry to get password from user  -->
                                         
                                         <Entry  PlaceholderColor="White"
-                                        BackgroundColor="Gray"
+                                        BackgroundColor="LightGray"
                                         Text="Password"
                                         TextColor="White" 
                                         IsPassword="True"
@@ -86,31 +97,30 @@
 
                     <!--2nd Tab-->
 
-                        <tabView:SfTabItem  Header="REGISTER">
+                        <tabView:SfTabItem  Header="REGISTER" TextColor="DarkOrange">
                             <!--<tabView:SfTabItem.BindingContext>
                                 <viewModel:SignUpPageViewModel/>
                             </tabView:SfTabItem.BindingContext>-->
                             <tabView:SfTabItem.Content>
-                                <StackLayout Padding="16,16,16,36" Spacing="24" HorizontalOptions="Center">
+                                <Grid VerticalOptions="Center">
+                                    <StackLayout HorizontalOptions="Center" 
+                                             VerticalOptions="Center">
                                     <!--  Entry to get username from user  -->
                                     
                                         <Entry
                                         x:Name="NameEntry"
                                         Placeholder="Name"
-                                        PlaceholderColor="Gray"
-                                        
+                                        PlaceholderColor="LightGray"
+                                        Margin="0,0,0,16"
                                         Text="Name"
-                                        TextColor="Gray" />
+                                        TextColor="LightGray" />
                                    
 
                                     <!--  Entry to get email ID from user  -->
                                     <!--<login:SimpleEmailEntry />-->
 
                                     <!--  Entry to get password from user  -->
-                                    <Frame                        
-                                    BackgroundColor="LightGray"
-                                    
-                                    >
+                                   
 
                                         <Entry
                                         x:Name="SignupPasswordEntry"
@@ -120,13 +130,9 @@
                                         
                                         Text="Password"
                                         TextColor="Gray" />
-                                    </Frame>
-
+                                   
                                     <!--  Entry to get the confirm password from user  -->
-                                    <Frame x:DataType="viewModel:LoginPageViewModel"
-                                    BackgroundColor="LightGray"
-                                    
-                                    >
+                                    <Frame x:DataType="viewModel:LoginPageViewModel">
                                         <Entry
                                         x:Name="ConfirmPasswordEntry"
                                         IsPassword="true"
@@ -146,6 +152,7 @@
                                     
                                     Text="SIGN UP" />
                                 </StackLayout>
+                                </Grid>
                             </tabView:SfTabItem.Content>
                         </tabView:SfTabItem>
                     </tabView:SfTabView>
