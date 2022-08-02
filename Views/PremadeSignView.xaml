@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
+             x:Class="FireSignage.Views.PremadeSignView"
+             xmlns:models="clr-namespace:FireSignage.Models"
+             Title="{Binding Title}"
+             x:DataType="viewmodel:PremadeViewModel"
+             Shell.TabBarIsVisible="False">
+
+    <Grid>
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+
+
+        </Grid.RowDefinitions>
+
+
+        
+
+        <CollectionView ItemsSource="{Binding GetSigns}" ItemsLayout="VerticalGrid, 2" Grid.Row="0"  IsGrouped="True" >
+
+            <CollectionView.ItemTemplate>
+
+                <DataTemplate x:DataType="models:PreMadeSigns">
+                   
+                       <VerticalStackLayout Padding="10">
+                    
+                    <Label VerticalOptions="Center" BackgroundColor="Black"
+                            FontSize="25" HorizontalTextAlignment="Center" WidthRequest="150"
+                           VerticalTextAlignment="Center" Padding="5">
+
+                        <Label.Text>
+                            <MultiBinding StringFormat="{}{0} &#x0a; {1}" >
+                                <Binding Path="Displaytext"  />
+                                <Binding Path="Displaytext2" />
+                            </MultiBinding>
+
+                        </Label.Text>
+                            <Label.TextColor >
+                                White
+
+                            </Label.TextColor>
+                    </Label>
+
+                        <HorizontalStackLayout HorizontalOptions="Center" Padding="5">
+                            <Button Text="Send" />
+                            <Button Text="Edit"/>
+
+                        </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+
+                   
+                </DataTemplate>
+
+            </CollectionView.ItemTemplate>
+
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Label VerticalOptions="Center" BackgroundColor="DarkGray"
+                            FontSize="30" HorizontalTextAlignment="Center" 
+                           VerticalTextAlignment="Center" FontAttributes="Bold">
+
+                        <Label.Text>
+                            
+                            <MultiBinding >
+                                <Binding Path="Category"  />
+                                
+                            </MultiBinding>
+
+                        </Label.Text>
+                            <Label.TextColor >
+                                Black
+
+                            </Label.TextColor>
+                    </Label>
+
+                </DataTemplate>
+
+            </CollectionView.GroupHeaderTemplate>
+
+        </CollectionView>
+
+        <Button Grid.Row="1" Text="Get Signs" TextColor="Black" Command="{Binding GetSignsCommand}" IsEnabled="{Binding IsNotBusy}" Margin="10"/>
+
+         <ActivityIndicator IsVisible="{Binding IsBusy}"
+                           IsRunning="{Binding IsBusy}"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="CenterAndExpand"
+                           Grid.RowSpan="2"
+                           Grid.ColumnSpan="2"/>
+
+    </Grid>
+
+</ContentPage>

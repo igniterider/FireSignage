@@ -1,0 +1,112 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>FireSignage</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>FireSignage</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.firesignage</ApplicationId>
+		<ApplicationIdGuid>89DC3E97-E188-4379-BE6F-899F1F6CEBA2</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="250,250" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		
+	</ItemGroup>
+
+	
+	<ItemGroup>
+	  <None Remove="Views\" />
+	  <None Remove="Viewmodels\" />
+	  <None Remove="Models\" />
+	  <None Remove="Services\" />
+	  <None Remove="Realm" />
+	  <None Remove="Realm.Fody" />
+	  <None Remove="CommunityToolkit.Maui.Core" />
+	  <None Remove="CommunityToolkit.Maui" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Syncfusion.Maui.Core" />
+	  <None Remove="Syncfusion.Maui.TabView" />
+	  <None Remove="Syncfusion.Maui.ListView" />
+	  <None Remove="Syncfusion.Maui.Scheduler" />
+	  <None Remove="Syncfusion.Maui.Sliders" />
+	  <None Remove="Syncfusion.Maui.DataGrid" />
+	  <None Remove="SampleBrowser.Maui.Base" />
+	  <None Remove="Syncfusion.Maui.Gauges" />
+	  <None Remove="Syncfusion.Maui.Charts" />
+	  <None Remove="Controls\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Views\" />
+	  <Folder Include="Viewmodels\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Controls\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\PremadeSignView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoginFlow\TabbedLogin.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\FlyoutFooter.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Realm" Version="10.14.0" />
+	  <PackageReference Include="Realm.Fody" Version="10.14.0">
+	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	    <PrivateAssets>all</PrivateAssets>
+	  </PackageReference>
+	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.2.0" />
+	  <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.2.40" />
+	  <PackageReference Include="SampleBrowser.Maui.Base" Version="20.2.38" />
+	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.40" />
+	</ItemGroup>
+</Project>
