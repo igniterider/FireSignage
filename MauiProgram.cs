@@ -32,7 +32,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<PremadeService>();
         builder.Services.AddSingleton<PremadeViewModel>();
         builder.Services.AddSingleton<PremadeSignView>();
-
+        builder.Services.AddSingleton<MainPage>();
         return builder.Build();
 	}
 }

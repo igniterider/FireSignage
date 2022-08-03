@@ -27,24 +27,21 @@
 
                 <DataTemplate x:DataType="models:PreMadeSigns">
                    
-                       <VerticalStackLayout Padding="10">
+                    <VerticalStackLayout Padding="10">
                     
                     <Label VerticalOptions="Center" BackgroundColor="Black"
                             FontSize="25" HorizontalTextAlignment="Center" WidthRequest="150"
-                           VerticalTextAlignment="Center" Padding="5">
+                           VerticalTextAlignment="Center" Padding="5" TextColor="White"
+                           Text="{Binding Displaytext}"/>
 
-                        <Label.Text>
-                            <MultiBinding StringFormat="{}{0} &#x0a; {1}" >
-                                <Binding Path="Displaytext"  />
-                                <Binding Path="Displaytext2" />
-                            </MultiBinding>
+                    <Label VerticalOptions="Center" BackgroundColor="Black"
+                           FontSize="25" HorizontalTextAlignment="Center" WidthRequest="150"
+                           VerticalTextAlignment="Center" Padding="5" TextColor="Red"
+                           Text="{Binding Displaytext2}"/>
 
-                        </Label.Text>
-                            <Label.TextColor >
-                                White
 
-                            </Label.TextColor>
-                    </Label>
+                        
+                    
 
                         <HorizontalStackLayout HorizontalOptions="Center" Padding="5">
                             <Button Text="Send" />
