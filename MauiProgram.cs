@@ -29,9 +29,9 @@ public static class MauiProgram
                 fonts.AddFont("Montserrat-SemiBold.ttf", "MontserratSemiBold");
             });
 
-        builder.Services.AddSingleton<PremadeService>();
-        builder.Services.AddSingleton<PremadeViewModel>();
-        builder.Services.AddSingleton<PremadeSignView>();
+        //builder.Services.AddSingleton<PremadeService>();
+        //builder.Services.AddSingleton<PremadeViewModel>();
+        //builder.Services.AddSingleton<PremadeSignView>();
         builder.Services.AddSingleton<MainPage>();
         return builder.Build();
 	}

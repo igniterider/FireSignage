@@ -4,10 +4,10 @@ public partial class MainPage : ContentPage
 {
 	
 
-	public MainPage(PremadeViewModel viewModel)
+	public MainPage()
 	{
 		InitializeComponent();
-        BindingContext = viewModel;
+        
     }
 
 	

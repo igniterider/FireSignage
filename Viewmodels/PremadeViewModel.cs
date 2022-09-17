@@ -1,4 +1,5 @@
-﻿using FireSignage.Models;
+﻿using CommunityToolkit.Mvvm.Input;
+using FireSignage.Models;
 using FireSignage.Services;
 
 
@@ -26,7 +27,7 @@ namespace FireSignage.Viewmodels;
 
 	//Icommand auto creates instead of writing code for the command and in constructor booo yahhh
 
-		[ICommand]
+		[RelayCommand]
 		async Task GetSignsAsync()
 		{
 			if (IsBusy)

@@ -4,22 +4,22 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/brianj/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/brianj/.nuget/packages/</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/brianjohnson/.nuget/packages/</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/brianjohnson/.nuget/packages/</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.2.1</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.3.0</NuGetToolVersion>
   </PropertyGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <SourceRoot Include="/Users/brianj/.nuget/packages/" />
+    <SourceRoot Include="/Users/brianjohnson/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props')" />
-    <Import Project="$(NuGetPackageRoot)realm/10.14.0/build/monoandroid/Realm.props" Condition="Exists('$(NuGetPackageRoot)realm/10.14.0/build/monoandroid/Realm.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm/10.15.1/build/monoandroid/Realm.props" Condition="Exists('$(NuGetPackageRoot)realm/10.15.1/build/monoandroid/Realm.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.14.0/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
   </ImportGroup>
 </Project>

@@ -30,6 +30,12 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	  <WarningLevel>4</WarningLevel>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <EnableCodeSigning>false</EnableCodeSigning>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -47,27 +53,7 @@
 	</ItemGroup>
 
 	
-	<ItemGroup>
-	  <None Remove="Views\" />
-	  <None Remove="Viewmodels\" />
-	  <None Remove="Models\" />
-	  <None Remove="Services\" />
-	  <None Remove="Realm" />
-	  <None Remove="Realm.Fody" />
-	  <None Remove="CommunityToolkit.Maui.Core" />
-	  <None Remove="CommunityToolkit.Maui" />
-	  <None Remove="CommunityToolkit.Mvvm" />
-	  <None Remove="Syncfusion.Maui.Core" />
-	  <None Remove="Syncfusion.Maui.TabView" />
-	  <None Remove="Syncfusion.Maui.ListView" />
-	  <None Remove="Syncfusion.Maui.Scheduler" />
-	  <None Remove="Syncfusion.Maui.Sliders" />
-	  <None Remove="Syncfusion.Maui.DataGrid" />
-	  <None Remove="SampleBrowser.Maui.Base" />
-	  <None Remove="Syncfusion.Maui.Gauges" />
-	  <None Remove="Syncfusion.Maui.Charts" />
-	  <None Remove="Controls\" />
-	</ItemGroup>
+	
 	<ItemGroup>
 	  <Folder Include="Views\" />
 	  <Folder Include="Viewmodels\" />
@@ -91,22 +77,24 @@
 	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="Realm" Version="10.14.0" />
-	  <PackageReference Include="Realm.Fody" Version="10.14.0">
+	  <PackageReference Include="Realm" Version="10.15.1" />
+	  <PackageReference Include="Realm.Fody" Version="10.15.1">
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	    <PrivateAssets>all</PrivateAssets>
 	  </PackageReference>
-	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.2.0" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="1.2.0" />
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="7.1.2" />
-	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.2.40" />
+	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.3.0" />
+	  <PackageReference Include="CommunityToolkit.Maui" Version="1.3.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.2.49" />
 	  <PackageReference Include="SampleBrowser.Maui.Base" Version="20.2.38" />
-	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.2.40" />
-	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.40" />
+	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.2.49" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.49" />
+	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.536" />
+	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.536" />
 	</ItemGroup>
 </Project>

@@ -14,10 +14,10 @@
        <controls:FlyoutHeader />
     </Shell.FlyoutHeader>
 
-     <ShellItem Route="LoginPage" FlyoutItemIsVisible="False"  >
+     <!--<ShellItem Route="LoginPage" FlyoutItemIsVisible="False"  >
         <ShellContent ContentTemplate="{DataTemplate loginflow:TabbedLogin}" Shell.TabBarIsVisible="False" />
 
-    </ShellItem>
+    </ShellItem>-->
    
 
      <FlyoutItem Shell.BackgroundColor="#4D687E" FlyoutDisplayOptions="AsMultipleItems">
@@ -26,10 +26,10 @@
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
-        <ShellContent
+        <!--<ShellContent
             Title="All Signs"
             ContentTemplate="{DataTemplate views:PremadeSignView}"
-            Route="AllSigns" />
+            Route="AllSigns" />-->
 
 
 </FlyoutItem>

@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/brianj/Documents/Projects/FireSignage/FireSignage/FireSignage.csproj": {}
+    "/Users/brianjohnson/Projects/FireSignage/FireSignage/FireSignage.csproj": {}
   },
   "projects": {
-    "/Users/brianj/Documents/Projects/FireSignage/FireSignage/FireSignage.csproj": {
+    "/Users/brianjohnson/Projects/FireSignage/FireSignage/FireSignage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/brianj/Documents/Projects/FireSignage/FireSignage/FireSignage.csproj",
+        "projectUniqueName": "/Users/brianjohnson/Projects/FireSignage/FireSignage/FireSignage.csproj",
         "projectName": "FireSignage",
-        "projectPath": "/Users/brianj/Documents/Projects/FireSignage/FireSignage/FireSignage.csproj",
-        "packagesPath": "/Users/brianj/.nuget/packages/",
-        "outputPath": "/Users/brianj/Documents/Projects/FireSignage/FireSignage/obj/",
+        "projectPath": "/Users/brianjohnson/Projects/FireSignage/FireSignage/FireSignage.csproj",
+        "packagesPath": "/Users/brianjohnson/.nuget/packages/",
+        "outputPath": "/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/Users/brianj/.nuget/NuGet/NuGet.Config"
+          "/Users/brianjohnson/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-android",
@@ -23,7 +23,6 @@
           "net6.0-maccatalyst"
         ],
         "sources": {
-          "/Users/brianj/Documents/Documents - Apple’s MacBook Air/Syncfusion/20.1.0.55/Xamarin/nuget": {},
           "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
@@ -53,35 +52,33 @@
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[7.1.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -89,35 +86,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             }
           },
           "imports": [
@@ -131,20 +128,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm",
-              "version": "[6.0.6, 6.0.6]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-arm64",
-              "version": "[6.0.6, 6.0.6]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.linux-x64",
-              "version": "[6.0.6, 6.0.6]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.Android": {
               "privateAssets": "all"
@@ -162,42 +145,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         },
         "net6.0-ios15.4": {
           "targetAlias": "net6.0-ios",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[7.1.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -205,35 +186,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -269,42 +250,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         },
         "net6.0-maccatalyst15.4": {
           "targetAlias": "net6.0-maccatalyst",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.2.0, )"
+              "version": "[1.3.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[7.1.2, )"
+              "version": "[8.0.0, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
-              "autoReferenced": true
+              "version": "[6.0.536, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.14.0, )"
+              "version": "[10.15.1, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -312,35 +291,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.2.40, )"
+              "version": "[20.2.49, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -377,7 +356,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.400-preview.22330.6/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {

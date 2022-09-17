@@ -33,6 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="splasha.png" />
+        <image name="{0}" />
     </resources>
 </document>

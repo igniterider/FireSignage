@@ -1,16 +1,17 @@
-﻿namespace FireSignage.Viewmodels;
+﻿using CommunityToolkit.Mvvm;
+using CommunityToolkit.Mvvm.Input;
+
+namespace FireSignage.Viewmodels;
 
 public partial class BaseViewModel : ObservableObject
 {
 
-
-    internal virtual void OnAppearing() { }
-
-    internal virtual void OnDisappearing() { }
-
     [ObservableProperty]
-    [AlsoNotifyChangeFor(nameof(IsNotBusy))]
+    [NotifyPropertyChangedFor(nameof(IsNotBusy))]
     bool isBusy;
+
+
+
 
     [ObservableProperty]
     string title;
