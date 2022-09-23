@@ -1,0 +1,152 @@
+﻿[
+
+  {
+
+
+    "Displaytext": "LYFT",
+    "Textcolor": "Purple",
+    
+    "Business": "LYFT",
+    "Category": "Rideshare"
+    
+  },
+
+  {
+
+
+    "Displaytext": "UBER",
+    "Textcolor": "White",
+    
+    "Business": "White",
+    "Category": "Rideshare"
+    
+  },
+  {
+
+
+    "Displaytext": "LYFT 4",
+    "Textcolor": "Purple",
+    "Displaytext2": "Brian",
+    "Business": "LYFT",
+    "Category": "Rideshare"
+    
+  },
+  {
+
+
+    "Displaytext": "UBER 4",
+    "Textcolor": "White",
+    "Displaytext2": "Brian",
+    "Business": "UBER",
+    "Category": "Rideshare"
+    
+  },
+  {
+
+
+    "Displaytext": "MERRY CHRISTMAS",
+    "Textcolor": "Red",
+
+    "Business": "Christmas",
+    "Category": "Holiday"
+
+  },
+
+  {
+
+
+    "Displaytext": "Happy Holidays",
+    "Textcolor": "Red",
+
+    "Business": "Christmas",
+    "Category": "Holiday"
+
+  },
+
+  {
+
+
+    "Displaytext": "Happy Halloween",
+    "Textcolor": "Orange",
+
+    "Business": "Halloween",
+    "Category": "Holiday"
+
+  },
+  {
+
+
+    "Displaytext": "LICENSCE PLATE#",
+    "Textcolor": "White",
+
+    "Business": "Christmas",
+    "Category": "Holiday"
+
+  },
+  {
+
+
+    "Displaytext": "SALE",
+    "Textcolor": "White",
+
+    "Business": "Business",
+    "Category": "Business"
+
+  },
+  {
+
+
+    "Displaytext": "SALE TODAY ONLY",
+    "Textcolor": "White",
+
+    "Business": "Business",
+    "Category": "Business"
+
+  },
+  {
+
+
+    "Displaytext": "OPEN",
+    "Textcolor": "White",
+
+    "Business": "Business",
+    "Category": "Business"
+
+  },
+  {
+
+
+    "Displaytext": "CLOSED",
+    "Textcolor": "White",
+
+    "Business": "Business",
+    "Category": "Business"
+
+  },
+  {
+
+
+    "Displaytext": "HAZARD HAZARD",
+    "Textcolor": "Yellow",
+
+    "Business": "Hazards",
+    "Category": "Hazards"
+
+  },
+  {
+
+
+    "Displaytext": "HELP HELP",
+    "Textcolor": "Yellow",
+
+    "Business": "Hazards",
+    "Category": "Hazards"
+
+  }
+
+
+
+
+
+]
+

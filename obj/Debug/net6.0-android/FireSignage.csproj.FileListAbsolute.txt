@@ -1035,3 +1035,6 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/f/fa6brands.otf
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/f/fa6regular.otf
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/f/fa6solid.otf
