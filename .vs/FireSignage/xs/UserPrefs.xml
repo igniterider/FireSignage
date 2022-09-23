@@ -6,27 +6,20 @@
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="App.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
     <Files>
-      <File FileName="App.xaml.cs" Line="1" Column="1" />
+      <File FileName="MainPage.xaml" Line="23" Column="56" />
+      <File FileName="FontAwesome.cs" Line="20" Column="46" />
+      <File FileName="MauiProgram.cs" Line="15" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Controls" expanded="True">
-                <Node name="FlyoutFooter.xaml" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Fonts" expanded="True" />
               </Node>
-              <Node name="Models" expanded="True" />
-              <Node name="Platforms" expanded="True">
-                <Node name="iOS" expanded="True" />
-              </Node>
-              <Node name="Viewmodels" expanded="True" />
-              <Node name="App.xaml" expanded="True">
-                <Node name="App.xaml.cs" selected="True" />
-              </Node>
-              <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -34,4 +27,5 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
 </Properties>

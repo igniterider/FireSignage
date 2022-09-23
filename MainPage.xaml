@@ -4,57 +4,87 @@
              x:Class="FireSignage.MainPage"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
              xmlns:model="clr-namespace:FireSignage.Models"
-             
-             
+             xmlns:fontAwesome="clr-namespace:FontAwesome" 
+             xmlns:effectsView="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
              Shell.TabBarIsVisible="False">
 
      <Grid
         ColumnDefinitions="*,*"
         ColumnSpacing="5"
-        RowDefinitions="150,*,Auto"
-        RowSpacing="0">
+        RowDefinitions="150,*"
+        RowSpacing="5"
+        Margin="0,10,0,0">
 
-    <BoxView BackgroundColor="Black" HeightRequest="125" Grid.Row="0" Margin="10" Grid.ColumnSpan="2" WidthRequest="300" HorizontalOptions="Start"/>
-    <VerticalStackLayout Grid.Column="1" Grid.Row="0" WidthRequest="25">
-        <!--<Image BackgroundColor="#D1D1D1">
-            <Image.Source>
-                        <FontImageSource Glyph="&#xf024;"
-                         FontFamily="fas"
-                         Size="20" />
-            </Image.Source>
-        </Image>-->
 
-        <Button Text="Edit" FontSize="Small"/>
-        <Button Text="Fav" FontSize="Small"/>
 
-    </VerticalStackLayout>
+    <BoxView BackgroundColor="Black" HeightRequest="150" Grid.Row="0" Margin="5" Grid.ColumnSpan="2" WidthRequest="280" HorizontalOptions="Start"/>
+   
+
+
+
+    <VerticalStackLayout WidthRequest="120"
+                       Grid.Row="0" Grid.Column="1"
+                       HorizontalOptions="EndAndExpand"
+                       >
+
+    <Button Text="Connected" ImageSource="{FontImage FontFamily=fas6,
+                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.Signal},
+                                        Color=Green,
+                                        Size=25}"  />
+
+    
+
+    <Button Text="Edit" ImageSource="{FontImage FontFamily=fas6,
+                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
+                                        Color=Black,
+                                        Size=25}" />
+
+   
+
+    <Button Text="Send" ImageSource="{FontImage FontFamily=fas6,
+                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
+                                        Color=Black,
+                                        Size=25}" />
+
+
+</VerticalStackLayout>
+
+
     <CollectionView Grid.Row="1"
-        Grid.ColumnSpan="2">
+                    Grid.ColumnSpan="2"
+                    >
+
         
+
     <CollectionView.ItemsSource>
         <x:Array Type="{x:Type model:PreMadeSigns}">
             <model:PreMadeSigns
                 Displaytext="UBER"
                 Displaytext2=""
+                Category="Rideshare"
              
                 />
             <model:PreMadeSigns
                 Displaytext="LYFT"
                 Displaytext2=""
+                Category="Rideshare"
                 />
             <model:PreMadeSigns
                 Displaytext="LYFT 4"
                 Displaytext2="BRIAN"
+                Category="Help"
                 />
 
             <model:PreMadeSigns
                 Displaytext="UBER 4"
                 Displaytext2="COURT"
+                Category="Business"
                 />
 
             <model:PreMadeSigns
                 Displaytext="UBER 4"
                 Displaytext2="KENDALLEANNE"
+                Category="Business"
                 />
         </x:Array>
     </CollectionView.ItemsSource>
@@ -80,6 +110,17 @@
             </Grid>
         </DataTemplate>
     </CollectionView.ItemTemplate>
+
+        <!--<CollectionView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <Label Text="{Binding Category}"
+                           BackgroundColor="LightGray"
+                           FontSize="20"
+                           FontAttributes="Bold" />
+                </DataTemplate>
+        </CollectionView.GroupHeaderTemplate>-->
 </CollectionView>
+
+   
 </Grid>
 </ContentPage>

@@ -19,6 +19,10 @@ public static class MauiProgram
             .ConfigureSyncfusionCore()
             .ConfigureFonts(fonts =>
             {
+                fonts.AddFont("fa6brands.otf", "fab6");
+                fonts.AddFont("fa6regular.otf", "far6");
+                fonts.AddFont("fa6solid.otf", "fas6");
+
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 fonts.AddFont("fa-brands.ttf", "fab");

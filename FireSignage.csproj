@@ -97,4 +97,12 @@
 	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.536" />
 	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.536" />
 	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Fonts\fa-brands-400.ttf" />
+	  <None Remove="Resources\Fonts\fa-regular-400.ttf" />
+	  <None Remove="Resources\Fonts\fa-solid-900.ttf" />
+	  <None Remove="Resources\Fonts\Font Awesome 6 Free-Solid-900.otf" />
+	  <None Remove="Resources\Fonts\Font Awesome 6 Free-Regular-400.otf" />
+	  <None Remove="Resources\Fonts\Font Awesome 6 Brands-Regular-400.otf" />
+	</ItemGroup>
 </Project>
