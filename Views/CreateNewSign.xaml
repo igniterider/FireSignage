@@ -4,9 +4,6 @@
              x:Class="FireSignage.Views.CreateNewSign"
              Title="CreateNewSign">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        
     </VerticalStackLayout>
 </ContentPage>
