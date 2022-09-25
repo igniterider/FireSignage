@@ -293,3 +293,14 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/f/fa6brands.otf
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/f/fa6regular.otf
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/f/fa6solid.otf
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Extended.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Extended.UI.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.SceneGraph.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Skottie.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.iOS.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Controls.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Core.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/module.modulemap
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/libSkiaSharp

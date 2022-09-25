@@ -277,3 +277,13 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/FireSignage.pdb
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/FireSignage.genruntimeconfig.cache
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/ref/FireSignage.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Extended.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Extended.UI.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.SceneGraph.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Skottie.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.iOS.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Controls.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Core.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libSkiaSharp.framework.zip

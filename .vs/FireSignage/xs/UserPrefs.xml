@@ -1,33 +1,32 @@
-﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
+  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/CreateNewSign.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Viewmodels/NewSignViewModel.cs">
     <Files>
       <File FileName="MainPage.xaml" Line="5" Column="5" />
-      <File FileName="App.xaml" Line="1" Column="1" />
-      <File FileName="Resources/Styles/Styles.xaml" Line="20" Column="13" />
-      <File FileName="Resources/Styles/Colors.xaml" Line="10" Column="36" />
-      <File FileName="Views/CreateNewSign.xaml" Line="7" Column="9" />
+      <File FileName="Resources/Styles/Colors.xaml" />
+      <File FileName="Views/CreateNewSign.xaml" />
+      <File FileName="Viewmodels/NewSignViewModel.cs" Line="52" Column="13" />
+      <File FileName="Services/NamedColor.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Views" expanded="True">
-                <Node name="CreateNewSign.xaml" selected="True" />
-              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="Viewmodels" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
-  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

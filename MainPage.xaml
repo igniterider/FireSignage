@@ -6,7 +6,7 @@
              xmlns:model="clr-namespace:FireSignage.Models"
              xmlns:fontAwesome="clr-namespace:FontAwesome" 
              xmlns:effectsView="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="True">
 <VerticalStackLayout>
 
 

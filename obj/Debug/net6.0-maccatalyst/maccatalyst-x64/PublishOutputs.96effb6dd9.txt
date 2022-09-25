@@ -17,6 +17,15 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/Realm.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/Remotion.Linq.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SampleBrowser.Maui.Base.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Extended.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Extended.UI.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.SceneGraph.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Skottie.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Views.iOS.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Controls.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Core.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/Syncfusion.Licensing.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/Syncfusion.Maui.Charts.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../FireSignage.app/Contents/MonoBundle/Syncfusion.Maui.Core.dll

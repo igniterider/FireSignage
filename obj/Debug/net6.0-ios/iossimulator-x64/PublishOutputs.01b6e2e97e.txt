@@ -17,6 +17,15 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/Realm.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/Remotion.Linq.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SampleBrowser.Maui.Base.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Extended.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Extended.UI.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.SceneGraph.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Skottie.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Views.iOS.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Views.Maui.Controls.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/SkiaSharp.Views.Maui.Core.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/Syncfusion.Licensing.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/Syncfusion.Maui.Charts.dll
 /Users/brianjohnson/Projects/FireSignage/FireSignage/bin/Debug/net6.0-ios/iossimulator-x64/publish/../FireSignage.app/Syncfusion.Maui.Core.dll

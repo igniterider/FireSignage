@@ -26,10 +26,12 @@
             Title="Home"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
-        <!--<ShellContent
+
+
+        <ShellContent
             Title="All Signs"
-            ContentTemplate="{DataTemplate views:PremadeSignView}"
-            Route="AllSigns" />-->
+            ContentTemplate="{DataTemplate views:CreateNewSign}"
+            Route="CreateNewSign" />
 
 
 </FlyoutItem>

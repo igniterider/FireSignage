@@ -1297,6 +1297,42 @@ app_system_properties:
 .L.env.buf.309:
 	.zero	70
 	.size	.L.env.buf.309, 70
+	.type	.L.env.buf.310, %object
+.L.env.buf.310:
+	.zero	70
+	.size	.L.env.buf.310, 70
+	.type	.L.env.buf.311, %object
+.L.env.buf.311:
+	.zero	70
+	.size	.L.env.buf.311, 70
+	.type	.L.env.buf.312, %object
+.L.env.buf.312:
+	.zero	70
+	.size	.L.env.buf.312, 70
+	.type	.L.env.buf.313, %object
+.L.env.buf.313:
+	.zero	70
+	.size	.L.env.buf.313, 70
+	.type	.L.env.buf.314, %object
+.L.env.buf.314:
+	.zero	70
+	.size	.L.env.buf.314, 70
+	.type	.L.env.buf.315, %object
+.L.env.buf.315:
+	.zero	70
+	.size	.L.env.buf.315, 70
+	.type	.L.env.buf.316, %object
+.L.env.buf.316:
+	.zero	70
+	.size	.L.env.buf.316, 70
+	.type	.L.env.buf.317, %object
+.L.env.buf.317:
+	.zero	70
+	.size	.L.env.buf.317, 70
+	.type	.L.env.buf.318, %object
+.L.env.buf.318:
+	.zero	70
+	.size	.L.env.buf.318, 70
 	@ Bundled assemblies data
 
 	.type	bundled_assemblies, %object
@@ -3475,7 +3511,70 @@ bundled_assemblies:
 	.long	0x0	@ name_length
 	.long	.L.env.buf.309	@ name
 
-	.size	bundled_assemblies, 7440
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.310	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.311	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.312	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.313	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.314	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.315	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.316	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.317	@ name
+
+	.long	0xffffffff	@ apk_fd
+	.long	0x0	@ data_offset
+	.long	0x0	@ data_size
+	.long	0x0	@ data
+	.long	0x0	@ name_length
+	.long	.L.env.buf.318	@ name
+
+	.size	bundled_assemblies, 7656
 	@ Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, %object
 	.global	assembly_store_bundled_assemblies
@@ -3557,11 +3656,19 @@ dso_cache:
 	.long	0x0	@ handle
 	.zero	4
 
+	.long	0x2ea572ff	@ hash, from name: SkiaSharp.so
+	.long	0x0
+	.byte	0x0	@ ignore
+	.zero	3
+	.long	.L.autostr.21	@ name: libSkiaSharp.so
+	.long	0x0	@ handle
+	.zero	4
+
 	.long	0x30366e51	@ hash, from name: libmono-component-hot_reload.so
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.21	@ name: libmono-component-hot_reload.so
+	.long	.L.autostr.22	@ name: libmono-component-hot_reload.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3569,7 +3676,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.22	@ name: libSystem.Security.Cryptography.Native.Android.so
+	.long	.L.autostr.23	@ name: libSystem.Security.Cryptography.Native.Android.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3577,7 +3684,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.23	@ name: libmono-component-hot_reload.so
+	.long	.L.autostr.24	@ name: libmono-component-hot_reload.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3585,7 +3692,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.24	@ name: libSystem.Security.Cryptography.Native.Android.so
+	.long	.L.autostr.25	@ name: libSystem.Security.Cryptography.Native.Android.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3593,7 +3700,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.25	@ name: libxamarin-debug-app-helper.so
+	.long	.L.autostr.26	@ name: libxamarin-debug-app-helper.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3601,7 +3708,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.26	@ name: libSystem.Native.so
+	.long	.L.autostr.27	@ name: libSystem.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3609,7 +3716,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.27	@ name: libSystem.IO.Compression.Native.so
+	.long	.L.autostr.28	@ name: libSystem.IO.Compression.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3617,7 +3724,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.28	@ name: libSystem.Native.so
+	.long	.L.autostr.29	@ name: libSystem.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3625,7 +3732,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.29	@ name: libSystem.IO.Compression.Native.so
+	.long	.L.autostr.30	@ name: libSystem.IO.Compression.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3633,7 +3740,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.30	@ name: libSystem.Security.Cryptography.Native.Android.so
+	.long	.L.autostr.31	@ name: libSystem.Security.Cryptography.Native.Android.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3641,7 +3748,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.31	@ name: libxamarin-debug-app-helper.so
+	.long	.L.autostr.32	@ name: libxamarin-debug-app-helper.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3649,7 +3756,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.32	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.33	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3657,7 +3764,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.33	@ name: libSystem.Native.so
+	.long	.L.autostr.34	@ name: libSystem.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3665,7 +3772,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.34	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.35	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3673,7 +3780,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.35	@ name: librealm-wrappers.so
+	.long	.L.autostr.36	@ name: librealm-wrappers.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3681,7 +3788,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.36	@ name: libSystem.IO.Compression.Native.so
+	.long	.L.autostr.37	@ name: libSystem.IO.Compression.Native.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3689,7 +3796,23 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.37	@ name: libSystem.IO.Compression.Native.so
+	.long	.L.autostr.38	@ name: libSystem.IO.Compression.Native.so
+	.long	0x0	@ handle
+	.zero	4
+
+	.long	0xb541b9f8	@ hash, from name: libSkiaSharp
+	.long	0x0
+	.byte	0x0	@ ignore
+	.zero	3
+	.long	.L.autostr.39	@ name: libSkiaSharp.so
+	.long	0x0	@ handle
+	.zero	4
+
+	.long	0xb5d05fb7	@ hash, from name: libSkiaSharp.so
+	.long	0x0
+	.byte	0x0	@ ignore
+	.zero	3
+	.long	.L.autostr.40	@ name: libSkiaSharp.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3697,7 +3820,15 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.38	@ name: libmono-component-hot_reload.so
+	.long	.L.autostr.41	@ name: libmono-component-hot_reload.so
+	.long	0x0	@ handle
+	.zero	4
+
+	.long	0xc71a4669	@ hash, from name: SkiaSharp
+	.long	0x0
+	.byte	0x0	@ ignore
+	.zero	3
+	.long	.L.autostr.42	@ name: libSkiaSharp.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3705,7 +3836,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.39	@ name: libmonodroid.so
+	.long	.L.autostr.43	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3713,7 +3844,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.40	@ name: librealm-wrappers.so
+	.long	.L.autostr.44	@ name: librealm-wrappers.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3721,7 +3852,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.41	@ name: libmonodroid.so
+	.long	.L.autostr.45	@ name: libmonodroid.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3729,7 +3860,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.42	@ name: libmono-component-hot_reload.so
+	.long	.L.autostr.46	@ name: libmono-component-hot_reload.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3737,7 +3868,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.43	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.47	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3745,7 +3876,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.44	@ name: libmonosgen-2.0.so
+	.long	.L.autostr.48	@ name: libmonosgen-2.0.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3753,7 +3884,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.45	@ name: librealm-wrappers.so
+	.long	.L.autostr.49	@ name: librealm-wrappers.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3761,7 +3892,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.46	@ name: libmono-component-debugger.so
+	.long	.L.autostr.50	@ name: libmono-component-debugger.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3769,7 +3900,7 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.47	@ name: libmono-component-debugger.so
+	.long	.L.autostr.51	@ name: libmono-component-debugger.so
 	.long	0x0	@ handle
 	.zero	4
 
@@ -3777,11 +3908,11 @@ dso_cache:
 	.long	0x0
 	.byte	0x0	@ ignore
 	.zero	3
-	.long	.L.autostr.48	@ name: libmono-component-debugger.so
+	.long	.L.autostr.52	@ name: libmono-component-debugger.so
 	.long	0x0	@ handle
 	.zero	4
 
-	.size	dso_cache, 864
+	.size	dso_cache, 960
 
 	@
 	@ Generated from instance of: Xamarin.Android.Tasks.ApplicationConfig, Xamarin.Android.Build.Tasks, Version=12.3.99.48, Culture=neutral, PublicKeyToken=84e04ff9cfb79065
@@ -3807,12 +3938,12 @@ application_config:
 	.long	0x3	@ package_naming_policy
 	.long	0xc	@ environment_variable_count
 	.long	0x0	@ system_property_count
-	.long	0x136	@ number_of_assemblies_in_apk
+	.long	0x13f	@ number_of_assemblies_in_apk
 	.long	0x46	@ bundled_assembly_name_width
 	.long	0x2	@ number_of_assembly_store_files
-	.long	0x24	@ number_of_dso_cache_entries
+	.long	0x28	@ number_of_dso_cache_entries
 	.long	0x3	@ mono_components_mask
-	.long	.L.autostr.49	@ android_package_name
+	.long	.L.autostr.53	@ android_package_name
 	.size	application_config, 48
 
 
@@ -3859,7 +3990,7 @@ application_config:
 
 	.type	.L.autostr.8, %object
 .L.autostr.8:
-	.asciz	"16633eb0-38f0-4605-aa77-c12cd22781cc"
+	.asciz	"a666470a-a139-4ccb-88bc-18bed49a9a7c"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, %object
@@ -3924,83 +4055,83 @@ application_config:
 
 	.type	.L.autostr.21, %object
 .L.autostr.21:
-	.asciz	"libmono-component-hot_reload.so"
-	.size	.L.autostr.21, 32
+	.asciz	"libSkiaSharp.so"
+	.size	.L.autostr.21, 16
 
 	.type	.L.autostr.22, %object
 .L.autostr.22:
-	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
-	.size	.L.autostr.22, 50
+	.asciz	"libmono-component-hot_reload.so"
+	.size	.L.autostr.22, 32
 
 	.type	.L.autostr.23, %object
 .L.autostr.23:
-	.asciz	"libmono-component-hot_reload.so"
-	.size	.L.autostr.23, 32
+	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
+	.size	.L.autostr.23, 50
 
 	.type	.L.autostr.24, %object
 .L.autostr.24:
-	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
-	.size	.L.autostr.24, 50
+	.asciz	"libmono-component-hot_reload.so"
+	.size	.L.autostr.24, 32
 
 	.type	.L.autostr.25, %object
 .L.autostr.25:
-	.asciz	"libxamarin-debug-app-helper.so"
-	.size	.L.autostr.25, 31
+	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
+	.size	.L.autostr.25, 50
 
 	.type	.L.autostr.26, %object
 .L.autostr.26:
-	.asciz	"libSystem.Native.so"
-	.size	.L.autostr.26, 20
+	.asciz	"libxamarin-debug-app-helper.so"
+	.size	.L.autostr.26, 31
 
 	.type	.L.autostr.27, %object
 .L.autostr.27:
-	.asciz	"libSystem.IO.Compression.Native.so"
-	.size	.L.autostr.27, 35
+	.asciz	"libSystem.Native.so"
+	.size	.L.autostr.27, 20
 
 	.type	.L.autostr.28, %object
 .L.autostr.28:
-	.asciz	"libSystem.Native.so"
-	.size	.L.autostr.28, 20
+	.asciz	"libSystem.IO.Compression.Native.so"
+	.size	.L.autostr.28, 35
 
 	.type	.L.autostr.29, %object
 .L.autostr.29:
-	.asciz	"libSystem.IO.Compression.Native.so"
-	.size	.L.autostr.29, 35
+	.asciz	"libSystem.Native.so"
+	.size	.L.autostr.29, 20
 
 	.type	.L.autostr.30, %object
 .L.autostr.30:
-	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
-	.size	.L.autostr.30, 50
+	.asciz	"libSystem.IO.Compression.Native.so"
+	.size	.L.autostr.30, 35
 
 	.type	.L.autostr.31, %object
 .L.autostr.31:
-	.asciz	"libxamarin-debug-app-helper.so"
-	.size	.L.autostr.31, 31
+	.asciz	"libSystem.Security.Cryptography.Native.Android.so"
+	.size	.L.autostr.31, 50
 
 	.type	.L.autostr.32, %object
 .L.autostr.32:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.32, 19
+	.asciz	"libxamarin-debug-app-helper.so"
+	.size	.L.autostr.32, 31
 
 	.type	.L.autostr.33, %object
 .L.autostr.33:
-	.asciz	"libSystem.Native.so"
-	.size	.L.autostr.33, 20
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.33, 19
 
 	.type	.L.autostr.34, %object
 .L.autostr.34:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.34, 19
+	.asciz	"libSystem.Native.so"
+	.size	.L.autostr.34, 20
 
 	.type	.L.autostr.35, %object
 .L.autostr.35:
-	.asciz	"librealm-wrappers.so"
-	.size	.L.autostr.35, 21
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.35, 19
 
 	.type	.L.autostr.36, %object
 .L.autostr.36:
-	.asciz	"libSystem.IO.Compression.Native.so"
-	.size	.L.autostr.36, 35
+	.asciz	"librealm-wrappers.so"
+	.size	.L.autostr.36, 21
 
 	.type	.L.autostr.37, %object
 .L.autostr.37:
@@ -4009,63 +4140,83 @@ application_config:
 
 	.type	.L.autostr.38, %object
 .L.autostr.38:
-	.asciz	"libmono-component-hot_reload.so"
-	.size	.L.autostr.38, 32
+	.asciz	"libSystem.IO.Compression.Native.so"
+	.size	.L.autostr.38, 35
 
 	.type	.L.autostr.39, %object
 .L.autostr.39:
-	.asciz	"libmonodroid.so"
+	.asciz	"libSkiaSharp.so"
 	.size	.L.autostr.39, 16
 
 	.type	.L.autostr.40, %object
 .L.autostr.40:
-	.asciz	"librealm-wrappers.so"
-	.size	.L.autostr.40, 21
+	.asciz	"libSkiaSharp.so"
+	.size	.L.autostr.40, 16
 
 	.type	.L.autostr.41, %object
 .L.autostr.41:
-	.asciz	"libmonodroid.so"
-	.size	.L.autostr.41, 16
+	.asciz	"libmono-component-hot_reload.so"
+	.size	.L.autostr.41, 32
 
 	.type	.L.autostr.42, %object
 .L.autostr.42:
-	.asciz	"libmono-component-hot_reload.so"
-	.size	.L.autostr.42, 32
+	.asciz	"libSkiaSharp.so"
+	.size	.L.autostr.42, 16
 
 	.type	.L.autostr.43, %object
 .L.autostr.43:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.43, 19
+	.asciz	"libmonodroid.so"
+	.size	.L.autostr.43, 16
 
 	.type	.L.autostr.44, %object
 .L.autostr.44:
-	.asciz	"libmonosgen-2.0.so"
-	.size	.L.autostr.44, 19
+	.asciz	"librealm-wrappers.so"
+	.size	.L.autostr.44, 21
 
 	.type	.L.autostr.45, %object
 .L.autostr.45:
-	.asciz	"librealm-wrappers.so"
-	.size	.L.autostr.45, 21
+	.asciz	"libmonodroid.so"
+	.size	.L.autostr.45, 16
 
 	.type	.L.autostr.46, %object
 .L.autostr.46:
-	.asciz	"libmono-component-debugger.so"
-	.size	.L.autostr.46, 30
+	.asciz	"libmono-component-hot_reload.so"
+	.size	.L.autostr.46, 32
 
 	.type	.L.autostr.47, %object
 .L.autostr.47:
-	.asciz	"libmono-component-debugger.so"
-	.size	.L.autostr.47, 30
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.47, 19
 
 	.type	.L.autostr.48, %object
 .L.autostr.48:
-	.asciz	"libmono-component-debugger.so"
-	.size	.L.autostr.48, 30
+	.asciz	"libmonosgen-2.0.so"
+	.size	.L.autostr.48, 19
 
 	.type	.L.autostr.49, %object
 .L.autostr.49:
+	.asciz	"librealm-wrappers.so"
+	.size	.L.autostr.49, 21
+
+	.type	.L.autostr.50, %object
+.L.autostr.50:
+	.asciz	"libmono-component-debugger.so"
+	.size	.L.autostr.50, 30
+
+	.type	.L.autostr.51, %object
+.L.autostr.51:
+	.asciz	"libmono-component-debugger.so"
+	.size	.L.autostr.51, 30
+
+	.type	.L.autostr.52, %object
+.L.autostr.52:
+	.asciz	"libmono-component-debugger.so"
+	.size	.L.autostr.52, 30
+
+	.type	.L.autostr.53, %object
+.L.autostr.53:
 	.asciz	"com.companyname.firesignage"
-	.size	.L.autostr.49, 28
+	.size	.L.autostr.53, 28
 
 
 	.ident	"Xamarin.Android remotes/origin/release/6.0.4xx @ 2c639362ff709d9f9c090d8bb363b2d6b67945ce"

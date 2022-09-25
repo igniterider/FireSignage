@@ -51,6 +51,15 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libSkiaSharp.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8YtFtZqyJw+21taAuRA4vagKMMg=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"f18b45b59ab2270fb6d6d680b91038bda80a30c8"</string>
+		</dict>
 		<key>Frameworks/realm-wrappers.framework</key>
 		<dict>
 			<key>cdhash</key>
@@ -85,14 +94,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hqmfkOyiDPkgRVbN9tBW9u+SVTJ2Png9nSXOjYWP7RM=
+			pWOZ50f0fVMaon52yif4G4sbSnRCDtn8cdrwfx7FvH0=
 			</data>
 		</dict>
 		<key>MonoBundle/FireSignage.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QBVe6bVFHF4HBVxlj+ubTJaaSpTREuCYkjidOWmQ1U0=
+			ajAEMDMIN/o8KijbrBb/3ACvdufcU6UHz+lgh8XcuZs=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -197,7 +206,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			riD0mQaAse2ZJ9l53U66L+d39SUz5PgErbKbiGImJW8=
+			Va2dx7CryQI32h+NEVJlUDupPrL+Ot+NPimocIMThlo=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.Maui.dll</key>
@@ -263,88 +272,151 @@
 			Sc/4vA9+cMMDMfNO6iIdg78Ofz+um4UUT5VzwYDkmrk=
 			</data>
 		</dict>
+		<key>MonoBundle/SkiaSharp.Extended.UI.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pjFn9SM5tJQtETDNJBfvvtSas2N8UXnVYvnINcimf+I=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Extended.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			svsIq09pj/oaA51MPXYJrBHrzCdRff/wBeachgCmKfc=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.SceneGraph.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			54GZXfZCza6RJ5Z0bEzPt0PAaeABKBtXbNxXtL7YmjA=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Skottie.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3jD0GgT+Il83QHyIOzkzN4e1h9GB9phVevqnO4Eh1Y=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.Compatibility.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			PrPsBvpAqsx0JLkT7TteJ85M3iL9baMYzH+VXQ/He7g=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			zq78jdKDFpyNuKUAhRbThOGfP33ex9iX7aWWETdw7Hw=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nxtnQxKrAnQbLTvT4aak0vk81Lo7xqmjM4nxhP2uZN0=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.iOS.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			fJNLhfO58wsYKHiySPN06keUfscP1lOEX5jEUCLc/9o=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			NFn6mxu034bRozTwcUx5+1FU+xPEyY5FmfWmym2DEEo=
+			</data>
+		</dict>
 		<key>MonoBundle/Syncfusion.Licensing.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6bsMJjYX/e0zaPPJK+dMLelNSV9ihNdttqrZ9Eam8Pc=
+			cfKLQh4rgC9eLIiZYcGNsvBhXfRGtZ4QtP6jCT+Ax/c=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Charts.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WBwHgpHMlFLi15Kdh0Nzr2Tsi6iFRzAk5LZRdnE3gDo=
+			cKbRkUIGmErHrGvwuG8/juh93I8nhSDaTPfHxXMAa+s=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Core.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			G8XI8mwXopAx6AJW3CjwUAY0r4GiEsqeeaCb+Wrbpds=
+			Iqlrvxzu4SgJmkkoWmMoSjSbj6//dmJIBEA7Xr8IXxc=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Data.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KUik06ydQheit30B3yTefxYXv4Y2Zv4JN1BlBeHVTJ4=
+			ddNl1lddQBZgikcbqFfXEcGPYavs07ZHAemVXI12LjE=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.DataGrid.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NtPiIZmNXVTKa8P/WM420MHqplkhnIET61VKTjOQRyU=
+			FKv89rOU80tM8AV61eS+MuHBjw9OVlUx37f/K2huLSs=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.DataSource.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g2rk+pTryOj/23puLJEkaxHH6MmvVmJQ5nk1vJpTbeE=
+			O1RFuyf8PzhLHWHw52VWHsFUPVnWTqWPUmS0ctjq82E=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Gauges.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			K3kPBCK7AoGSmruNMANElqFRipvWb2GKiAfjcB+cfEU=
+			R8dn0d91lFrK77shLsebRt/Hmj+B8BCNvE3ZwWC+aL4=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.GridCommon.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			GEKC/fn+pdFW3dWOD9pbLuddpBOLCcYwEzZhMJUniyo=
+			GiIYR4qH/qggfaa04cY+ox9A0X+LJ/bybsNo8V49+uI=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.ListView.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tu3dT2BJdBpGo24a15xf0o/7+RIIF+3ACnpHE0rAJHM=
+			ee5olZLZy0DyQGDTy9D4A6f5TrmdU7Cnl35Yfg82cNo=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Scheduler.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AqGFN1l2lUeCfaup3K01V3aBWOZf14n07dYnZg1w8eM=
+			eHna3M3kWA3IOeHmGvP3doApF3rGZ7eFj82AdHxo580=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Sliders.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7Y2y8Us6X2n5tixv/a20fDCPrkhmyAabPFbGeJPdjJE=
+			7dKMQwmqXTUb3qAZvZZsRWQ7XDXalZMXLU7w5j/9r2c=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.TabView.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			cs1QenJ0+j+is/VnHzZtU8zBg1UMu1h1H7P26eaRz0g=
+			L+01VxZlOqMPgoihNxxjFdpWCk9huioojHi3q44oamM=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1464,14 +1536,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PQC4MSfWwWJrLfGb71rwCEgkPWvEE3UVkzZ4/hO4HUc=
+			2E5R8PUIZmP211RVsSmAONB46ss9QuOK2RNelkrYk7g=
 			</data>
 		</dict>
 		<key>MonoBundle/en-US/Syncfusion.Maui.Scheduler.resources.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			9CDGiRntOdLl/pEHKNMR6aXdgZFuoZDS9mWzdh9sZQI=
+			hN9hf2gZVmyglD5Hbcgas3jsm0oHWHrqEhfNvdDzCLo=
 			</data>
 		</dict>
 		<key>MonoBundle/icudt.dat</key>
