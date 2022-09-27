@@ -11,7 +11,7 @@ namespace FireSignage.Viewmodels
 
 
     {
-        public ObservableCollection<PreMadeSigns> _getSigns = new ObservableCollection<PreMadeSigns>();
+        
 
         private ObservableCollection<String> colors = new ObservableCollection<string>();
         private Color selectedColor;
@@ -43,7 +43,7 @@ namespace FireSignage.Viewmodels
                 MyColors.Add(color.Name);
             }
 
-
+            StartingColors("Start", "White", "Black");
 
         }
 
@@ -89,15 +89,15 @@ namespace FireSignage.Viewmodels
 
         }
 
-        public void ApplyQueryAttributes(IDictionary<string, string> query)
-        {
+        //public void ApplyQueryAttributes(IDictionary<string, string> query)
+        //{
 
-            string displaytext = HttpUtility.UrlDecode(query["displaytext"]); ;
-            string textcolor = HttpUtility.UrlDecode(query["textcolor"]); ;
-            string backgroundcolor = HttpUtility.UrlDecode(query["backgroundcolor"]); ;
-            StartingColors(displaytext, textcolor, backgroundcolor);
+        //    string displaytext = HttpUtility.UrlDecode(query["displaytext"]); ;
+        //    string textcolor = HttpUtility.UrlDecode(query["textcolor"]); ;
+        //    string backgroundcolor = HttpUtility.UrlDecode(query["backgroundcolor"]); ;
+        //    StartingColors(displaytext, textcolor, backgroundcolor);
 
-        }
+        //}
 
         public ObservableCollection<String> MyColors
         {

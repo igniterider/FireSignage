@@ -41,7 +41,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="250,250" />
+		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="350,350" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -80,6 +80,9 @@
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\HelpPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\NewSignTesting.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>

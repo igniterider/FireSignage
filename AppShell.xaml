@@ -29,20 +29,18 @@
 
 
         <ShellContent
-            Title="All Signs"
-            ContentTemplate="{DataTemplate views:CreateNewSign}"
-            Route="CreateNewSign" />
+            Title="Create A Sign"
+            ContentTemplate="{DataTemplate views:NewSignTesting}"
+            Route="NewSignTesting" />
 
 
-</FlyoutItem>
+     </FlyoutItem>
 
 
-    <MenuItem Text="HELP"
-       Command="{Binding HelpCommand}"/>
+        <MenuItem Text="HELP"
+            Command="{Binding HelpCommand}"/>
        
-    <MenuItem Text="LOGOUT"
-              
-               />
+        <MenuItem Text="LOGOUT"/>
 
      <Shell.FlyoutFooter>
         <controls:FlyoutFooter />

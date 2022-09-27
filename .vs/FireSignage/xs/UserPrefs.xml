@@ -1,32 +1,35 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
-  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Viewmodels/NewSignViewModel.cs">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/NewSignTesting.xaml.cs">
     <Files>
-      <File FileName="MainPage.xaml" Line="5" Column="5" />
-      <File FileName="Resources/Styles/Colors.xaml" />
-      <File FileName="Views/CreateNewSign.xaml" />
-      <File FileName="Viewmodels/NewSignViewModel.cs" Line="52" Column="13" />
-      <File FileName="Services/NamedColor.cs" />
+      <File FileName="Views/NewSignTesting.xaml" Line="17" Column="49" />
+      <File FileName="Views/NewSignTesting.xaml.cs" Line="25" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Services" expanded="True" />
+              <Node name="Controls" expanded="True" />
+              <Node name="Services" expanded="True">
+                <Node name="NamedColor.cs" selected="True" />
+              </Node>
               <Node name="Viewmodels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="NewSignTesting.xaml" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
