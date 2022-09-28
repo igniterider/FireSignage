@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Reflection;
+using Microsoft.Maui.Graphics.Converters;
 
 
-namespace FireSignage.Services
+namespace FireSignage
 {
-    public class SolidColorBrushColor : IEquatable<SolidColorBrushColor>, IComparable<SolidColorBrushColor>
+    public class SolidColorBrushColor : ObservableObject, IEquatable<SolidColorBrushColor>, IComparable<SolidColorBrushColor>
     {
         public string Name { get; private set; }
         public Color Color { get; private set; }
         public string Hex { get; private set; }
 
-        public static IList<SolidColorBrushColor> All { get; private set; }
+        public static List<SolidColorBrushColor> All { get; private set; }
 
         public bool Equals(SolidColorBrushColor other)
         {
@@ -49,5 +50,41 @@ namespace FireSignage.Services
             all.Sort();
             All = all;
         }
+
+
+        
+
+        ColorTypeConverter colorTypeConverter = new ColorTypeConverter();
+
+        string selectedColorName;
+        public string SelectedColorName
+        {
+            get { return selectedColorName; }
+            set
+            {
+                if (selectedColorName != value)
+                {
+                    selectedColorName = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged("SelectedColor");
+                }
+            }
+        }
+
+        public SolidColorBrush SelectedColor
+        {
+            get
+            {
+                if (string.IsNullOrWhiteSpace(selectedColorName))
+                {
+                    return startcolor;
+                }
+                return (SolidColorBrush)colorTypeConverter.ConvertFromInvariantString(selectedColorName);
+            }
+        }
+
+
+        SolidColorBrush startcolor = SolidColorBrush.White;
+
     }
 }
