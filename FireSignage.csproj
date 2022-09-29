@@ -63,29 +63,7 @@
 	  <Folder Include="Controls\" />
 	  <Folder Include="Renderers\" />
 	</ItemGroup>
-	<ItemGroup>
-	  <MauiXaml Update="Views\PremadeSignView.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\LoginFlow\TabbedLogin.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\FlyoutFooter.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\CreateNewSign.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\HelpPage.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Views\NewSignTesting.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	</ItemGroup>
+	
 	<ItemGroup>
 	  <PackageReference Include="Realm" Version="10.15.1" />
 	  <PackageReference Include="Realm.Fody" Version="10.15.1">
@@ -95,15 +73,15 @@
 	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="1.3.0" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="1.3.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
-	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.2.50" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.3.47" />
 	  <PackageReference Include="SampleBrowser.Maui.Base" Version="20.2.38" />
-	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.2.50" />
-	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.50" />
+	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.47" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.3.47" />
 	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.540" />
 	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.540" />
 	  <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.2" />
@@ -111,17 +89,5 @@
 	  <PackageReference Include="SkiaSharp.Views.Maui.Controls.Compatibility" Version="2.88.2" />
 	  <PackageReference Include="SkiaSharp.Extended.UI.Maui" Version="2.0.0-preview.61" />
 	</ItemGroup>
-	<ItemGroup>
-	  <None Remove="Resources\Fonts\fa-brands-400.ttf" />
-	  <None Remove="Resources\Fonts\fa-regular-400.ttf" />
-	  <None Remove="Resources\Fonts\fa-solid-900.ttf" />
-	  <None Remove="Resources\Fonts\Font Awesome 6 Free-Solid-900.otf" />
-	  <None Remove="Resources\Fonts\Font Awesome 6 Free-Regular-400.otf" />
-	  <None Remove="Resources\Fonts\Font Awesome 6 Brands-Regular-400.otf" />
-	  <None Remove="Renderers\" />
-	  <None Remove="SkiaSharp.Views.Maui.Controls" />
-	  <None Remove="SkiaSharp.Views.Maui.Core" />
-	  <None Remove="SkiaSharp.Views.Maui.Controls.Compatibility" />
-	  <None Remove="SkiaSharp.Extended.UI.Maui" />
-	</ItemGroup>
+	
 </Project>

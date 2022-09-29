@@ -17,6 +17,7 @@ attr;/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-andro
 attr;/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/lp/176/jl/res/values/attr.xml
 background;obj/Debug/net6.0-android/resizetizer/r/mipmap-anydpi-v26/appicon_round.xml
 background;obj/Debug/net6.0-android/resizetizer/r/mipmap-anydpi-v26/appicon.xml
+bitmap;obj/Debug/net6.0-android/res/resources/drawable/maui_splash_image.xml
 cache-path;/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/lp/177/jl/res/xml/microsoft_maui_essentials_fileprovider_file_paths.xml
 color;/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/lp/176/jl/res/values/colors.xml
 color;obj/Debug/net6.0-android/res/resources/values/maui_colors.xml

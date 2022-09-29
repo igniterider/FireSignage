@@ -40,7 +40,7 @@
 
         <Frame WidthRequest="300" HeightRequest="250" BackgroundColor="Black" Margin="0,10,0,5">
 
-            <Label Text="UBER" FontSize="40" HeightRequest="200"
+            <Label BindingContext="{x:Reference Entry}" FontSize="40" HeightRequest="200"
                    WidthRequest="250" HorizontalTextAlignment="Center"
                    x:Name="MainLabel" />
 
@@ -64,7 +64,7 @@
 
             
 
-        <Entry Text="Change Text Here" Placeholder="Start" HorizontalTextAlignment="Center" x:Name="Entry"/>
+        <Entry Placeholder="Text Entry" HorizontalTextAlignment="Center" x:Name="Entry" TextChanged="Entry_TextChanged"/>
 
         
 

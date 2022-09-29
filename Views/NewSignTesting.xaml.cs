@@ -38,5 +38,9 @@ public partial class NewSignTesting : ContentPage
         }
     }
 
+    void Entry_TextChanged(System.Object sender, Microsoft.Maui.Controls.TextChangedEventArgs e)
+    {
+        MainLabel.Text = e.NewTextValue;
+    }
 }
 
