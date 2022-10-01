@@ -2,9 +2,11 @@
 
 public partial class PremadeSignView : ContentPage
 {
-	public PremadeSignView(PremadeViewModel viewModel)
+	
+
+	public PremadeSignView()
 	{
 		InitializeComponent();
-		BindingContext = viewModel;
+		BindingContext = new PremadeViewModel();
 	}
 }

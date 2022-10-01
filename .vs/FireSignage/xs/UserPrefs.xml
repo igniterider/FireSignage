@@ -1,19 +1,25 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
   <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.026D1713-8D27-40FB-B89C-4D3EB408EA7F" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="FireSignage.csproj">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/PremadeSignView.xaml">
     <Files>
-      <File FileName="Resources/Styles/Styles.xaml" Line="1" Column="1" />
-      <File FileName="App.xaml" Line="1" Column="1" />
-      <File FileName="FireSignage.csproj" Line="92" Column="2" />
+      <File FileName="Views/PremadeSignView.xaml" Line="51" Column="1" />
+      <File FileName="Views/PremadeSignView.xaml.cs" Line="10" Column="2" />
+      <File FileName="Viewmodels/PremadeViewModel.cs" Line="21" Column="4" />
+      <File FileName="AppShell.xaml" Line="38" Column="65" />
+      <File FileName="Services/PremadeService.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="Fonts" expanded="True" selected="True" />
+              <Node name="Services" expanded="True">
+                <Node name="PremadeService.cs" selected="True" />
+              </Node>
+              <Node name="Viewmodels" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="PremadeSignView.xaml" expanded="True" />
               </Node>
             </Node>
           </Node>

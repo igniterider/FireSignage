@@ -17,10 +17,10 @@ namespace FireSignage.Viewmodels;
 
     
 
-		public PremadeViewModel(PremadeService premadeService)
+		public PremadeViewModel()
 		{
 			Title = "Premade Signs";
-			this.premadeService = premadeService;
+			premadeService = new PremadeService();
 
 		
 		}

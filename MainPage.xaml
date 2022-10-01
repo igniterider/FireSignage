@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireSignage.MainPage"
-             xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
+             xmlns:controls="clr-namespace:FireSignage.Controls"
              xmlns:model="clr-namespace:FireSignage.Models"
              xmlns:fontAwesome="clr-namespace:FontAwesome" 
              xmlns:effectsView="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core"
@@ -20,38 +20,63 @@
 
 
 
-    <BoxView BackgroundColor="Black" HeightRequest="150" Grid.Row="0" Margin="5" Grid.ColumnSpan="2" WidthRequest="280" HorizontalOptions="Start"/>
+    <Label BackgroundColor="Black" HeightRequest="150" Grid.Row="0" Margin="5" Grid.ColumnSpan="2" WidthRequest="280" HorizontalOptions="Start"/>
    
 
-
-
-    <VerticalStackLayout WidthRequest="120"
+<SwipeView WidthRequest="100"
                        Grid.Row="0" Grid.Column="1"
                        HorizontalOptions="EndAndExpand"
-                       Spacing="5">
+                       Margin="0,0,5,0">
 
+     <SwipeView.LeftItems>
+        <SwipeItems SwipeBehaviorOnInvoked="Auto">
+
+            <SwipeItem Text="Help"
+                       IconImageSource="{FontImage FontFamily=fas6,
+                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.QuestionCircle},
+                                        Color=Green,
+                                        Size=15}"
+                       BackgroundColor="DarkGray"
+                        />
+
+
+            <!--<SwipeItem Text="Delete"
+                       IconImageSource="delete.png"
+                       BackgroundColor="LightPink"
+                       Invoked="OnDeleteSwipeItemInvoked" />-->
+        </SwipeItems>
+    </SwipeView.LeftItems>
+
+    <VerticalStackLayout WidthRequest="100"
+                       Grid.Row="0" Grid.Column="1"
+                       HorizontalOptions="EndAndExpand"
+                       Spacing="5" Margin="0,0,5,0">
+    
+
+                    
     <Button Text="Connected" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.Signal},
                                         Color=Green,
-                                        Size=20}"  />
+                                        Size=15}"  />
 
     
+
 
     <Button Text="Edit" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
                                         Color=Black,
-                                        Size=20}" />
+                                        Size=15}" />
 
    
 
     <Button Text="Send" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
                                         Color=Black,
-                                        Size=20}" />
+                                        Size=15}" />
 
 
-</VerticalStackLayout>
-
+    </VerticalStackLayout>
+</SwipeView>
 
 <HorizontalStackLayout Grid.Row="1" Grid.ColumnSpan="2" Margin="10" Spacing="10">
     <Button Text="All Signs" ImageSource="{FontImage FontFamily=fas6,
@@ -113,8 +138,8 @@
                 />
 
             <model:PreMadeSigns
-                Displaytext="UBER 4"
-                Displaytext2="KENDALLEANNE"
+                Displaytext="SALE SALE"
+                Displaytext2="TODAY ONLY"
                 Category="Business"
                 />
         </x:Array>

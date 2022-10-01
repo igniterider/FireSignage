@@ -33,6 +33,11 @@
             ContentTemplate="{DataTemplate views:NewSignTesting}"
             Route="NewSignTesting" />
 
+         <ShellContent
+            Title="Signs"
+            ContentTemplate="{DataTemplate views:PremadeSignView}"
+            Route="PremadeSignView" />
+
 
      </FlyoutItem>
 
