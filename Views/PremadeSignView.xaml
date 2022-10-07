@@ -8,13 +8,15 @@
              xmlns:fontAwesome="clr-namespace:FontAwesome"
              Title="{Binding Title}"
              x:DataType="viewmodel:PremadeViewModel"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="False"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource">
 
 
     <ContentPage.Behaviors>
     <toolkit:EventToCommandBehavior
         EventName="Appearing"
-        Command="{Binding GetRideshareCommand}" />
+        Command="{Binding GetSignsCommand}" />
     </ContentPage.Behaviors>
     
 <VerticalStackLayout>
@@ -122,12 +124,13 @@
 
 
 
-    <CollectionView Grid.Row="3"
+    <!--<CollectionView Grid.Row="3"
                     Grid.ColumnSpan="2"
                     ItemsSource="{Binding SignCategory}"
-                    ItemsLayout="VerticalList" 
-                    
-                    IsGrouped="True">
+                    ItemsLayout="VerticalGrid, 2" 
+                    x:Name="collection"
+                    IsGrouped="True"
+                     >
 
 
     <CollectionView.GroupHeaderTemplate>
@@ -141,7 +144,7 @@
     </CollectionView.GroupHeaderTemplate>
 
    
-    <CollectionView.ItemTemplate>
+    <CollectionView.ItemTemplate >
 
         <DataTemplate x:DataType="model:PreMadeSigns" >
             <Grid Padding="10">
@@ -160,7 +163,7 @@
     </CollectionView.ItemTemplate>
 
        
-</CollectionView>
+</CollectionView>-->
 
 
             <!--<CollectionView Grid.Row="4"
@@ -196,6 +199,50 @@
        
 </CollectionView>-->
 
+<ScrollView Grid.Row="3" Grid.ColumnSpan="2">
+
+ <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding GetSigns}"
+                        Grid.Row="3" Grid.ColumnSpan="2"
+                        ItemSize="100">
+    <syncfusion:SfListView.DataSource>
+      <data:DataSource>
+        <data:DataSource.GroupDescriptors>
+          <data:GroupDescriptor PropertyName="Category"/>
+        </data:DataSource.GroupDescriptors>
+      </data:DataSource>
+    </syncfusion:SfListView.DataSource>
+
+      <syncfusion:SfListView.ItemsLayout>
+        <syncfusion:GridLayout SpanCount="2" />
+      </syncfusion:SfListView.ItemsLayout>
+
+<syncfusion:SfListView.ItemTemplate>
+        <DataTemplate x:DataType="model:PreMadeSigns">
+            <Grid Padding="10">
+                <Frame HeightRequest="100" WidthRequest="200" Style="{StaticResource CardView}">
+
+                <VerticalStackLayout Padding="10">
+                
+                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext}" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext2}" TextColor="Red" HorizontalTextAlignment="Center" />
+
+                </VerticalStackLayout>
+
+                </Frame>
+            </Grid>
+
+
+
+
+        </DataTemplate>
+
+
+</syncfusion:SfListView.ItemTemplate>
+
+
+
+  </syncfusion:SfListView>
+</ScrollView>
    
 </Grid>
 

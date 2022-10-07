@@ -1,45 +1,33 @@
-﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Resources/Raw/premadedata.json">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/PremadeSignView.xaml">
     <Files>
-      <File FileName="Views/PremadeSignView.xaml" Line="27" Column="36" />
-      <File FileName="Viewmodels/PremadeViewModel.cs" Line="119" Column="70" />
+      <File FileName="Views/PremadeSignView.xaml" Line="213" Column="7" />
+      <File FileName="Viewmodels/PremadeViewModel.cs" Line="30" Column="22" />
       <File FileName="Resources/Raw/premadedata.json" Line="1" Column="1" />
+      <File FileName="Views/PremadeSignView.xaml.cs" Line="17" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Helpers" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="Platforms" expanded="True">
                 <Node name="iOS" expanded="True" />
               </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="Raw" expanded="True">
-                  <Node name="premadedata.json" selected="True" />
-                </Node>
-              </Node>
-              <Node name="Services" expanded="True" />
-              <Node name="Viewmodels" expanded="True" />
-              <Node name="Views" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

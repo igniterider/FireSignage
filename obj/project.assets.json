@@ -557,7 +557,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -566,11 +566,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -583,11 +583,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -600,7 +600,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -616,13 +616,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -635,7 +635,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -651,11 +651,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -668,7 +668,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -684,13 +684,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -708,11 +708,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -730,11 +730,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -747,11 +747,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -3014,7 +3014,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -3023,11 +3023,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -3040,11 +3040,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -3057,7 +3057,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -3073,13 +3073,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -3092,7 +3092,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -3108,11 +3108,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -3125,7 +3125,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -3141,13 +3141,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -3165,11 +3165,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -3187,11 +3187,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -3204,11 +3204,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -5471,7 +5471,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -5480,11 +5480,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -5497,11 +5497,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -5514,7 +5514,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -5530,13 +5530,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -5549,7 +5549,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -5565,11 +5565,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -5582,7 +5582,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -5598,13 +5598,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -5622,11 +5622,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -5644,11 +5644,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -5661,11 +5661,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -7928,7 +7928,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -7937,11 +7937,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -7954,11 +7954,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -7971,7 +7971,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -7987,13 +7987,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -8006,7 +8006,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -8022,11 +8022,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -8039,7 +8039,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -8055,13 +8055,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -8079,11 +8079,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -8101,11 +8101,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -8118,11 +8118,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -10385,7 +10385,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -10394,11 +10394,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -10411,11 +10411,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -10428,7 +10428,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -10444,13 +10444,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -10463,7 +10463,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -10479,11 +10479,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -10496,7 +10496,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -10512,13 +10512,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -10536,11 +10536,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -10558,11 +10558,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -10575,11 +10575,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -12841,7 +12841,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -12850,11 +12850,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -12867,11 +12867,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -12884,7 +12884,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -12900,13 +12900,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -12919,7 +12919,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -12935,11 +12935,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -12952,7 +12952,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -12968,13 +12968,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -12992,11 +12992,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -13014,11 +13014,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -13031,11 +13031,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -15295,7 +15295,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -15304,11 +15304,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Charts.dll": {
@@ -15321,11 +15321,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Core.dll": {
@@ -15338,7 +15338,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -15354,13 +15354,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.DataGrid.dll": {
@@ -15373,7 +15373,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -15389,11 +15389,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Gauges.dll": {
@@ -15406,7 +15406,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -15422,13 +15422,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.ListView.dll": {
@@ -15446,11 +15446,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Scheduler.dll": {
@@ -15468,11 +15468,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.Sliders.dll": {
@@ -15485,11 +15485,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-android30.0/Syncfusion.Maui.TabView.dll": {
@@ -17833,7 +17833,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -17842,11 +17842,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -17859,11 +17859,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -17876,7 +17876,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -17892,13 +17892,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -17911,7 +17911,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -17927,11 +17927,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -17944,7 +17944,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -17960,13 +17960,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -17984,11 +17984,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -18006,11 +18006,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -18023,11 +18023,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -19134,7 +19134,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -19143,11 +19143,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -19160,11 +19160,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -19177,7 +19177,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -19193,13 +19193,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -19212,7 +19212,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -19228,11 +19228,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -19245,7 +19245,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -19261,13 +19261,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -19285,11 +19285,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -19307,11 +19307,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -19324,11 +19324,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -20458,7 +20458,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -20467,11 +20467,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -20484,11 +20484,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -20501,7 +20501,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -20517,13 +20517,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -20536,7 +20536,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -20552,11 +20552,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -20569,7 +20569,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -20585,13 +20585,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -20609,11 +20609,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -20631,11 +20631,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -20648,11 +20648,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -21782,7 +21782,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -21791,11 +21791,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -21808,11 +21808,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -21825,7 +21825,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -21841,13 +21841,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -21860,7 +21860,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -21876,11 +21876,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -21893,7 +21893,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -21909,13 +21909,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -21933,11 +21933,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -21955,11 +21955,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -21972,11 +21972,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -23106,7 +23106,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -23115,11 +23115,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -23132,11 +23132,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -23149,7 +23149,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -23165,13 +23165,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -23184,7 +23184,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -23200,11 +23200,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -23217,7 +23217,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -23233,13 +23233,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -23257,11 +23257,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -23279,11 +23279,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -23296,11 +23296,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -24438,7 +24438,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -24447,11 +24447,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -24464,11 +24464,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -24481,7 +24481,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -24497,13 +24497,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -24516,7 +24516,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -24532,11 +24532,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -24549,7 +24549,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -24565,13 +24565,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -24589,11 +24589,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -24611,11 +24611,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -24628,11 +24628,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -25768,7 +25768,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -25777,11 +25777,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Charts.dll": {
@@ -25794,11 +25794,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Core.dll": {
@@ -25811,7 +25811,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -25827,13 +25827,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.DataGrid.dll": {
@@ -25846,7 +25846,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -25862,11 +25862,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Gauges.dll": {
@@ -25879,7 +25879,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -25895,13 +25895,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.ListView.dll": {
@@ -25919,11 +25919,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Scheduler.dll": {
@@ -25941,11 +25941,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.Sliders.dll": {
@@ -25958,11 +25958,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-ios13.6/Syncfusion.Maui.TabView.dll": {
@@ -26959,7 +26959,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -26968,11 +26968,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -26985,11 +26985,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -27002,7 +27002,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -27018,13 +27018,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -27037,7 +27037,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -27053,11 +27053,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -27070,7 +27070,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -27086,13 +27086,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -27110,11 +27110,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -27132,11 +27132,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -27149,11 +27149,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -28260,7 +28260,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -28269,11 +28269,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -28286,11 +28286,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -28303,7 +28303,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -28319,13 +28319,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -28338,7 +28338,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -28354,11 +28354,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -28371,7 +28371,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -28387,13 +28387,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -28411,11 +28411,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -28433,11 +28433,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -28450,11 +28450,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -29584,7 +29584,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -29593,11 +29593,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -29610,11 +29610,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -29627,7 +29627,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -29643,13 +29643,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -29662,7 +29662,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -29678,11 +29678,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -29695,7 +29695,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -29711,13 +29711,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -29735,11 +29735,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -29757,11 +29757,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -29774,11 +29774,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -30908,7 +30908,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -30917,11 +30917,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -30934,11 +30934,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -30951,7 +30951,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -30967,13 +30967,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -30986,7 +30986,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -31002,11 +31002,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -31019,7 +31019,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -31035,13 +31035,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -31059,11 +31059,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -31081,11 +31081,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -31098,11 +31098,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -32232,7 +32232,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -32241,11 +32241,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -32258,11 +32258,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -32275,7 +32275,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -32291,13 +32291,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -32310,7 +32310,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -32326,11 +32326,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -32343,7 +32343,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -32359,13 +32359,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -32383,11 +32383,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -32405,11 +32405,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -32422,11 +32422,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -33558,7 +33558,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -33567,11 +33567,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -33584,11 +33584,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -33601,7 +33601,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -33617,13 +33617,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -33636,7 +33636,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -33652,11 +33652,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -33669,7 +33669,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -33685,13 +33685,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -33709,11 +33709,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -33731,11 +33731,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -33748,11 +33748,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -34885,7 +34885,7 @@
           }
         }
       },
-      "Syncfusion.Licensing/20.3.0.47": {
+      "Syncfusion.Licensing/20.3.0.48": {
         "type": "package",
         "compile": {
           "lib/net6.0/Syncfusion.Licensing.dll": {}
@@ -34894,11 +34894,11 @@
           "lib/net6.0/Syncfusion.Licensing.dll": {}
         }
       },
-      "Syncfusion.Maui.Charts/20.3.47": {
+      "Syncfusion.Maui.Charts/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Charts.dll": {
@@ -34911,11 +34911,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Core/20.3.47": {
+      "Syncfusion.Maui.Core/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Licensing": "20.3.0.47"
+          "Syncfusion.Licensing": "20.3.0.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Core.dll": {
@@ -34928,7 +34928,7 @@
           }
         }
       },
-      "Syncfusion.Maui.Data/20.3.47": {
+      "Syncfusion.Maui.Data/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -34944,13 +34944,13 @@
           }
         }
       },
-      "Syncfusion.Maui.DataGrid/20.3.47": {
+      "Syncfusion.Maui.DataGrid/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.Data": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.Data": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.DataGrid.dll": {
@@ -34963,7 +34963,7 @@
           }
         }
       },
-      "Syncfusion.Maui.DataSource/20.3.47": {
+      "Syncfusion.Maui.DataSource/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -34979,11 +34979,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Gauges/20.3.47": {
+      "Syncfusion.Maui.Gauges/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Gauges.dll": {
@@ -34996,7 +34996,7 @@
           }
         }
       },
-      "Syncfusion.Maui.GridCommon/20.3.47": {
+      "Syncfusion.Maui.GridCommon/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608"
@@ -35012,13 +35012,13 @@
           }
         }
       },
-      "Syncfusion.Maui.ListView/20.3.47": {
+      "Syncfusion.Maui.ListView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47",
-          "Syncfusion.Maui.DataSource": "20.3.47",
-          "Syncfusion.Maui.GridCommon": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48",
+          "Syncfusion.Maui.DataSource": "20.3.48",
+          "Syncfusion.Maui.GridCommon": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.ListView.dll": {
@@ -35036,11 +35036,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Scheduler/20.3.47": {
+      "Syncfusion.Maui.Scheduler/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Scheduler.dll": {
@@ -35058,11 +35058,11 @@
           }
         }
       },
-      "Syncfusion.Maui.Sliders/20.3.47": {
+      "Syncfusion.Maui.Sliders/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.Sliders.dll": {
@@ -35075,11 +35075,11 @@
           }
         }
       },
-      "Syncfusion.Maui.TabView/20.3.47": {
+      "Syncfusion.Maui.TabView/20.3.48": {
         "type": "package",
         "dependencies": {
           "Microsoft.Maui.Dependencies": "6.0.100-rc.1.1608",
-          "Syncfusion.Maui.Core": "20.3.47"
+          "Syncfusion.Maui.Core": "20.3.48"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/Syncfusion.Maui.TabView.dll": {
@@ -37060,10 +37060,10 @@
         "skiasharp.views.maui.core.nuspec"
       ]
     },
-    "Syncfusion.Licensing/20.3.0.47": {
-      "sha512": "ZiRKdTzARG3yB9cNW4K1fKf7yRjG9LalULpou5p9JcNNWXC6bKpTbIFK9BxSpVUpQSN/ak+72boll1CFQPo3Tg==",
+    "Syncfusion.Licensing/20.3.0.48": {
+      "sha512": "kV0BEn3U1hPAKUFXpsUGQnf/fBIwLI1oKT752Rcfom+IanoVxPLiHOXHsDnXY7PSuMijRN6YOn9by3EFL5lnuw==",
       "type": "package",
-      "path": "syncfusion.licensing/20.3.0.47",
+      "path": "syncfusion.licensing/20.3.0.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37087,15 +37087,15 @@
         "lib/netstandard2.0/Syncfusion.Licensing.dll",
         "lib/portable-win+net45+wp80+win81+wpa81/Syncfusion.Licensing.dll",
         "lib/uap10.0/Syncfusion.Licensing.dll",
-        "syncfusion.licensing.20.3.0.47.nupkg.sha512",
+        "syncfusion.licensing.20.3.0.48.nupkg.sha512",
         "syncfusion.licensing.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Charts/20.3.47": {
-      "sha512": "9UKVhWGACcAdRDIZwAZ4sMoeec3+JgpFZ2p+76xZtisxjY4Z2omifB03av8EUNjVJ1GiwRax4/N7OogOS8Q3dA==",
+    "Syncfusion.Maui.Charts/20.3.48": {
+      "sha512": "66/smVeZzTZS7A/I6sWOv29DDksEYWuHQDXXWReP9rodlbL03C4ogLQXMh6PaCoarw2IRRZppSnc0hckxdYUTQ==",
       "type": "package",
-      "path": "syncfusion.maui.charts/20.3.47",
+      "path": "syncfusion.maui.charts/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37113,15 +37113,15 @@
         "lib/net6.0/Syncfusion.Maui.Charts.deps.json",
         "lib/net6.0/Syncfusion.Maui.Charts.dll",
         "lib/net6.0/Syncfusion.Maui.Charts.xml",
-        "syncfusion.maui.charts.20.3.47.nupkg.sha512",
+        "syncfusion.maui.charts.20.3.48.nupkg.sha512",
         "syncfusion.maui.charts.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Core/20.3.47": {
-      "sha512": "2k1FkAB/olzcsAB4USufwPqh7elm9z/y7OCVAb1Lk6Hzmx2Y/uR/yScgkKL3PLjlDSMHmF8Zm1IR+gL+xU5aQg==",
+    "Syncfusion.Maui.Core/20.3.48": {
+      "sha512": "fMgZ84mhEw0QTJ2Yq3eYZA9vOg3pnz02TONO521BJZZaA3xKMW0zqdgOBvqKgOuWurdxVGSHh5u4xvXnXF9OLA==",
       "type": "package",
-      "path": "syncfusion.maui.core/20.3.47",
+      "path": "syncfusion.maui.core/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37139,15 +37139,15 @@
         "lib/net6.0/Syncfusion.Maui.Core.deps.json",
         "lib/net6.0/Syncfusion.Maui.Core.dll",
         "lib/net6.0/Syncfusion.Maui.Core.xml",
-        "syncfusion.maui.core.20.3.47.nupkg.sha512",
+        "syncfusion.maui.core.20.3.48.nupkg.sha512",
         "syncfusion.maui.core.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Data/20.3.47": {
-      "sha512": "5eczEcuVfxfzStQqJQotXAXOApVAqFV/O7pxJLEjaxRwjl3PmHTPxBo4gNEfPPZoIwshJIQQYK30baw2qv49vg==",
+    "Syncfusion.Maui.Data/20.3.48": {
+      "sha512": "S2ED4QdmxD15Ul1UtBNalXDgnlpFcVSbk3bm3aEZCLLhwgSo06G9Icwh5o6JnKLtOkeMLj7fEDTiB7w3OcvK8g==",
       "type": "package",
-      "path": "syncfusion.maui.data/20.3.47",
+      "path": "syncfusion.maui.data/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37165,15 +37165,15 @@
         "lib/net6.0/Syncfusion.Maui.Data.deps.json",
         "lib/net6.0/Syncfusion.Maui.Data.dll",
         "lib/net6.0/Syncfusion.Maui.Data.xml",
-        "syncfusion.maui.data.20.3.47.nupkg.sha512",
+        "syncfusion.maui.data.20.3.48.nupkg.sha512",
         "syncfusion.maui.data.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.DataGrid/20.3.47": {
-      "sha512": "+Go/J7vvvy9GpZD3jz5UkVLbPwVkEniuj6AUFdMV2ApnSBBaDNjsn+mChOY4AwGwuDjto3O9L5gUKtavFUZ+DA==",
+    "Syncfusion.Maui.DataGrid/20.3.48": {
+      "sha512": "iV+ayEwufs8pkokyDbI5Flqbp4jvJ3jbtwf+gIvwJLo3oncton4izhnYTdVJDpW1eKK/jHiFoj5yj9Cyg4QqRw==",
       "type": "package",
-      "path": "syncfusion.maui.datagrid/20.3.47",
+      "path": "syncfusion.maui.datagrid/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37191,15 +37191,15 @@
         "lib/net6.0/Syncfusion.Maui.DataGrid.deps.json",
         "lib/net6.0/Syncfusion.Maui.DataGrid.dll",
         "lib/net6.0/Syncfusion.Maui.DataGrid.xml",
-        "syncfusion.maui.datagrid.20.3.47.nupkg.sha512",
+        "syncfusion.maui.datagrid.20.3.48.nupkg.sha512",
         "syncfusion.maui.datagrid.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.DataSource/20.3.47": {
-      "sha512": "+pCjOOpcFSB7qmIPgmzMHhD+N8NSaeOSDZcuNA0N/0Z8eMOLev+AkoxfKAkhglr7x9SQ0LgkbZTycmJMKo/Ivw==",
+    "Syncfusion.Maui.DataSource/20.3.48": {
+      "sha512": "kdM6wOWCCpsU/VQvMJr+hFG6GFYGeAMCfB+izwNN8Nqa/TT1132rSD2K5PtetQo0HhGnAivT1bPP5q8JcLAQqg==",
       "type": "package",
-      "path": "syncfusion.maui.datasource/20.3.47",
+      "path": "syncfusion.maui.datasource/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37217,15 +37217,15 @@
         "lib/net6.0/Syncfusion.Maui.DataSource.deps.json",
         "lib/net6.0/Syncfusion.Maui.DataSource.dll",
         "lib/net6.0/Syncfusion.Maui.DataSource.xml",
-        "syncfusion.maui.datasource.20.3.47.nupkg.sha512",
+        "syncfusion.maui.datasource.20.3.48.nupkg.sha512",
         "syncfusion.maui.datasource.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Gauges/20.3.47": {
-      "sha512": "V7sIkf/9v+bJf9uloiTPMb2GyenHU/64f+QaL0thN7n+pSbaOhgbcm5A3pZkRa3qk87VvY1sKjSAzc4ttZoxhg==",
+    "Syncfusion.Maui.Gauges/20.3.48": {
+      "sha512": "vmrTXaZ+EJrEmhYDcPCSJHlIyAFOwEneiYYWTQe6tqcssHToizRml01H6TS2itw4EADtwg+aGtN7k7gfl+72tQ==",
       "type": "package",
-      "path": "syncfusion.maui.gauges/20.3.47",
+      "path": "syncfusion.maui.gauges/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37243,15 +37243,15 @@
         "lib/net6.0/Syncfusion.Maui.Gauges.deps.json",
         "lib/net6.0/Syncfusion.Maui.Gauges.dll",
         "lib/net6.0/Syncfusion.Maui.Gauges.xml",
-        "syncfusion.maui.gauges.20.3.47.nupkg.sha512",
+        "syncfusion.maui.gauges.20.3.48.nupkg.sha512",
         "syncfusion.maui.gauges.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.GridCommon/20.3.47": {
-      "sha512": "Gp45a8ZPImf/HZrHMiQWuQj49YIxn9oRWSlGBCQnWJc9J7njdGZo2vlg9ghIOnUwGUC2HjBZEIOR1jFF7Fns2w==",
+    "Syncfusion.Maui.GridCommon/20.3.48": {
+      "sha512": "KRT4ItyZygCyNgVFJ4uTxKAWSm3E5Thxw4byxLMjEZNrp/1TcmiKziQlVFmXird/Q2LBfCDiV/Nem8Mr8QHMRQ==",
       "type": "package",
-      "path": "syncfusion.maui.gridcommon/20.3.47",
+      "path": "syncfusion.maui.gridcommon/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37269,15 +37269,15 @@
         "lib/net6.0/Syncfusion.Maui.GridCommon.deps.json",
         "lib/net6.0/Syncfusion.Maui.GridCommon.dll",
         "lib/net6.0/Syncfusion.Maui.GridCommon.xml",
-        "syncfusion.maui.gridcommon.20.3.47.nupkg.sha512",
+        "syncfusion.maui.gridcommon.20.3.48.nupkg.sha512",
         "syncfusion.maui.gridcommon.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.ListView/20.3.47": {
-      "sha512": "qJTxvvAP7ageF6PxH275z+7f9nKdnVbvz5xt5RZqNOADQxIeOP0TkJg/oxz4DmU75IXq05NrLMpPi7WYh6rixg==",
+    "Syncfusion.Maui.ListView/20.3.48": {
+      "sha512": "l2xuc/Wa46250hQJ0GkQRfyRKTO52IMIY0gCV1pl0Rtt8UOczzXoRZ+eYN1f0PBtuBm+ePgebGW/MTuti1Yyjw==",
       "type": "package",
-      "path": "syncfusion.maui.listview/20.3.47",
+      "path": "syncfusion.maui.listview/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37300,15 +37300,15 @@
         "lib/net6.0/Syncfusion.Maui.ListView.dll",
         "lib/net6.0/Syncfusion.Maui.ListView.xml",
         "lib/net6.0/en-US/Syncfusion.Maui.ListView.resources.dll",
-        "syncfusion.maui.listview.20.3.47.nupkg.sha512",
+        "syncfusion.maui.listview.20.3.48.nupkg.sha512",
         "syncfusion.maui.listview.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Scheduler/20.3.47": {
-      "sha512": "57shOwlQduuP412b+2qsrcbqbMcfN9CObRZgk2hpD2osr8+HRi5VAj4P9JhArTXLa9lfV/ERxfdQFHkekkAtdw==",
+    "Syncfusion.Maui.Scheduler/20.3.48": {
+      "sha512": "zFcRfH4onUx4st3CNEXDRbC8lfxqV8cfYYW/k/ECOHP8do9cTcxiG8KA8bxlP6iK9HTTrZyadA6rArv+QjMT1A==",
       "type": "package",
-      "path": "syncfusion.maui.scheduler/20.3.47",
+      "path": "syncfusion.maui.scheduler/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37331,15 +37331,15 @@
         "lib/net6.0/Syncfusion.Maui.Scheduler.dll",
         "lib/net6.0/Syncfusion.Maui.Scheduler.xml",
         "lib/net6.0/en-US/Syncfusion.Maui.Scheduler.resources.dll",
-        "syncfusion.maui.scheduler.20.3.47.nupkg.sha512",
+        "syncfusion.maui.scheduler.20.3.48.nupkg.sha512",
         "syncfusion.maui.scheduler.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.Sliders/20.3.47": {
-      "sha512": "BQHFMzVEj/mCHb7RlPdbZJZJ+eYGK/qt6m4oT3/ZZQ5R8I8PWfKZUorrkWcYCKj+ZCID77lF0js0G0hGT6qr3w==",
+    "Syncfusion.Maui.Sliders/20.3.48": {
+      "sha512": "kwYzJU/Ae0oBFBcVJvzjvSaruhiDcSmoWXVpTZa5a/0edkIC3NsL5IpA0gYavrNzNevYabukY3JIHn7yaqATOA==",
       "type": "package",
-      "path": "syncfusion.maui.sliders/20.3.47",
+      "path": "syncfusion.maui.sliders/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37357,15 +37357,15 @@
         "lib/net6.0/Syncfusion.Maui.Sliders.deps.json",
         "lib/net6.0/Syncfusion.Maui.Sliders.dll",
         "lib/net6.0/Syncfusion.Maui.Sliders.xml",
-        "syncfusion.maui.sliders.20.3.47.nupkg.sha512",
+        "syncfusion.maui.sliders.20.3.48.nupkg.sha512",
         "syncfusion.maui.sliders.nuspec",
         "syncfusion_logo.png"
       ]
     },
-    "Syncfusion.Maui.TabView/20.3.47": {
-      "sha512": "aIKOB1bvywMfOspni6I2n+6IcOSfh8IrdjLc1QisNQd2XaW9pnJ/p2xtAKKq9xcLvxISJrxDeqeH7KGpPyNSFA==",
+    "Syncfusion.Maui.TabView/20.3.48": {
+      "sha512": "wXxSWInhkk+9BiX2HmIB5m1FM6V8umKgzwMOSNtqz5/AAfZ5ir1xz5jt2Wnt8E36cejxgyWUWUSgdmYb8PNbKQ==",
       "type": "package",
-      "path": "syncfusion.maui.tabview/20.3.47",
+      "path": "syncfusion.maui.tabview/20.3.48",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37383,7 +37383,7 @@
         "lib/net6.0/Syncfusion.Maui.TabView.deps.json",
         "lib/net6.0/Syncfusion.Maui.TabView.dll",
         "lib/net6.0/Syncfusion.Maui.TabView.xml",
-        "syncfusion.maui.tabview.20.3.47.nupkg.sha512",
+        "syncfusion.maui.tabview.20.3.48.nupkg.sha512",
         "syncfusion.maui.tabview.nuspec",
         "syncfusion_logo.png"
       ]
@@ -40816,14 +40816,14 @@
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
       "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
       "SkiaSharp.Views.Maui.Core >= 2.88.3",
-      "Syncfusion.Maui.Charts >= 20.3.47",
-      "Syncfusion.Maui.Core >= 20.3.47",
-      "Syncfusion.Maui.DataGrid >= 20.3.47",
-      "Syncfusion.Maui.Gauges >= 20.3.47",
-      "Syncfusion.Maui.ListView >= 20.3.47",
-      "Syncfusion.Maui.Scheduler >= 20.3.47",
-      "Syncfusion.Maui.Sliders >= 20.3.47",
-      "Syncfusion.Maui.TabView >= 20.3.47"
+      "Syncfusion.Maui.Charts >= 20.3.48",
+      "Syncfusion.Maui.Core >= 20.3.48",
+      "Syncfusion.Maui.DataGrid >= 20.3.48",
+      "Syncfusion.Maui.Gauges >= 20.3.48",
+      "Syncfusion.Maui.ListView >= 20.3.48",
+      "Syncfusion.Maui.Scheduler >= 20.3.48",
+      "Syncfusion.Maui.Sliders >= 20.3.48",
+      "Syncfusion.Maui.TabView >= 20.3.48"
     ],
     "net6.0-ios15.4": [
       "CommunityToolkit.Maui >= 1.3.0",
@@ -40838,14 +40838,14 @@
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
       "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
       "SkiaSharp.Views.Maui.Core >= 2.88.3",
-      "Syncfusion.Maui.Charts >= 20.3.47",
-      "Syncfusion.Maui.Core >= 20.3.47",
-      "Syncfusion.Maui.DataGrid >= 20.3.47",
-      "Syncfusion.Maui.Gauges >= 20.3.47",
-      "Syncfusion.Maui.ListView >= 20.3.47",
-      "Syncfusion.Maui.Scheduler >= 20.3.47",
-      "Syncfusion.Maui.Sliders >= 20.3.47",
-      "Syncfusion.Maui.TabView >= 20.3.47",
+      "Syncfusion.Maui.Charts >= 20.3.48",
+      "Syncfusion.Maui.Core >= 20.3.48",
+      "Syncfusion.Maui.DataGrid >= 20.3.48",
+      "Syncfusion.Maui.Gauges >= 20.3.48",
+      "Syncfusion.Maui.ListView >= 20.3.48",
+      "Syncfusion.Maui.Scheduler >= 20.3.48",
+      "Syncfusion.Maui.Sliders >= 20.3.48",
+      "Syncfusion.Maui.TabView >= 20.3.48",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ],
     "net6.0-maccatalyst15.4": [
@@ -40861,14 +40861,14 @@
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
       "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
       "SkiaSharp.Views.Maui.Core >= 2.88.3",
-      "Syncfusion.Maui.Charts >= 20.3.47",
-      "Syncfusion.Maui.Core >= 20.3.47",
-      "Syncfusion.Maui.DataGrid >= 20.3.47",
-      "Syncfusion.Maui.Gauges >= 20.3.47",
-      "Syncfusion.Maui.ListView >= 20.3.47",
-      "Syncfusion.Maui.Scheduler >= 20.3.47",
-      "Syncfusion.Maui.Sliders >= 20.3.47",
-      "Syncfusion.Maui.TabView >= 20.3.47",
+      "Syncfusion.Maui.Charts >= 20.3.48",
+      "Syncfusion.Maui.Core >= 20.3.48",
+      "Syncfusion.Maui.DataGrid >= 20.3.48",
+      "Syncfusion.Maui.Gauges >= 20.3.48",
+      "Syncfusion.Maui.ListView >= 20.3.48",
+      "Syncfusion.Maui.Scheduler >= 20.3.48",
+      "Syncfusion.Maui.Sliders >= 20.3.48",
+      "Syncfusion.Maui.TabView >= 20.3.48",
       "System.Runtime.InteropServices.NFloat.Internal >= 6.0.1"
     ]
   },
@@ -40973,35 +40973,35 @@
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Core": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.DataGrid": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.ListView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Scheduler": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Sliders": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.TabView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           }
         },
         "imports": [
@@ -41147,35 +41147,35 @@
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Core": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.DataGrid": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.ListView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Scheduler": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Sliders": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.TabView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",
@@ -41302,35 +41302,35 @@
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Core": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.DataGrid": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Gauges": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.ListView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Scheduler": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.Sliders": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "Syncfusion.Maui.TabView": {
             "target": "Package",
-            "version": "[20.3.47, )"
+            "version": "[20.3.48, )"
           },
           "System.Runtime.InteropServices.NFloat.Internal": {
             "target": "Package",

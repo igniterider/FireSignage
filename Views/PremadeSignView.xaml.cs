@@ -1,4 +1,6 @@
-﻿namespace FireSignage.Views;
+﻿using Syncfusion.Maui.DataSource;
+
+namespace FireSignage.Views;
 
 public partial class PremadeSignView : ContentPage
 {
@@ -8,5 +10,13 @@ public partial class PremadeSignView : ContentPage
 	{
 		InitializeComponent();
 		BindingContext = new PremadeViewModel();
-	}
+        
+
+        //listView.DataSource.GroupDescriptors.Add(new GroupDescriptor()
+        //{
+        //    PropertyName = "Category",
+        //});
+    }
+
+
 }

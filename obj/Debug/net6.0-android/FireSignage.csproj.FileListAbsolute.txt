@@ -1,0 +1,12 @@
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/build.props
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/adb.props
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/FireSignage.csproj.AssemblyReference.cache
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauiimage.inputs
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauifont.inputs
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauisplash.inputs
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/sp/maui_colors.xml
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/sp/maui_splash_image.xml
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauisplash.stamp
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauifont.stamp
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/mauiimage.stamp

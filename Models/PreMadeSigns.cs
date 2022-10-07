@@ -34,11 +34,11 @@ namespace FireSignage.Models
     }
 
 
-    public class CategoriesList : ObservableCollection<PreMadeSigns>
+    public class CategoriesList : List<PreMadeSigns>
     {
 
         public string CategoryName { get; set; }
-        public CategoriesList(string categoryname, ObservableCollection<PreMadeSigns> premadeSigns) : base(premadeSigns)
+        public CategoriesList(string categoryname, List<PreMadeSigns> premadeSigns) : base(premadeSigns)
         {
             CategoryName = categoryname;
 
