@@ -27,19 +27,26 @@ namespace FireSignage.Models
         
         public string Category { get; set; }
 
-        
-        
+       // public ObservableCollection<PreMadeSigns> CategoryGroup { get; set; }
+
 
 
     }
-    //public class CategoriesList : List<PreMadeSigns>
-    //{
 
-    //    public string CategoryName { get; set; }
-    //    public CategoriesList(string categoryname, List<PreMadeSigns> premadeSigns) : base(premadeSigns)
-    //    {
-    //        CategoryName = categoryname;
 
-    //    }
-    //}
+    public class CategoriesList : ObservableCollection<PreMadeSigns>
+    {
+
+        public string CategoryName { get; set; }
+        public CategoriesList(string categoryname, ObservableCollection<PreMadeSigns> premadeSigns) : base(premadeSigns)
+        {
+            CategoryName = categoryname;
+
+        }
+
+
+    }
+
+
+
 }

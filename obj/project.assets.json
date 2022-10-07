@@ -47,7 +47,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -268,13 +268,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -356,7 +356,7 @@
           }
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -393,10 +393,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -440,7 +440,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -492,10 +492,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -508,10 +508,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -524,10 +524,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -540,11 +540,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -2578,7 +2578,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -2799,13 +2799,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -2828,7 +2828,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -2865,10 +2865,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -2912,7 +2912,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -2949,10 +2949,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -2965,10 +2965,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -2981,10 +2981,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -2997,11 +2997,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -5035,7 +5035,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -5256,13 +5256,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -5285,7 +5285,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -5322,10 +5322,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -5369,7 +5369,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -5406,10 +5406,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -5422,10 +5422,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -5438,10 +5438,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -5454,11 +5454,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -7492,7 +7492,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -7713,13 +7713,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -7742,7 +7742,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -7779,10 +7779,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -7826,7 +7826,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -7863,10 +7863,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -7879,10 +7879,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -7895,10 +7895,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -7911,11 +7911,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -9949,7 +9949,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -10170,13 +10170,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -10199,7 +10199,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -10236,10 +10236,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -10283,7 +10283,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -10320,10 +10320,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -10336,10 +10336,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -10352,10 +10352,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -10368,11 +10368,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -12406,7 +12406,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -12627,13 +12627,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -12658,7 +12658,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -12695,10 +12695,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -12742,7 +12742,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -12776,10 +12776,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -12792,10 +12792,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -12808,10 +12808,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -12824,11 +12824,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -14862,7 +14862,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -15083,13 +15083,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -15112,7 +15112,7 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -15149,10 +15149,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.Android": "2.88.2"
+          "SkiaSharp.NativeAssets.Android": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.dll": {
@@ -15196,7 +15196,7 @@
           }
         }
       },
-      "SkiaSharp.NativeAssets.Android/2.88.2": {
+      "SkiaSharp.NativeAssets.Android/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-android30.0/_._": {}
@@ -15230,10 +15230,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Android.dll": {
@@ -15246,10 +15246,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.dll": {
@@ -15262,10 +15262,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -15278,11 +15278,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-android30.0/SkiaSharp.Views.Maui.Core.dll": {
@@ -17320,7 +17320,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -17537,13 +17537,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -17622,7 +17622,7 @@
           }
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -17672,10 +17672,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -17716,7 +17716,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -17768,10 +17768,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -17784,10 +17784,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -17800,10 +17800,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -17816,11 +17816,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -18500,7 +18500,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -18717,13 +18717,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -18743,7 +18743,7 @@
           "runtimes/android-arm/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -18991,10 +18991,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -19035,7 +19035,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -19069,10 +19069,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -19085,10 +19085,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -19101,10 +19101,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -19117,11 +19117,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -19824,7 +19824,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -20041,13 +20041,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -20067,7 +20067,7 @@
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -20315,10 +20315,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -20359,7 +20359,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -20393,10 +20393,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -20409,10 +20409,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -20425,10 +20425,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -20441,11 +20441,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -21148,7 +21148,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -21365,13 +21365,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -21391,7 +21391,7 @@
           "runtimes/android-x64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -21639,10 +21639,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -21683,7 +21683,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -21717,10 +21717,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -21733,10 +21733,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -21749,10 +21749,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -21765,11 +21765,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -22472,7 +22472,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -22689,13 +22689,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -22715,7 +22715,7 @@
           "runtimes/android-x86/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -22963,10 +22963,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -23007,7 +23007,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -23041,10 +23041,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -23057,10 +23057,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -23073,10 +23073,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -23089,11 +23089,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -23796,7 +23796,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -24013,13 +24013,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -24041,7 +24041,7 @@
           "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -24289,10 +24289,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -24333,7 +24333,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -24373,10 +24373,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -24389,10 +24389,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -24405,10 +24405,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -24421,11 +24421,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -25128,7 +25128,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -25345,13 +25345,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -25371,7 +25371,7 @@
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -25619,10 +25619,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.iOS": "2.88.2"
+          "SkiaSharp.NativeAssets.iOS": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.dll": {
@@ -25663,7 +25663,7 @@
           "lib/net6.0-ios15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.iOS/2.88.2": {
+      "SkiaSharp.NativeAssets.iOS/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-ios13.6/_._": {}
@@ -25703,10 +25703,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.iOS.dll": {
@@ -25719,10 +25719,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.dll": {
@@ -25735,10 +25735,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -25751,11 +25751,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-ios13.6/SkiaSharp.Views.Maui.Core.dll": {
@@ -26458,7 +26458,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -26675,13 +26675,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -26760,7 +26760,7 @@
           }
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -26810,10 +26810,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -26854,7 +26854,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -26894,10 +26894,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -26910,10 +26910,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -26926,10 +26926,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -26942,11 +26942,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -27626,7 +27626,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -27843,13 +27843,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -27869,7 +27869,7 @@
           "runtimes/android-arm/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -28117,10 +28117,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -28161,7 +28161,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -28195,10 +28195,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -28211,10 +28211,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -28227,10 +28227,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -28243,11 +28243,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -28950,7 +28950,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -29167,13 +29167,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -29193,7 +29193,7 @@
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -29441,10 +29441,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -29485,7 +29485,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -29519,10 +29519,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -29535,10 +29535,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -29551,10 +29551,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -29567,11 +29567,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -30274,7 +30274,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -30491,13 +30491,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -30517,7 +30517,7 @@
           "runtimes/android-x64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -30765,10 +30765,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -30809,7 +30809,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -30843,10 +30843,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -30859,10 +30859,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -30875,10 +30875,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -30891,11 +30891,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -31598,7 +31598,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -31815,13 +31815,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -31841,7 +31841,7 @@
           "runtimes/android-x86/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -32089,10 +32089,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -32133,7 +32133,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -32167,10 +32167,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -32183,10 +32183,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -32199,10 +32199,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -32215,11 +32215,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -32922,7 +32922,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -33139,13 +33139,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -33167,7 +33167,7 @@
           "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -33415,10 +33415,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -33459,7 +33459,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -33493,10 +33493,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -33509,10 +33509,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -33525,10 +33525,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -33541,11 +33541,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -34248,7 +34248,7 @@
           "buildTransitive/netstandard2.1/CommunityToolkit.Mvvm.targets": {}
         }
       },
-      "Fody/6.6.3": {
+      "Fody/6.6.4": {
         "type": "package",
         "build": {
           "build/Fody.targets": {}
@@ -34465,13 +34465,13 @@
           }
         }
       },
-      "Realm/10.15.1": {
+      "Realm/10.17.0": {
         "type": "package",
         "dependencies": {
-          "Fody": "6.6.3",
+          "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.15.1",
+          "Realm.Fody": "10.17.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -34491,7 +34491,7 @@
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
         }
       },
-      "Realm.Fody/10.15.1": {
+      "Realm.Fody/10.17.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
@@ -34739,10 +34739,10 @@
           }
         }
       },
-      "SkiaSharp/2.88.2": {
+      "SkiaSharp/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.2"
+          "SkiaSharp.NativeAssets.MacCatalyst": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.dll": {
@@ -34783,7 +34783,7 @@
           "lib/net6.0-maccatalyst15.4/SkiaSharp.Extended.UI.dll": {}
         }
       },
-      "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
+      "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
         "type": "package",
         "compile": {
           "lib/net6.0-maccatalyst13.5/_._": {}
@@ -34820,10 +34820,10 @@
           }
         }
       },
-      "SkiaSharp.Views/2.88.2": {
+      "SkiaSharp.Views/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2"
+          "SkiaSharp": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.iOS.dll": {
@@ -34836,10 +34836,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Core": "2.88.2"
+          "SkiaSharp.Views.Maui.Core": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.dll": {
@@ -34852,10 +34852,10 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
+      "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp.Views.Maui.Controls": "2.88.2"
+          "SkiaSharp.Views.Maui.Controls": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Controls.Compatibility.dll": {
@@ -34868,11 +34868,11 @@
           }
         }
       },
-      "SkiaSharp.Views.Maui.Core/2.88.2": {
+      "SkiaSharp.Views.Maui.Core/2.88.3": {
         "type": "package",
         "dependencies": {
-          "SkiaSharp": "2.88.2",
-          "SkiaSharp.Views": "2.88.2"
+          "SkiaSharp": "2.88.3",
+          "SkiaSharp.Views": "2.88.3"
         },
         "compile": {
           "lib/net6.0-maccatalyst13.5/SkiaSharp.Views.Maui.Core.dll": {
@@ -35604,16 +35604,16 @@
         "lib/netstandard2.1/CommunityToolkit.Mvvm.xml"
       ]
     },
-    "Fody/6.6.3": {
-      "sha512": "X1WKKgSNYVtLzdO8dK3YWmfmljA4L0soePcWNouq9X6WbVF4bmivuJdlhTZx/2L3ml6tMvhFe8skIbVQ24PAYA==",
+    "Fody/6.6.4": {
+      "sha512": "vLZS+oa+ndUHYPlx/8n9bBTT3dHkCF0riml4paKq4D663+cZd47x1uagQo32D/gKFZ/sfmV1oqKaLmH0elxq4A==",
       "type": "package",
-      "path": "fody/6.6.3",
+      "path": "fody/6.6.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "License.txt",
         "build/Fody.targets",
-        "fody.6.6.3.nupkg.sha512",
+        "fody.6.6.4.nupkg.sha512",
         "fody.nuspec",
         "netclassictask/Fody.dll",
         "netclassictask/FodyCommon.dll",
@@ -36034,10 +36034,10 @@
         "packageIcon.png"
       ]
     },
-    "Realm/10.15.1": {
-      "sha512": "hcz3bsPjzrPDwECKMAPu+1NaNiCKkeKq2fDniwAsp08gaBeZRcLvT+jWOTPFb/JlE9fkTxwo6xQPKS27Ou9sFg==",
+    "Realm/10.17.0": {
+      "sha512": "Gq6SOja5SbtYBnk61JJ/w72bsFGpCLhDtHc5PyTn1JU6beB1MHFHUuLh770CFpaTyY56eKv6e7wMhnkyIedTGg==",
       "type": "package",
-      "path": "realm/10.15.1",
+      "path": "realm/10.17.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36053,7 +36053,7 @@
         "lib/netstandard2.0/Realm.dll",
         "lib/netstandard2.0/Realm.pdb",
         "lib/netstandard2.0/Realm.xml",
-        "realm.10.15.1.nupkg.sha512",
+        "realm.10.17.0.nupkg.sha512",
         "realm.nuspec",
         "runtimes/android-arm/native/librealm-wrappers.so",
         "runtimes/android-arm64/native/librealm-wrappers.so",
@@ -36076,16 +36076,16 @@
         "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll"
       ]
     },
-    "Realm.Fody/10.15.1": {
-      "sha512": "F4cDDWn1eti4E9rprAesuLXcjkWbE+0J3fo/vYvo+/1WIqba+SQexC52HRYx0PxQZyu3Az1PN6lTOfRnvUSGcQ==",
+    "Realm.Fody/10.17.0": {
+      "sha512": "Axt4Lb6CZPcozf2yamcPUKQVXPaBLsFITYnD4+o78qZgzzJnNctDkXGsdxehv44b/BQVfArkMS2GUp5YLB8BMg==",
       "type": "package",
-      "path": "realm.fody/10.15.1",
+      "path": "realm.fody/10.17.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Realm.Fody.props",
         "icon.png",
-        "realm.fody.10.15.1.nupkg.sha512",
+        "realm.fody.10.17.0.nupkg.sha512",
         "realm.fody.nuspec",
         "weaver/netstandard2.0/Realm.Fody.dll",
         "weaver/netstandard2.0/Realm.Fody.xcf",
@@ -36621,10 +36621,10 @@
         "syncfusion_logo.png"
       ]
     },
-    "SkiaSharp/2.88.2": {
-      "sha512": "B7ToGj6WO4K4iEtD1Lydrt5FARxMNbNjnlEa4M2TaKs3EM0cmZLrJjCaZvfOJL9gXkswJb5pTSJL9Qz9AHd+Jw==",
+    "SkiaSharp/2.88.3": {
+      "sha512": "GG8X3EdfwyBfwjl639UIiOVOKEdeoqDgYrz0P1MUCnefXt9cofN+AK8YB/v1+5cLMr03ieWCQdDmPqnFIzSxZw==",
       "type": "package",
-      "path": "skiasharp/2.88.2",
+      "path": "skiasharp/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36694,7 +36694,7 @@
         "lib/xamarinwatchos1.0/SkiaSharp.dll",
         "lib/xamarinwatchos1.0/SkiaSharp.pdb",
         "lib/xamarinwatchos1.0/SkiaSharp.xml",
-        "skiasharp.2.88.2.nupkg.sha512",
+        "skiasharp.2.88.3.nupkg.sha512",
         "skiasharp.nuspec"
       ]
     },
@@ -36729,10 +36729,10 @@
         "skiasharp.extended.ui.maui.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.Android/2.88.2": {
-      "sha512": "bL/dIyZiSzLM6arXJcvhAD+W6spjs/Q+fyM6teQsWmdJB6z/y7aBvxJTXGJMmPERcisYK/NbsfKtErfW0P1rRQ==",
+    "SkiaSharp.NativeAssets.Android/2.88.3": {
+      "sha512": "AMBVT1BIjnnWNcH4BPE1arJrrMJSTODRNvDZFbNufYVCzfAFaqA5YLU6vaolUKC18/EoFQQmVl+Ne3l90SV+yQ==",
       "type": "package",
-      "path": "skiasharp.nativeassets.android/2.88.2",
+      "path": "skiasharp.nativeassets.android/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36748,14 +36748,14 @@
         "runtimes/android-arm64/native/libSkiaSharp.so",
         "runtimes/android-x64/native/libSkiaSharp.so",
         "runtimes/android-x86/native/libSkiaSharp.so",
-        "skiasharp.nativeassets.android.2.88.2.nupkg.sha512",
+        "skiasharp.nativeassets.android.2.88.3.nupkg.sha512",
         "skiasharp.nativeassets.android.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.iOS/2.88.2": {
-      "sha512": "Vk1d7C2TNy0gEEICsiN//70pUFGWlfnKU61iVG+uuZpTToKBJGzba8mRXpf12manERvsimiwXCPpXB7/AQ0vqA==",
+    "SkiaSharp.NativeAssets.iOS/2.88.3": {
+      "sha512": "wQeyYQwtdQjk7/BRtpSpXAix56AfvpLoTN7L2G7hNrWvybD2BAqseOZo8urIrha8vXLmUsZlnOZBb3AkKAqo0g==",
       "type": "package",
-      "path": "skiasharp.nativeassets.ios/2.88.2",
+      "path": "skiasharp.nativeassets.ios/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36771,14 +36771,14 @@
         "runtimes/ios/native/libSkiaSharp.framework/Modules/module.modulemap",
         "runtimes/ios/native/libSkiaSharp.framework/_CodeSignature/CodeResources",
         "runtimes/ios/native/libSkiaSharp.framework/libSkiaSharp",
-        "skiasharp.nativeassets.ios.2.88.2.nupkg.sha512",
+        "skiasharp.nativeassets.ios.2.88.3.nupkg.sha512",
         "skiasharp.nativeassets.ios.nuspec"
       ]
     },
-    "SkiaSharp.NativeAssets.MacCatalyst/2.88.2": {
-      "sha512": "VnxnOesc1HQJ3LFflpKbkDgaGHFqOfLPP3XK7xrJt7pkmd6hp47i/RJETTg5Mw0gkToA99EP+45XQkPQQe//+w==",
+    "SkiaSharp.NativeAssets.MacCatalyst/2.88.3": {
+      "sha512": "I/drzi8x9sZ+1img29rpl7Zq9IcjBym7CUPNXZtXVaJWhKQqKIafc49PvMt3xKpK3AeBYuzNcEu78fQDAQ6tog==",
       "type": "package",
-      "path": "skiasharp.nativeassets.maccatalyst/2.88.2",
+      "path": "skiasharp.nativeassets.maccatalyst/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36788,7 +36788,7 @@
         "buildTransitive/net6.0-maccatalyst13.5/SkiaSharp.NativeAssets.MacCatalyst.targets",
         "lib/net6.0-maccatalyst13.5/_._",
         "runtimes/maccatalyst/native/libSkiaSharp.framework.zip",
-        "skiasharp.nativeassets.maccatalyst.2.88.2.nupkg.sha512",
+        "skiasharp.nativeassets.maccatalyst.2.88.3.nupkg.sha512",
         "skiasharp.nativeassets.maccatalyst.nuspec"
       ]
     },
@@ -36912,10 +36912,10 @@
         "skiasharp.skottie.nuspec"
       ]
     },
-    "SkiaSharp.Views/2.88.2": {
-      "sha512": "pWjhRVafXQMyfMkk5MQIkVAlIHdVIZj6zk72Nja+mGCany967pDg4rtInvar+i+znmxO2LdKRDZ1SU4kE/CeLw==",
+    "SkiaSharp.Views/2.88.3": {
+      "sha512": "+ForGhGT7uunE+Upu3mrdi3I37W4kzDyqHIDOzl4xul9wFVFmLWLHF6R8EMFSxK0TSKGN88XpKXgWuZDRjjBtA==",
       "type": "package",
-      "path": "skiasharp.views/2.88.2",
+      "path": "skiasharp.views/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36966,14 +36966,14 @@
         "runtimes/win10-arm64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x64/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
         "runtimes/win10-x86/nativeassets/uap10.0/SkiaSharp.Views.Interop.UWP.dll",
-        "skiasharp.views.2.88.2.nupkg.sha512",
+        "skiasharp.views.2.88.3.nupkg.sha512",
         "skiasharp.views.nuspec"
       ]
     },
-    "SkiaSharp.Views.Maui.Controls/2.88.2": {
-      "sha512": "TRmQrwcnUBWsf0GxKqdoB/th3t8K8+dE2vRq26sJjx52F3+1tQdN9pC4+2t3fEu+3OXnFkOEKmy2rdefKlrjEQ==",
+    "SkiaSharp.Views.Maui.Controls/2.88.3": {
+      "sha512": "fvnvZdfWFYrptu37ul9/rT3QOdhrSUrMrBsHWcDpanVM04KOpHBWJDv/LEsD0jp1rE7TPIXXQk1RXutfXSYveg==",
       "type": "package",
-      "path": "skiasharp.views.maui.controls/2.88.2",
+      "path": "skiasharp.views.maui.controls/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -36996,14 +36996,14 @@
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.dll",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.pdb",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.xml",
-        "skiasharp.views.maui.controls.2.88.2.nupkg.sha512",
+        "skiasharp.views.maui.controls.2.88.3.nupkg.sha512",
         "skiasharp.views.maui.controls.nuspec"
       ]
     },
-    "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.2": {
-      "sha512": "dhgv0uMbKffiMbNfOyDKfHuqzq9SLvEPxEj8JEOFrLXW68+RLDHtPABzbZN8b4r56ykbppIHXj79PdMx7F1lew==",
+    "SkiaSharp.Views.Maui.Controls.Compatibility/2.88.3": {
+      "sha512": "oQO25hl9emcfeUSIlcNY+cEYQ171PFHbYhjw3dptgpVLgX97e9Y6yNHcchxcTTdyiNuK8E9oEBSx8K709nUvnw==",
       "type": "package",
-      "path": "skiasharp.views.maui.controls.compatibility/2.88.2",
+      "path": "skiasharp.views.maui.controls.compatibility/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37026,14 +37026,14 @@
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.Compatibility.dll",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.Compatibility.pdb",
         "lib/net6.0/SkiaSharp.Views.Maui.Controls.Compatibility.xml",
-        "skiasharp.views.maui.controls.compatibility.2.88.2.nupkg.sha512",
+        "skiasharp.views.maui.controls.compatibility.2.88.3.nupkg.sha512",
         "skiasharp.views.maui.controls.compatibility.nuspec"
       ]
     },
-    "SkiaSharp.Views.Maui.Core/2.88.2": {
-      "sha512": "a7unz5C1Nr8wZyQXodth4FRicrwps5gM/3HVHGQDCs5rHAC8vd1ZmPdJLDJ3U/veY4k1AZaRdhNJ/IKBtgEDjg==",
+    "SkiaSharp.Views.Maui.Core/2.88.3": {
+      "sha512": "kP7m/DxrGeitgaN9hU7UmOeV4mRMfKdRf+z/SrAJhk2PXJSQJr3jnpBIBr3STTCkWBOuPzw0svQhwonrI2rj5g==",
       "type": "package",
-      "path": "skiasharp.views.maui.core/2.88.2",
+      "path": "skiasharp.views.maui.core/2.88.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -37056,7 +37056,7 @@
         "lib/net6.0/SkiaSharp.Views.Maui.Core.dll",
         "lib/net6.0/SkiaSharp.Views.Maui.Core.pdb",
         "lib/net6.0/SkiaSharp.Views.Maui.Core.xml",
-        "skiasharp.views.maui.core.2.88.2.nupkg.sha512",
+        "skiasharp.views.maui.core.2.88.3.nupkg.sha512",
         "skiasharp.views.maui.core.nuspec"
       ]
     },
@@ -40809,13 +40809,13 @@
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.540",
       "Microsoft.Maui.Extensions >= 6.0.540",
-      "Realm >= 10.15.1",
-      "Realm.Fody >= 10.15.1",
+      "Realm >= 10.17.0",
+      "Realm.Fody >= 10.17.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
-      "SkiaSharp.Views.Maui.Controls >= 2.88.2",
-      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.2",
-      "SkiaSharp.Views.Maui.Core >= 2.88.2",
+      "SkiaSharp.Views.Maui.Controls >= 2.88.3",
+      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
+      "SkiaSharp.Views.Maui.Core >= 2.88.3",
       "Syncfusion.Maui.Charts >= 20.3.47",
       "Syncfusion.Maui.Core >= 20.3.47",
       "Syncfusion.Maui.DataGrid >= 20.3.47",
@@ -40831,13 +40831,13 @@
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.540",
       "Microsoft.Maui.Extensions >= 6.0.540",
-      "Realm >= 10.15.1",
-      "Realm.Fody >= 10.15.1",
+      "Realm >= 10.17.0",
+      "Realm.Fody >= 10.17.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
-      "SkiaSharp.Views.Maui.Controls >= 2.88.2",
-      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.2",
-      "SkiaSharp.Views.Maui.Core >= 2.88.2",
+      "SkiaSharp.Views.Maui.Controls >= 2.88.3",
+      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
+      "SkiaSharp.Views.Maui.Core >= 2.88.3",
       "Syncfusion.Maui.Charts >= 20.3.47",
       "Syncfusion.Maui.Core >= 20.3.47",
       "Syncfusion.Maui.DataGrid >= 20.3.47",
@@ -40854,13 +40854,13 @@
       "CommunityToolkit.Mvvm >= 8.0.0",
       "Microsoft.Maui.Dependencies >= 6.0.540",
       "Microsoft.Maui.Extensions >= 6.0.540",
-      "Realm >= 10.15.1",
-      "Realm.Fody >= 10.15.1",
+      "Realm >= 10.17.0",
+      "Realm.Fody >= 10.17.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
-      "SkiaSharp.Views.Maui.Controls >= 2.88.2",
-      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.2",
-      "SkiaSharp.Views.Maui.Core >= 2.88.2",
+      "SkiaSharp.Views.Maui.Controls >= 2.88.3",
+      "SkiaSharp.Views.Maui.Controls.Compatibility >= 2.88.3",
+      "SkiaSharp.Views.Maui.Core >= 2.88.3",
       "Syncfusion.Maui.Charts >= 20.3.47",
       "Syncfusion.Maui.Core >= 20.3.47",
       "Syncfusion.Maui.DataGrid >= 20.3.47",
@@ -40943,13 +40943,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -40961,15 +40961,15 @@
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Controls.Compatibility": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Core": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
@@ -41117,13 +41117,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -41135,15 +41135,15 @@
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Controls.Compatibility": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Core": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",
@@ -41272,13 +41272,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.15.1, )"
+            "version": "[10.17.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -41290,15 +41290,15 @@
           },
           "SkiaSharp.Views.Maui.Controls": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Controls.Compatibility": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "SkiaSharp.Views.Maui.Core": {
             "target": "Package",
-            "version": "[2.88.2, )"
+            "version": "[2.88.3, )"
           },
           "Syncfusion.Maui.Charts": {
             "target": "Package",

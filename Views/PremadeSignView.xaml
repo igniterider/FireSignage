@@ -14,7 +14,7 @@
     <ContentPage.Behaviors>
     <toolkit:EventToCommandBehavior
         EventName="Appearing"
-        Command="{Binding GetSignsCommand}" />
+        Command="{Binding GetRideshareCommand}" />
     </ContentPage.Behaviors>
     
 <VerticalStackLayout>
@@ -24,7 +24,7 @@
      <Grid
         ColumnDefinitions="*,*"
         ColumnSpacing="5"
-        RowDefinitions="150,*,400"
+        RowDefinitions="150,60,25,*"
         RowSpacing="5"
         Margin="0,10,0,0">
 
@@ -116,25 +116,36 @@
 
 </HorizontalStackLayout>
 
-    <CollectionView Grid.Row="2"
+    <!--<Label Text="Rideshare" TextColor="Black" HorizontalTextAlignment="Center"
+           HorizontalOptions="Center" Grid.Row="2"
+           Grid.ColumnSpan="2"/>-->
+
+
+
+    <CollectionView Grid.Row="3"
                     Grid.ColumnSpan="2"
-                    ItemsSource="{Binding GetSigns}">
+                    ItemsSource="{Binding SignCategory}"
+                    ItemsLayout="VerticalList" 
+                    
+                    IsGrouped="True">
 
-        
+
+    <CollectionView.GroupHeaderTemplate>
+        <DataTemplate x:DataType="model:CategoriesList">
+            <Label Text="{Binding CategoryName}"
+                   BackgroundColor="LightGray"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+        </DataTemplate>
+    </CollectionView.GroupHeaderTemplate>
 
    
-        
-   
-
-        <CollectionView.ItemsLayout>
-            <GridItemsLayout Orientation="Vertical" Span="2" />
-        </CollectionView.ItemsLayout>
-
     <CollectionView.ItemTemplate>
 
-        <DataTemplate x:DataType="model:PreMadeSigns">
+        <DataTemplate x:DataType="model:PreMadeSigns" >
             <Grid Padding="10">
-                <Frame HeightRequest="100" Style="{StaticResource CardView}">
+                <Frame HeightRequest="100" WidthRequest="200" Style="{StaticResource CardView}">
 
                 <VerticalStackLayout Padding="10">
                 
@@ -148,15 +159,42 @@
         </DataTemplate>
     </CollectionView.ItemTemplate>
 
-        <!--<CollectionView.GroupHeaderTemplate>
-                <DataTemplate>
-                    <Label Text="{Binding Category}"
-                           BackgroundColor="LightGray"
-                           FontSize="20"
-                           FontAttributes="Bold" />
-                </DataTemplate>
-        </CollectionView.GroupHeaderTemplate>-->
+       
 </CollectionView>
+
+
+            <!--<CollectionView Grid.Row="4"
+                    Grid.ColumnSpan="2"
+                    ItemsSource="{Binding GetSigns}"
+                    Header="BUSINESS"
+                    ItemsLayout="HorizontalList">
+
+   
+
+        <CollectionView.ItemsLayout>
+            <LinearItemsLayout Orientation="Horizontal" />
+        </CollectionView.ItemsLayout>
+
+    <CollectionView.ItemTemplate>
+
+        <DataTemplate x:DataType="model:PreMadeSigns">
+            <Grid Padding="10">
+                <Frame HeightRequest="100" WidthRequest="200" Style="{StaticResource CardView}">
+
+                <VerticalStackLayout Padding="10">
+                
+                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext}" TextColor="White" HorizontalTextAlignment="Center"/>
+                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext2}" TextColor="Red" HorizontalTextAlignment="Center" />
+
+                </VerticalStackLayout>
+
+                </Frame>
+            </Grid>
+        </DataTemplate>
+    </CollectionView.ItemTemplate>
+
+       
+</CollectionView>-->
 
    
 </Grid>

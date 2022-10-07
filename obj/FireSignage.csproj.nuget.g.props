@@ -13,13 +13,13 @@
     <SourceRoot Include="/Users/brianjohnson/.nuget/packages/" />
   </ItemGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-android' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
-    <Import Project="$(NuGetPackageRoot)realm/10.15.1/build/monoandroid/Realm.props" Condition="Exists('$(NuGetPackageRoot)realm/10.15.1/build/monoandroid/Realm.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm/10.17.0/build/monoandroid/Realm.props" Condition="Exists('$(NuGetPackageRoot)realm/10.17.0/build/monoandroid/Realm.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-ios' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props')" />
   </ImportGroup>
   <ImportGroup Condition=" '$(TargetFramework)' == 'net6.0-maccatalyst' AND '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.15.1/build/Realm.Fody.props')" />
+    <Import Project="$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props" Condition="Exists('$(NuGetPackageRoot)realm.fody/10.17.0/build/Realm.Fody.props')" />
   </ImportGroup>
 </Project>
