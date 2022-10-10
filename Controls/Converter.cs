@@ -6,26 +6,21 @@ namespace FireSignage
 {
    
 
-    public class Converter : IValueConverter
+    public class Converter
     {
 
+
+
+    }
+
+
+    #region BoolToImageConverter
+
+    public class BoolToImageConverter : IValueConverter
+    {
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            int result = 0;
-            var items = value as IEnumerable;
-            if (items != null)
-            {
-                var items = items.ToList<object>().ToList<object>();
-                if (items != null)
-                {
-                    for (int i = 0; i < items.Count; i++)
-                    {
-                        var contact = items[i] as Contacts;
-                        result += contact.ContactNumber;
-                    }
-                }
-            }
-            return result
+            return (bool)value ? "group_expand.png" : "group_collapse.png";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -33,7 +28,7 @@ namespace FireSignage
             throw new NotImplementedException();
         }
     }
-
+    #endregion
 
 
 }

@@ -12,6 +12,10 @@
 		<data>
 		DqLVmU7wR1pvvTFAHVho42FWkBg=
 		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		rzwATZfMJ+RtcmiGzVN1EltNL/w=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
@@ -39,6 +43,14 @@
 		<key>Resources/fa6solid.otf</key>
 		<data>
 		LFkh1RzM/aFDeTI8yEedUSu2Xi4=
+		</data>
+		<key>Resources/group_collapse.png</key>
+		<data>
+		i4N/61J/M8nvu0sdsC8cavTbkWI=
+		</data>
+		<key>Resources/group_expand.png</key>
+		<data>
+		vO3EsrfVFJm4hb48vUos/eO2StE=
 		</data>
 		<key>Resources/premadedata.json</key>
 		<data>
@@ -90,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Z7lKM7dyRSjpSeV2+8hiza/BDiYVsBO7XgsF4Hq3s5o=
+			VNPRSUBbM8ecGvxnRzxeb8QqcyU6bft3SDlQapDfu7c=
 			</data>
 		</dict>
 		<key>MonoBundle/FireSignage.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			waIXZmygPsymMPHuRPBaCHHZlsMUptCmSDXhwsJRwCU=
+			HQD5kECnyQYqJsQoLGU3Gt+0BWh0MzZtnLFSmBE/t68=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1626,6 +1638,13 @@
 			+8FoGBg73xzsmbYB7g/urMHF9fimqN7KEesZIw30KFM=
 			</data>
 		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nwStLdcIfQMAy+8PrlzgX1NoWUDsNGKXp6oAHdROStc=
+			</data>
+		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
@@ -1673,6 +1692,20 @@
 			<key>hash2</key>
 			<data>
 			yjrXlxfwAOu6Ofkgan/useGlEkgx0r0y2itqtgOD7dA=
+			</data>
+		</dict>
+		<key>Resources/group_collapse.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Xxw5CMfi6+ZDAu88Syoyc2HUUF8yVVMYeBZ46W9nX10=
+			</data>
+		</dict>
+		<key>Resources/group_expand.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OQU6AfU5rFYxitF/4iDYCZWChCFytv79SzqKJAF3G1w=
 			</data>
 		</dict>
 		<key>Resources/premadedata.json</key>

@@ -1067,3 +1067,5 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable/group_collapse.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable/group_expand.png

@@ -287,3 +287,5 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/FireSignage.pdb
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/FireSignage.genruntimeconfig.cache
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/ref/FireSignage.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/group_collapse.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/group_expand.png

@@ -64,6 +64,7 @@
 	  <Folder Include="Renderers\" />
 	  <Folder Include="Helpers\" />
 	  <Folder Include="Views\Settings\" />
+	  <Folder Include="Resources\Images\" />
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -95,12 +96,21 @@
 	<ItemGroup>
 	  <None Remove="Helpers\" />
 	  <None Remove="Views\Settings\" />
+	  <None Remove="Resources\Images\" />
+	  <None Remove="Resources\Images\group_collapse.png" />
+	  <None Remove="Resources\Images\group_expand.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\Settings\SettingsPage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\SomethingWentWrongPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\FlyoutFooter.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>

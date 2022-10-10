@@ -25,6 +25,13 @@
     <ContentPage.BindingContext>
         <viewmodel:PremadeViewModel />
     </ContentPage.BindingContext>
+
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:BoolToImageConverter x:Key="BoolToImageConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     
 <VerticalStackLayout>
 
@@ -129,8 +136,16 @@
  <ListView:SfListView x:Name="listView" ItemsSource="{Binding GetSigns}"
                         Grid.Row="3" Grid.ColumnSpan="2"
                         ItemSize="100"
+                        SelectionMode="Single"
                         AllowGroupExpandCollapse="True"
-                       >
+                        >
+
+
+ <ListView:SfListView.Behaviors>
+        <local:Behavior />
+ </ListView:SfListView.Behaviors>
+
+
     <ListView:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.GroupDescriptors>
@@ -139,7 +154,7 @@
       </data:DataSource>
     </ListView:SfListView.DataSource>
 
-    <ListView:SfListView.GroupHeaderTemplate>
+    <!--<ListView:SfListView.GroupHeaderTemplate>
     <DataTemplate>
       <ViewCell>
         <ViewCell.View>
@@ -147,14 +162,27 @@
             <Label Text="{Binding Key}"
                    FontSize="30"
                    FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
                    TextColor="Black"
                    TextTransform="Uppercase"
-                    />
+                     />
           </StackLayout>
         </ViewCell.View>
       </ViewCell>
     </DataTemplate>
-  </ListView:SfListView.GroupHeaderTemplate>
+  </ListView:SfListView.GroupHeaderTemplate>-->
+
+
+<ListView:SfListView.GroupHeaderTemplate>
+                <DataTemplate>
+                    <StackLayout Orientation="Horizontal" BackgroundColor="#E4E4E4">
+                        <Image Source="{Binding IsExpand, Converter={StaticResource BoolToImageConverter}}" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" Margin="10,0" HorizontalOptions="End"/>
+                        <Label Text="{Binding Key}" FontSize="30" FontAttributes="Bold"
+                               TextColor="Black" VerticalOptions="Center"
+                               HorizontalOptions="Center" TextTransform="Uppercase"/>
+                    </StackLayout>
+                </DataTemplate>
+</ListView:SfListView.GroupHeaderTemplate>
 
       <ListView:SfListView.ItemsLayout>
         <ListView:GridLayout SpanCount="2" />
