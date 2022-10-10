@@ -1,41 +1,40 @@
-﻿namespace FireSignage;
+﻿using Syncfusion.Maui.ListView;
+
+namespace FireSignage;
 
 public partial class MainPage : ContentPage
 {
-	
-
+    
 	public MainPage()
 	{
 		InitializeComponent();
+
         
-    }
 
-    void SwipeContainer_Swipe(System.Object sender, Microsoft.Maui.Controls.SwipedEventArgs e)
-    {
-
-        switch (e.Direction)
+        listView.GroupHeaderTemplate = new DataTemplate(() =>
         {
-            case SwipeDirection.Left:
-                // Handle the swipe
-                BackgroundColor = Colors.Red;
-
-                break;
-            case SwipeDirection.Right:
-                // Handle the swipe
-
-                BackgroundColor = Colors.Green;
-
-                break;
-            case SwipeDirection.Up:
-                // Handle the swipe
-                break;
-            case SwipeDirection.Down:
-                // Handle the swipe
-                break;
-        }
+            var grid = new Grid { BackgroundColor = Color.FromHex("#E4E4E4") };
+            var label = new Label
+            {
+                VerticalOptions = LayoutOptions.Center,
+                HorizontalOptions = LayoutOptions.Center,
+                TextColor = Colors.Black,
+                TextTransform = TextTransform.Uppercase, 
+            };
+            label.SetBinding(Label.TextProperty, new Binding("Key"));
+            grid.Children.Add(label);
+            return grid;
+        });
 
 
+
+        var group = listView.DataSource.Groups[1];
+        listView.ExpandGroup(group);
+        listView.CollapseGroup(group);
     }
+
+    
+
 
 }
 

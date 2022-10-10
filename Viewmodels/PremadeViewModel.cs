@@ -10,8 +10,8 @@ namespace FireSignage.Viewmodels;
 public partial class PremadeViewModel : BaseViewModel
 {
 
-
-	PremadeService premadeService;
+    
+    PremadeService premadeService;
 
 	public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
 
@@ -70,8 +70,10 @@ public partial class PremadeViewModel : BaseViewModel
 		}
 	}
 
+    
 
-	[RelayCommand]
+
+    [RelayCommand]
 	async Task GetRideshareAsync()
 	{
 		if (IsBusy)

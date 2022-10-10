@@ -26,7 +26,7 @@
      <Grid
         ColumnDefinitions="*,*"
         ColumnSpacing="5"
-        RowDefinitions="150,60,25,*"
+        RowDefinitions="150,60,25,*,25"
         RowSpacing="5"
         Margin="0,10,0,0">
 
@@ -118,10 +118,7 @@
 
 </HorizontalStackLayout>
 
-    <!--<Label Text="Rideshare" TextColor="Black" HorizontalTextAlignment="Center"
-           HorizontalOptions="Center" Grid.Row="2"
-           Grid.ColumnSpan="2"/>-->
-
+    
 
 
     <!--<CollectionView Grid.Row="3"
@@ -203,7 +200,8 @@
 
  <syncfusion:SfListView x:Name="listView" ItemsSource="{Binding GetSigns}"
                         Grid.Row="3" Grid.ColumnSpan="2"
-                        ItemSize="100">
+                        ItemSize="100"
+                         >
     <syncfusion:SfListView.DataSource>
       <data:DataSource>
         <data:DataSource.GroupDescriptors>
@@ -243,7 +241,7 @@
 
   </syncfusion:SfListView>
 </ScrollView>
-   
+ <Label Grid.Row="4"/>  
 </Grid>
 
 </VerticalStackLayout>

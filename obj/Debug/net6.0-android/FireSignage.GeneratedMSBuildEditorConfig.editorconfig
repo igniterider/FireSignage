@@ -80,3 +80,15 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.PremadeSignView.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/PremadeSignView.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/PremadeSignView.xaml
+
+[/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/Settings/SettingsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.Settings.SettingsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Settings/SettingsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Settings/SettingsPage.xaml
+
+[/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/Settings/SomethingWentWrongPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.Settings.SomethingWentWrongPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Settings/SomethingWentWrongPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Settings/SomethingWentWrongPage.xaml

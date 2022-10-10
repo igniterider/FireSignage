@@ -1,12 +1,12 @@
 ﻿
 namespace FireSignage.Models
 {
-	public class PreMadeSigns
+	public class PreMadeSigns : BaseViewModel
 	{
-        
-        
 
-        
+        private bool isVisible = false;
+
+
         public string Displaytext { get; set; }
 
         public string Displaytext2 { get; set; }
@@ -27,8 +27,18 @@ namespace FireSignage.Models
         
         public string Category { get; set; }
 
-       // public ObservableCollection<PreMadeSigns> CategoryGroup { get; set; }
+        // public ObservableCollection<PreMadeSigns> CategoryGroup { get; set; }
 
+
+        public bool IsVisible
+        {
+            get { return isVisible; }
+            set
+            {
+                this.OnPropertyChanged("IsVisible");
+
+            }
+        }
 
 
     }
