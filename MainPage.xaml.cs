@@ -9,7 +9,7 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 
-
+        
 
         //listView.GroupHeaderTemplate = new DataTemplate(() =>
         //{
@@ -36,7 +36,6 @@ public partial class MainPage : ContentPage
     }
 
     
-
 
 }
 

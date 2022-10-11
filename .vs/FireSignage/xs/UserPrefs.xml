@@ -1,22 +1,27 @@
 ﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="FireSignage.csproj">
     <Files>
-      <File FileName="MainPage.xaml" Line="1" Column="1" />
+      <File FileName="FireSignage.csproj" Line="44" Column="93" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
+              <Node name="Controls" expanded="True" />
               <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
+                <Node name="Splash" expanded="True">
+                  <Node name="splasha.svg" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
@@ -24,6 +29,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations />
 </Properties>

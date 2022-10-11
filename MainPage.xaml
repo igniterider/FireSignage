@@ -138,7 +138,7 @@
                         ItemSize="100"
                         SelectionMode="Single"
                         AllowGroupExpandCollapse="True"
-                        >
+                        IsStickyGroupHeader="True">
 
 
  <ListView:SfListView.Behaviors>
@@ -175,8 +175,11 @@
 
 <ListView:SfListView.GroupHeaderTemplate>
                 <DataTemplate>
-                    <StackLayout Orientation="Horizontal" BackgroundColor="#E4E4E4">
-                        <Image Source="{Binding IsExpand, Converter={StaticResource BoolToImageConverter}}" HeightRequest="30" WidthRequest="30" VerticalOptions="Center" Margin="10,0" HorizontalOptions="End"/>
+                    <StackLayout Orientation="Horizontal" BackgroundColor="#E4E4E4" Margin="0,5">
+                        <Image Source="{Binding IsExpand, Converter={StaticResource BoolToImageConverter}}"
+                               HeightRequest="30" WidthRequest="30" VerticalOptions="Center"
+                               Margin="10,0" HorizontalOptions="End"/>
+
                         <Label Text="{Binding Key}" FontSize="30" FontAttributes="Bold"
                                TextColor="Black" VerticalOptions="Center"
                                HorizontalOptions="Center" TextTransform="Uppercase"/>
