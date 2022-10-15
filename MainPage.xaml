@@ -114,7 +114,35 @@
 
   
 <HorizontalStackLayout Grid.Row="3" Grid.ColumnSpan="2" Margin="10" Spacing="10">
-    <Button Text="All Signs" ImageSource="{FontImage FontFamily=fas6,
+
+    <Grid Grid.Row="3" Grid.ColumnSpan="2"
+         RowDefinitions="*" ColumnDefinitions="*,*,*">
+        
+
+        <Picker Grid.Row="0" Grid.Column="0"
+                Title="Select Background Color"
+                      SelectedItem="{Binding SelectedBackItem, Mode=TwoWay}"
+                      ItemsSource="{Binding MyColors}"
+                      TitleColor="{Binding SelectedBackItem}" />
+
+
+        <Picker Grid.Row="0" Grid.Column="1"
+                Title="Select Text Color"
+                      SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                      ItemsSource="{Binding MyColors}"
+                      TitleColor="{Binding SelectedItem}" />
+
+
+        <Picker Grid.Row="0" Grid.Column="2"
+                Title="Animations"
+                      SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                      ItemsSource="{Binding MyColors}"
+                      TitleColor="{Binding SelectedItem}" />
+
+
+
+    </Grid>
+    <!--<Button Text="All Signs" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
                                         Color=Black,
                                         Size=20}" Padding="5"/>
@@ -136,7 +164,7 @@
     <Button Text="Business" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
                                         Color=Black,
-                                        Size=20}" Padding="5"/>
+                                        Size=20}" Padding="5"/>-->
 
 
 </HorizontalStackLayout>
@@ -167,23 +195,7 @@
       </data:DataSource>
     </ListView:SfListView.DataSource>
 
-    <!--<ListView:SfListView.GroupHeaderTemplate>
-    <DataTemplate>
-      <ViewCell>
-        <ViewCell.View>
-          <StackLayout BackgroundColor="#E4E4E4">
-            <Label Text="{Binding Key}"
-                   FontSize="30"
-                   FontAttributes="Bold"
-                   HorizontalTextAlignment="Center"
-                   TextColor="Black"
-                   TextTransform="Uppercase"
-                     />
-          </StackLayout>
-        </ViewCell.View>
-      </ViewCell>
-    </DataTemplate>
-  </ListView:SfListView.GroupHeaderTemplate>-->
+    
 
 
 <ListView:SfListView.GroupHeaderTemplate>

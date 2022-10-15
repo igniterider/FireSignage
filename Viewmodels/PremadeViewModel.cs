@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.Input;
+﻿using System.Reflection;
+using CommunityToolkit.Mvvm.Input;
 using FireSignage.Models;
 using FireSignage.Services;
 
@@ -19,21 +20,118 @@ public partial class PremadeViewModel : BaseViewModel
 	public List<PreMadeSigns> Rides { get; set; } = new();
 	public List<PreMadeSigns> Business { get; set; } = new();
 	public List<PreMadeSigns> Holiday { get; set; } = new();
-
-
 	private string categoryname;
 
-	public PremadeViewModel()
+
+    readonly IReadOnlyDictionary<string, Color> colors = typeof(Colors)
+        .GetFields(BindingFlags.Static | BindingFlags.Public)
+        .ToDictionary(c => c.Name, c => (Color)(c.GetValue(null) ?? throw new InvalidOperationException()));
+
+    private string selectedItem;
+    private Color selectedColor;
+    private Color selectedBackColor;
+    private string selectedbackItem;
+    private List<String> colors2 = new List<string>();
+
+    public PremadeViewModel()
 	{
 		Title = "Premade Signs";
 		premadeService = new PremadeService();
-		
+		MyColors = colors.Keys.ToList();
 
-	}
+    }
 
-	//Icommand auto creates instead of writing code for the command and in constructor booo yahhh
 
-	[RelayCommand]
+    public List<String> MyColors
+    {
+        get
+        {
+            return colors2;
+        }
+        set
+        {
+            colors2 = value;
+            OnPropertyChanged("Colors");
+        }
+    }
+
+    public Color SelectedColor
+    {
+        get
+        {
+            if (SelectedItem != null)
+                return (Color)typeof(Color).GetField(SelectedItem).GetValue(this);
+            return SelectedColor;
+        }
+        internal set
+        {
+            selectedColor = value;
+
+            //took out colorchange method
+
+
+        }
+    }
+
+    public string SelectedItem
+    {
+        get
+        {
+            return selectedItem;
+        }
+        set
+        {
+            selectedItem = value;
+            OnPropertyChanged("SelectedItem");
+            OnPropertyChanged("SelectedColor");
+            
+
+
+
+        }
+
+
+    }
+
+    public string SelectedBackItem
+    {
+        get
+        {
+            return selectedbackItem;
+        }
+        set
+        {
+            selectedbackItem = value;
+            OnPropertyChanged("SelectedBackItem");
+            OnPropertyChanged("SelectedBackColor");
+            
+
+
+
+        }
+
+    }
+
+    public Color SelectedBackColor
+    {
+        get
+        {
+            if (SelectedBackItem != null)
+                return (Color)typeof(Color).GetField(SelectedBackItem).GetValue(this);
+            return SelectedBackColor;
+        }
+        internal set
+        {
+            selectedColor = value;
+
+
+        }
+    }
+
+
+    //Icommand auto creates instead of writing code for the command and in constructor booo yahhh
+
+    [RelayCommand]
 	async Task GetSignsAsync()
 	{
 		if (IsBusy)
