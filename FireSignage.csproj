@@ -99,6 +99,9 @@
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\group_collapse.png" />
 	  <None Remove="Resources\Images\group_expand.png" />
+	  <None Remove="Resources\Raw\errorAndEmpty.json" />
+	  <None Remove="Resources\Images\SomethingWentWrong.svg" />
+	  <None Remove="Resources\Images\somethingwentwrong.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Update="Views\Settings\SettingsPage.xaml">
@@ -113,5 +116,8 @@
 	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiAsset Remove="Resources\Raw\errorAndEmpty.json" />
 	</ItemGroup>
 </Project>

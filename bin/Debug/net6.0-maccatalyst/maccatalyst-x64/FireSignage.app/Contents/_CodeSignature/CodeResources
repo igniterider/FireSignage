@@ -12,6 +12,10 @@
 		<data>
 		DqLVmU7wR1pvvTFAHVho42FWkBg=
 		</data>
+		<key>Resources/MauiInfo.plist</key>
+		<data>
+		rzwATZfMJ+RtcmiGzVN1EltNL/w=
+		</data>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<data>
 		HlmAtjuZZYt4rOfUtxY3eRZ7cWA=
@@ -51,6 +55,18 @@
 		<key>Resources/premadedata.json</key>
 		<data>
 		8qw7j9M1y6sJTtHdoeg9iE9Gx7Q=
+		</data>
+		<key>Resources/somethingwentwrong.png</key>
+		<data>
+		Nd2WksK7Yy9DY47V+MOEdhO2Ln8=
+		</data>
+		<key>Resources/somethingwentwrong@2x.png</key>
+		<data>
+		sk0Q8bkTjKHKM2uKiw+UP1MyFW8=
+		</data>
+		<key>Resources/somethingwentwrong@3x.png</key>
+		<data>
+		xi1SUNA98Otr6O6IwY58eHahyV8=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -98,14 +114,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dMYPkWBvu4JginAy/7UPy0NGU7gZGGriCPyGjEBT0xA=
+			f2gmxCzpPmGca6d+eS+HaTVuhb1n+Y0WfTZ4EB9o+DU=
 			</data>
 		</dict>
 		<key>MonoBundle/FireSignage.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uo78kmRRKmhBN6FrtSMZmAhwk8xt19Ut29wYX0cCj0w=
+			J9l5X5Y0WrEixTrsZsNJj31NRJHa+If/YFoiKNil6Mw=
 			</data>
 		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
@@ -1634,6 +1650,13 @@
 			+8FoGBg73xzsmbYB7g/urMHF9fimqN7KEesZIw30KFM=
 			</data>
 		</dict>
+		<key>Resources/MauiInfo.plist</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nwStLdcIfQMAy+8PrlzgX1NoWUDsNGKXp6oAHdROStc=
+			</data>
+		</dict>
 		<key>Resources/MonoTouchDebugConfiguration.txt</key>
 		<dict>
 			<key>hash2</key>
@@ -1702,6 +1725,27 @@
 			<key>hash2</key>
 			<data>
 			Q7wG9DvPgMmlfXPKX4jZ0ewfRaZWdV26VArWjB8ia/c=
+			</data>
+		</dict>
+		<key>Resources/somethingwentwrong.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0kwfOq26uc5evqxgZt6KGaGYFtoe/evmhoxzGAp6vDc=
+			</data>
+		</dict>
+		<key>Resources/somethingwentwrong@2x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2q4hW0ycaKYudDHFSCaiC1y1MMoM3cCLWc4ereMZUUo=
+			</data>
+		</dict>
+		<key>Resources/somethingwentwrong@3x.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			mawb0EYBMCp71BNyuXYZJIyKsrQp5f5pLTVRTV4Nqe4=
 			</data>
 		</dict>
 	</dict>

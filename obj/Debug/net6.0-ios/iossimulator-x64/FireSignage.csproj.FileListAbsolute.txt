@@ -302,3 +302,6 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/FireSignage.pdb
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/FireSignage.genruntimeconfig.cache
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/ref/FireSignage.dll
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/somethingwentwrong.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/somethingwentwrong@2x.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/somethingwentwrong@3x.png

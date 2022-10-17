@@ -39,6 +39,11 @@
             Route="PremadeSignView" />
 
 
+         <ShellContent
+            Title="Settings"
+            ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
+            Route="SettingsPage" />
+
      </FlyoutItem>
 
 

@@ -1069,3 +1069,8 @@
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable-hdpi/somethingwentwrong.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable-mdpi/somethingwentwrong.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable-xhdpi/somethingwentwrong.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable-xxhdpi/somethingwentwrong.png
+/Users/brianjohnson/Projects/FireSignage/FireSignage/obj/Debug/net6.0-android/resizetizer/r/drawable-xxxhdpi/somethingwentwrong.png

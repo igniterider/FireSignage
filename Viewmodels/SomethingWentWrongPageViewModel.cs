@@ -122,7 +122,7 @@ namespace FireSignage.ViewModels
         /// <returns>Returns the view model object.</returns>
         private static T PopulateData<T>(string fileName)
         {
-            var file = "SyncTesting2.Data." + fileName;
+            var file = "FireSignage.Resources.Raw" + fileName;
 
             var assembly = typeof(App).GetTypeInfo().Assembly;
 

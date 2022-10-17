@@ -39,7 +39,7 @@
   "paymentFailedHeader": "PAYMENT FAILED",
   "paymentFailedContent": "An error occurred while processing your payment",
 
-  "somethingWentWrongImagePath": "SomethingWentWrong.svg",
+  "somethingWentWrongImagePath": "somethingwentwrong.svg",
   "somethingWentWrongHeader": "SOMETHING WENT WRONG",
   "somethingWentWrongContent": "We are not sure what happened, but we know an error occurred"
 
