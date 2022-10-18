@@ -1,29 +1,22 @@
 ﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Settings/SettingsPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Viewmodels/SettingsViewModel.cs">
     <Files>
-      <File FileName="Views/HelpPage.xaml" Line="1" Column="1" />
-      <File FileName="Views/Settings/SettingsPage.xaml" Line="440" Column="24" />
-      <File FileName="Views/Settings/SomethingWentWrongPage.xaml" Line="1" Column="1" />
-      <File FileName="Viewmodels/SettingsViewModel.cs" Line="1" Column="1" />
-      <File FileName="Controls/TapAnimationGrid.cs" Line="1" Column="1" />
+      <File FileName="Views/Settings/SomethingWentWrongPage.xaml" />
+      <File FileName="Viewmodels/SettingsViewModel.cs" Line="6" Column="28" />
+      <File FileName="Controls/TapAnimationGrid.cs" Line="10" Column="5" />
+      <File FileName="Views/Settings/SettingsPage.xaml" Line="259" Column="43" />
+      <File FileName="AppShell.xaml" Line="43" Column="28" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Controls" expanded="True">
-                <Node name="TapAnimationGrid.cs" selected="True" />
-              </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
-              </Node>
+              <Node name="Controls" expanded="True" />
               <Node name="Viewmodels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Settings" expanded="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
             </Node>
           </Node>
         </State>

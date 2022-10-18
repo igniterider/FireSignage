@@ -35,7 +35,7 @@ public partial class PremadeViewModel : BaseViewModel
 
     public PremadeViewModel()
 	{
-		Title = "Premade Signs";
+		Title = "Dashboard";
 		premadeService = new PremadeService();
 		MyColors = colors.Keys.ToList();
 

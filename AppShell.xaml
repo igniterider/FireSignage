@@ -23,7 +23,7 @@
      <FlyoutItem Shell.BackgroundColor="#4D687E" FlyoutDisplayOptions="AsMultipleItems">
 
          <ShellContent
-            Title="Home"
+            Title="Dashboard"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
 
@@ -33,10 +33,6 @@
             ContentTemplate="{DataTemplate views:NewSignTesting}"
             Route="NewSignTesting" />
 
-         <ShellContent
-            Title="Signs"
-            ContentTemplate="{DataTemplate views:PremadeSignView}"
-            Route="PremadeSignView" />
 
 
          <ShellContent

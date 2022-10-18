@@ -102,35 +102,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             }
           },
           "imports": [
@@ -276,35 +276,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -431,35 +431,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.49, )"
+              "version": "[20.3.50, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

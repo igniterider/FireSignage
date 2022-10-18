@@ -9,6 +9,197 @@
             Customizes the shadow effects of the Frame control in iOS to make the shadow effects looks similar to Android.
             </summary>
         </member>
+        <member name="T:FireSignage.Controls.TapAnimationGrid">
+            <summary>
+            Customizes the tap animation effects of the grid control.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TapAnimationGrid.CommandProperty">
+            <summary>
+            Gets or sets the CommandProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TapAnimationGrid.CommandParameterProperty">
+            <summary>
+            Gets or sets the CommandParameterProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TapAnimationGrid.TappedProperty">
+            <summary>
+            Gets or sets the TappedProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="M:FireSignage.Controls.TapAnimationGrid.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:FireSignage.Controls.TapAnimationGrid" /> class.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TapAnimationGrid.Command">
+            <summary>
+            Gets or sets the command value.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TapAnimationGrid.CommandParameter">
+            <summary>
+            Gets or sets the command parameter value.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TapAnimationGrid.Tapped">
+            <summary>
+            Gets or sets a value indicating whether it is tapped or not.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TapAnimationGrid.TappedCommand">
+            <summary>
+            Gets or sets the tapped command.
+            </summary>
+        </member>
+        <member name="M:FireSignage.Controls.TapAnimationGrid.OnTapped(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when tap on the item.
+            </summary>
+        </member>
+        <member name="M:FireSignage.Controls.TapAnimationGrid.Initialize">
+            <summary>
+            Invoked when control is initialized.
+            </summary>
+        </member>
+        <member name="T:FireSignage.Controls.TitleView">
+            <summary>
+            The Title view
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.LeadingViewProperty">
+            <summary>
+            Gets or sets the LeadingViewProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.TrailingViewProperty">
+            <summary>
+            Gets or sets the TrailingViewProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.ContentProperty">
+            <summary>
+            Gets or sets the ContentProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.TitleProperty">
+            <summary>
+            Gets or sets the TitleProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.FontFamilyProperty">
+            <summary>
+            Gets or sets the FontFamilyProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.FontAttributesProperty">
+            <summary>
+            Gets or sets the FontAttributesProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.FontSizeProperty">
+            <summary>
+            Gets or sets the FontSizeProperty, and it is a bindable property.
+            </summary>
+        </member>
+        <member name="F:FireSignage.Controls.TitleView.titleLabel">
+            <summary>
+            Gets or sets the title label.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.LeadingView">
+            <summary>
+            Gets or sets the LeadingView.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.TrailingView">
+            <summary>
+            Gets or sets the TrailingView.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.Content">
+            <summary>
+            Gets or sets the Content.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.Title">
+            <summary>
+            Gets or sets the Title.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.FontFamily">
+            <summary>
+            Gets or sets the FontFamily.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.FontAttributes">
+            <summary>
+            Gets or sets the FontAttributes.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Controls.TitleView.FontSize">
+            <summary>
+            Gets or sets the FontSize.
+            </summary>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnLeadingViewPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the leading view is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnTrailingViewPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the trailing view is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnContentPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the Content is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnTitlePropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the Title is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnFontFamilyPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the FontFamily is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnFontAttributesPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the FontAttributes is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
+        <member name="M:FireSignage.Controls.TitleView.OnFontSizePropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)">
+            <summary>
+            Invoked when the FontSize is changed.
+            </summary>
+            <param name="bindable">The TitleView</param>
+            <param name="oldValue">The old value</param>
+            <param name="newValue">The new value</param>
+        </member>
         <member name="P:FireSignage.Viewmodels.BaseViewModel.IsBusy">
             <inheritdoc cref="F:FireSignage.Viewmodels.BaseViewModel.isBusy"/>
         </member>
@@ -90,6 +281,99 @@
         </member>
         <member name="P:FireSignage.Viewmodels.PremadeViewModel.GetRideshareCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FireSignage.Viewmodels.PremadeViewModel.GetRideshareAsync"/>.</summary>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="!:SettingViewModel" /> class
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.EditProfileCommand">
+            <summary>
+            Gets or sets the command is executed when the edit profile option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.ChangePasswordCommand">
+            <summary>
+            Gets or sets the command is executed when the change password option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.LinkAccountCommand">
+            <summary>
+            Gets or sets the command is executed when the account link option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.HelpCommand">
+            <summary>
+            Gets or sets the command is executed when the help option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.TermsCommand">
+            <summary>
+            Gets or sets the command is executed when the terms of service option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.PolicyCommand">
+            <summary>
+            Gets or sets the command is executed when the privacy policy option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.FAQCommand">
+            <summary>
+            Gets or sets the command is executed when the FAQ option is clicked.
+            </summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.SettingsViewModel.LogoutCommand">
+            <summary>
+            Gets or sets the command is executed when the logout is clicked.
+            </summary>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.EditProfileClicked(System.Object)">
+            <summary>
+            Invoked when the edit profile option clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.ChangePasswordClicked(System.Object)">
+            <summary>
+            Invoked when the change password clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.LinkAccountClicked(System.Object)">
+            <summary>
+            Invoked when the account link clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.TermsServiceClicked(System.Object)">
+            <summary>
+            Invoked when the terms of service clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.PrivacyPolicyClicked(System.Object)">
+            <summary>
+            Invoked when the privacy and policy clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.FAQClicked(System.Object)">
+            <summary>
+            Invoked when the FAQ clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.HelpClicked(System.Object)">
+            <summary>
+            Invoked when the help option is clicked
+            </summary>
+            <param name="obj">The object</param>
+        </member>
+        <member name="M:FireSignage.Viewmodels.SettingsViewModel.LogoutClicked(System.Object)">
+            <summary>
+            Invoked when the logout button is clicked
+            </summary>
+            <param name="obj">The object</param>
         </member>
         <member name="T:FireSignage.Viewmodels.SignUpPageViewModel">
             <summary>

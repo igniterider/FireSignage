@@ -50,6 +50,7 @@
                     Text="ACCOUNT"
                     TextColor="{DynamicResource Gray-800}"
                     VerticalOptions="Center"
+                    FontAttributes="Bold"
                     VerticalTextAlignment="Center" />
 
                 <!--  Grid for Edit profile label and navigation bar icon  -->
@@ -66,7 +67,8 @@
                         Grid.Column="0"
                         Margin="16,0,0,0"
                         Style="{StaticResource IconLabelStyle}"
-                        Text="{StaticResource Account}" />
+                        Text="{StaticResource Account}"
+                        FontAttributes="Bold"/>
                     <!--  Edit profile label  -->
                     <Label
                         Grid.Column="1"

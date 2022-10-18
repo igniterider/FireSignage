@@ -39,11 +39,23 @@ build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
+[/Users/brianjohnson/Projects/FireSignage/FireSignage/Resources/Styles/ButtonStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Resources.Styles.ButtonStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/ButtonStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/ButtonStyles.xaml
+
 [/Users/brianjohnson/Projects/FireSignage/FireSignage/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/brianjohnson/Projects/FireSignage/FireSignage/Resources/Styles/FontIcons.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Resources.Styles.FontIcons.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/FontIcons.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/FontIcons.xaml
 
 [/Users/brianjohnson/Projects/FireSignage/FireSignage/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -74,12 +86,6 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.NewSignTesting.xaml
 build_metadata.AdditionalFiles.TargetPath = Views/NewSignTesting.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/NewSignTesting.xaml
-
-[/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/PremadeSignView.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.PremadeSignView.xaml
-build_metadata.AdditionalFiles.TargetPath = Views/PremadeSignView.xaml
-build_metadata.AdditionalFiles.RelativePath = Views/PremadeSignView.xaml
 
 [/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/Settings/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
