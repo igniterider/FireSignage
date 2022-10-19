@@ -7,12 +7,12 @@
 
 <!--  Common style for Gradient buttons  -->
     <Style x:Key="GradientButtonStyle" TargetType="Button">
-        <Setter Property="BackgroundColor">
+        <Setter Property="Background">
             <Setter.Value>
                 <LinearGradientBrush>
                    
-                        <GradientStop Offset="0" Color="{DynamicResource PrimaryColor}" />
-                        <GradientStop Offset="1" Color="{DynamicResource PrimaryGradient}" />
+                        <GradientStop Offset="0" Color="{DynamicResource Primary}" />
+                        <GradientStop Offset="1" Color="{DynamicResource Secondary}" />
                    
                 </LinearGradientBrush>
             </Setter.Value>

@@ -2,9 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireSignage.Views.Settings.SettingsPage"
-             
-             xmlns:model="clr-namespace:FireSignage.Models"
-             xmlns:fontAwesome="clr-namespace:FontAwesome"
              Title="{Binding Title}"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
@@ -43,7 +40,7 @@
                 <Label
                     Margin="16,24,0,16"
                     FontFamily="Montserrat-SemiBold"
-                    FontSize="12"
+                    FontSize="14"
                     HorizontalOptions="FillAndExpand"
                     LineHeight="{OnPlatform Default=-1,
                                             Android=1.25}"
@@ -51,7 +48,8 @@
                     TextColor="{DynamicResource Gray-800}"
                     VerticalOptions="Center"
                     FontAttributes="Bold"
-                    VerticalTextAlignment="Center" />
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"/>
 
                 <!--  Grid for Edit profile label and navigation bar icon  -->
                 <controls:TapAnimationGrid
@@ -158,14 +156,16 @@
                 <Label
                     Margin="16,40,0,16"
                     FontFamily="Montserrat-SemiBold"
-                    FontSize="12"
+                    FontSize="14"
                     HorizontalOptions="FillAndExpand"
                     LineHeight="{OnPlatform Default=-1,
                                             Android=1.25}"
                     Text="NOTIFICATIONS"
                     TextColor="{DynamicResource Gray-800}"
                     VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
+                    VerticalTextAlignment="Center"
+                    FontAttributes="Bold"
+                    HorizontalTextAlignment="Center"/>
 
                 <!--  Grid for Notifications label and switch  -->
                 <Grid
@@ -253,7 +253,7 @@
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
                         Text="Email Notifications"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center"/>
                     <!--  Email notification switch  -->
                     <Switch
                         Grid.Column="2"
@@ -297,14 +297,16 @@
                 <Label
                     Margin="16,40,0,16"
                     FontFamily="Montserrat-SemiBold"
-                    FontSize="12"
+                    FontSize="14"
                     HorizontalOptions="FillAndExpand"
                     LineHeight="{OnPlatform Default=-1,
                                             Android=1.25}"
                     Text="SUPPORT"
                     TextColor="{DynamicResource Gray-800}"
                     VerticalOptions="Center"
-                    VerticalTextAlignment="Center" />
+                    VerticalTextAlignment="Center"
+                    HorizontalTextAlignment="Center"
+                    FontAttributes="Bold"/>
 
                 <!--  Grid for Help label and navigation bar icon  -->
                 <controls:TapAnimationGrid

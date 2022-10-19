@@ -101,18 +101,18 @@ namespace FireSignage.Viewmodels
         /// Invoked when the terms of service clicked
         /// </summary>
         /// <param name="obj">The object</param>
-        private void TermsServiceClicked(object obj)
+        private async void TermsServiceClicked(object obj)
         {
-            // Do something
+            await Launcher.OpenAsync("https://learn.microsoft.com/dotnet/maui");
         }
 
         /// <summary>
         /// Invoked when the privacy and policy clicked
         /// </summary>
         /// <param name="obj">The object</param>
-        private void PrivacyPolicyClicked(object obj)
+        private async void PrivacyPolicyClicked(object obj)
         {
-            // Do something
+            await Launcher.OpenAsync("https://learn.microsoft.com/dotnet/maui");
         }
 
         /// <summary>
@@ -137,9 +137,11 @@ namespace FireSignage.Viewmodels
         /// Invoked when the logout button is clicked
         /// </summary>
         /// <param name="obj">The object</param>
-        private void LogoutClicked(object obj)
+        private async void LogoutClicked(object obj)
         {
-            // Do something
+            await App.realmApp.CurrentUser.LogOutAsync();
+            await Shell.Current.GoToAsync("//..");
+
         }
 
         #endregion

@@ -5,10 +5,10 @@
 
     "Displaytext": "LYFT",
     "Textcolor": "Purple",
-    
+    "Displaytext2": "",
     "Business": "LYFT",
     "Category": "Rideshare"
-    
+
   },
 
   {
@@ -16,10 +16,10 @@
 
     "Displaytext": "UBER",
     "Textcolor": "White",
-    
-    "Business": "White",
+    "Displaytext2": "",
+    "Business": "UBER",
     "Category": "Rideshare"
-    
+
   },
   {
 
@@ -29,7 +29,7 @@
     "Displaytext2": "Brian",
     "Business": "LYFT",
     "Category": "Rideshare"
-    
+
   },
   {
 
@@ -39,14 +39,47 @@
     "Displaytext2": "Brian",
     "Business": "UBER",
     "Category": "Rideshare"
-    
+
+  },
+
+  {
+
+
+    "Displaytext": "UBERDRIVER",
+    "Textcolor": "White",
+    "Displaytext2": "Brian",
+    "Business": "UBER",
+    "Category": "Rideshare"
+
+  },
+
+  {
+
+
+    "Displaytext": "UBER FOR",
+    "Textcolor": "White",
+    "Displaytext2": "Brian",
+    "Business": "UBER",
+    "Category": "Rideshare"
+
   },
   {
 
 
-    "Displaytext": "MERRY CHRISTMAS",
-    "Textcolor": "Red",
+    "Displaytext": "UBER 4",
+    "Textcolor": "Black",
+    "Displaytext2": "Name",
+    "BackgroundColors": "White",
+    "Business": "UBER",
+    "Category": "Rideshare"
 
+  },
+  {
+
+
+    "Displaytext": "MERRY",
+    "Textcolor": "Red",
+    "Displaytext2": "CHRISTMAS",
     "Business": "Christmas",
     "Category": "Holiday"
 
@@ -55,9 +88,9 @@
   {
 
 
-    "Displaytext": "Happy Holidays",
+    "Displaytext": "Happy",
     "Textcolor": "Red",
-
+    "Displaytext2": "HOLIDAYS",
     "Business": "Christmas",
     "Category": "Holiday"
 
@@ -66,9 +99,9 @@
   {
 
 
-    "Displaytext": "Happy Halloween",
+    "Displaytext": "Happy",
     "Textcolor": "Orange",
-
+    "Displaytext2": "HALLOWEEN",
     "Business": "Halloween",
     "Category": "Holiday"
 
@@ -78,9 +111,9 @@
 
     "Displaytext": "LICENSCE PLATE#",
     "Textcolor": "White",
-
-    "Business": "Christmas",
-    "Category": "Holiday"
+    "Displaytext2": "KGS292",
+    "Business": "Rideshare",
+    "Category": "Rideshare"
 
   },
   {
@@ -88,7 +121,7 @@
 
     "Displaytext": "SALE",
     "Textcolor": "White",
-
+    "Displaytext2": "",
     "Business": "Business",
     "Category": "Business"
 
@@ -96,9 +129,9 @@
   {
 
 
-    "Displaytext": "SALE TODAY ONLY",
+    "Displaytext": "SALE TODAY",
     "Textcolor": "White",
-
+    "Displaytext2": "ONLY",
     "Business": "Business",
     "Category": "Business"
 
@@ -108,7 +141,7 @@
 
     "Displaytext": "OPEN",
     "Textcolor": "White",
-
+    "Displaytext2": "",
     "Business": "Business",
     "Category": "Business"
 
@@ -118,7 +151,7 @@
 
     "Displaytext": "CLOSED",
     "Textcolor": "White",
-
+    "Displaytext2": "",
     "Business": "Business",
     "Category": "Business"
 
@@ -126,9 +159,9 @@
   {
 
 
-    "Displaytext": "HAZARD HAZARD",
+    "Displaytext": "HAZARD",
     "Textcolor": "Yellow",
-
+    "Displaytext2": "HAZARD",
     "Business": "Hazards",
     "Category": "Hazards"
 
@@ -136,11 +169,80 @@
   {
 
 
-    "Displaytext": "HELP HELP",
+    "Displaytext": "CAUTION",
     "Textcolor": "Yellow",
-
+    "Displaytext2": "",
     "Business": "Hazards",
     "Category": "Hazards"
+
+  },
+  {
+
+
+    "Displaytext": "HELP",
+    "Textcolor": "Yellow",
+    "Displaytext2": "",
+    "Business": "Hazards",
+    "Category": "Hazards"
+
+  },
+  {
+
+
+    "Displaytext": "DOORDASH",
+    "Textcolor": "Red",
+    "Displaytext2": "",
+    "Business": "DoorDash",
+    "Category": "Delivery"
+
+  },
+  {
+
+
+    "Displaytext": "UBER EATS",
+    "Textcolor": "Red",
+    "Displaytext2": "",
+    "Business": "Uber",
+    "Category": "Delivery"
+
+  },
+  {
+
+
+    "Displaytext": "GRUBHUB",
+    "Textcolor": "Green",
+    "Displaytext2": "",
+    "Business": "Grubhub",
+    "Category": "Delivery"
+
+  },
+  {
+
+
+    "Displaytext": "DOORDASH 4",
+    "Textcolor": "Red",
+    "Displaytext2": "Brian",
+    "Business": "DoorDash",
+    "Category": "Delivery"
+
+  },
+  {
+
+
+    "Displaytext": "GRUBHUB 4",
+    "Textcolor": "Green",
+    "Displaytext2": "Brian",
+    "Business": "Grubhub",
+    "Category": "Delivery"
+
+  },
+  {
+
+    "Displaytext": "UBER EATS 4",
+    "Textcolor": "Red",
+    "Displaytext2": "Brian",
+    "Business": "Uber",
+    "Category": "Delivery"
 
   }
 

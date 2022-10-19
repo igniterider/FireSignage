@@ -13,7 +13,7 @@ namespace FireSignage.Models
         
         public bool? Changename { get; set; }
 
-
+        public string BackgroundColors { get; set; }
         
         public string Textcolor { get; set; }
 
