@@ -103,6 +103,8 @@
 	  <None Remove="Resources\Images\SomethingWentWrong.svg" />
 	  <None Remove="Resources\Images\somethingwentwrong.svg" />
 	  <None Remove="Resources\Fonts\UIFontIcons.ttf" />
+	  <None Remove="Resources\Images\ilogo.png" />
+	  <None Remove="Resources\Images\logo.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiXaml Remove="Resources\Styles\ButtonStyles %28copy%29.xaml" />
@@ -118,6 +120,9 @@
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\LoginFlow\RegistrationPage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>

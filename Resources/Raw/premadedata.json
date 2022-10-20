@@ -244,6 +244,27 @@
     "Business": "Uber",
     "Category": "Delivery"
 
+  },
+
+  {
+
+
+    "Displaytext": "UBER/LYFT",
+    "Textcolor": "White",
+    "Displaytext2": "",
+    "Business": "",
+    "Category": "Rideshare"
+
+  },
+  {
+
+
+    "Displaytext": "DELIVERY DRIVER",
+    "Textcolor": "Red",
+    "Displaytext2": "Brian",
+    "Business": "DoorDash",
+    "Category": "Delivery"
+
   }
 
 

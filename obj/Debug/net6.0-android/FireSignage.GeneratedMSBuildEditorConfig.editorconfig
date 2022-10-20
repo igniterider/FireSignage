@@ -75,6 +75,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.HelpPage
 build_metadata.AdditionalFiles.TargetPath = Views/HelpPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Views/HelpPage.xaml
 
+[/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/LoginFlow/RegistrationPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.LoginFlow.RegistrationPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/LoginFlow/RegistrationPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/LoginFlow/RegistrationPage.xaml
+
 [/Users/brianjohnson/Projects/FireSignage/FireSignage/Views/LoginFlow/TabbedLogin.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.LoginFlow.TabbedLogin.xaml

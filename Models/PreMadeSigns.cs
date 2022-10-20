@@ -20,7 +20,7 @@ namespace FireSignage.Models
         
         public string Textcolor2 { get; set; }
 
-
+        public bool IsFavorite { get; set; }
         
         public string Business { get; set; }
 

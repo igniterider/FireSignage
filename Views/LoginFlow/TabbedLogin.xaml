@@ -6,168 +6,91 @@
              xmlns:viewModel="clr-namespace:FireSignage.Viewmodels"
              xmlns:login="clr-namespace:FireSignage.Views.LoginFlow"
              xmlns:control="clr-namespace:FireSignage.Controls"
-             
              Title="Login"
-             >
-    <Grid>
-        <Frame>
-            <Frame.Background>
-        <!-- StartPoint defaults to (0,0) -->
-                <LinearGradientBrush>
-                    <GradientStop Color="#a6c0d4"
-                        />
-                    <GradientStop Color="#49687e"
-                        />
-                </LinearGradientBrush>
-            </Frame.Background>
+             BackgroundColor="#d9d9d9"
+             Shell.NavBarIsVisible="False" Shell.TabBarIsVisible="False">
+   
+       <VerticalStackLayout>
 
-        </Frame>
+        <Image HorizontalOptions="Center" Source="ilogo.png" Aspect="AspectFit" Margin="0,10"/>
+
         
-       
-            <VerticalStackLayout x:DataType="viewModel:LoginViewModel" >
-                <Image Source="ilogo.png" Margin="20"/>
+
+        <Frame BackgroundColor="#4D687E" HasShadow="True" >
+        <tabView:SfTabView x:Name="tabView" HeightRequest="400" Margin="10"
+                           Padding="10">
 
 
-                <control:CustomShadowFrame Margin="24,8" Padding="0" HeightRequest="300" BackgroundColor="White">
-                
 
-                    <tabView:SfTabView x:Name="tabView" Padding="0" >
-                    
-                        <tabView:SfTabItem TextColor="Red" Header="LOGIN">
-                            
-                            <tabView:SfTabItem.Content>
-                                <Grid VerticalOptions="Center">
-                                    <StackLayout HorizontalOptions="Center" 
-                                             VerticalOptions="Center">
-                                        <!--<login:SimpleEmailEntry Padding="0,24" />-->
-                                    <Entry
+            <tabView:SfTabView.Items>
+                <tabView:SfTabItem Header="LOGIN" TextColor="White">
+                    <tabView:SfTabItem.Content>
+                    <VerticalStackLayout Padding="5">
+                     <TableView Intent="Form" HorizontalOptions="Center"
+                                   VerticalOptions="CenterAndExpand">
+                        <TableRoot>
+                            <TableSection >
+                                <EntryCell Label="Login"
+                                           Placeholder="username" />
+                                <EntryCell Label="Password"
+                                           Placeholder="password" />
+                                
 
-                                        PlaceholderColor="White"
-                                        BackgroundColor="LightGray"
-                                        Placeholder="Email"
-                                        TextColor="White" Margin="0,0,0,16"/>
-                                        <!--  Entry to get password from user  -->
-                                        
-                                        <Entry  PlaceholderColor="White"
-                                        BackgroundColor="LightGray"
-                                        Text="Password"
-                                        TextColor="White" 
-                                        IsPassword="True"
-                                        
-                                        />
-                                        
-
-                                        <!--  Forgot password link  -->
-                                    <Label
-                                    x:Name="ForgotPasswordLabel"
-                                    Margin="0,16"
-                                    
-                                    FontSize="12"                        
-                                    HorizontalOptions="End"                        
-                                    Text="Forgot Password?"
-                                    />
-                                        
-
-                                        <!--  Login button  -->
-                                    <Button
-                                    HorizontalOptions="Center"
-                                    WidthRequest="245"
-                                    Margin="0,16"
-                                  
-                                    Text="LOGIN">
+                            </TableSection>
+                        </TableRoot>
 
 
-                                        <Button.Background>
-                                            <LinearGradientBrush EndPoint="1,0">
-                                                 <GradientStop Color="DarkRed"
-                                                    Offset="0.1" />
-                                                 <GradientStop Color="DarkOrange"
-                                                    Offset="1.0" />
+                        </TableView>
+                        <Button Text="LOGIN" Style="{StaticResource GradientButtonStyle}" Margin="0,10,0,0"
+                                FontSize="25"/>
+                    </VerticalStackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
 
-                                            </LinearGradientBrush>
 
-                                        </Button.Background>
 
-                                    </Button> 
+                <tabView:SfTabItem Header="REGISTER" TextColor="White">
+                    <tabView:SfTabItem.Content>
+                        <VerticalStackLayout>
+                        <TableView Intent="Form" HorizontalOptions="Center"
+                                   VerticalOptions="CenterAndExpand">
+                        <TableRoot>
+                            <TableSection>
+                                <EntryCell Label="First Name"
+                                           Placeholder="firstname" />
 
-                                    </StackLayout>
-                                </Grid>
-                            </tabView:SfTabItem.Content>
-                        </tabView:SfTabItem>
+                                <EntryCell Label="Last Name"
+                                           Placeholder="lastname" />
 
-                    <!--2nd Tab-->
+                                <EntryCell Label="License Plate #"
+                                           Placeholder="plate #" />
 
-                        <tabView:SfTabItem  Header="REGISTER" TextColor="DarkOrange">
-                            <!--<tabView:SfTabItem.BindingContext>
-                                <viewModel:SignUpPageViewModel/>
-                            </tabView:SfTabItem.BindingContext>-->
-                            <tabView:SfTabItem.Content>
-                                <Grid VerticalOptions="Center">
-                                    <StackLayout HorizontalOptions="Center" 
-                                             VerticalOptions="Center">
-                                    <!--  Entry to get username from user  -->
-                                    
-                                        <Entry
-                                        x:Name="NameEntry"
-                                        Placeholder="Name"
-                                        PlaceholderColor="LightGray"
-                                        Margin="0,0,0,16"
-                                        Text="Name"
-                                        TextColor="LightGray" />
-                                   
+                                <EntryCell Label="Username"
+                                           Placeholder="username" />
+                                <EntryCell Label="Password"
+                                           Placeholder="password" />
+                            </TableSection>
+                        </TableRoot>
 
-                                    <!--  Entry to get email ID from user  -->
-                                    <!--<login:SimpleEmailEntry />-->
 
-                                    <!--  Entry to get password from user  -->
-                                   
+                        </TableView>
 
-                                        <Entry
-                                        x:Name="SignupPasswordEntry"
-                                        IsPassword="true"
-                                        Placeholder="Password"
-                                        PlaceholderColor="Gray"
-                                        
-                                        Text="Password"
-                                        TextColor="Gray" />
-                                   
-                                    <!--  Entry to get the confirm password from user  -->
-                                    <Frame x:DataType="viewModel:LoginPageViewModel">
-                                        <Entry
-                                        x:Name="ConfirmPasswordEntry"
-                                        IsPassword="true"
-                                        Placeholder="Confirm Password"
-                                        PlaceholderColor="Gray"
-                                        
-                                        Text="Password"
-                                        TextColor="Gray" />
-                                    </Frame>
+                         <Button Text="Register" Style="{StaticResource GradientButtonStyle}" FontSize="25"
+                                 Padding="5" Margin="0,10,0,0"/>
 
-                                    <!--  Sign-up button  -->
-                                    <Button
-                                    HorizontalOptions="Center"
-                                    
-                                    CornerRadius="20"
-                                    WidthRequest="245"
-                                    
-                                    Text="SIGN UP" />
-                                </StackLayout>
-                                </Grid>
-                            </tabView:SfTabItem.Content>
-                        </tabView:SfTabItem>
-                    </tabView:SfTabView>
-                </control:CustomShadowFrame>
-            <Label 
-                       Margin="0,20,0,0"
-                        
-                        HorizontalTextAlignment="Center"
-                        
-                        Text="Or create an account using social media"
-                        TextColor="Gray" />
 
-            <Button Text="FACEBOOK" TextColor="White" FontSize="18" Margin="10"/>
+                        </VerticalStackLayout>
+                    </tabView:SfTabItem.Content>
+                </tabView:SfTabItem>
 
-            </VerticalStackLayout>
-       
-    </Grid>
+               
+            </tabView:SfTabView.Items>
+        </tabView:SfTabView>
+
+    </Frame>
+
+        <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
+               FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
+
+  </VerticalStackLayout>
 </ContentPage>

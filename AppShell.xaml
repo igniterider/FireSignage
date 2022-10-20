@@ -35,10 +35,15 @@
 
 
 
-         <ShellContent
+        <ShellContent
             Title="Settings"
             ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
             Route="SettingsPage" />
+
+        <ShellContent
+            Title="Login"
+            ContentTemplate="{DataTemplate views:LoginFlow.TabbedLogin}"
+            Route="Login" />
 
      </FlyoutItem>
 
