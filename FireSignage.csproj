@@ -122,9 +122,6 @@
 	  <MauiXaml Update="Controls\FlyoutHeader.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LoginFlow\RegistrationPage.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\errorAndEmpty.json" />
