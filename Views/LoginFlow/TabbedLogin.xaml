@@ -9,7 +9,11 @@
              Title="Login"
              BackgroundColor="#d9d9d9"
              Shell.NavBarIsVisible="False" Shell.TabBarIsVisible="False">
-   
+
+    <ContentPage.BindingContext>
+        <viewModel:LoginPageViewModel />
+    </ContentPage.BindingContext>
+
        <VerticalStackLayout>
 
         <Image HorizontalOptions="Center" Source="ilogo.png" Aspect="AspectFit" Margin="0,10"/>
@@ -30,10 +34,13 @@
                                    VerticalOptions="CenterAndExpand">
                         <TableRoot>
                             <TableSection >
-                                <EntryCell Label="Login"
-                                           Placeholder="username" />
+                                <EntryCell Label="Email"
+                                           Placeholder="email"
+                                           Text="{Binding Email}"/>
                                 <EntryCell Label="Password"
-                                           Placeholder="password" />
+                                           Placeholder="password"
+                                           Text="{Binding Password}"
+                                           />
                                 
 
                             </TableSection>
@@ -42,7 +49,7 @@
 
                         </TableView>
                         <Button Text="LOGIN" Style="{StaticResource GradientButtonStyle}" Margin="0,10,0,0"
-                                FontSize="25"/>
+                                FontSize="25" Command="{Binding LoginCommand}"/>
                     </VerticalStackLayout>
                     </tabView:SfTabItem.Content>
                 </tabView:SfTabItem>
@@ -57,18 +64,25 @@
                         <TableRoot>
                             <TableSection>
                                 <EntryCell Label="First Name"
-                                           Placeholder="firstname" />
+                                           Placeholder="firstname"
+                                           x:Name="fname"
+                                           Text="{Binding FName}"/>
 
                                 <EntryCell Label="Last Name"
-                                           Placeholder="lastname" />
+                                           Placeholder="lastname"
+                                           Text="{Binding LName}"/>
 
                                 <EntryCell Label="License Plate #"
-                                           Placeholder="plate #" />
+                                           Placeholder="plate #"
+                                           x:Name="licplate"
+                                           Text="{Binding LicPlate}"/>
 
-                                <EntryCell Label="Username"
-                                           Placeholder="username" />
+                                <EntryCell Label="Email"
+                                           Placeholder="email"
+                                           Text="{Binding Email}"/>
                                 <EntryCell Label="Password"
-                                           Placeholder="password" />
+                                           Placeholder="password"
+                                           Text="{Binding Password}"/>
                             </TableSection>
                         </TableRoot>
 
@@ -76,7 +90,8 @@
                         </TableView>
 
                          <Button Text="Register" Style="{StaticResource GradientButtonStyle}" FontSize="25"
-                                 Padding="5" Margin="0,10,0,0"/>
+                                 Padding="5" Margin="0,10,0,0" WidthRequest="245"
+                                 Command="{Binding SignUpCommand}"/>
 
 
                         </VerticalStackLayout>

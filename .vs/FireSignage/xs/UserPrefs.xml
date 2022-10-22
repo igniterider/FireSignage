@@ -8,27 +8,25 @@
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Views/LoginFlow/TabbedLogin.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Settings/UserSettings.xaml">
     <Files>
-      <File FileName="Models/User.cs" Line="8" Column="23" />
-      <File FileName="Models/PersonalSigns.cs" Line="37" Column="18" />
-      <File FileName="Views/LoginFlow/TabbedLogin.xaml" Line="6" Column="8" />
-      <File FileName="AppShell.xaml" Line="23" Column="48" />
-      <File FileName="Controls/FlyoutHeader.xaml" Line="1" Column="1" />
-      <File FileName="FireSignage.csproj" Line="44" Column="74" />
+      <File FileName="Models/User.cs" />
+      <File FileName="Views/LoginFlow/TabbedLogin.xaml" Line="73" Column="56" />
+      <File FileName="Viewmodels/LoginPageViewModel.cs" Line="240" Column="13" />
+      <File FileName="MainPage.xaml" Line="23" Column="29" />
+      <File FileName="../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Projects/SignDisplays2/SignDisplays/ViewModels/ControllerViewModel.cs" Line="22" Column="39" />
+      <File FileName="Views/Settings/UserSettings.xaml" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Controls" expanded="True" />
-              <Node name="Models" expanded="True" />
-              <Node name="Viewmodels" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="LoginFlow" expanded="True" />
                 <Node name="Settings" expanded="True" />
               </Node>
+              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

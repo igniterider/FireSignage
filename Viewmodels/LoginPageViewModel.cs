@@ -4,6 +4,8 @@ using Realms.Sync;
 using FireSignage.Views;
 using FireSignage.Viewmodels;
 using Android.Runtime;
+using User = FireSignage.Models.User;
+using Realms;
 
 namespace FireSignage.Viewmodels
 {
@@ -11,8 +13,12 @@ namespace FireSignage.Viewmodels
     public class LoginPageViewModel : LoginViewModel
     {
         #region Fields
+        private Realm controllerRealm;
 
         private string password;
+        private string fname;
+        private string lname;
+        private string licplate;
 
         #endregion
 
@@ -53,6 +59,63 @@ namespace FireSignage.Viewmodels
                 this.password = value;
                 this.OnPropertyChanged();
             }
+        }
+
+        public string FName
+        {
+            get
+            {
+                return this.fname;
+            }
+
+            set
+            {
+                if (this.fname == value)
+                {
+                    return;
+                }
+                this.fname = value;
+                this.OnPropertyChanged();
+            }
+
+        }
+
+        public string LName
+        {
+            get
+            {
+                return this.lname;
+            }
+
+            set
+            {
+                if (this.lname == value)
+                {
+                    return;
+                }
+                this.lname = value;
+                this.OnPropertyChanged();
+            }
+
+        }
+
+        public string LicPlate
+        {
+            get
+            {
+                return this.licplate;
+            }
+
+            set
+            {
+                if (this.licplate == value)
+                {
+                    return;
+                }
+                this.licplate = value;
+                this.OnPropertyChanged();
+            }
+
         }
 
         #endregion
@@ -164,15 +227,18 @@ namespace FireSignage.Viewmodels
             {
                 await App.realmApp.EmailPasswordAuth.RegisterUserAsync(Email, password);
 
+
                 DoRegisterLogin();
 
 
-                
             }
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Registration Failed", ex.Message, "OK");
             }
+
+            
+            AddUserInfo();
         }
 
         private async void DoRegisterLogin()
@@ -185,8 +251,7 @@ namespace FireSignage.Viewmodels
 
 
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
-
-
+                    
 
                 }
                 else
@@ -199,7 +264,7 @@ namespace FireSignage.Viewmodels
                 await App.Current.MainPage.DisplayAlert("Login Failed", ex.Message, "OK");
             }
 
-            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            
 
             return;
 
@@ -211,7 +276,45 @@ namespace FireSignage.Viewmodels
             //throw new NotImplementedException();
         }
 
-        
+        private async void AddUserInfo()
+        {
+            
+
+            var userinfo = controllerRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            controllerRealm.Write(() =>
+            {
+                userinfo.Id = App.realmApp.CurrentUser.Id;
+                userinfo.OwnerId = App.realmApp.CurrentUser.Id;
+                userinfo.Firstname = fname;
+                userinfo.Lastname = lname; 
+                userinfo.Licenseplate = licplate; 
+                userinfo.Email = App.realmApp.CurrentUser.Profile.Email;
+                userinfo.Password = password;
+
+                
+            });
+
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+        }
+
+        //private void ChangeName(object obj)
+        //{
+        //    CheckLogin();
+        //    var allPages = controllerRealm.All<DisplayChanges>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+        //    controllerRealm.Write(() =>
+        //    {
+
+
+        //        allPages.Id = App.realmApp.CurrentUser.Id;
+        //        allPages.OwnerId = App.realmApp.CurrentUser.Id;
+        //        allPages.Pagename = pagename;
+        //        allPages.Textcolor = "White";
+                
+
+        //    });
+
+
+        //}
 
 
     }
