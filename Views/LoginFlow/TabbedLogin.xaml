@@ -16,19 +16,16 @@
 
        <VerticalStackLayout>
 
-        <Image HorizontalOptions="Center" Source="ilogo.png" Aspect="AspectFit" Margin="0,10"/>
+        <Image HorizontalOptions="Center" Source="ilogo.png" Aspect="AspectFit" Margin="0,20"/>
 
         
 
-        <Frame BackgroundColor="#4D687E" HasShadow="True" >
-        <tabView:SfTabView x:Name="tabView" HeightRequest="400" Margin="10"
-                           Padding="10">
+        <Frame BackgroundColor="#4D687E" HasShadow="True" HorizontalOptions="Center" VerticalOptions="Center">
+        
 
 
 
-            <tabView:SfTabView.Items>
-                <tabView:SfTabItem Header="LOGIN" TextColor="White">
-                    <tabView:SfTabItem.Content>
+            
                     <VerticalStackLayout Padding="5">
                      <TableView Intent="Form" HorizontalOptions="Center"
                                    VerticalOptions="CenterAndExpand">
@@ -48,59 +45,25 @@
 
 
                         </TableView>
-                        <Button Text="LOGIN" Style="{StaticResource GradientButtonStyle}" Margin="0,10,0,0"
-                                FontSize="25" Command="{Binding LoginCommand}"/>
-                    </VerticalStackLayout>
-                    </tabView:SfTabItem.Content>
-                </tabView:SfTabItem>
 
+                <Grid Margin="0,20" ColumnDefinitions="*,*">
 
+                        <Button Text="LOGIN" Style="{StaticResource GradientButtonStyle}" 
+                                FontSize="25" Command="{Binding LoginCommand}" Grid.Column="0" />
+                   
+                   
+                       
+                       
 
-                <tabView:SfTabItem Header="REGISTER" TextColor="White">
-                    <tabView:SfTabItem.Content>
-                        <VerticalStackLayout>
-                        <TableView Intent="Form" HorizontalOptions="Center"
-                                   VerticalOptions="CenterAndExpand">
-                        <TableRoot>
-                            <TableSection>
-                                <EntryCell Label="First Name"
-                                           Placeholder="firstname"
-                                           x:Name="fname"
-                                           Text="{Binding FName}"/>
-
-                                <EntryCell Label="Last Name"
-                                           Placeholder="lastname"
-                                           Text="{Binding LName}"/>
-
-                                <EntryCell Label="License Plate #"
-                                           Placeholder="plate #"
-                                           x:Name="licplate"
-                                           Text="{Binding LicPlate}"/>
-
-                                <EntryCell Label="Email"
-                                           Placeholder="email"
-                                           Text="{Binding Email}"/>
-                                <EntryCell Label="Password"
-                                           Placeholder="password"
-                                           Text="{Binding Password}"/>
-                            </TableSection>
-                        </TableRoot>
-
-
-                        </TableView>
-
-                         <Button Text="Register" Style="{StaticResource GradientButtonStyle}" FontSize="25"
-                                 Padding="5" Margin="0,10,0,0" WidthRequest="245"
+                         <Button Text="REGISTER" Style="{StaticResource GradientButtonStyle}" FontSize="25"
+                                 Grid.Column="1"
                                  Command="{Binding SignUpCommand}"/>
 
 
-                        </VerticalStackLayout>
-                    </tabView:SfTabItem.Content>
-                </tabView:SfTabItem>
 
-               
-            </tabView:SfTabView.Items>
-        </tabView:SfTabView>
+               </Grid>
+                        </VerticalStackLayout>
+                   
 
     </Frame>
 
