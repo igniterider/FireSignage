@@ -35,6 +35,12 @@ namespace FireSignage.Models
 
         [MapTo("personalsigns")]
         public IList<PersonalSigns> Personalsigns { get; }
+
+        [MapTo("userdeviceinfo")]
+        public IList<UserDeviceInfo> Userdeviceinfo { get; }
+
     }
+
+
 
 }

@@ -422,6 +422,12 @@
             </summary>
             <param name="obj">The Object</param>
         </member>
+        <member name="F:FireSignage.Viewmodels.UserSettingsViewModel.addUserInfoCommand">
+            <summary>The backing field for <see cref="P:FireSignage.Viewmodels.UserSettingsViewModel.AddUserInfoCommand"/>.</summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.UserSettingsViewModel.AddUserInfoCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FireSignage.Viewmodels.UserSettingsViewModel.AddUserInfo"/>.</summary>
+        </member>
         <member name="T:FireSignage.ViewModels.SomethingWentWrongPageViewModel">
             <summary>
             ViewModel for something went wrong page.

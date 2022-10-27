@@ -34,11 +34,20 @@
             Route="NewSignTesting" />
 
 
-
-        <ShellContent
-            Title="Settings"
+        <Tab Title="Settings">
+            <ShellContent
+            Title="App Settings"
             ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
             Route="SettingsPage" />
+
+            <ShellContent
+            Title="UserSettings"
+            ContentTemplate="{DataTemplate views:Settings.UserSettings}"
+            Route="UserSettings" />
+
+
+        </Tab>
+        
 
         <ShellContent
             Title="Login"

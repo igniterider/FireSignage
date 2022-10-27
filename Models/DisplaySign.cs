@@ -9,22 +9,27 @@ namespace FireSignage.Models
 
 	public class DisplaySign : RealmObject
     {
+        [MapTo("_id")]
+        [PrimaryKey]
+        [Required]
+        public string Id { get; set; }
 
-        [MapTo("owner_id")]
-        public string OwnerId { get; set; }
+
+        [MapTo("_backgroundcolor")]
+        public string Backgroundcolor { get; set; }
 
 
-        [MapTo("_devicename")]
-        public string DeviceName { get; set; }
-
-        [MapTo("_backgroundcolors")]
-        public string Backgroundcolors { get; set; }
-
-        [MapTo("_backgroundcolors2")]
-        public string Backgroundcolors2 { get; set; }
+        [MapTo("_backgroundcolor2")]
+        public string Backgroundcolor2 { get; set; }
 
         [MapTo("_displaytext")]
         public string Displaytext { get; set; }
+
+        [MapTo("_pagename")]
+        public string Pagename { get; set; }
+
+        [MapTo("_ridername")]
+        public string Ridername { get; set; }
 
         [MapTo("_textcolor")]
         public string Textcolor { get; set; }
@@ -32,12 +37,12 @@ namespace FireSignage.Models
         [MapTo("_textcolor2")]
         public string Textcolor2 { get; set; }
 
-
-        [MapTo("_displaytext2")]
-        public string Displaytext2 { get; set; }
-
-     
-
+        [MapTo("owner_id")]
+        [Required]
+        public string OwnerId { get; set; }
     }
+
+
 }
+
 

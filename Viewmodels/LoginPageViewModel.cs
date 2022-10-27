@@ -4,8 +4,8 @@ using Realms.Sync;
 using FireSignage.Views;
 using FireSignage.Viewmodels;
 using Android.Runtime;
-using User = FireSignage.Models.User;
 using Realms;
+using FireSignage.Views.Settings;
 
 namespace FireSignage.Viewmodels
 {
@@ -13,8 +13,8 @@ namespace FireSignage.Viewmodels
     public class LoginPageViewModel : LoginViewModel
     {
         #region Fields
+        Realm realm;
         
-
         private string password;
         
 
@@ -194,7 +194,7 @@ namespace FireSignage.Viewmodels
 
 
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
-                    
+                    await Shell.Current.GoToAsync($"//{nameof(UserSettings)}");
 
                 }
                 else

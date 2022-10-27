@@ -65,7 +65,7 @@
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.Signal},
                                         Color=Green,
                                         Size=15}"
-            FontSize="{OnPlatform Android=10}"/>
+            FontSize="{OnPlatform Android=10, iOS=12}"/>
 
     
 
@@ -74,7 +74,7 @@
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
                                         Color=Black,
                                         Size=15}"
-            FontSize="{OnPlatform Android=10}"/>
+            FontSize="{OnPlatform Android=10, iOS=12}"/>
 
    
 
@@ -82,7 +82,7 @@
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
                                         Color=Black,
                                         Size=15}"
-            FontSize="{OnPlatform Android=10}"/>
+            FontSize="{OnPlatform Android=10, iOS=12}"/>
 
     
 
