@@ -1,6 +1,8 @@
 ﻿using System;
 using CommunityToolkit.Mvvm.Input;
 using Realms;
+using CommunityToolkit.Maui;
+
 using Realms.Sync;
 using User = FireSignage.Models.User;
 
@@ -24,6 +26,27 @@ namespace FireSignage.Viewmodels
         private string model;
         private string name;
         private string screen;
+
+
+
+        public ObservableCollection<User> _getUsers = new ObservableCollection<User>();
+
+        public ObservableCollection<User> GetUsers
+        {
+
+            get
+            {
+                return _getUsers;
+            }
+            set
+            {
+                _getUsers = value;
+                OnPropertyChanged("_getUsers");
+
+            }
+        }
+
+        
 
 
         public UserSettingsViewModel()
@@ -73,34 +96,41 @@ namespace FireSignage.Viewmodels
 
 
                 var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-                Console.WriteLine("realmappID = ", App.realmApp.CurrentUser.Id.ToString());
-                Console.WriteLine("realm user = ", App.realmApp.CurrentUser.ToString());
-                Console.WriteLine(fname);
-                Console.WriteLine(lname);
+                _getUsers = new ObservableCollection<User>(userRealm.All<User>().Where(t => t.Id == App.realmApp.CurrentUser.Id));
 
-                var device = new UserDeviceInfo()
-                {
-                    DeviceManuf = manu,
-                    Devicename = name,
-                    DeviceOS = OS,
-                    Devicetype = idiom,
-                    Devicescreensize = screen,
-                    OwnerId = partid
+                FName = userinfo.Firstname;
+                LName = userinfo.Lastname;
+                Console.WriteLine(FName);
+                Console.WriteLine(userinfo.Firstname);
+
+                //Console.WriteLine("realmappID = ", App.realmApp.CurrentUser.Id.ToString());
+                //Console.WriteLine("realm user = ", App.realmApp.CurrentUser.ToString());
+                //Console.WriteLine(fname);
+                //Console.WriteLine(lname);
+
+                //var device = new UserDeviceInfo()
+                //{
+                //    DeviceManuf = manu,
+                //    Devicename = name,
+                //    DeviceOS = OS,
+                //    Devicetype = idiom,
+                //    Devicescreensize = screen,
+                //    OwnerId = partid
 
 
 
-                };
+                //};
 
-                userRealm.Write(() =>
-                {
-                    
-                    userinfo.Firstname = fname;
-                    userinfo.Lastname = lname;
-                    userinfo.Licenseplate = licplate;
-                    
-                    userinfo.Userdeviceinfo.Add(device);
+                //userRealm.Write(() =>
+                //{
 
-                });
+                //    userinfo.Firstname = fname;
+                //    userinfo.Lastname = lname;
+                //    userinfo.Licenseplate = licplate;
+
+                //    userinfo.Userdeviceinfo.Add(device);
+
+                //});
 
             }
 
@@ -131,6 +161,8 @@ namespace FireSignage.Viewmodels
             Console.WriteLine(model);
             Console.WriteLine(name);
             Console.WriteLine(screen);
+
+            
 
         }
         

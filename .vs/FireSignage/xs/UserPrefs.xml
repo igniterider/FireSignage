@@ -1,27 +1,21 @@
 ﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/DisplaySign.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Views/Settings/UserSettings.xaml">
     <Files>
-      <File FileName="Models/User.cs" Line="15" Column="39" />
-      <File FileName="Models/DisplaySign.cs" Line="42" Column="42" />
-      <File FileName="Viewmodels/UserSettingsViewModel.cs" Line="85" Column="18" />
+      <File FileName="Viewmodels/UserSettingsViewModel.cs" Line="101" Column="44" />
+      <File FileName="Views/Settings/UserSettings.xaml" Line="50" Column="41" />
+      <File FileName="Models/User.cs" Line="1" Column="1" />
+      <File FileName="../../../Library/Mobile Documents/com~apple~CloudDocs/Documents/Projects/SignDisplays2/SignDisplays/ViewModels/DashViewmodel.cs" Line="8" Column="1" />
+      <File FileName="MainPage.xaml" Line="23" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Models" expanded="True">
-                <Node name="DisplaySign.cs" selected="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Resources" expanded="True">
+                <Node name="Splash" expanded="True" />
               </Node>
-              <Node name="Platforms" expanded="True">
-                <Node name="iOS" expanded="True" />
-              </Node>
-              <Node name="Viewmodels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="LoginFlow" expanded="True" />
-                <Node name="Settings" expanded="True" />
-              </Node>
-              <Node name="App.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

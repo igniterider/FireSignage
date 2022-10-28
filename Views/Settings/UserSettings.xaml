@@ -6,8 +6,18 @@
              xmlns:tabView="http://schemas.syncfusion.com/maui"
              xmlns:viewModel="clr-namespace:FireSignage.Viewmodels"
              xmlns:controls="clr-namespace:FireSignage.Controls"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Shell.TabBarIsVisible="True">
 
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding AddUserInfoCommand}" />
+
+         
+
+    </ContentPage.Behaviors>
 
      <ContentPage.BindingContext>
         <viewModel:UserSettingsViewModel />
@@ -16,10 +26,10 @@
     <VerticalStackLayout Margin="10">
         <Label 
             Text="Please fill out all required information"
-            Padding="20"/>
+            Padding="20" HorizontalTextAlignment="Center" HorizontalOptions="Center" Margin="0,10,0,5"/>
 
-
-        <Frame BackgroundColor="#4D687E" HasShadow="True" HeightRequest="800" >
+        
+        <Border BackgroundColor="#4D687E" HeightRequest="800" >
         <tabView:SfTabView x:Name="tabView" Margin="10"
                            Padding="10">
 
@@ -33,14 +43,17 @@
                 <tabView:SfTabItem Header="PERSONAL INFO" TextColor="White" HeightRequest="500">
                     <tabView:SfTabItem.Content>
                         <VerticalStackLayout>
-                        
+                                <!--changing binding from FName, LName etc...-->
+                                <Label Text="{Binding FName}" BackgroundColor="Red"/>
+                                <Label Text="{Binding LName}" BackgroundColor="Green"/>
+
                                 <Entry  
-                                           Placeholder="First Name"
-                                           
+                                           Placeholder="{Binding FName}"
+                                             
                                            Text="{Binding FName}"/>
 
                                 <Entry 
-                                           Placeholder="lastname"
+                                           Placeholder="Last Name"
                                            Text="{Binding LName}"/>
 
                                 <Entry 
@@ -79,7 +92,7 @@
             </tabView:SfTabView.Items>
         </tabView:SfTabView>
 
-    </Frame>
+    </Border>
 
         <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
                FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
