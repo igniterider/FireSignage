@@ -17,7 +17,7 @@ namespace FireSignage.Viewmodels
         private string lname;
         private string licplate;
         private string email;
-
+        private string devicename;
 
         private string idiom;
         private string OS;
@@ -28,31 +28,10 @@ namespace FireSignage.Viewmodels
         private string screen;
 
 
-
-        public ObservableCollection<User> _getUsers = new ObservableCollection<User>();
-
-        public ObservableCollection<User> GetUsers
-        {
-
-            get
-            {
-                return _getUsers;
-            }
-            set
-            {
-                _getUsers = value;
-                OnPropertyChanged("_getUsers");
-
-            }
-        }
-
-        
-
-
         public UserSettingsViewModel()
         {
             Title = "User Settings";
-            GetDeviceInfo();
+            CheckDeviceInfo();
 
         }
 
@@ -96,55 +75,70 @@ namespace FireSignage.Viewmodels
 
 
                 var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-                _getUsers = new ObservableCollection<User>(userRealm.All<User>().Where(t => t.Id == App.realmApp.CurrentUser.Id));
 
-                FName = userinfo.Firstname;
-                LName = userinfo.Lastname;
-                Console.WriteLine(FName);
-                Console.WriteLine(userinfo.Firstname);
+                
+               
 
-                //Console.WriteLine("realmappID = ", App.realmApp.CurrentUser.Id.ToString());
-                //Console.WriteLine("realm user = ", App.realmApp.CurrentUser.ToString());
-                //Console.WriteLine(fname);
-                //Console.WriteLine(lname);
+               
 
-                //var device = new UserDeviceInfo()
-                //{
-                //    DeviceManuf = manu,
-                //    Devicename = name,
-                //    DeviceOS = OS,
-                //    Devicetype = idiom,
-                //    Devicescreensize = screen,
-                //    OwnerId = partid
+                userRealm.Write(() =>
+                {
 
+                    userinfo.Firstname = fname;
+                    userinfo.Lastname = lname;
+                    userinfo.Licenseplate = licplate;
 
+                    //    userinfo.Userdeviceinfo.Add(device);
 
-                //};
+                    });
 
-                //userRealm.Write(() =>
-                //{
-
-                //    userinfo.Firstname = fname;
-                //    userinfo.Lastname = lname;
-                //    userinfo.Licenseplate = licplate;
-
-                //    userinfo.Userdeviceinfo.Add(device);
-
-                //});
-
-            }
+                }
 
             else 
             {
-                
-            }
+                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+                userRealm.Write(() =>
+                {
 
+                    userinfo.Firstname = fname;
+                    userinfo.Lastname = lname;
+                    userinfo.Licenseplate = licplate;
+
+                    //    userinfo.Userdeviceinfo.Add(device);
+
+                });
+
+            }
 
             return;
         }
 
 
-        private void GetDeviceInfo()
+        [RelayCommand]
+        async Task GetUserInfo()
+        {
+            
+                var user = App.realmApp.CurrentUser;
+                var partid = App.realmApp.CurrentUser.Id;
+                var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+                userRealm = await Realm.GetInstanceAsync(config);
+                await userRealm.SyncSession.WaitForDownloadAsync();
+
+
+                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+
+                FName = userinfo.Firstname;
+                LName = userinfo.Lastname;
+                LicPlate = userinfo.Licenseplate;
+                Email = userinfo.Email;
+                
+                
+            
+
+        }
+
+
+        private async void GetDeviceInfo()
         {
             idiom = DeviceInfo.Idiom.ToString();
             OS = DeviceInfo.Platform.ToString();
@@ -153,19 +147,66 @@ namespace FireSignage.Viewmodels
             model = DeviceInfo.Model;
             name = DeviceInfo.Name;
             screen = DeviceDisplay.MainDisplayInfo.ToString();
+            await WriteDeviceInfo();
+        }
 
-            Console.WriteLine(idiom);
-            Console.WriteLine(OS);
-            Console.WriteLine(osVersion);
-            Console.WriteLine(manu);
-            Console.WriteLine(model);
-            Console.WriteLine(name);
-            Console.WriteLine(screen);
 
-            
+
+        private async Task WriteDeviceInfo()
+        {
+            var device = new UserDeviceInfo()
+            {
+                DeviceManuf = manu,
+                Devicename = name,
+                DeviceOS = OS,
+                Devicetype = idiom,
+                Devicescreensize = screen,
+                OwnerId = App.realmApp.CurrentUser.Id
+
+
+
+            };
+
+            var user = App.realmApp.CurrentUser;
+            var partid = App.realmApp.CurrentUser.Id;
+            var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+            userRealm = await Realm.GetInstanceAsync(config);
+            await userRealm.SyncSession.WaitForDownloadAsync();
+
+
+            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+
+            userRealm.Write(() =>
+            {
+                userinfo.Userdeviceinfo.Add(device);
+
+            });
 
         }
-        
+
+
+        private void CheckDeviceInfo()
+        {
+            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
+
+            if (getdevicename == null)
+            {
+                GetDeviceInfo();
+
+
+            }
+
+            else if (getdevicename != null)
+            {
+
+                devicename = getdevicename.ToString();
+
+            }
+
+
+        }
+
 
         public event EventHandler<EventArgs> OperationCompeleted;
 
