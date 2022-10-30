@@ -5,6 +5,7 @@ using CommunityToolkit.Maui;
 
 using Realms.Sync;
 using User = FireSignage.Models.User;
+using System.Linq;
 
 namespace FireSignage.Viewmodels
 {
@@ -17,8 +18,6 @@ namespace FireSignage.Viewmodels
         private string lname;
         private string licplate;
         private string email;
-        private string devicename;
-
         private string idiom;
         private string OS;
         private string osVersion;
@@ -27,6 +26,7 @@ namespace FireSignage.Viewmodels
         private string name;
         private string screen;
 
+        public List<UserDeviceInfo> userDeviceList = new List<UserDeviceInfo>();
 
         public UserSettingsViewModel()
         {
@@ -182,6 +182,7 @@ namespace FireSignage.Viewmodels
 
             });
 
+            CheckDeviceInfo();
         }
 
 
@@ -199,8 +200,8 @@ namespace FireSignage.Viewmodels
 
             else if (getdevicename != null)
             {
-
-                devicename = getdevicename.ToString();
+               userDeviceList = getdevicename.ToList();
+                
 
             }
 

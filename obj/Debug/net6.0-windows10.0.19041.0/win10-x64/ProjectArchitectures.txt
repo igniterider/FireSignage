@@ -1,1 +1,0 @@
-C:\Users\bkjoh\source\repos\firesignage\FireSignage.csproj;x64
