@@ -38,7 +38,7 @@
 
                 <!--  Header label for account setting  -->
                 <Label
-                    Margin="16,64,0,16"
+                    Margin="16,34,0,16"
                     FontFamily="Montserrat-SemiBold"
                     FontSize="14"
                     HorizontalOptions="FillAndExpand"
@@ -154,7 +154,7 @@
 
                 <!--  Header lable for notifications  -->
                 <Label
-                    Margin="16,40,0,16"
+                    Margin="16,10,0,16"
                     FontFamily="Montserrat-SemiBold"
                     FontSize="14"
                     HorizontalOptions="FillAndExpand"
@@ -194,6 +194,8 @@
                         Grid.Column="2"
                         Margin="8,0"
                         
+                         OnColor="Green"
+                         ThumbColor="{StaticResource Primary}"
                         HeightRequest="28"
                         >
                         <!--<VisualStateManager.VisualStateGroups>

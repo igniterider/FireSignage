@@ -131,8 +131,8 @@ namespace FireSignage.Viewmodels
                 LName = userinfo.Lastname;
                 LicPlate = userinfo.Licenseplate;
                 Email = userinfo.Email;
-                
-                
+
+                CheckDeviceInfo();
             
 
         }
@@ -200,7 +200,11 @@ namespace FireSignage.Viewmodels
 
             else if (getdevicename != null)
             {
-               userDeviceList = getdevicename.ToList();
+                foreach(var i in getdevicename)
+                {
+                   userDeviceList.Add(i);
+                }
+               
                 
 
             }
