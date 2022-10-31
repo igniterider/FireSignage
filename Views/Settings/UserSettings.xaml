@@ -56,14 +56,14 @@
                             <ViewCell >
                                 <VerticalStackLayout>
                                 <Label Text="" />
-                                <ListView>
+                                <ListView ItemsSource="{Binding userDeviceList}">
                                     <ListView.ItemTemplate>
                                         <DataTemplate >
                                             <Grid Padding="10">
 
                                                 <VerticalStackLayout Padding="10">
                 
-                                                     <Label VerticalOptions="Center" FontSize="30" Text="DeviceName" TextColor="White" HorizontalTextAlignment="Center"/>
+                                                     <Label VerticalOptions="Center" FontSize="30" Text="{Binding Devicename}" TextColor="White" HorizontalTextAlignment="Center"/>
 
                                                 </VerticalStackLayout>
 
