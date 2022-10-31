@@ -1,20 +1,14 @@
-﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+﻿<Properties StartupConfiguration="{A6C1CB7D-F45E-4C3F-9B4B-23C01D06B52A}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
   <MultiItemStartupConfigurations />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Viewmodels/UserSettingsViewModel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Viewmodels/LoginPageViewModel.cs">
     <Files>
-      <File FileName="Viewmodels/UserSettingsViewModel.cs" Line="206" Column="1" />
-      <File FileName="Views/Settings/UserSettings.xaml" Line="66" Column="116" />
-      <File FileName="Models/User.cs" Line="1" Column="1" />
-      <File FileName="Models/UserDeviceInfo.cs" Line="1" Column="1" />
-      <File FileName="Views/LoginFlow/TabbedLogin.xaml" Line="1" Column="1" />
+      <File FileName="Views/Settings/UserSettings.xaml" Line="1" Column="1" />
+      <File FileName="Models/User.cs" />
+      <File FileName="Models/UserDeviceInfo.cs" />
+      <File FileName="Views/LoginFlow/TabbedLogin.xaml" />
       <File FileName="Viewmodels/LoginPageViewModel.cs" Line="1" Column="1" />
     </Files>
     <Pads>
@@ -22,8 +16,9 @@
         <State name="__root__">
           <Node name="FireSignage" expanded="True">
             <Node name="FireSignage" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="Viewmodels" expanded="True" />
+              <Node name="Viewmodels" expanded="True">
+                <Node name="LoginPageViewModel.cs" selected="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="LoginFlow" expanded="True" />
                 <Node name="Settings" expanded="True" />
@@ -34,4 +29,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.FireSignage PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.4F47FCFE-84BC-4D7A-9C3C-F9F38358EE5D" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="13.0.99.81" />
 </Properties>
