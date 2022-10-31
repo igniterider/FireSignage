@@ -31,7 +31,7 @@ namespace FireSignage.Viewmodels
         public UserSettingsViewModel()
         {
             Title = "User Settings";
-            CheckDeviceInfo();
+            GetDeviceInfo();
 
         }
 
@@ -88,7 +88,7 @@ namespace FireSignage.Viewmodels
                     userinfo.Lastname = lname;
                     userinfo.Licenseplate = licplate;
 
-                    //    userinfo.Userdeviceinfo.Add(device);
+                    
 
                     });
 
@@ -104,7 +104,7 @@ namespace FireSignage.Viewmodels
                     userinfo.Lastname = lname;
                     userinfo.Licenseplate = licplate;
 
-                    //    userinfo.Userdeviceinfo.Add(device);
+                    
 
                 });
 
@@ -131,9 +131,26 @@ namespace FireSignage.Viewmodels
                 LName = userinfo.Lastname;
                 LicPlate = userinfo.Licenseplate;
                 Email = userinfo.Email;
-                
-                
-            
+
+               var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name).ToString();
+
+                if (getdevicename == null)
+                   {
+                    GetDeviceInfo();
+
+
+                   }
+
+                else if (getdevicename != null)
+                {
+                    foreach (var device in getdevicename)
+                    {
+                        userDeviceList.Add(device);
+                    }
+
+
+            }
+
 
         }
 
@@ -147,7 +164,9 @@ namespace FireSignage.Viewmodels
             model = DeviceInfo.Model;
             name = DeviceInfo.Name;
             screen = DeviceDisplay.MainDisplayInfo.ToString();
+            
             await WriteDeviceInfo();
+            
         }
 
 
@@ -182,31 +201,34 @@ namespace FireSignage.Viewmodels
 
             });
 
-            CheckDeviceInfo();
+            
         }
 
 
-        private void CheckDeviceInfo()
-        {
-            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-            var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
+        //private async Task CheckDeviceInfo()
+        //{
+        //    var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+        //    var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
 
-            if (getdevicename == null)
-            {
-                GetDeviceInfo();
+        //    if (getdevicename == null)
+        //    {
+        //        GetDeviceInfo();
 
 
-            }
+        //    }
 
-            else if (getdevicename != null)
-            {
-               userDeviceList = getdevicename.ToList();
+        //    else if (getdevicename != null)
+        //    {
+        //        foreach(var device in getdevicename)
+        //        {
+        //            userDeviceList.Add(device);
+        //        }
                 
 
-            }
+        //    }
 
 
-        }
+        //}
 
 
         public event EventHandler<EventArgs> OperationCompeleted;

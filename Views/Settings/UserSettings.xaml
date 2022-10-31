@@ -55,7 +55,7 @@
                     <TableSection Title="Devices" TextColor="White">
                             <ViewCell >
                                 <VerticalStackLayout>
-                                <Label Text="" />
+                                
                                 <ListView ItemsSource="{Binding userDeviceList}">
                                     <ListView.ItemTemplate>
                                         <DataTemplate >
