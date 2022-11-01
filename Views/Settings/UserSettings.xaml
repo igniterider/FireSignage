@@ -29,7 +29,7 @@
             Padding="20" HorizontalTextAlignment="Center" HorizontalOptions="Center" Margin="0,10,0,5"/>
        
 
-        <Border BackgroundColor="#4D687E" HeightRequest="400">
+        <Border BackgroundColor="#4D687E" HeightRequest="450">
             <VerticalStackLayout>
             <TableView Intent="Settings" BackgroundColor="#4D687E">
                 <TableRoot>
@@ -63,7 +63,7 @@
 
                                                 <VerticalStackLayout Padding="10">
                 
-                                                     <Label VerticalOptions="Center" FontSize="30" Text="{Binding Devicename}" TextColor="White" HorizontalTextAlignment="Center"/>
+                                                     <Label VerticalOptions="Center" FontSize="20" Text="{Binding Devicename}" TextColor="White" HorizontalTextAlignment="Center"/>
 
                                                 </VerticalStackLayout>
 

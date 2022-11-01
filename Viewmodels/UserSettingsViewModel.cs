@@ -2,6 +2,7 @@
 using CommunityToolkit.Mvvm.Input;
 using Realms;
 using CommunityToolkit.Maui;
+using MongoDB;
 
 using Realms.Sync;
 using User = FireSignage.Models.User;
@@ -25,8 +26,11 @@ namespace FireSignage.Viewmodels
         private string model;
         private string name;
         private string screen;
+        private string dname;
 
-        public List<UserDeviceInfo> userDeviceList = new List<UserDeviceInfo>();
+        public List<User> userDeviceList = new List<User>();
+        public User deviceInfo { get; }
+        public ObservableCollection<User> devicecollection = new ObservableCollection<User>();
 
         public UserSettingsViewModel()
         {
@@ -77,9 +81,8 @@ namespace FireSignage.Viewmodels
                 var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
                 
-               
 
-               
+                
 
                 userRealm.Write(() =>
                 {
@@ -125,37 +128,33 @@ namespace FireSignage.Viewmodels
                 await userRealm.SyncSession.WaitForDownloadAsync();
 
 
-                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-
-                FName = userinfo.Firstname;
-                LName = userinfo.Lastname;
-                LicPlate = userinfo.Licenseplate;
-                Email = userinfo.Email;
-
-               var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name).ToString();
-
-                if (getdevicename == null)
-                   {
-                    GetDeviceInfo();
+            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
 
-                   }
 
-                else if (getdevicename != null)
-                {
-                    foreach (var device in getdevicename)
-                    {
-                        userDeviceList.Add(device);
-                    }
+            userDeviceList = (List<User>)deviceInfo.Userdeviceinfo.AsRealmQueryable().Where(i => i.OwnerId == partid.ToString());
+            var idtostring = partid.ToString();
+            var devicesbuild = Builders<User>.Filter.All("Userdeviceinfo.OwnerId", idtostring);
 
+            foreach (var i in userDeviceList)
+            {
+                Console.WriteLine(i.Userdeviceinfo);
 
             }
 
 
+            FName = userinfo.Firstname;
+            LName = userinfo.Lastname;
+            LicPlate = userinfo.Licenseplate;
+            Email = userinfo.Email;
+
+
+            return;
+
         }
 
 
-        private async void GetDeviceInfo()
+        private void GetDeviceInfo()
         {
             idiom = DeviceInfo.Idiom.ToString();
             OS = DeviceInfo.Platform.ToString();
@@ -165,7 +164,7 @@ namespace FireSignage.Viewmodels
             name = DeviceInfo.Name;
             screen = DeviceDisplay.MainDisplayInfo.ToString();
             
-            await WriteDeviceInfo();
+            
             
         }
 
@@ -261,4 +260,5 @@ namespace FireSignage.Viewmodels
 
     }
 }
+
 
