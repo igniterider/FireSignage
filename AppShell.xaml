@@ -34,7 +34,7 @@
             Route="NewSignTesting" />
 
 
-        <Tab Title="Settings">
+        <!--Deleted Tab-->
             <ShellContent
             Title="App Settings"
             ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
@@ -46,7 +46,6 @@
             Route="UserSettings" />
 
 
-        </Tab>
         
 
         <ShellContent

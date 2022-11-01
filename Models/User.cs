@@ -29,6 +29,8 @@ namespace FireSignage.Models
         [MapTo("_password")]
         public string Password { get; set; }
 
+
+        [Indexed]
         [MapTo("owner_id")]
         [Required]
         public string OwnerId { get; set; }

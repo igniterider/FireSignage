@@ -17,6 +17,8 @@ namespace FireSignage.Models
         public string Devicetype { get; set; }
         [MapTo("_deviceuse")]
         public string Deviceuse { get; set; }
+
+        [Indexed]
         [MapTo("owner_id")]
         public string OwnerId { get; set; }
     }
