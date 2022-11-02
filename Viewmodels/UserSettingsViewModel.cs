@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Realms;
 using CommunityToolkit.Maui;
 using MongoDB;
-
+using MongoDB.Driver;
 using Realms.Sync;
 using User = FireSignage.Models.User;
 using System.Linq;
@@ -28,7 +28,7 @@ namespace FireSignage.Viewmodels
         private string screen;
         private string dname;
 
-        public List<User> userDeviceList = new List<User>();
+        public List<UserDeviceInfo> userDeviceList = new List<UserDeviceInfo>();
         public User deviceInfo { get; }
         public ObservableCollection<User> devicecollection = new ObservableCollection<User>();
 
@@ -132,15 +132,9 @@ namespace FireSignage.Viewmodels
 
 
 
-            userDeviceList = (List<User>)deviceInfo.Userdeviceinfo.AsRealmQueryable().Where(i => i.OwnerId == partid.ToString());
             var idtostring = partid.ToString();
             var devicesbuild = Builders<User>.Filter.All("Userdeviceinfo.OwnerId", idtostring);
-
-            foreach (var i in userDeviceList)
-            {
-                Console.WriteLine(i.Userdeviceinfo);
-
-            }
+            var getlist = userRealm.Find(devicesbuild).ToList();
 
 
             FName = userinfo.Firstname;
