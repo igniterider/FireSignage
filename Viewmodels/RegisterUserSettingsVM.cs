@@ -30,8 +30,7 @@ namespace FireSignage.Viewmodels
         private string screen;
         private string dname;
 
-        private bool is_controller;
-        private bool is_sign;
+       
 
         public RegisterUserSettingsVM()
         {
@@ -88,8 +87,9 @@ namespace FireSignage.Viewmodels
                     DeviceOS = OS,
                     Devicetype = idiom,
                     Devicescreensize = screen,
-                    OwnerId = App.realmApp.CurrentUser.Id
-
+                    OwnerId = App.realmApp.CurrentUser.Id,
+                    DeviceIsControl = true,
+                    DeviceIsSign = false
 
 
                 };
@@ -111,7 +111,7 @@ namespace FireSignage.Viewmodels
 
             else
             {
-              
+                HandleFailure();
 
             }
 
@@ -132,7 +132,11 @@ namespace FireSignage.Viewmodels
 
         }
 
-
+        private void HandleFailure()
+        {
+            App.Current.MainPage.DisplayAlert("Saved Failed", "HitOk", "OK");
+            //throw new NotImplementedException();
+        }
     }
 
 
