@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 using Realms;
 using CommunityToolkit.Maui;
 using MongoDB;
-
+using MongoDB.Driver;
 using Realms.Sync;
 using User = FireSignage.Models.User;
 using System.Linq;
@@ -28,9 +28,9 @@ namespace FireSignage.Viewmodels
         private string screen;
         private string dname;
 
-        public List<User> userDeviceList = new List<User>();
-        public User deviceInfo { get; }
-        public ObservableCollection<User> devicecollection = new ObservableCollection<User>();
+        public List<String> userDeviceList = new List<String>();
+        // public User deviceInfo { get; }
+        public ObservableCollection<User> usercollection = new ObservableCollection<User>();
 
         public UserSettingsViewModel()
         {
@@ -130,24 +130,23 @@ namespace FireSignage.Viewmodels
 
             var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
-
-
-            userDeviceList = (List<User>)deviceInfo.Userdeviceinfo.AsRealmQueryable().Where(i => i.OwnerId == partid.ToString());
-            var idtostring = partid.ToString();
-            var devicesbuild = Builders<User>.Filter.All("Userdeviceinfo.OwnerId", idtostring);
-
-            foreach (var i in userDeviceList)
-            {
-                Console.WriteLine(i.Userdeviceinfo);
-
-            }
-
-
             FName = userinfo.Firstname;
             LName = userinfo.Lastname;
             LicPlate = userinfo.Licenseplate;
             Email = userinfo.Email;
 
+            foreach (var dev in userinfo.Userdeviceinfo)
+            {
+                dname = dev.Devicename;
+                userDeviceList.Add(dname);
+                Console.WriteLine(dname);
+            }
+            
+            //var idtostring = partid.ToString();
+            //var devicesbuild = Builders<User>.Filter.All("Userdeviceinfo.OwnerId", idtostring);
+
+            //var getdevices = userinfo.Userdeviceinfo.ToList();
+            
 
             return;
 

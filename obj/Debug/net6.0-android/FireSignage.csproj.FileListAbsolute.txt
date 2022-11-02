@@ -167,7 +167,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Mono.Android.Export.pdb
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Mono.Android.pdb
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\mscorlib.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\netstandard.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Realm.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Realm.pdb
@@ -203,7 +202,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Syncfusion.Maui.TabView.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.AppContext.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Buffers.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Collections.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Collections.Immutable.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Collections.NonGeneric.dll
@@ -219,7 +217,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Core.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Data.Common.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Data.DataSetExtensions.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Data.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Contracts.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Debug.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.DiagnosticSource.dll
@@ -230,7 +227,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tools.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.TraceSource.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Diagnostics.Tracing.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Drawing.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Drawing.Primitives.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Dynamic.Runtime.dll
@@ -264,7 +260,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.HttpListener.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.Mail.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.NameResolution.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.Ping.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.Primitives.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.Quic.dll
@@ -280,9 +275,7 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Numerics.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Numerics.Vectors.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.ObjectModel.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.DataContractSerialization.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.Xml.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.Xml.Linq.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Reflection.DispatchProxy.dll
@@ -349,7 +342,6 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Web.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Web.HttpUtility.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Windows.dll
-C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Xml.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Xml.Linq.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Xml.ReaderWriter.dll
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Xml.Serialization.dll
@@ -1031,3 +1023,18 @@ C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\stamp\_ConvertR
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\stamp\_GenerateJavaStubs.stamp
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\DnsClient.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\MongoDB.Driver.Core.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\MongoDB.Driver.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\MongoDB.Libmongocrypt.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\SharpCompress.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\Snappier.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\ZstdSharp.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\mscorlib.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Collections.Concurrent.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Data.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Net.NetworkInformation.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.CoreLib.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Private.Uri.dll
+C:\Users\bkjoh\Source\Repos\FireSignage\obj\Debug\net6.0-android\android\assets\System.Xml.dll
