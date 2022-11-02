@@ -9,8 +9,7 @@ public partial class App : Application
 
     private const string appId = "signdisplays-awkrz";
     public static Realms.Sync.App realmApp;
-    public bool is_Controller;
-    public bool is_Sign;
+   
 
     public App()
 	{
@@ -45,11 +44,6 @@ public partial class App : Application
 
     }
 
-    public void SetDeviceUsage()
-    {
-        is_Controller = true;
-        is_Sign = false;
-
-    }
+   
 }
 

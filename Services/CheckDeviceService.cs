@@ -82,30 +82,30 @@ namespace FireSignage.Services
 
         }
 
-        private async Task CheckDeviceInfo()
-        {
-            var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-            var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
+        //private async Task CheckDeviceInfo()
+        //{
+        //    var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+        //    var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
 
-            if (getdevicename == null)
-            {
-                GetDeviceInfo();
-
-
-            }
-
-            else if (getdevicename != null)
-            {
-                foreach (var device in getdevicename)
-                {
-                    userDeviceList.Add(device);
-                }
+        //    if (getdevicename == null)
+        //    {
+        //        GetDeviceInfo();
 
 
-            }
+        //    }
+
+        //    else if (getdevicename != null)
+        //    {
+        //        foreach (var device in getdevicename)
+        //        {
+        //            userDeviceList.Add(device);
+        //        }
 
 
-        }
+        //    }
+
+
+        //}
 
 
     }

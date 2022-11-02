@@ -30,8 +30,6 @@ namespace FireSignage.Viewmodels
         private string screen;
         private string dname;
 
-       
-
         public RegisterUserSettingsVM()
         {
             Title = "Register User Settings";
@@ -115,6 +113,7 @@ namespace FireSignage.Viewmodels
 
             }
 
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
             return;
         }
 

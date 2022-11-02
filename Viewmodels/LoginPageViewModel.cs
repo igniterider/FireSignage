@@ -194,7 +194,7 @@ namespace FireSignage.Viewmodels
 
 
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
-                    await Shell.Current.GoToAsync($"//{nameof(UserSettings)}");
+                    await Shell.Current.GoToAsync($"//{nameof(RegisterUserSettings)}");
 
                 }
                 else

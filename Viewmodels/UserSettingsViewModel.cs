@@ -169,7 +169,8 @@ namespace FireSignage.Viewmodels
                 DeviceOS = OS,
                 Devicetype = idiom,
                 Devicescreensize = screen,
-                OwnerId = App.realmApp.CurrentUser.Id
+                OwnerId = App.realmApp.CurrentUser.Id,
+                
 
 
 

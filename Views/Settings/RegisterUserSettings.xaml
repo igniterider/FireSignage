@@ -10,14 +10,14 @@
              Shell.TabBarIsVisible="True">
 
 
-    <ContentPage.Behaviors>
+    <!--<ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
         EventName="Appearing"
         Command="{Binding GetUserInfoCommand}" />
 
 
 
-    </ContentPage.Behaviors>
+    </ContentPage.Behaviors>-->
 
     <ContentPage.BindingContext>
         <viewModel:RegisterUserSettingsVM />
@@ -52,15 +52,12 @@
 
                         </TableSection>
 
-                        <TableSection Title="Device Settings" TextColor="White">
-                            <SwitchCell Text="Use this device as a Controller?" OnColor="Green" />
-                            <SwitchCell Text="Use this device as a Sign?"  />
-                        </TableSection>
+                       
                     </TableRoot>
 
                 </TableView>
 
-                <Button Text="Submit Changes"
+                <Button Text="SAVE"
                     Style="{StaticResource GradientButtonStyle}" FontSize="25"
                     Padding="5" Margin="0,10,0,0" WidthRequest="245"
                     Command="{Binding AddUserInfoCommand}"/>

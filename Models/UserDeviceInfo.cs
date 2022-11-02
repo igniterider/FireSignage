@@ -15,8 +15,12 @@ namespace FireSignage.Models
         public string Devicescreensize { get; set; }
         [MapTo("_devicetype")]
         public string Devicetype { get; set; }
-        [MapTo("_deviceuse")]
-        public string Deviceuse { get; set; }
+
+        [MapTo("_deviceissign")]
+        public bool DeviceIsSign { get; set; }
+
+        [MapTo("_deviceiscontrol")]
+        public bool DeviceIsControl { get; set; }
 
         [Indexed]
         [MapTo("owner_id")]

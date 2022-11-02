@@ -45,8 +45,12 @@
             ContentTemplate="{DataTemplate views:Settings.UserSettings}"
             Route="UserSettings" />
 
+            <ShellContent
+            Title="RegistrationSettings"
+            ContentTemplate="{DataTemplate views:Settings.RegisterUserSettings}"
+            Route="RegisterUserSettings" />
 
-        
+
 
         <ShellContent
             Title="Login"
