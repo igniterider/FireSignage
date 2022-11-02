@@ -9,6 +9,8 @@ public partial class App : Application
 
     private const string appId = "signdisplays-awkrz";
     public static Realms.Sync.App realmApp;
+    public bool is_Controller;
+    public bool is_Sign;
 
     public App()
 	{
@@ -40,6 +42,13 @@ public partial class App : Application
             // MainPage = new TabbedLogin();//need to make a network error page or popup
         }
 
+
+    }
+
+    public void SetDeviceUsage()
+    {
+        is_Controller = true;
+        is_Sign = false;
 
     }
 }

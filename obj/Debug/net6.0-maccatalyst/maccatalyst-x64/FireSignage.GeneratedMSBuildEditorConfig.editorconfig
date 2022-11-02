@@ -88,6 +88,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.NewSignT
 build_metadata.AdditionalFiles.TargetPath = Views\NewSignTesting.xaml
 build_metadata.AdditionalFiles.RelativePath = Views\NewSignTesting.xaml
 
+[C:/Users/bkjoh/Source/Repos/FireSignage/Views/Settings/RegisterUserSettings.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.Settings.RegisterUserSettings.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Settings\RegisterUserSettings.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Settings\RegisterUserSettings.xaml
+
 [C:/Users/bkjoh/Source/Repos/FireSignage/Views/Settings/SettingsPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = FireSignage.Views.Settings.SettingsPage.xaml

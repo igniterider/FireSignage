@@ -39,20 +39,20 @@
                             Text="{Binding FName}"/>
 
                         <EntryCell Label="Last Name"
-                                   Placeholder="Last Name"
+                                   Placeholder="Enter Last Name"
                                    Text="{Binding LName}"/>
 
                         <EntryCell Label="License Plate"
-                            Placeholder="{Binding LicPlate}"
+                            Placeholder="Enter License Plate #"
                             Text="{Binding LicPlate}"/>
 
                         <EntryCell Label="Email"
-                            Placeholder="{Binding Email}"
+                            Placeholder="Enter Email"
                             Text="{Binding Email}"/>
 
                     </TableSection>
 
-                    <TableSection Title="Devices" TextColor="White">
+                    <TableSection Title="Device Settings" TextColor="White">
                             <ViewCell >
                                 <VerticalStackLayout>
                                 
@@ -63,7 +63,7 @@
 
                                                 <VerticalStackLayout Padding="10">
                 
-                                                     <Label VerticalOptions="Center" FontSize="20" Text="{Binding Source}" TextColor="White" HorizontalTextAlignment="Center"/>
+                                                     <Label VerticalOptions="Center" FontSize="20" Text="{Binding userDeviceList}" TextColor="White" HorizontalTextAlignment="Center"/>
 
                                                 </VerticalStackLayout>
 

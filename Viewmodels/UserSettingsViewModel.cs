@@ -29,8 +29,6 @@ namespace FireSignage.Viewmodels
         private string dname;
 
         public List<String> userDeviceList = new List<String>();
-        // public User deviceInfo { get; }
-        public ObservableCollection<User> usercollection = new ObservableCollection<User>();
 
         public UserSettingsViewModel()
         {
@@ -141,14 +139,7 @@ namespace FireSignage.Viewmodels
                 userDeviceList.Add(dname);
                 Console.WriteLine(dname);
             }
-            
-            //var idtostring = partid.ToString();
-            //var devicesbuild = Builders<User>.Filter.All("Userdeviceinfo.OwnerId", idtostring);
-
-            //var getdevices = userinfo.Userdeviceinfo.ToList();
-            
-
-            return;
+           
 
         }
 
@@ -201,33 +192,6 @@ namespace FireSignage.Viewmodels
 
             
         }
-
-
-        //private async Task CheckDeviceInfo()
-        //{
-        //    var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-        //    var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
-
-        //    if (getdevicename == null)
-        //    {
-        //        GetDeviceInfo();
-
-
-        //    }
-
-        //    else if (getdevicename != null)
-        //    {
-        //        foreach(var device in getdevicename)
-        //        {
-        //            userDeviceList.Add(device);
-        //        }
-                
-
-        //    }
-
-
-        //}
-
 
         public event EventHandler<EventArgs> OperationCompeleted;
 

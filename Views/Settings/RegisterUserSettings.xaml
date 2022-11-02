@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FireSignage.Views.Settings.RegisterUserSettings"
+             Title="Registration"
+             xmlns:tabView="http://schemas.syncfusion.com/maui"
+             xmlns:viewModel="clr-namespace:FireSignage.Viewmodels"
+             xmlns:controls="clr-namespace:FireSignage.Controls"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Shell.TabBarIsVisible="True">
+
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding GetUserInfoCommand}" />
+
+
+
+    </ContentPage.Behaviors>
+
+    <ContentPage.BindingContext>
+        <viewModel:RegisterUserSettingsVM />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout Margin="10">
+        <Label 
+            Text="Please fill out all required information"
+            Padding="20" HorizontalTextAlignment="Center" HorizontalOptions="Center" Margin="0,10,0,5"/>
+
+
+        <Border BackgroundColor="#4D687E" HeightRequest="450">
+            <VerticalStackLayout>
+                <TableView Intent="Settings" BackgroundColor="#4D687E">
+                    <TableRoot>
+                        <TableSection Title="User Information" TextColor="Black">
+                            <EntryCell Label="First Name"
+                            Placeholder="Enter First Name"
+                            Text="{Binding FName}"/>
+
+                            <EntryCell Label="Last Name"
+                                   Placeholder="Enter Last Name"
+                                   Text="{Binding LName}"/>
+
+                            <EntryCell Label="License Plate"
+                            Placeholder="Enter License Plate #"
+                            Text="{Binding LicPlate}"/>
+
+                            <EntryCell Label="Email"
+                            Placeholder="Enter Email"
+                            Text="{Binding Email}"/>
+
+                        </TableSection>
+
+                        <TableSection Title="Device Settings" TextColor="White">
+                            <SwitchCell Text="Use this device as a Controller?" OnColor="Green" />
+                            <SwitchCell Text="Use this device as a Sign?"  />
+                        </TableSection>
+                    </TableRoot>
+
+                </TableView>
+
+                <Button Text="Submit Changes"
+                    Style="{StaticResource GradientButtonStyle}" FontSize="25"
+                    Padding="5" Margin="0,10,0,0" WidthRequest="245"
+                    Command="{Binding AddUserInfoCommand}"/>
+            </VerticalStackLayout>
+
+        </Border>
+
+        <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
+               FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
