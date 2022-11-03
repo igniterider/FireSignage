@@ -108,6 +108,9 @@
 	  <MauiXaml Remove="Resources\Styles\ButtonStyles %28copy%29.xaml" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Views\Settings\DeviceSettingsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\RegisterUserSettings.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

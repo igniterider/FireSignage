@@ -35,6 +35,9 @@
 
 
         <!--Deleted Tab-->
+        <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"
+             FlyoutIcon="{StaticResource Settings}"  >
+
             <ShellContent
             Title="App Settings"
             ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
@@ -48,7 +51,11 @@
             <ShellContent
             Title="RegistrationSettings"
             ContentTemplate="{DataTemplate views:Settings.RegisterUserSettings}"
-            Route="RegisterUserSettings" />
+            Route="RegisterUserSettings"
+             FlyoutItemIsVisible="False"/>
+            
+        </Tab>
+            
 
 
 
