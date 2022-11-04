@@ -44,7 +44,7 @@
             Route="SettingsPage" />
 
             <ShellContent
-            Title="UserSettings"
+            Title="User Settings"
             ContentTemplate="{DataTemplate views:Settings.UserSettings}"
             Route="UserSettings" />
 
@@ -52,7 +52,8 @@
             Title="RegistrationSettings"
             ContentTemplate="{DataTemplate views:Settings.RegisterUserSettings}"
             Route="RegisterUserSettings"
-             FlyoutItemIsVisible="False"/>
+            FlyoutItemIsVisible="False"
+            IsVisible="False"/>
             
         </Tab>
             

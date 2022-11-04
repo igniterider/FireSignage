@@ -6,6 +6,7 @@ using FireSignage.Viewmodels;
 using Android.Runtime;
 using Realms;
 using FireSignage.Views.Settings;
+using FireSignage.Services;
 
 namespace FireSignage.Viewmodels
 {
@@ -14,7 +15,7 @@ namespace FireSignage.Viewmodels
     {
         #region Fields
         Realm realm;
-        
+        CheckDeviceService deviceService;
         private string password;
         
 
@@ -31,6 +32,7 @@ namespace FireSignage.Viewmodels
             this.SignUpCommand = new Command(this.SignUpClicked);
             this.ForgotPasswordCommand = new Command(this.ForgotPasswordClicked);
             this.SocialMediaLoginCommand = new Command(this.SocialLoggedIn);
+            deviceService = new CheckDeviceService();
         }
 
         #endregion
@@ -141,8 +143,9 @@ namespace FireSignage.Viewmodels
                 if (user != null)
                 {
 
-
+                    
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
+                   
                     await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
 
 
@@ -212,7 +215,7 @@ namespace FireSignage.Viewmodels
             return;
 
         }
-
+        
         private void HandleFailure()
         {
             App.Current.MainPage.DisplayAlert("Login Failed", "HitOk", "OK");

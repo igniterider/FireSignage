@@ -10,6 +10,7 @@ using MongoDB;
 using MongoDB.Driver;
 using Realms.Sync;
 using User = FireSignage.Models.User;
+using FireSignage.Views.Settings;
 
 namespace FireSignage.Services
 {
@@ -29,7 +30,7 @@ namespace FireSignage.Services
 
         public CheckDeviceService()
         {
-
+            GetDeviceInfo();
 
         }
 
@@ -49,21 +50,11 @@ namespace FireSignage.Services
 
 
 
-        private async Task WriteDeviceInfo()
+        public async Task CheckDeviceInfo()
         {
-            var device = new UserDeviceInfo()
-            {
-                DeviceManuf = manu,
-                Devicename = name,
-                DeviceOS = OS,
-                Devicetype = idiom,
-                Devicescreensize = screen,
-                OwnerId = App.realmApp.CurrentUser.Id
+            
 
-
-
-            };
-
+            
             var user = App.realmApp.CurrentUser;
             var partid = App.realmApp.CurrentUser.Id;
             var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
@@ -71,41 +62,40 @@ namespace FireSignage.Services
             await deviceRealm.SyncSession.WaitForDownloadAsync();
 
 
-            var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-
-            deviceRealm.Write(() =>
+            var deviceinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            foreach (var dev in deviceinfo.Userdeviceinfo)
             {
-                userinfo.Userdeviceinfo.Add(device);
+                dname = dev.Devicename;
+                userDeviceList.Add(dname);
 
-            });
+                    //if (dname == name)
+                    //{
+                    //    await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                    //    return;
+                         
+                    //}
+                    //else
+                    //{
+                    //  var answer =  await App.Current.MainPage.DisplayAlert("Device not Registered", "Register Device Now", "Yes", "No");
+                    //    if(answer == true)
+                    //    {
+                    //        await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
+                    //    }
+                    //    else
+                    //    {
+                    //        await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                    //    }
+                    //}
+
+                Console.WriteLine(dname);
+            }
+
+            
 
 
         }
 
-        //private async Task CheckDeviceInfo()
-        //{
-        //    var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-        //    var getdevicename = userinfo.Userdeviceinfo.Where<UserDeviceInfo>(t => t.Devicename == DeviceInfo.Name);
-
-        //    if (getdevicename == null)
-        //    {
-        //        GetDeviceInfo();
-
-
-        //    }
-
-        //    else if (getdevicename != null)
-        //    {
-        //        foreach (var device in getdevicename)
-        //        {
-        //            userDeviceList.Add(device);
-        //        }
-
-
-        //    }
-
-
-        //}
+        
 
 
     }

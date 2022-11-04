@@ -19,21 +19,12 @@ namespace FireSignage.Viewmodels
         private string lname;
         private string licplate;
         private string email;
-        private string idiom;
-        private string OS;
-        private string osVersion;
-        private string manu;
-        private string model;
-        private string name;
-        private string screen;
-        private string dname;
+        
 
-        public List<String> userDeviceList = new List<String>();
 
         public UserSettingsViewModel()
         {
             Title = "User Settings";
-            GetDeviceInfo();
 
         }
 
@@ -133,65 +124,8 @@ namespace FireSignage.Viewmodels
             LicPlate = userinfo.Licenseplate;
             Email = userinfo.Email;
 
-            foreach (var dev in userinfo.Userdeviceinfo)
-            {
-                dname = dev.Devicename;
-                userDeviceList.Add(dname);
-                Console.WriteLine(dname);
-            }
            
 
-        }
-
-
-        private void GetDeviceInfo()
-        {
-            idiom = DeviceInfo.Idiom.ToString();
-            OS = DeviceInfo.Platform.ToString();
-            osVersion = DeviceInfo.Version.ToString();
-            manu = DeviceInfo.Manufacturer;
-            model = DeviceInfo.Model;
-            name = DeviceInfo.Name;
-            screen = DeviceDisplay.MainDisplayInfo.ToString();
-            
-            
-            
-        }
-
-
-
-        private async Task WriteDeviceInfo()
-        {
-            var device = new UserDeviceInfo()
-            {
-                DeviceManuf = manu,
-                Devicename = name,
-                DeviceOS = OS,
-                Devicetype = idiom,
-                Devicescreensize = screen,
-                OwnerId = App.realmApp.CurrentUser.Id,
-                
-
-
-
-            };
-
-            var user = App.realmApp.CurrentUser;
-            var partid = App.realmApp.CurrentUser.Id;
-            var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
-            userRealm = await Realm.GetInstanceAsync(config);
-            await userRealm.SyncSession.WaitForDownloadAsync();
-
-
-            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-
-            userRealm.Write(() =>
-            {
-                userinfo.Userdeviceinfo.Add(device);
-
-            });
-
-            
         }
 
         public event EventHandler<EventArgs> OperationCompeleted;
@@ -201,27 +135,6 @@ namespace FireSignage.Viewmodels
             App.Current.MainPage.DisplayAlert("Login Failed", "HitOk", "OK");
             //throw new NotImplementedException();
         }
-
-        //private void ChangeName(object obj)
-        //{
-        //    CheckLogin();
-        //    var allPages = controllerRealm.All<DisplayChanges>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-        //    controllerRealm.Write(() =>
-        //    {
-
-
-        //        allPages.Id = App.realmApp.CurrentUser.Id;
-        //        allPages.OwnerId = App.realmApp.CurrentUser.Id;
-        //        allPages.Pagename = pagename;
-        //        allPages.Textcolor = "White";
-
-
-        //    });
-
-
-        //}
-
-
     }
 }
 

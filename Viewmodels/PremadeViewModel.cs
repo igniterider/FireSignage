@@ -10,11 +10,12 @@ namespace FireSignage.Viewmodels;
 
 public partial class PremadeViewModel : BaseViewModel
 {
-
+    CheckDeviceService deviceService;
     
     PremadeService premadeService;
 
 	public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
+    public ObservableCollection<User> GetDevices { get; } = new();
 
 	public List<CategoriesList> SignCategory { get; set; } = new();
 	public List<PreMadeSigns> Rides { get; set; } = new();
@@ -26,7 +27,7 @@ public partial class PremadeViewModel : BaseViewModel
     readonly IReadOnlyDictionary<string, Color> colors = typeof(Colors)
         .GetFields(BindingFlags.Static | BindingFlags.Public)
         .ToDictionary(c => c.Name, c => (Color)(c.GetValue(null) ?? throw new InvalidOperationException()));
-
+        
     private string selectedItem;
     private Color selectedColor;
     private Color selectedBackColor;
@@ -37,6 +38,7 @@ public partial class PremadeViewModel : BaseViewModel
 	{
 		Title = "Dashboard";
 		premadeService = new PremadeService();
+        deviceService = new CheckDeviceService();
 		MyColors = colors.Keys.ToList();
 
     }
@@ -140,6 +142,7 @@ public partial class PremadeViewModel : BaseViewModel
 		try
 		{
 			IsBusy = true;
+            deviceService.CheckDeviceInfo();
 			var signs = await premadeService.GetPreMadeSigns();
 
 			if (GetSigns.Count != 0)
@@ -207,20 +210,6 @@ public partial class PremadeViewModel : BaseViewModel
 
 
 		}
-
-
-
-
-
-
-		//var ride = signs.Where(n => n.Category == "Rideshare");
-
-
-
-
-
-
-
 		catch (Exception ex)
 		{
 			Debug.WriteLine($"Unable to get Signs: {ex.Message}");
@@ -241,39 +230,7 @@ public partial class PremadeViewModel : BaseViewModel
 
 
 	
-	void CreateCollection()
-	{
-		
-
-
-		SignCategory.Add(new CategoriesList("Rideshare", Rides));
-		
-
-
-		SignCategory.Add(new CategoriesList("Business", new List<PreMadeSigns>
-		{
-
-
-
-
-
-
-
-		}));
-
-
-
-		SignCategory.Add(new CategoriesList("Holiday", Holiday));
-
-		foreach (var sign in Rides)
-		{
-			var dis = sign.Displaytext;
-			Console.WriteLine(dis);
-
-		}
-
-
-    }
+	
 
 }
 
