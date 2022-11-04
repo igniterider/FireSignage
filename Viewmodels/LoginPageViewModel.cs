@@ -138,8 +138,8 @@ namespace FireSignage.Viewmodels
         private async void DoLogin()
         {
             try
-            {
-                var user = await App.realmApp.LogInAsync(Credentials.EmailPassword(Email, password));
+            {                                                                                               //delete email and password
+                var user = await App.realmApp.LogInAsync(Credentials.EmailPassword("Bkjohnson76@outlook.com", "Owen2006"));
                 if (user != null)
                 {
 

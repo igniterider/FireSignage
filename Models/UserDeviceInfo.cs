@@ -22,7 +22,7 @@ namespace FireSignage.Models
         [MapTo("_deviceiscontrol")]
         public bool DeviceIsControl { get; set; }
 
-        [Indexed]
+       
         [MapTo("owner_id")]
         public string OwnerId { get; set; }
     }

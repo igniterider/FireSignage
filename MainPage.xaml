@@ -65,7 +65,8 @@
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.Signal},
                                         Color=Green,
                                         Size=15}"
-            FontSize="{OnPlatform Android=10, iOS=12}"/>
+            FontSize="{OnPlatform Android=10, iOS=12}"
+            Command="{Binding CheckDevicesCommand }"/>
 
     
 

@@ -27,13 +27,15 @@ namespace FireSignage.Services
         private string dname;
 
         public List<String> userDeviceList = new List<String>();
-
+                
         public CheckDeviceService()
         {
-            GetDeviceInfo();
+           
 
         }
 
+
+        // can get rid of
         private void GetDeviceInfo()
         {
             idiom = DeviceInfo.Idiom.ToString();
@@ -50,7 +52,7 @@ namespace FireSignage.Services
 
 
 
-        public async Task CheckDeviceInfo()
+        public async Task <List<string>> CheckDeviceInfo()
         {
             
 
@@ -67,31 +69,12 @@ namespace FireSignage.Services
             {
                 dname = dev.Devicename;
                 userDeviceList.Add(dname);
-
-                    //if (dname == name)
-                    //{
-                    //    await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-                    //    return;
-                         
-                    //}
-                    //else
-                    //{
-                    //  var answer =  await App.Current.MainPage.DisplayAlert("Device not Registered", "Register Device Now", "Yes", "No");
-                    //    if(answer == true)
-                    //    {
-                    //        await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
-                    //    }
-                    //    else
-                    //    {
-                    //        await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-                    //    }
-                    //}
-
                 Console.WriteLine(dname);
+                
             }
 
             
-
+            return userDeviceList;
 
         }
 

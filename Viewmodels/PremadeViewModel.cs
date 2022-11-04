@@ -1,8 +1,12 @@
-﻿using System.Reflection;
+﻿using System.Linq;
+using System.Reflection;
 using CommunityToolkit.Mvvm.Input;
 using FireSignage.Models;
 using FireSignage.Services;
-
+using FireSignage.Views.Settings;
+using Realms;
+using Realms.Sync;
+using User = FireSignage.Models.User;
 
 namespace FireSignage.Viewmodels;
 
@@ -10,19 +14,27 @@ namespace FireSignage.Viewmodels;
 
 public partial class PremadeViewModel : BaseViewModel
 {
-    CheckDeviceService deviceService;
-    
+    private Realm deviceRealm;
+    private string idiom;
+    private string OS;
+    private string osVersion;
+    private string manu;
+    private string model;
+    private string name;
+    private string screen;
+    private string dname;
+
     PremadeService premadeService;
 
 	public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
-    public ObservableCollection<User> GetDevices { get; } = new();
+    public ObservableCollection<String> GetDevices { get; } = new();
 
 	public List<CategoriesList> SignCategory { get; set; } = new();
 	public List<PreMadeSigns> Rides { get; set; } = new();
 	public List<PreMadeSigns> Business { get; set; } = new();
 	public List<PreMadeSigns> Holiday { get; set; } = new();
 	private string categoryname;
-
+    private int devicecount = 0;
 
     readonly IReadOnlyDictionary<string, Color> colors = typeof(Colors)
         .GetFields(BindingFlags.Static | BindingFlags.Public)
@@ -38,9 +50,9 @@ public partial class PremadeViewModel : BaseViewModel
 	{
 		Title = "Dashboard";
 		premadeService = new PremadeService();
-        deviceService = new CheckDeviceService();
+        
 		MyColors = colors.Keys.ToList();
-
+        GetDeviceInfo();
     }
 
 
@@ -142,8 +154,7 @@ public partial class PremadeViewModel : BaseViewModel
 		try
 		{
 			IsBusy = true;
-            deviceService.CheckDeviceInfo();
-			var signs = await premadeService.GetPreMadeSigns();
+            var signs = await premadeService.GetPreMadeSigns();
 
 			if (GetSigns.Count != 0)
 
@@ -153,6 +164,7 @@ public partial class PremadeViewModel : BaseViewModel
 				GetSigns.Add(sign);
 
 
+           
 		}
 
 
@@ -166,9 +178,8 @@ public partial class PremadeViewModel : BaseViewModel
 		finally //gets called no matter what with try or exception
 		{
 			IsBusy = false;
-			
-
-		}
+          
+        }
 	}
 
     
@@ -227,7 +238,67 @@ public partial class PremadeViewModel : BaseViewModel
 		}
 	}
 
+    public List<String> userDeviceList = new List<String>();
 
+    private void GetDeviceInfo()
+    {
+        idiom = DeviceInfo.Idiom.ToString();
+        OS = DeviceInfo.Platform.ToString();
+        osVersion = DeviceInfo.Version.ToString();
+        manu = DeviceInfo.Manufacturer;
+        model = DeviceInfo.Model;
+        name = DeviceInfo.Name;
+        screen = DeviceDisplay.MainDisplayInfo.ToString();
+
+
+
+    }
+
+    [RelayCommand]
+    async Task CheckDevices()
+    {
+        
+
+        try
+        {
+            var user = App.realmApp.CurrentUser;
+            var partid = App.realmApp.CurrentUser.Id;
+            var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+            deviceRealm = await Realm.GetInstanceAsync(config);
+            await deviceRealm.SyncSession.WaitForDownloadAsync();
+
+
+            var deviceinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            foreach (var dev in deviceinfo.Userdeviceinfo)
+            {
+                dname = dev.Devicename;
+                userDeviceList.Add(dname);
+                Console.WriteLine(dname);
+
+                if (name == dname)
+                {
+                    devicecount++;
+                    Console.WriteLine(name);
+                }
+
+            }
+
+            if (devicecount <= 0)
+            {
+                bool answer = await Shell.Current.DisplayAlert("Device Not Registered", "Register Now?", "Yes", "No");
+                if (answer == true)
+                {
+                    await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
+                }
+            }
+        }
+
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+            throw;
+        }
+    }
 
 	
 	

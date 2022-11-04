@@ -282,6 +282,12 @@
         <member name="P:FireSignage.Viewmodels.PremadeViewModel.GetRideshareCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FireSignage.Viewmodels.PremadeViewModel.GetRideshareAsync"/>.</summary>
         </member>
+        <member name="F:FireSignage.Viewmodels.PremadeViewModel.checkDevicesCommand">
+            <summary>The backing field for <see cref="P:FireSignage.Viewmodels.PremadeViewModel.CheckDevicesCommand"/>.</summary>
+        </member>
+        <member name="P:FireSignage.Viewmodels.PremadeViewModel.CheckDevicesCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:FireSignage.Viewmodels.PremadeViewModel.CheckDevices"/>.</summary>
+        </member>
         <member name="F:FireSignage.Viewmodels.RegisterUserSettingsVM.addUserInfoCommand">
             <summary>The backing field for <see cref="P:FireSignage.Viewmodels.RegisterUserSettingsVM.AddUserInfoCommand"/>.</summary>
         </member>
