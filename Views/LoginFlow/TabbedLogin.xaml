@@ -49,14 +49,15 @@
                 <Grid Margin="0,20" ColumnDefinitions="*,*">
 
                         <Button Text="LOGIN" Style="{StaticResource GradientButtonStyle}" 
-                                FontSize="25" Command="{Binding LoginCommand}" Grid.Column="0" />
+                                FontSize="20" Command="{Binding LoginCommand}"
+                                HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="0"/>
                    
                    
                        
                        
 
-                         <Button Text="REGISTER" Style="{StaticResource GradientButtonStyle}" FontSize="25"
-                                 Grid.Column="1"
+                         <Button Text="REGISTER" Style="{StaticResource GradientButtonStyle}" FontSize="20"
+                                 Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"
                                  Command="{Binding SignUpCommand}"/>
 
 

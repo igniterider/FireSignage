@@ -7,6 +7,7 @@
     xmlns:controls="clr-namespace:FireSignage.Controls"
     xmlns:loginflow="clr-namespace:FireSignage.Views.LoginFlow"
     xmlns:views="clr-namespace:FireSignage.Views"
+    xmlns:settings="clr-namespace:FireSignage.Views.Settings"
     Shell.FlyoutBehavior="Flyout">
 
 
@@ -40,25 +41,33 @@
 
             <ShellContent
             Title="App Settings"
-            ContentTemplate="{DataTemplate views:Settings.SettingsPage}"
+            ContentTemplate="{DataTemplate settings:SettingsPage}"
             Route="SettingsPage" />
 
             <ShellContent
             Title="User Settings"
-            ContentTemplate="{DataTemplate views:Settings.UserSettings}"
+            ContentTemplate="{DataTemplate settings:UserSettings}"
             Route="UserSettings" />
 
             <ShellContent
             Title="RegistrationSettings"
-            ContentTemplate="{DataTemplate views:Settings.RegisterUserSettings}"
+            ContentTemplate="{DataTemplate settings:RegisterUserSettings}"
             Route="RegisterUserSettings"
             FlyoutItemIsVisible="False"
             IsVisible="False"/>
+
             
+
         </Tab>
-            
 
 
+
+        <ShellContent
+            Title="Device Settings"
+            ContentTemplate="{DataTemplate settings:DeviceSettingsPage}"
+            Route="DeviceSettingsPage"
+            FlyoutItemIsVisible="False"
+            IsVisible="True"/>
 
         <!--<ShellContent
             Title="Login"

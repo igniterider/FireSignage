@@ -7,27 +7,40 @@ using MongoDB.Driver;
 using Realms.Sync;
 using User = FireSignage.Models.User;
 using System.Linq;
+using Microsoft.Maui.Controls;
+using Microsoft.VisualBasic;
+using System.Xml.Linq;
 
 namespace FireSignage.Viewmodels
 {
 	public partial class UserSettingsViewModel : BaseViewModel
 	{
         private Realm userRealm;
-
+        private Realm deviceRealm;
         private string password;
         private string fname;
         private string lname;
         private string licplate;
         private string email;
-        
 
+        private string idiom;
+        private string OS;
+        private string osVersion;
+        private string manu;
+        private string model;
+        private string name;
+        private string screen;
+        private bool iscontrol;
+        private bool issign;
+        private string dname;
 
         public UserSettingsViewModel()
         {
             Title = "User Settings";
-
+            GetDeviceInfo();
         }
 
+        //Users
         public string FName
         {
             set { SetProperty(ref fname, value); }
@@ -55,6 +68,44 @@ namespace FireSignage.Viewmodels
             get { return email; }
         }
 
+        //Devices
+        public string DeviceName
+        {
+            set { SetProperty(ref name, value); }
+            get { return name; }
+        }
+
+        public string Manuf
+        {
+            set { SetProperty(ref manu, value); }
+            get { return manu; }
+        }
+
+        public string OperatingSystem
+        {
+            set { SetProperty(ref OS, value); }
+            get { return OS; }
+        }
+
+        public string DeviceType
+        {
+            set { SetProperty(ref idiom, value); }
+            get { return idiom; }
+        }
+
+        public bool ISSign
+        {
+            set { SetProperty(ref issign, value); }
+            get { return issign; }
+        }
+
+        public bool ISControl
+        { 
+            set { SetProperty(ref iscontrol, value); }
+            get { return ISControl; } 
+        
+        }
+        
         [RelayCommand]
         async Task AddUserInfo()
         {
@@ -125,6 +176,71 @@ namespace FireSignage.Viewmodels
             Email = userinfo.Email;
 
            
+
+        }
+
+        [RelayCommand]
+        async Task AddDeviceInfo()
+        {
+            if (deviceRealm == null)
+            {
+                var user = App.realmApp.CurrentUser;
+                var partid = App.realmApp.CurrentUser.Id;
+                var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+                deviceRealm = await Realm.GetInstanceAsync(config);
+                await deviceRealm.SyncSession.WaitForDownloadAsync();
+
+
+                var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+
+                var setdevice = new UserDeviceInfo()
+                {
+                    DeviceManuf = manu,
+                    Devicename = name,
+                    DeviceOS = OS,
+                    Devicetype = idiom,
+                    Devicescreensize = screen,
+                    OwnerId = App.realmApp.CurrentUser.Id,
+                    Deviceiscontrol = iscontrol,
+                    Deviceissign = issign
+
+
+                };
+
+
+
+                deviceRealm.Write(() =>
+                {
+
+                    
+                    userinfo.Userdeviceinfo.Add(setdevice);
+
+
+                });
+
+            }
+
+            else
+            {
+                HandleFailure();
+
+            }
+
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            return;
+        }
+
+        private void GetDeviceInfo()
+        {
+            idiom = DeviceInfo.Idiom.ToString();
+            OS = DeviceInfo.Platform.ToString();
+            osVersion = DeviceInfo.Version.ToString();
+            manu = DeviceInfo.Manufacturer;
+            model = DeviceInfo.Model;
+            name = DeviceInfo.Name;
+            screen = DeviceDisplay.MainDisplayInfo.ToString();
+
+
 
         }
 

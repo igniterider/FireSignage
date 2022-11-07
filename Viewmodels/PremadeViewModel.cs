@@ -14,7 +14,7 @@ namespace FireSignage.Viewmodels;
 
 public partial class PremadeViewModel : BaseViewModel
 {
-    private Realm deviceRealm;
+    private Realm newRealm;
     private string idiom;
     private string OS;
     private string osVersion;
@@ -50,9 +50,9 @@ public partial class PremadeViewModel : BaseViewModel
 	{
 		Title = "Dashboard";
 		premadeService = new PremadeService();
-        
 		MyColors = colors.Keys.ToList();
         GetDeviceInfo();
+
     }
 
 
@@ -257,18 +257,18 @@ public partial class PremadeViewModel : BaseViewModel
     [RelayCommand]
     async Task CheckDevices()
     {
-        
-
+      
         try
         {
+
             var user = App.realmApp.CurrentUser;
             var partid = App.realmApp.CurrentUser.Id;
             var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
-            deviceRealm = await Realm.GetInstanceAsync(config);
-            await deviceRealm.SyncSession.WaitForDownloadAsync();
+            newRealm = await Realm.GetInstanceAsync(config);
+            await newRealm.SyncSession.WaitForDownloadAsync();
 
 
-            var deviceinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            var deviceinfo = newRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
             foreach (var dev in deviceinfo.Userdeviceinfo)
             {
                 dname = dev.Devicename;
@@ -279,6 +279,7 @@ public partial class PremadeViewModel : BaseViewModel
                 {
                     devicecount++;
                     Console.WriteLine(name);
+                    return;
                 }
 
             }
@@ -289,6 +290,7 @@ public partial class PremadeViewModel : BaseViewModel
                 if (answer == true)
                 {
                     await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
+                    return;
                 }
             }
         }
@@ -298,6 +300,7 @@ public partial class PremadeViewModel : BaseViewModel
             Console.WriteLine(ex.ToString());
             throw;
         }
+        return;
     }
 
 	

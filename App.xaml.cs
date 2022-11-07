@@ -9,7 +9,8 @@ public partial class App : Application
 
     private const string appId = "signdisplays-awkrz";
     public static Realms.Sync.App realmApp;
-   
+    public int logins;
+    public bool _isSign;
 
     public App()
 	{
