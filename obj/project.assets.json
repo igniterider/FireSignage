@@ -402,13 +402,14 @@
           }
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -490,11 +491,14 @@
           }
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -3117,13 +3121,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -3146,11 +3151,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -5742,13 +5750,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -5771,11 +5780,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -8367,13 +8379,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -8396,11 +8409,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -10992,13 +11008,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -11021,11 +11038,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -13614,13 +13634,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -13645,11 +13666,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -16235,13 +16259,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -16264,11 +16289,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -18857,13 +18885,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -18886,11 +18915,14 @@
           "build/monoandroid/Realm.props": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -21486,13 +21518,14 @@
           }
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -21571,11 +21604,14 @@
           }
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -22828,13 +22864,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -22854,11 +22891,14 @@
           "runtimes/android-arm/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -24298,13 +24338,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -24324,11 +24365,14 @@
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -25768,13 +25812,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -25794,11 +25839,14 @@
           "runtimes/android-x64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -27238,13 +27286,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -27264,11 +27313,14 @@
           "runtimes/android-x86/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -28705,13 +28757,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -28733,11 +28786,14 @@
           "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -30180,13 +30236,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -30206,11 +30263,14 @@
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -31656,13 +31716,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -31682,11 +31743,14 @@
           "runtimes/win-x64/native/realm-wrappers.dll": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -33071,13 +33135,14 @@
           }
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -33156,11 +33221,14 @@
           }
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -34401,13 +34469,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -34427,11 +34496,14 @@
           "runtimes/android-arm/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -35871,13 +35943,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -35897,11 +35970,14 @@
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -37341,13 +37417,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -37367,11 +37444,14 @@
           "runtimes/android-x64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -38811,13 +38891,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -38837,11 +38918,14 @@
           "runtimes/android-x86/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -40278,13 +40362,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -40306,11 +40391,14 @@
           "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -41747,13 +41835,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -41773,11 +41862,14 @@
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -43220,13 +43312,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -43246,11 +43339,14 @@
           "runtimes/win-x64/native/realm-wrappers.dll": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -44764,13 +44860,14 @@
           }
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -44849,11 +44946,14 @@
           }
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -46208,13 +46308,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -46234,11 +46335,14 @@
           "runtimes/android-arm/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -47778,13 +47882,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -47804,11 +47909,14 @@
           "runtimes/android-arm64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -49348,13 +49456,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -49374,11 +49483,14 @@
           "runtimes/android-x64/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -50918,13 +51030,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -50944,11 +51057,14 @@
           "runtimes/android-x86/native/librealm-wrappers.so": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -52485,13 +52601,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -52513,11 +52630,14 @@
           "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -54054,13 +54174,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -54080,11 +54201,14 @@
           "runtimes/maccatalyst/native/realm-wrappers.framework.zip": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -55630,13 +55754,14 @@
           "build/_._": {}
         }
       },
-      "Realm/10.17.0": {
+      "Realm/10.18.0": {
         "type": "package",
         "dependencies": {
           "Fody": "6.6.4",
           "Microsoft.CSharp": "4.5.0",
           "MongoDB.Bson": "2.11.3",
-          "Realm.Fody": "10.17.0",
+          "Realm.Fody": "10.18.0",
+          "Realm.SourceGenerator": "10.18.0",
           "Remotion.Linq": "2.2.0",
           "System.Buffers": "4.4.0",
           "System.Dynamic.Runtime": "4.3.0",
@@ -55656,11 +55781,14 @@
           "runtimes/win-x64/native/realm-wrappers.dll": {}
         }
       },
-      "Realm.Fody/10.17.0": {
+      "Realm.Fody/10.18.0": {
         "type": "package",
         "build": {
           "build/Realm.Fody.props": {}
         }
+      },
+      "Realm.SourceGenerator/10.18.0": {
+        "type": "package"
       },
       "Remotion.Linq/2.2.0": {
         "type": "package",
@@ -58227,10 +58355,10 @@
         "runtimes/win/native/mongocrypt.dll"
       ]
     },
-    "Realm/10.17.0": {
-      "sha512": "Gq6SOja5SbtYBnk61JJ/w72bsFGpCLhDtHc5PyTn1JU6beB1MHFHUuLh770CFpaTyY56eKv6e7wMhnkyIedTGg==",
+    "Realm/10.18.0": {
+      "sha512": "sBll13AEgRvStvDSCQx0qJfUDycEhdleYDeFbq2P5nX4Ydk4Q7s8W2g4ehEBVHEsY2+BCxmcdRzwEfCzVMM8iw==",
       "type": "package",
-      "path": "realm/10.17.0",
+      "path": "realm/10.18.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -58246,7 +58374,7 @@
         "lib/netstandard2.0/Realm.dll",
         "lib/netstandard2.0/Realm.pdb",
         "lib/netstandard2.0/Realm.xml",
-        "realm.10.17.0.nupkg.sha512",
+        "realm.10.18.0.nupkg.sha512",
         "realm.nuspec",
         "runtimes/android-arm/native/librealm-wrappers.so",
         "runtimes/android-arm64/native/librealm-wrappers.so",
@@ -58269,20 +58397,33 @@
         "runtimes/win10-x86/nativeassets/uap10.0/realm-wrappers.dll"
       ]
     },
-    "Realm.Fody/10.17.0": {
-      "sha512": "Axt4Lb6CZPcozf2yamcPUKQVXPaBLsFITYnD4+o78qZgzzJnNctDkXGsdxehv44b/BQVfArkMS2GUp5YLB8BMg==",
+    "Realm.Fody/10.18.0": {
+      "sha512": "vNJYGha6ySDASbyCDpkxTK6ApZUcbPwQ0PDqWegcp6UNU5/9lJZsHPa4X6Twm6yrNyDq4Qj8B/Kw1s1X9r5fig==",
       "type": "package",
-      "path": "realm.fody/10.17.0",
+      "path": "realm.fody/10.18.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "build/Realm.Fody.props",
         "icon.png",
-        "realm.fody.10.17.0.nupkg.sha512",
+        "realm.fody.10.18.0.nupkg.sha512",
         "realm.fody.nuspec",
         "weaver/netstandard2.0/Realm.Fody.dll",
         "weaver/netstandard2.0/Realm.Fody.xcf",
         "weaver/netstandard2.0/Realm.Fody.xml"
+      ]
+    },
+    "Realm.SourceGenerator/10.18.0": {
+      "sha512": "j5Nq+QJZim5ITUZZR2Fc17NzU6njC9re9bsIsQ9a4GLG67dsHuK4sZhj627WDm0l4jX4oapVkOIKY1Kl+OCfOA==",
+      "type": "package",
+      "path": "realm.sourcegenerator/10.18.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Realm.SourceGenerator.dll",
+        "icon.png",
+        "realm.sourcegenerator.10.18.0.nupkg.sha512",
+        "realm.sourcegenerator.nuspec"
       ]
     },
     "Remotion.Linq/2.2.0": {
@@ -63419,8 +63560,8 @@
       "Microsoft.Maui.Extensions >= 6.0.541",
       "Microsoft.Maui.Graphics >= 7.0.0-rc.2.6866",
       "MongoDB.Driver >= 2.18.0",
-      "Realm >= 10.17.0",
-      "Realm.Fody >= 10.17.0",
+      "Realm >= 10.18.0",
+      "Realm.Fody >= 10.18.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
@@ -63458,8 +63599,8 @@
       "Microsoft.Maui.Extensions >= 6.0.541",
       "Microsoft.Maui.Graphics >= 7.0.0-rc.2.6866",
       "MongoDB.Driver >= 2.18.0",
-      "Realm >= 10.17.0",
-      "Realm.Fody >= 10.17.0",
+      "Realm >= 10.18.0",
+      "Realm.Fody >= 10.18.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
@@ -63486,8 +63627,8 @@
       "Microsoft.Maui.Extensions >= 6.0.541",
       "Microsoft.Maui.Graphics >= 7.0.0-rc.2.6866",
       "MongoDB.Driver >= 2.18.0",
-      "Realm >= 10.17.0",
-      "Realm.Fody >= 10.17.0",
+      "Realm >= 10.18.0",
+      "Realm.Fody >= 10.18.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
@@ -63517,8 +63658,8 @@
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.1",
       "Microsoft.WindowsAppSDK >= 1.1.5",
       "MongoDB.Driver >= 2.18.0",
-      "Realm >= 10.17.0",
-      "Realm.Fody >= 10.17.0",
+      "Realm >= 10.18.0",
+      "Realm.Fody >= 10.18.0",
       "SampleBrowser.Maui.Base >= 20.2.38",
       "SkiaSharp.Extended.UI.Maui >= 2.0.0-preview.61",
       "SkiaSharp.Views.Maui.Controls >= 2.88.3",
@@ -63646,13 +63787,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -63846,13 +63987,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -63991,13 +64132,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",
@@ -64153,13 +64294,13 @@
           },
           "Realm": {
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "Realm.Fody": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
             "suppressParent": "All",
             "target": "Package",
-            "version": "[10.17.0, )"
+            "version": "[10.18.0, )"
           },
           "SampleBrowser.Maui.Base": {
             "target": "Package",

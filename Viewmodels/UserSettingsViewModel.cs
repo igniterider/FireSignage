@@ -16,7 +16,6 @@ namespace FireSignage.Viewmodels
 	public partial class UserSettingsViewModel : BaseViewModel
 	{
         private Realm userRealm;
-        private Realm deviceRealm;
         private string password;
         private string fname;
         private string lname;
@@ -102,7 +101,7 @@ namespace FireSignage.Viewmodels
         public bool ISControl
         { 
             set { SetProperty(ref iscontrol, value); }
-            get { return ISControl; } 
+            get { return iscontrol; } 
         
         }
         
@@ -182,16 +181,16 @@ namespace FireSignage.Viewmodels
         [RelayCommand]
         async Task AddDeviceInfo()
         {
-            if (deviceRealm == null)
+            if (userRealm == null)
             {
                 var user = App.realmApp.CurrentUser;
                 var partid = App.realmApp.CurrentUser.Id;
                 var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
-                deviceRealm = await Realm.GetInstanceAsync(config);
-                await deviceRealm.SyncSession.WaitForDownloadAsync();
+                userRealm = await Realm.GetInstanceAsync(config);
+                await userRealm.SyncSession.WaitForDownloadAsync();
 
 
-                var userinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
                 var setdevice = new UserDeviceInfo()
                 {
@@ -209,7 +208,7 @@ namespace FireSignage.Viewmodels
 
 
 
-                deviceRealm.Write(() =>
+                userRealm.Write(() =>
                 {
 
                     

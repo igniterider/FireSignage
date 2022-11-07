@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "bOf/8imiFq39lqBeRqK9gsh1rpoBdFrapxl5ME9rzTVsImQd1ZN1WoBHRe3f5p8JkCxPkA/JoFofmbKb3gnBkA==",
+  "dgSpecHash": "uNxeZdpsi1wxdfrD7PzdtGvABnDk0tjxIUq/ff1Oo1sMK7/tTDWXAg/ECJcazm6odXRvI2zVWFK815ZEI5jgBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\FireSignage.csproj",
   "expectedPackageFiles": [
@@ -33,8 +33,9 @@
     "C:\\Users\\bkjoh\\.nuget\\packages\\mongodb.driver\\2.18.0\\mongodb.driver.2.18.0.nupkg.sha512",
     "C:\\Users\\bkjoh\\.nuget\\packages\\mongodb.driver.core\\2.18.0\\mongodb.driver.core.2.18.0.nupkg.sha512",
     "C:\\Users\\bkjoh\\.nuget\\packages\\mongodb.libmongocrypt\\1.6.0\\mongodb.libmongocrypt.1.6.0.nupkg.sha512",
-    "C:\\Users\\bkjoh\\.nuget\\packages\\realm\\10.17.0\\realm.10.17.0.nupkg.sha512",
-    "C:\\Users\\bkjoh\\.nuget\\packages\\realm.fody\\10.17.0\\realm.fody.10.17.0.nupkg.sha512",
+    "C:\\Users\\bkjoh\\.nuget\\packages\\realm\\10.18.0\\realm.10.18.0.nupkg.sha512",
+    "C:\\Users\\bkjoh\\.nuget\\packages\\realm.fody\\10.18.0\\realm.fody.10.18.0.nupkg.sha512",
+    "C:\\Users\\bkjoh\\.nuget\\packages\\realm.sourcegenerator\\10.18.0\\realm.sourcegenerator.10.18.0.nupkg.sha512",
     "C:\\Users\\bkjoh\\.nuget\\packages\\remotion.linq\\2.2.0\\remotion.linq.2.2.0.nupkg.sha512",
     "C:\\Users\\bkjoh\\.nuget\\packages\\runtime.any.system.collections\\4.3.0\\runtime.any.system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\bkjoh\\.nuget\\packages\\runtime.any.system.globalization\\4.3.0\\runtime.any.system.globalization.4.3.0.nupkg.sha512",

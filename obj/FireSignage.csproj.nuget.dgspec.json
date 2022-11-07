@@ -112,13 +112,13 @@
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -312,13 +312,13 @@
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -457,13 +457,13 @@
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
@@ -619,13 +619,13 @@
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.17.0, )"
+              "version": "[10.18.0, )"
             },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
