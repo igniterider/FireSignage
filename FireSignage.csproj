@@ -40,10 +40,15 @@
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+		<AndroidAsset Include="Platforms\Android\drawable\maui_splash.xml" />
+		<AndroidAsset Include="Platforms\Android\drawable\splasha.svg">
+		  <Color>#d9d9d9</Color>
+		  <BaseSize>128,128</BaseSize>
+		</AndroidAsset>
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="64,64" />
-
+		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="128,128" />
+    
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
 		<MauiFont Include="Resources\Fonts\*" />
@@ -92,6 +97,9 @@
 	
 	<ItemGroup>
 	  <None Remove="Helpers\" />
+	  <None Remove="Platforms\Android\drawable\maui_splash.xml" />
+	  <None Remove="Platforms\Android\drawable\splasha.svg" />
+	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
 	  <None Remove="Views\Settings\" />
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\group_collapse.png" />
@@ -131,5 +139,10 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\errorAndEmpty.json" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
+	  <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen">
+	    <Version>1.0.0.2</Version>
+	  </PackageReference>
 	</ItemGroup>
 </Project>

@@ -1128,10 +1128,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -1484,6 +1484,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -2596,7 +2616,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -2612,11 +2632,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -2632,7 +2652,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -3757,10 +3777,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -4113,6 +4133,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -5225,7 +5265,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -5241,11 +5281,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -5261,7 +5301,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -6386,10 +6426,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -6742,6 +6782,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -7854,7 +7914,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -7870,11 +7930,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -7890,7 +7950,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -9015,10 +9075,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -9371,6 +9431,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -10483,7 +10563,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -10499,11 +10579,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -10519,7 +10599,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -11644,10 +11724,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -12000,6 +12080,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -13112,7 +13212,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -13128,11 +13228,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -13148,7 +13248,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -14269,10 +14369,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -14625,6 +14725,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -15737,7 +15857,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -15753,11 +15873,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -15773,7 +15893,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -16892,10 +17012,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -17248,6 +17368,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -18360,7 +18500,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -18376,11 +18516,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -18396,7 +18536,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -19518,10 +19658,10 @@
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Activity.Ktx.targets": {}
         }
       },
-      "Xamarin.AndroidX.Annotation/1.4.0": {
+      "Xamarin.AndroidX.Annotation/1.5.0.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Kotlin.StdLib": "1.7.0"
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll": {
@@ -19874,6 +20014,26 @@
         },
         "build": {
           "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.targets": {}
+        }
+      },
+      "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.AndroidX.Annotation": "1.5.0.1",
+          "Xamarin.Kotlin.StdLib": "1.7.20.1"
+        },
+        "compile": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets": {}
         }
       },
       "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -20986,7 +21146,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Google.Guava.ListenableFuture.targets": {}
         }
       },
-      "Xamarin.Jetbrains.Annotations/23.0.0.4": {
+      "Xamarin.Jetbrains.Annotations/23.0.0.5": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll": {
@@ -21002,11 +21162,11 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Jetbrains.Annotations.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib/1.7.10": {
+      "Xamarin.Kotlin.StdLib/1.7.20.1": {
         "type": "package",
         "dependencies": {
-          "Xamarin.Jetbrains.Annotations": "23.0.0.4",
-          "Xamarin.Kotlin.StdLib.Common": "1.7.10"
+          "Xamarin.Jetbrains.Annotations": "23.0.0.5",
+          "Xamarin.Kotlin.StdLib.Common": "1.7.20.1"
         },
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll": {
@@ -21022,7 +21182,7 @@
           "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets": {}
         }
       },
-      "Xamarin.Kotlin.StdLib.Common/1.7.10": {
+      "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
         "type": "package",
         "compile": {
           "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll": {
@@ -61670,10 +61830,10 @@
         "xamarin.androidx.activity.ktx.nuspec"
       ]
     },
-    "Xamarin.AndroidX.Annotation/1.4.0": {
-      "sha512": "vrV2eklIxE5q5xpcd2sjggiy6zFY6xywU9pOkxYn4q84FWHcJgUF2ruAjhZ7gg6cwnXfY6OWPV0CoIvPyz8VdQ==",
+    "Xamarin.AndroidX.Annotation/1.5.0.1": {
+      "sha512": "P3QXBOLiFVYoytRhJur3xKh6DsZ9m4umeDTrmhK3NXIFQq+tqFUFtUHYKUP4JRaW3FkCWsNFHczFlh9DfPM25Q==",
       "type": "package",
-      "path": "xamarin.androidx.annotation/1.4.0",
+      "path": "xamarin.androidx.annotation/1.5.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -61691,7 +61851,7 @@
         "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.dll",
         "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.pdb",
         "lib/net6.0-android31.0/Xamarin.AndroidX.Annotation.xml",
-        "xamarin.androidx.annotation.1.4.0.nupkg.sha512",
+        "xamarin.androidx.annotation.1.5.0.1.nupkg.sha512",
         "xamarin.androidx.annotation.nuspec"
       ]
     },
@@ -62096,6 +62256,31 @@
         "lib/net6.0-android31.0/Xamarin.AndroidX.Core.Core.Ktx.xml",
         "xamarin.androidx.core.core.ktx.1.9.0.nupkg.sha512",
         "xamarin.androidx.core.core.ktx.nuspec"
+      ]
+    },
+    "Xamarin.AndroidX.Core.SplashScreen/1.0.0.2": {
+      "sha512": "/Oc8nxG+gAd6MSMn355ldtAlWyMPVu+fr9ndNEqf5oAPN8VBDluKyawcFRKY6P+uD7fcOSRVEr2oYrTOVy+z/A==",
+      "type": "package",
+      "path": "xamarin.androidx.core.splashscreen/1.0.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "THIRD-PARTY-NOTICES.txt",
+        "aar/androidx.core.core-splashscreen.aar",
+        "build/monoandroid12.0/Xamarin.AndroidX.Core.SplashScreen.targets",
+        "build/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets",
+        "buildTransitive/monoandroid12.0/Xamarin.AndroidX.Core.SplashScreen.targets",
+        "buildTransitive/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.targets",
+        "icon.png",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Core.SplashScreen.dll",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Core.SplashScreen.pdb",
+        "lib/monoandroid12.0/Xamarin.AndroidX.Core.SplashScreen.xml",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.dll",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.pdb",
+        "lib/net6.0-android31.0/Xamarin.AndroidX.Core.SplashScreen.xml",
+        "xamarin.androidx.core.splashscreen.1.0.0.2.nupkg.sha512",
+        "xamarin.androidx.core.splashscreen.nuspec"
       ]
     },
     "Xamarin.AndroidX.CursorAdapter/1.0.0.14": {
@@ -63375,10 +63560,10 @@
         "xamarin.google.guava.listenablefuture.nuspec"
       ]
     },
-    "Xamarin.Jetbrains.Annotations/23.0.0.4": {
-      "sha512": "jSVQakmVkMMqLCExg97qsGsmTv1qKpyd9vFSJlelK5aawFPsZY1Z7ovF4zpKGXP4A8Axb0ZaDFZot4RjOxSgzg==",
+    "Xamarin.Jetbrains.Annotations/23.0.0.5": {
+      "sha512": "DYXvp8jMk4iQbH0ApB2mMUuCUtESbGRdaStFxkRGKYyFA73XrdxG4K8rFHT+a92LRe/fBZhpvQtt+s2R5HmIDQ==",
       "type": "package",
-      "path": "xamarin.jetbrains.annotations/23.0.0.4",
+      "path": "xamarin.jetbrains.annotations/23.0.0.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -63393,14 +63578,14 @@
         "lib/monoandroid12.0/Xamarin.Jetbrains.Annotations.xml",
         "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.dll",
         "lib/net6.0-android31.0/Xamarin.Jetbrains.Annotations.xml",
-        "xamarin.jetbrains.annotations.23.0.0.4.nupkg.sha512",
+        "xamarin.jetbrains.annotations.23.0.0.5.nupkg.sha512",
         "xamarin.jetbrains.annotations.nuspec"
       ]
     },
-    "Xamarin.Kotlin.StdLib/1.7.10": {
-      "sha512": "mal/YdvnJgw66Ud7KLmR82+onag7AD6dBZ+CINMLD1Yu+1Hy3YigKHIoZbSVa88yeN5PZgCUiQkRLTspVO8+yA==",
+    "Xamarin.Kotlin.StdLib/1.7.20.1": {
+      "sha512": "rXf7f31keX62tzFrfaZ5qC0qLiGRqk3qFBpocL87U8+DwJONOQ8/gc6MpmDQnrcJbAgJn7tudqKubPFVIJhaHw==",
       "type": "package",
-      "path": "xamarin.kotlin.stdlib/1.7.10",
+      "path": "xamarin.kotlin.stdlib/1.7.20.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -63410,19 +63595,19 @@
         "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
         "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.targets",
         "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.targets",
-        "jar/org.jetbrains.kotlin.kotlin-stdlib-1.7.10.jar",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-1.7.20.jar",
         "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.dll",
         "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.xml",
         "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.dll",
         "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.xml",
-        "xamarin.kotlin.stdlib.1.7.10.nupkg.sha512",
+        "xamarin.kotlin.stdlib.1.7.20.1.nupkg.sha512",
         "xamarin.kotlin.stdlib.nuspec"
       ]
     },
-    "Xamarin.Kotlin.StdLib.Common/1.7.10": {
-      "sha512": "kOshhqEU40RDFP55l6I3oQCc/qkkEu0et54vgcw4Tj0XByPrB30/PhqY6kKCj9tVJYhPCPh/7hA77IjXAPHOPw==",
+    "Xamarin.Kotlin.StdLib.Common/1.7.20.1": {
+      "sha512": "4OAlyfiGtm1JAQAwdSZq+Eqmm8Bb9LDXbqtknNl11i4f1mZ35OtKIHiCuxy3h5YnAYna4K1iqz3mCe+L/lBuRw==",
       "type": "package",
-      "path": "xamarin.kotlin.stdlib.common/1.7.10",
+      "path": "xamarin.kotlin.stdlib.common/1.7.20.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -63432,12 +63617,12 @@
         "build/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
         "buildTransitive/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.targets",
         "buildTransitive/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.targets",
-        "jar/org.jetbrains.kotlin.kotlin-stdlib-common-1.7.10.jar",
+        "jar/org.jetbrains.kotlin.kotlin-stdlib-common-1.7.20.jar",
         "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.dll",
         "lib/monoandroid12.0/Xamarin.Kotlin.StdLib.Common.xml",
         "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.dll",
         "lib/net6.0-android31.0/Xamarin.Kotlin.StdLib.Common.xml",
-        "xamarin.kotlin.stdlib.common.1.7.10.nupkg.sha512",
+        "xamarin.kotlin.stdlib.common.1.7.20.1.nupkg.sha512",
         "xamarin.kotlin.stdlib.common.nuspec"
       ]
     },
@@ -63577,6 +63762,7 @@
       "Syncfusion.Maui.TabView >= 20.3.52",
       "Xamarin.Android.Glide >= 4.13.2.2",
       "Xamarin.AndroidX.Browser >= 1.4.0.2",
+      "Xamarin.AndroidX.Core.SplashScreen >= 1.0.0.2",
       "Xamarin.AndroidX.Legacy.Support.V4 >= 1.0.0.14",
       "Xamarin.AndroidX.Lifecycle.LiveData >= 2.5.1",
       "Xamarin.AndroidX.Navigation.Common >= 2.5.2",
@@ -63856,6 +64042,10 @@
             "target": "Package",
             "version": "[1.4.0.2, )",
             "autoReferenced": true
+          },
+          "Xamarin.AndroidX.Core.SplashScreen": {
+            "target": "Package",
+            "version": "[1.0.0.2, )"
           },
           "Xamarin.AndroidX.Legacy.Support.V4": {
             "target": "Package",

@@ -182,6 +182,10 @@
               "version": "[1.4.0.2, )",
               "autoReferenced": true
             },
+            "Xamarin.AndroidX.Core.SplashScreen": {
+              "target": "Package",
+              "version": "[1.0.0.2, )"
+            },
             "Xamarin.AndroidX.Legacy.Support.V4": {
               "target": "Package",
               "version": "[1.0.0.14, )",
