@@ -25,6 +25,9 @@ namespace FireSignage.Models
         [MapTo("_displaytext")]
         public string Displaytext { get; set; }
 
+        [MapTo("_displaytext2")]
+        public string Displaytext2 { get; set; }
+
         [MapTo("_pagename")]
         public string Pagename { get; set; }
 
@@ -36,6 +39,9 @@ namespace FireSignage.Models
 
         [MapTo("_textcolor2")]
         public string Textcolor2 { get; set; }
+
+        [MapTo("_devicename2")]
+        public string Devicename2 { get; set; }
 
         [MapTo("owner_id")]
         [Required]
