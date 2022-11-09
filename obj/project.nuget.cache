@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hmDMWY1uijqVvauukpAdikbY5KawbQ6kEcXx5dnMRa/qHC0Q/Wl3yKAZu1SMnhKixZ1vqexDg0z5OHYVB8S1HQ==",
+  "dgSpecHash": "BiVK7UHsaEzE1keHylNrQnJ9Go8+DOr2RIk4J4Ch+xUeNOrtyon1Ix8/5XvVYrUGnBtWhglQVcnQi8xbbrPmwg==",
   "success": true,
   "projectFilePath": "/Users/brianjohnson/Documents/LocalProjects/FireSignage/FireSignage.csproj",
   "expectedPackageFiles": [
-    "/Users/brianjohnson/.nuget/packages/communitytoolkit.maui/1.3.0/communitytoolkit.maui.1.3.0.nupkg.sha512",
-    "/Users/brianjohnson/.nuget/packages/communitytoolkit.maui.core/1.3.0/communitytoolkit.maui.core.1.3.0.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/communitytoolkit.maui/3.0.0/communitytoolkit.maui.3.0.0.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/communitytoolkit.maui.core/3.0.0/communitytoolkit.maui.core.3.0.0.nupkg.sha512",
     "/Users/brianjohnson/.nuget/packages/communitytoolkit.mvvm/8.1.0-preview1/communitytoolkit.mvvm.8.1.0-preview1.nupkg.sha512",
     "/Users/brianjohnson/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
     "/Users/brianjohnson/.nuget/packages/fody/6.6.4/fody.6.6.4.nupkg.sha512",
@@ -194,7 +194,13 @@
     "/Users/brianjohnson/.nuget/packages/xamarin.kotlin.stdlib.jdk8/1.7.10/xamarin.kotlin.stdlib.jdk8.1.7.10.nupkg.sha512",
     "/Users/brianjohnson/.nuget/packages/xamarin.kotlinx.coroutines.android/1.6.4/xamarin.kotlinx.coroutines.android.1.6.4.nupkg.sha512",
     "/Users/brianjohnson/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.4/xamarin.kotlinx.coroutines.core.jvm.1.6.4.nupkg.sha512",
-    "/Users/brianjohnson/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512"
+    "/Users/brianjohnson/.nuget/packages/zstdsharp.port/0.6.2/zstdsharp.port.0.6.2.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.controls.ref.ios/7.0.49/microsoft.maui.controls.ref.ios.7.0.49.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.controls.runtime.ios/7.0.49/microsoft.maui.controls.runtime.ios.7.0.49.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.core.ref.ios/7.0.49/microsoft.maui.core.ref.ios.7.0.49.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.core.runtime.ios/7.0.49/microsoft.maui.core.runtime.ios.7.0.49.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.essentials.ref.ios/7.0.49/microsoft.maui.essentials.ref.ios.7.0.49.nupkg.sha512",
+    "/Users/brianjohnson/.nuget/packages/microsoft.maui.essentials.runtime.ios/7.0.49/microsoft.maui.essentials.runtime.ios.7.0.49.nupkg.sha512"
   ],
   "logs": []
 }

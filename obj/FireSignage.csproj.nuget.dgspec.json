@@ -52,11 +52,11 @@
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
@@ -244,18 +244,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
@@ -367,6 +367,32 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Maui.Controls.Ref.ios",
+              "version": "[7.0.49, 7.0.49]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.ios",
+              "version": "[7.0.49, 7.0.49]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.ios",
+              "version": "[7.0.49, 7.0.49]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.ios",
+              "version": "[7.0.49, 7.0.49]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.ios",
+              "version": "[7.0.49, 7.0.49]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.ios",
+              "version": "[7.0.49, 7.0.49]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.iOS": {
               "privateAssets": "all"
@@ -384,18 +410,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[1.3.0, )"
+              "version": "[3.0.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
@@ -525,7 +551,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100-rc.2.22477.23/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
