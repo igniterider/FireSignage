@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using FireSignage.Models;
 using FireSignage.Services;
 using FireSignage.Views.Settings;
+using FireSignage.Views.SignDisplay;
 using Realms;
 using Realms.Sync;
 using User = FireSignage.Models.User;
@@ -23,6 +24,7 @@ public partial class PremadeViewModel : BaseViewModel
     private string name;
     private string screen;
     private string dname;
+    private bool isdevicesign;
 
     PremadeService premadeService;
 
@@ -277,9 +279,10 @@ public partial class PremadeViewModel : BaseViewModel
 
                 if (name == dname)
                 {
+                    isdevicesign = dev.Deviceissign ?? false;
                     devicecount++;
                     Console.WriteLine(name);
-                    return;
+                    
                 }
 
             }
@@ -300,10 +303,26 @@ public partial class PremadeViewModel : BaseViewModel
             Console.WriteLine(ex.ToString());
             throw;
         }
-        return;
+
+        DeviceUse();
+        
     }
 
-	
+	private async void DeviceUse()
+    {
+        if(isdevicesign == true)
+        {
+            await Shell.Current.GoToAsync($"/{nameof(SignDisplayMain)}");
+
+        }
+
+        else if(isdevicesign == false)
+        {
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+
+        }
+
+    }
 	
 
 }
