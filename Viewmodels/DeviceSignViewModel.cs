@@ -14,9 +14,9 @@ namespace FireSignage.Viewmodels
         string NameofPage;
         public Command DisplaySetupCommand { get; }
 
-        private string backcolor;
+        public string backcolor;
         private string backcolor2;
-        private string displaytext;
+        public string displaytext;
         private string displaytext2;
         private string ridername;
         private string textcolor;
@@ -60,12 +60,18 @@ namespace FireSignage.Viewmodels
                 textcolor2 = newpage.Textcolor2;
                 devicename = newpage.Devicename2;
 
-                await ChangePage(NameofPage);
+               
             };
 
 
             // Later, when you no longer wish to receive notifications
             //watch.Dispose();
+
+
+        }
+
+        public async Task ChangeSign()
+        {
 
 
         }
