@@ -2,10 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireSignage.Views.SignDisplay.SignDisplayMain"
-             Title="SignDisplayMain">
-    <VerticalStackLayout>
+             Title="{Binding Title}"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
+             Shell.TabBarIsVisible="False"
+             >
+    <ContentPage.BindingContext>
+        <viewmodel:DeviceSignViewModel />
+    </ContentPage.BindingContext>
+
+    <VerticalStackLayout BackgroundColor="Black">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="{Binding displaytext}"
+            
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>
