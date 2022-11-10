@@ -35,6 +35,11 @@
             Route="NewSignTesting" />
 
 
+        <ShellContent
+            Title="Page Testing Xaml"
+            ContentTemplate="{DataTemplate views:CreateNewSign}"
+            Route="CreateNewSign" />
+
         <!--Deleted Tab-->
         <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"
              FlyoutIcon="{StaticResource Settings}"  >
@@ -69,10 +74,10 @@
             FlyoutItemIsVisible="False"
             IsVisible="True"/>
 
-        <!--<ShellContent
-            Title="Login"
-            ContentTemplate="{DataTemplate views:LoginFlow.TabbedLogin}"
-            Route="Login" />-->
+        <ShellContent
+            Title="MainDashboard"
+            ContentTemplate="{DataTemplate views:Dashboards.MainDashBoard}"
+            Route="MainDashboard" />
 
      </FlyoutItem>
 

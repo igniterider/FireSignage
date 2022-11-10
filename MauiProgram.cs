@@ -6,6 +6,7 @@ using Syncfusion.Maui.ListView.Hosting;
 using FireSignage.Views;
 using FireSignage.Controls;
 using FireSignage.Renderers;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace FireSignage;
 
@@ -15,10 +16,9 @@ public static class MauiProgram
 	{
         var builder = MauiApp.CreateBuilder();
         builder
-            
+
             .UseMauiApp<App>()
             .UseMauiCommunityToolkit()
-            
             .ConfigureSyncfusionCore()
             .ConfigureFonts(fonts =>
             {
@@ -36,12 +36,12 @@ public static class MauiProgram
                 fonts.AddFont("Montserrat-Regular.ttf", "MontserratReg");
                 fonts.AddFont("Montserrat-Medium.ttf", "MontserratMed");
                 fonts.AddFont("Montserrat-SemiBold.ttf", "MontserratSemiBold");
-            })
+            });
 
-        .ConfigureMauiHandlers(handlers =>
-         {
-             handlers.AddHandler(typeof (SKRenderView), typeof(IRenderer));
-         });
+        //.ConfigureMauiHandlers(handlers =>
+        // {
+        //     handlers.AddHandler(typeof (SKRenderView), typeof(IRenderer));
+        // });
 
         //builder.Services.AddSingleton<PremadeService>();
         //builder.Services.AddSingleton<PremadeViewModel>();
