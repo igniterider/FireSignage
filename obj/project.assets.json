@@ -13353,7 +13353,7 @@
         }
       }
     },
-    "net7.0-android33.0/iossimulator-x64": {
+    "net7.0-android33.0/ios-arm64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -13758,9 +13758,8 @@
           }
         },
         "native": {
-          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
         },
         "build": {
           "build/monoandroid/Realm.props": {}
@@ -28526,7 +28525,7 @@
         }
       }
     },
-    "net7.0-ios16.0/iossimulator-x64": {
+    "net7.0-ios16.0/ios-arm64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -28917,9 +28916,8 @@
           }
         },
         "native": {
-          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -40099,7 +40097,7 @@
         }
       }
     },
-    "net7.0-maccatalyst15.4/iossimulator-x64": {
+    "net7.0-maccatalyst15.4/ios-arm64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -40490,9 +40488,8 @@
           }
         },
         "native": {
-          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -52225,7 +52222,7 @@
         }
       }
     },
-    "net7.0-windows10.0.19041/iossimulator-x64": {
+    "net7.0-windows10.0.19041/ios-arm64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -52721,9 +52718,8 @@
           }
         },
         "native": {
-          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
-          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -64526,7 +64522,7 @@
       "android-x86": {
         "#import": []
       },
-      "iossimulator-x64": {
+      "ios-arm64": {
         "#import": []
       },
       "maccatalyst-x64": {

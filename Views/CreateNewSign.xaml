@@ -6,47 +6,16 @@
              xmlns:ctrl="clr-namespace:FireSignage.Controls"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
              Title="CreateNewSign"
-             x:DataType="viewmodel:NewSignViewModel">
-    
-        <ContentPage.Resources>
-        <ResourceDictionary>
-            <renderer:SignControlRenderer x:Key="SignControlRenderer" />
-        </ResourceDictionary>
-    </ContentPage.Resources>
+             x:DataType="viewmodel:NewSignViewModel"
+             Shell.PresentationMode="Modal">
 
     <VerticalStackLayout>
 
+       
 
 
-        <ctrl:SKRenderView x:Name="Canvas" Renderer="{Binding Renderer}" HeightRequest="300" VerticalOptions="Fill"  />
 
-        <Grid ColumnDefinitions="*,*"
-              RowDefinitions="75,75,*">
+    </VerticalStackLayout>  
 
-
-            <Picker Grid.Row="0" Grid.Column="0"
-                Title="Select Text Color"
-                      SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-                      ItemsSource="{Binding MyColors}"
-                      TitleColor="{Binding SelectedItem}" />
-
-            <Picker Grid.Row="0" Grid.Column="1"
-             Title="Background Color"
-              SelectedItem="{Binding SelectedBackItem, Mode=TwoWay}"
-              ItemsSource="{Binding MyColors}"
-              TitleColor="{Binding SelectedBackItem}"/>
-
-
-        </Grid>
-
-            
-
-        <Entry Text="Change Text Here" Placeholder="" HorizontalTextAlignment="Center" />
-
-        
-
-        
-        
-
-    </VerticalStackLayout>
+   
 </ContentPage>

@@ -165,4 +165,5 @@
 	  <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.0.2">
 	  </PackageReference>
 	</ItemGroup>
+	
 </Project>
