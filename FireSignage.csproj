@@ -40,17 +40,19 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+  
+  
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 		<AndroidAsset Include="Platforms\Android\drawable\maui_splash.xml" />
 		<AndroidAsset Include="Platforms\Android\drawable\splasha.svg">
 		  <Color>#d9d9d9</Color>
-		  <BaseSize>128,128</BaseSize>
+		  <BaseSize>64,64</BaseSize>
 		</AndroidAsset>
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\splasha.svg" Color="#d9d9d9" BaseSize="64,64" />
     
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />

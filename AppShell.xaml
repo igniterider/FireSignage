@@ -8,6 +8,7 @@
     xmlns:loginflow="clr-namespace:FireSignage.Views.LoginFlow"
     xmlns:views="clr-namespace:FireSignage.Views"
     xmlns:settings="clr-namespace:FireSignage.Views.Settings"
+    xmlns:signdisplays="clr-namespace:FireSignage.Views.SignDisplay"
     Shell.FlyoutBehavior="Flyout">
 
 
@@ -27,6 +28,11 @@
             Title="Dashboard"
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
+
+        <ShellContent
+            Title="MainSign"
+            ContentTemplate="{DataTemplate signdisplays:SignDisplayMain}"
+            Route="SignDisplayMain" />
 
 
         <ShellContent

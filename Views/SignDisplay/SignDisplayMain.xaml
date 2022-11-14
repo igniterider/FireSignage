@@ -7,15 +7,35 @@
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
              Shell.TabBarIsVisible="False"
              >
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding WatchingCommand}" />
+
+
+
+    </ContentPage.Behaviors>
+
+
+
     <ContentPage.BindingContext>
         <viewmodel:DeviceSignViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout BackgroundColor="Black">
+    <VerticalStackLayout BackgroundColor="White">
         <Label 
-            Text="{Binding displaytext}"
-            
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="{Binding DisplayText}"
+            BackgroundColor="Black"
+            HeightRequest="300"
+            VerticalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalOptions="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="30"
+            TextColor="Red"/>
+
+
+        
     </VerticalStackLayout>
 </ContentPage>

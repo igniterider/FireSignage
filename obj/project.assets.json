@@ -13353,7 +13353,7 @@
         }
       }
     },
-    "net7.0-android33.0/ios-arm64": {
+    "net7.0-android33.0/iossimulator-x64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -13758,8 +13758,9 @@
           }
         },
         "native": {
-          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         },
         "build": {
           "build/monoandroid/Realm.props": {}
@@ -28525,7 +28526,7 @@
         }
       }
     },
-    "net7.0-ios16.0/ios-arm64": {
+    "net7.0-ios16.0/iossimulator-x64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -28916,8 +28917,9 @@
           }
         },
         "native": {
-          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -40097,7 +40099,7 @@
         }
       }
     },
-    "net7.0-maccatalyst15.4/ios-arm64": {
+    "net7.0-maccatalyst15.4/iossimulator-x64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -40488,8 +40490,9 @@
           }
         },
         "native": {
-          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -44718,11 +44721,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -46197,11 +46200,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -47771,11 +47774,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -49345,11 +49348,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -50919,11 +50922,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -52222,7 +52225,7 @@
         }
       }
     },
-    "net7.0-windows10.0.19041/ios-arm64": {
+    "net7.0-windows10.0.19041/iossimulator-x64": {
       "CommunityToolkit.Maui/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -52493,11 +52496,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -52718,8 +52721,9 @@
           }
         },
         "native": {
-          "runtimes/ios/native/realm-wrappers.framework/Info.plist": {},
-          "runtimes/ios/native/realm-wrappers.framework/realm-wrappers": {}
+          "runtimes/iossimulator/native/realm-wrappers.framework/Info.plist": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/_CodeSignature/CodeResources": {},
+          "runtimes/iossimulator/native/realm-wrappers.framework/realm-wrappers": {}
         }
       },
       "Realm.Fody/10.18.0": {
@@ -54065,11 +54069,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -55639,11 +55643,11 @@
           }
         }
       },
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
         "type": "package",
         "dependencies": {
           "Microsoft.Graphics.Win2D": "1.0.4",
-          "Microsoft.Maui.Graphics": "7.0.0-rc.2.6866",
+          "Microsoft.Maui.Graphics": "7.0.49",
           "Microsoft.WindowsAppSDK": "1.1.5"
         },
         "compile": {
@@ -57465,10 +57469,10 @@
         "microsoft.maui.graphics.nuspec"
       ]
     },
-    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.0-rc.2.6866": {
-      "sha512": "JlmZd0WElnFz1wRDU/CY7nNECIfyR9FRe01WSXez+kB2qI/rVD+PaxX7FLptFY96GYYD8hVxbqoLXh6uvlTlJA==",
+    "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop/7.0.49": {
+      "sha512": "hiJ2ALQ3HsimHolxyEgSVPT3lWdoemqcEvwZSfGv+fXf7b0pyx2Z6c/M0GQEfz77LwzP6RvjHxyvM5uf4xHXUQ==",
       "type": "package",
-      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.0-rc.2.6866",
+      "path": "microsoft.maui.graphics.win2d.winui.desktop/7.0.49",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -57476,7 +57480,7 @@
         "lib/net7.0-windows10.0.19041/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll",
         "lib/net7.0-windows10.0.20348/Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.pdb",
-        "microsoft.maui.graphics.win2d.winui.desktop.7.0.0-rc.2.6866.nupkg.sha512",
+        "microsoft.maui.graphics.win2d.winui.desktop.7.0.49.nupkg.sha512",
         "microsoft.maui.graphics.win2d.winui.desktop.nuspec"
       ]
     },
@@ -63779,7 +63783,7 @@
       "Microsoft.Maui.Dependencies >= 6.0.547",
       "Microsoft.Maui.Extensions >= 6.0.547",
       "Microsoft.Maui.Graphics >= 7.0.49",
-      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.0-rc.2.6866",
+      "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop >= 7.0.49",
       "Microsoft.Windows.SDK.BuildTools >= 10.0.22621.1",
       "Microsoft.WindowsAppSDK >= 1.1.5",
       "MongoDB.Driver >= 2.18.0",
@@ -64055,7 +64059,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       },
       "net7.0-ios16.0": {
         "targetAlias": "net7.0-ios",
@@ -64195,7 +64199,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       },
       "net7.0-maccatalyst15.4": {
         "targetAlias": "net7.0-maccatalyst",
@@ -64336,7 +64340,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       },
       "net7.0-windows10.0.19041": {
         "targetAlias": "net7.0-windows10.0.19041.0",
@@ -64383,7 +64387,7 @@
           },
           "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
             "target": "Package",
-            "version": "[7.0.0-rc.2.6866, )",
+            "version": "[7.0.49, )",
             "autoReferenced": true
           },
           "Microsoft.Windows.SDK.BuildTools": {
@@ -64478,7 +64482,7 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-            "version": "[7.0.0-rc.2.22476.2, 7.0.0-rc.2.22476.2]"
+            "version": "[7.0.0, 7.0.0]"
           },
           {
             "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -64486,7 +64490,7 @@
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-            "version": "[7.0.0-rc.2.22472.13, 7.0.0-rc.2.22472.13]"
+            "version": "[7.0.0, 7.0.0]"
           }
         ],
         "frameworkReferences": {
@@ -64506,7 +64510,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {
@@ -64522,7 +64526,7 @@
       "android-x86": {
         "#import": []
       },
-      "ios-arm64": {
+      "iossimulator-x64": {
         "#import": []
       },
       "maccatalyst-x64": {

@@ -255,7 +255,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-ios16.0": {
           "targetAlias": "net7.0-ios",
@@ -395,7 +395,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-maccatalyst15.4": {
           "targetAlias": "net7.0-maccatalyst",
@@ -536,7 +536,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
         "net7.0-windows10.0.19041": {
           "targetAlias": "net7.0-windows10.0.19041.0",
@@ -583,7 +583,7 @@
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.0-rc.2.6866, )",
+              "version": "[7.0.49, )",
               "autoReferenced": true
             },
             "Microsoft.Windows.SDK.BuildTools": {
@@ -678,7 +678,7 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[7.0.0-rc.2.22476.2, 7.0.0-rc.2.22476.2]"
+              "version": "[7.0.0, 7.0.0]"
             },
             {
               "name": "Microsoft.Windows.SDK.NET.Ref",
@@ -686,7 +686,7 @@
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[7.0.0-rc.2.22472.13, 7.0.0-rc.2.22472.13]"
+              "version": "[7.0.0, 7.0.0]"
             }
           ],
           "frameworkReferences": {
@@ -706,7 +706,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100-rc.2.22477.23\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
@@ -722,7 +722,7 @@
         "android-x86": {
           "#import": []
         },
-        "ios-arm64": {
+        "iossimulator-x64": {
           "#import": []
         },
         "maccatalyst-x64": {
