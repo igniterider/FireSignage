@@ -23,19 +23,20 @@
         <viewmodel:DeviceSignViewModel />
     </ContentPage.BindingContext>
 
-    <VerticalStackLayout BackgroundColor="White">
+    <StackLayout BackgroundColor="White">
         <Label 
             Text="{Binding DisplayText}"
             BackgroundColor="Black"
             HeightRequest="300"
             VerticalOptions="Center"
             VerticalTextAlignment="Center"
-            HorizontalOptions="Center"
+            HorizontalOptions="FillAndExpand"
             HorizontalTextAlignment="Center"
-            FontSize="30"
-            TextColor="Red"/>
+            FontSize="80"
+            TextColor="Red"
+            FontAutoScalingEnabled="True"/>
 
 
         
-    </VerticalStackLayout>
+    </StackLayout>
 </ContentPage>
