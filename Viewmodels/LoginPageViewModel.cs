@@ -14,7 +14,6 @@ namespace FireSignage.Viewmodels
     public class LoginPageViewModel : LoginViewModel
     {
         #region Fields
-        Realm realm;
         CheckDeviceService deviceService;
         private string password;
         
