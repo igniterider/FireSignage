@@ -24,5 +24,8 @@
     <MauiXaml Update="Views\Settings\RegisterUserSettings.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Testing\Test1.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
   </ItemGroup>
 </Project>

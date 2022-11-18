@@ -9,6 +9,7 @@
     xmlns:views="clr-namespace:FireSignage.Views"
     xmlns:settings="clr-namespace:FireSignage.Views.Settings"
     xmlns:signdisplays="clr-namespace:FireSignage.Views.SignDisplay"
+    xmlns:testing="clr-namespace:FireSignage.Views.Testing"
     Shell.FlyoutBehavior="Flyout">
 
 
@@ -43,8 +44,8 @@
 
         <ShellContent
             Title="Page Testing Xaml"
-            ContentTemplate="{DataTemplate views:CreateNewSign}"
-            Route="CreateNewSign" />
+            ContentTemplate="{DataTemplate testing:Test1}"
+            Route="Test1" />
 
         <!--Deleted Tab-->
         <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"

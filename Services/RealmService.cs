@@ -10,9 +10,19 @@ namespace FireSignage.Services;
 
 public class RealmService
 {
-    private Realm userRealm;
-    private Realm displayRealm;
+    
+    public Realm alldataRealm;
 
+    public async Task GetDisplayRealm()
+    {
 
+        if (alldataRealm == null) 
+        {
+            var partition = App.realmApp.CurrentUser.Id;
+            var syncConfig = new PartitionSyncConfiguration(partition, App.realmApp.CurrentUser);
+
+            alldataRealm = await Realm.GetInstanceAsync(syncConfig);
+        }
+    }
 
 }

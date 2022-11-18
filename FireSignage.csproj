@@ -158,6 +158,9 @@
 	  <MauiXaml Update="Views\SignDisplay\SignDisplayMain.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Testing\Test1.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\errorAndEmpty.json" />

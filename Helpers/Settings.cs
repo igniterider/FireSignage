@@ -14,25 +14,31 @@ namespace FireSignage.Helpers
             set => Preferences.Set(nameof(IsDeviceASign), value);
         }
 
-        public static string EpisodeId
+        public static bool IsDeviceRegistered
         {
-            get => Preferences.Get(nameof(EpisodeId), null);
-            set => Preferences.Set(nameof(EpisodeId), value);
+            get => Preferences.Get(nameof(IsDeviceRegistered), false);
+            set => Preferences.Set(nameof(IsDeviceRegistered), value);
         }
 
-        public static string EpisodeTitle
+        public static string UserId
         {
-            get => Preferences.Get(nameof(EpisodeTitle), null);
-            set => Preferences.Set(nameof(EpisodeTitle), value);
+            get => Preferences.Get(nameof(UserId), null);
+            set => Preferences.Set(nameof(UserId), value);
         }
 
-        public static string EpisodeDescription
+        public static string CurrentSignText
         {
-            get => Preferences.Get(nameof(EpisodeDescription), null);
-            set => Preferences.Set(nameof(EpisodeDescription), value);
+            get => Preferences.Get(nameof(CurrentSignText), null);
+            set => Preferences.Set(nameof(CurrentSignText), value);
         }
 
+        public static string CurrentSignText2
+        {
+            get => Preferences.Get(nameof(CurrentSignText2), null);
+            set => Preferences.Set(nameof(CurrentSignText2), value);
+        }
 
+        
 
     }
 }
