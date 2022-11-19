@@ -1,4 +1,5 @@
 ﻿
+
 namespace FireSignage.Models
 {
 	public class PreMadeSigns : BaseViewModel

@@ -24,7 +24,7 @@ namespace FireSignage.Viewmodels
 
         public Command TextColorCommand { get; set; }
 
-        public Command BackColorCommand { get; set; }
+        public Microsoft.Maui.Controls.Command BackColorCommand { get; set; }
 
         public Renderers.IRenderer Renderer { get; set; }
 

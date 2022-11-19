@@ -115,6 +115,10 @@
               "target": "Package",
               "version": "[10.18.0, )"
             },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
               "version": "[20.2.38, )"
@@ -137,35 +141,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -314,6 +318,10 @@
               "target": "Package",
               "version": "[10.18.0, )"
             },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
               "version": "[20.2.38, )"
@@ -336,35 +344,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             }
           },
           "imports": [
@@ -454,6 +462,10 @@
               "target": "Package",
               "version": "[10.18.0, )"
             },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
               "version": "[20.2.38, )"
@@ -476,35 +488,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             }
           },
           "imports": [
@@ -611,6 +623,10 @@
               "target": "Package",
               "version": "[10.18.0, )"
             },
+            "Refractored.MvvmHelpers": {
+              "target": "Package",
+              "version": "[1.6.2, )"
+            },
             "SampleBrowser.Maui.Base": {
               "target": "Package",
               "version": "[20.2.38, )"
@@ -633,35 +649,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.56, )"
+              "version": "[20.3.57, )"
             }
           },
           "imports": [

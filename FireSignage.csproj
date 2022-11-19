@@ -83,15 +83,16 @@
 	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="3.0.0" />
 	  <PackageReference Include="CommunityToolkit.Maui" Version="3.0.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0-preview1" />
-	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.3.56" />
+	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.3.57" />
 	  <PackageReference Include="SampleBrowser.Maui.Base" Version="20.2.38" />
-	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.56" />
-	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.3.56" />
+	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.3.57" />
 	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.547" />
 	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.547" />
 	  <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />

@@ -29,7 +29,7 @@
             TextColor="Black"
             FontSize="40"/>
 
-        <Label Text="{Binding GetText.Displaytext}"
+        <Label Text="{Binding GetDisplayText.Displaytext}"
             VerticalOptions="Center" 
             HorizontalOptions="Center"
             TextColor="Red"

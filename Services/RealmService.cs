@@ -12,6 +12,7 @@ public class RealmService
 {
     
     public Realm alldataRealm;
+    private Realms.Sync.User _user;
 
     public async Task GetDisplayRealm()
     {
@@ -22,6 +23,7 @@ public class RealmService
             var syncConfig = new PartitionSyncConfiguration(partition, App.realmApp.CurrentUser);
 
             alldataRealm = await Realm.GetInstanceAsync(syncConfig);
+            
         }
     }
 
