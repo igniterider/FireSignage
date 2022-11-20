@@ -75,6 +75,7 @@
 	
 	<ItemGroup>
 	  <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
 	  <PackageReference Include="Realm" Version="10.18.0" />
 	  <PackageReference Include="Realm.Fody" Version="10.18.0">
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -111,6 +112,7 @@
 	  <None Remove="Platforms\Android\drawable\maui_splash.xml" />
 	  <None Remove="Platforms\Android\drawable\splasha.svg" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
+	  <None Remove="Resources\Raw\realm.json" />
 	  <None Remove="Views\Settings\" />
 	  <None Remove="Resources\Images\" />
 	  <None Remove="Resources\Images\group_collapse.png" />
@@ -165,10 +167,14 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiAsset Remove="Resources\Raw\errorAndEmpty.json" />
+	  <MauiAsset Remove="Resources\Raw\realm.json" />
 	</ItemGroup>
 	<ItemGroup Condition="'$(TargetFramework)' == 'net7.0-android'">
 	  <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.0.0.2">
 	  </PackageReference>
+	</ItemGroup>
+	<ItemGroup>
+	  <AndroidResource Include="Resources\Raw\realm.json" />
 	</ItemGroup>
 	
 </Project>

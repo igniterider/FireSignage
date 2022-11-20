@@ -7,6 +7,10 @@ using FireSignage.Views;
 using FireSignage.Controls;
 using FireSignage.Renderers;
 using SkiaSharp.Views.Maui.Controls.Hosting;
+using FireSignage.Views.Testing;
+using Microsoft.Extensions.DependencyInjection;
+using FireSignage.Views.LoginFlow;
+using FireSignage.Viewmodels;
 
 namespace FireSignage;
 
@@ -43,12 +47,13 @@ public static class MauiProgram
         //     handlers.AddHandler(typeof (SKRenderView), typeof(IRenderer));
         // });
 
-        //builder.Services.AddSingleton<PremadeService>();
-        //builder.Services.AddSingleton<PremadeViewModel>();
-        //builder.Services.AddSingleton<PremadeSignView>();
 
         builder.ConfigureSyncfusionListView();
         builder.Services.AddSingleton<MainPage>();
+        builder.Services.AddSingleton<Test1>();
+        builder.Services.AddSingleton<RealmService>();
+        builder.Services.AddSingleton<TabbedLogin>();
+        builder.Services.AddSingleton<LoginPageViewModel>();
         return builder.Build();
 	}
 }

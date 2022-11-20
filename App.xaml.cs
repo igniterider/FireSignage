@@ -1,4 +1,6 @@
-﻿
+﻿using FireSignage.Views.LoginFlow;
+using Newtonsoft.Json;
+using System;
 
 namespace FireSignage;
 
@@ -7,44 +9,63 @@ public partial class App : Application
 
     public static string BaseImageUrl { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
 
-    private const string appId = "signdisplays-awkrz";
+    private string appId = "signdisplays-awkrz";
+    private string baseUrl = "https://realm.mongodb.com";
     public static Realms.Sync.App realmApp;
-    public int logins;
-    public bool _isSign;
+    private Page page;
 
     public App()
 	{
         Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NjU0Nzg0QDMyMzAyZTMxMmUzMGFVWGs5V1VvTHZ6UVVjbHFxbURYdDdhYTB4RElISS9wZFJpQlUrRDJ6Nzg9");
 
         InitializeComponent();
+        OnStart();
 
-		MainPage = new AppShell();
-	}
+    }
 
     public static string ImageServerPath { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
 
     protected override void OnStart()
     {
-        realmApp = Realms.Sync.App.Create(appId);
-        var current = Connectivity.NetworkAccess;
-
-
-
-        if (current == NetworkAccess.Internet && App.realmApp.CurrentUser == null)
+        try
         {
-            // Connection to internet is available
-            // MainPage = new TabbedLogin();
-            MainPage = new AppShell();
+            
+            var appConfiguration = new Realms.Sync.AppConfiguration(appId)
+            {
+                BaseUri = new Uri(baseUrl)
+            };
+            realmApp = Realms.Sync.App.Create(appConfiguration);
+
+           
+            if(realmApp.CurrentUser == null)
+            {
+                MainPage = new TabbedLogin();
+            }
+            else
+            {
+               MainPage = new AppShell();
+            }
 
         }
-        else
+        catch (Exception ex)
         {
-            // MainPage = new TabbedLogin();//need to make a network error page or popup
+            // A Exception occurs if:
+            // 1. the config file does not exist, or
+            // 2. the config does not contain an "appId" or "baseUrl" element.
+
+            // If the appId value is incorrect, we handle that
+            // exception in the Login page.
+
+            Debug.WriteLine(ex.ToString());
         }
-
-
+        
     }
 
-   
+    
+
+
 }
+
+   
+
 

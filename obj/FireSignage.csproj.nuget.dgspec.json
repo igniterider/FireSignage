@@ -105,6 +105,10 @@
               "target": "Package",
               "version": "[2.18.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Realm": {
               "target": "Package",
               "version": "[10.18.0, )"
@@ -308,6 +312,10 @@
               "target": "Package",
               "version": "[2.18.0, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Realm": {
               "target": "Package",
               "version": "[10.18.0, )"
@@ -451,6 +459,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.18.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Realm": {
               "target": "Package",
@@ -612,6 +624,10 @@
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.18.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Realm": {
               "target": "Package",
