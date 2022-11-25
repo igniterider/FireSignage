@@ -71,7 +71,7 @@ namespace FireSignage.Viewmodels
             {
                 var user = App.realmApp.CurrentUser;
                 var partid = App.realmApp.CurrentUser.Id;
-                var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+                var config = new FlexibleSyncConfiguration(user);
                 userRealm = await Realm.GetInstanceAsync(config);
                 await userRealm.SyncSession.WaitForDownloadAsync();
 

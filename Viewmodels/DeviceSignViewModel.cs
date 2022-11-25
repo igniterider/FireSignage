@@ -51,7 +51,7 @@ namespace FireSignage.Viewmodels
             {
 
 
-                var syncConfig = new PartitionSyncConfiguration(part, App.realmApp.CurrentUser);
+                var syncConfig = new FlexibleSyncConfiguration(part);
 
                 signrealm = await Realm.GetInstanceAsync(syncConfig);
                 var newpage = signrealm.All<DisplaySign>().FirstOrDefault(t => t.OwnerId == App.realmApp.CurrentUser.Id);
