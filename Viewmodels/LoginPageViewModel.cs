@@ -144,7 +144,8 @@ namespace FireSignage.Viewmodels
 
                     
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
-                   
+
+                    await App.Current.MainPage = AppShell;
                     await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
 
 
@@ -196,6 +197,8 @@ namespace FireSignage.Viewmodels
 
 
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
+
+                    await App.Current.MainPage = AppShell;
                     await Shell.Current.GoToAsync($"//{nameof(RegisterUserSettings)}");
 
                 }

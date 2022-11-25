@@ -1,5 +1,7 @@
 ﻿using FireSignage.Views.LoginFlow;
 using Newtonsoft.Json;
+using Realms;
+using Realms.Sync;
 using System;
 
 namespace FireSignage;
@@ -13,6 +15,7 @@ public partial class App : Application
     private string baseUrl = "https://realm.mongodb.com";
     public static Realms.Sync.App realmApp;
     private Page page;
+    
 
     public App()
 	{
@@ -20,10 +23,24 @@ public partial class App : Application
 
         InitializeComponent();
         OnStart();
-
+        if (realmApp.CurrentUser == null)
+        {
+            MainPage = new TabbedLogin();
+        }
+        else
+        {
+            MainPage = new AppShell();
+        }
     }
 
     public static string ImageServerPath { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
+
+    
+
+    protected override Window CreateWindow(IActivationState activationState)
+    {
+        return new MauiWindow(MainPage);
+    }
 
     protected override void OnStart()
     {
@@ -37,14 +54,7 @@ public partial class App : Application
             realmApp = Realms.Sync.App.Create(appConfiguration);
 
            
-            if(realmApp.CurrentUser == null)
-            {
-                MainPage = new TabbedLogin();
-            }
-            else
-            {
-               MainPage = new AppShell();
-            }
+            
 
         }
         catch (Exception ex)
