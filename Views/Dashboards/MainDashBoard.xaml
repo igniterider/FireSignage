@@ -44,71 +44,10 @@
         RowDefinitions="200,60,100,*,*"
         RowSpacing="5"
         Margin="0,10,0,0">
-
-
-
-            <!--<Label BackgroundColor="Black" HeightRequest="150" Grid.Row="0" Margin="5" Grid.ColumnSpan="2" WidthRequest="280" HorizontalOptions="Start"/>
-
-
-
-
-
-
-
-            <VerticalStackLayout WidthRequest="100"
-                       Grid.Row="0" Grid.Column="1"
-                       HorizontalOptions="EndAndExpand"
-                       Spacing="5" Margin="0,0,10,0">
-
-
-
-                <Button Text="Connected" ImageSource="{FontImage FontFamily=fas6,
-                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.Signal},
-                                        Color=Green,
-                                        Size=15}"
-            FontSize="{OnPlatform Android=10, iOS=12}"
-            Command="{Binding CheckDevicesCommand }"/>
-
-
-
-
-                <Button Text="Edit" ImageSource="{FontImage FontFamily=fas6,
-                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
-                                        Color=Black,
-                                        Size=15}"
-            FontSize="{OnPlatform Android=10, iOS=12}"/>
-
-
-
-                <Button Text="Switch" ImageSource="{FontImage FontFamily=fas6,
-                                        Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
-                                        Color=Black,
-                                        Size=15}"
-            FontSize="{OnPlatform Android=10, iOS=12}"/>
-
-
-
-
-            </VerticalStackLayout>
-
-            <HorizontalStackLayout Grid.Row="1" Grid.ColumnSpan="2" HeightRequest="{OnPlatform Android=35}">
-                <Label Text="Change Name Only" TextColor="Black" Grid.Row="1" Grid.Column="0"
-               HorizontalOptions="FillAndExpand" Margin="5"
-               FontAttributes="Bold" FontSize="16"/>
-
-
-                <Entry Placeholder="Enter Name   " PlaceholderColor="Blue"
-               Grid.ColumnSpan="2" x:Name="displayname" WidthRequest="150" ClearButtonVisibility="WhileEditing"
-               HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"
-               Margin="20,0,0,0" />
-
-            </HorizontalStackLayout>-->
-
-            <!--start of 2nd screen and listviews-->
-            
+           
             <VerticalStackLayout Grid.Row="0" Grid.ColumnSpan="2" >
 
-                <Label Text="Editing Screen" FontAttributes="Bold"
+                <Label Text="WHATS SHOWING" FontAttributes="Bold"
                         HorizontalOptions="CenterAndExpand" FontSize="20"
                         Grid.ColumnSpan="2" HorizontalTextAlignment="Center" Padding="10"/>
 
@@ -157,12 +96,12 @@
 
    
 
-    <Button Text="Favs" ImageSource="{FontImage FontFamily=fas6,
+                <Button Text="Favs" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.ArrowRightArrowLeft},
                                         Color=Black,
                                         Size=20}" Padding="5"/>
 
-    <Button Text="Rideshare" ImageSource="{FontImage FontFamily=fas6,
+                    <Button Text="Rideshare" ImageSource="{FontImage FontFamily=fas6,
                                         Glyph={x:Static fontAwesome:FontAwesomeIcons.PenToSquare},
                                         Color=Black,
                                         Size=20}" Padding="5"/>

@@ -135,6 +135,12 @@
 	  <MauiXaml Remove="Resources\Styles\ButtonStyles %28copy%29.xaml" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Views\Dashboards\BusinessDashBoard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Dashboards\GigDashBoard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Dashboards\MainDashBoard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

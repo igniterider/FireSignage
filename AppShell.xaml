@@ -7,6 +7,7 @@
     xmlns:controls="clr-namespace:FireSignage.Controls"
     xmlns:loginflow="clr-namespace:FireSignage.Views.LoginFlow"
     xmlns:views="clr-namespace:FireSignage.Views"
+    xmlns:dashboards="clr-namespace:FireSignage.Views.Dashboards"
     xmlns:settings="clr-namespace:FireSignage.Views.Settings"
     xmlns:signdisplays="clr-namespace:FireSignage.Views.SignDisplay"
     xmlns:testing="clr-namespace:FireSignage.Views.Testing"
@@ -72,7 +73,28 @@
 
         </Tab>
 
+        <Tab Title="Dashboards" FlyoutDisplayOptions="AsMultipleItems"
+             FlyoutIcon="{StaticResource BurgerMenu}"  >
 
+            <ShellContent
+            Title="MainDashboard"
+            ContentTemplate="{DataTemplate dashboards:MainDashBoard}"
+            Route="MainDashboard" />
+
+            <ShellContent
+            Title="Business Dashboard"
+            ContentTemplate="{DataTemplate dashboards:BusinessDashBoard}"
+            Route="BusinessDashboard" />
+
+
+
+        </Tab>
+
+
+        <ShellContent
+            Title="Gig Dashboard"
+            ContentTemplate="{DataTemplate dashboards:GigDashBoard}"
+            Route="GigDashBoard" />
 
         <ShellContent
             Title="Device Settings"
@@ -81,18 +103,13 @@
             FlyoutItemIsVisible="False"
             IsVisible="True"/>
 
-        <ShellContent
-            Title="MainDashboard"
-            ContentTemplate="{DataTemplate views:Dashboards.MainDashBoard}"
-            Route="MainDashboard" />
+        
 
      </FlyoutItem>
 
 
         <MenuItem Text="HELP"
             Command="{Binding HelpCommand}"/>
-       
-        <MenuItem Text="LOGOUT"/>
 
      <Shell.FlyoutFooter>
         <controls:FlyoutFooter />

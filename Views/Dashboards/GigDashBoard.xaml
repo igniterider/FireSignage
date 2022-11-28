@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FireSignage.Views.Dashboards.GigDashBoard"
+             xmlns:model="clr-namespace:FireSignage.Models"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
+             Title="{Binding Title}"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
+             Shell.TabBarIsVisible="False"
+             xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
+             xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
+             xmlns:local="clr-namespace:FireSignage"
+             >
+
+
+    <ScrollView>
+        <Grid  
+        ColumnDefinitions="*,*,*"
+        ColumnSpacing="0"
+        RowDefinitions="15,200,15,*,*,*,*,*,*,*"
+        RowSpacing="5"
+        Margin="5">
+
+
+
+            <Label Text="WHAT'S PLAYING" TextColor="Black" Grid.Row="0"
+                   Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"
+                   FontAttributes="Bold"/>
+            <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" Grid.ColumnSpan="3" Grid.Row="1"/>
+
+
+           
+            <Label Text="Edit Screen" Grid.Row="2" Grid.Column="2" FontAttributes="Bold"/>
+
+            <Picker TextColor="Black" Title="Select Device" Grid.Row="2" Grid.Column="0"/>
+            <Label BackgroundColor="Black" Grid.ColumnSpan="2" Grid.Row="3" 
+                   Grid.Column="1" HeightRequest="100" Margin="5,35,5,5"/>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>
