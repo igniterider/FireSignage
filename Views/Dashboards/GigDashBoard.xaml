@@ -12,9 +12,21 @@
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
              xmlns:local="clr-namespace:FireSignage"
              >
+    
+    
 
+    <ContentPage.BindingContext>
+        <viewmodel:PremadeViewModel />
+    </ContentPage.BindingContext>
 
-    <ScrollView>
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding GetSignsCommand}" />
+
+    </ContentPage.Behaviors>
+        
+        <ScrollView>
         <Grid  
         ColumnDefinitions="*,*,*"
         ColumnSpacing="0"
@@ -27,15 +39,72 @@
             <Label Text="WHAT'S PLAYING" TextColor="Black" Grid.Row="0"
                    Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"
                    FontAttributes="Bold"/>
+            
             <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" Grid.ColumnSpan="3" Grid.Row="1"/>
 
 
-           
-            <Label Text="Edit Screen" Grid.Row="2" Grid.Column="2" FontAttributes="Bold"/>
+            <VerticalStackLayout Grid.Column="0" Grid.Row="3" >
+                <Picker TextColor="Black" Title="Select Device" FontAttributes="Bold"/>
 
-            <Picker TextColor="Black" Title="Select Device" Grid.Row="2" Grid.Column="0"/>
-            <Label BackgroundColor="Black" Grid.ColumnSpan="2" Grid.Row="3" 
-                   Grid.Column="1" HeightRequest="100" Margin="5,35,5,5"/>
+                <Picker Title="Pick Animations" FontAttributes="Bold" TextColor="Black"/>
+
+            </VerticalStackLayout>
+
+            
+            <VerticalStackLayout Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
+                <Label Text="Edit Screen" FontAttributes="Bold" Grid.ColumnSpan="2" HorizontalOptions="Center"/>
+                <Label BackgroundColor="Black" Grid.ColumnSpan="2"
+                    HeightRequest="100" Margin="5"/>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="5" Grid.ColumnSpan="3" Margin="5,20,5,5">
+                <Label Text="Change Name Only" Grid.Column="1" TextColor="Black" FontAttributes="Bold" Padding="10"/>
+                <Entry Text="Name" Placeholder="Name Only         " Grid.Column="1" Grid.ColumnSpan="2"/>
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout Grid.Row="6" Grid.Column="0">
+                <Picker Title="Background Color" FontAttributes="Bold" TextColor="Black"/>
+
+                <Picker Title="Text Color" FontAttributes="Bold" TextColor="Black"/>
+
+                <Picker Title="Text Size" FontAttributes="Bold" TextColor="Black"/>
+            </VerticalStackLayout>
+
+
+            <VerticalStackLayout Grid.Row="6" Grid.Column="2">
+                <Button Text="Send Edits" Style="{StaticResource GradientButtonStyle}" Margin="5"/>
+                <Button Text="Switch Back" Style="{StaticResource GradientButtonStyle}" Margin="5"/>
+                
+
+
+            </VerticalStackLayout>
+
+            <Label Text="Choose a sign" FontAttributes="Bold" TextColor="Black" Grid.Row="7" 
+                   Grid.Column="1" HorizontalOptions="CenterAndExpand" Margin="5,35,5,10"/>
+            <CollectionView Grid.Row="8" Grid.ColumnSpan="3" ItemsLayout="HorizontalList" ItemsSource="{Binding GetSigns}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:PreMadeSigns">
+                        <Grid Padding="10">
+                            <Frame HeightRequest="100" WidthRequest="200" Style="{StaticResource CardView}">
+
+                                <VerticalStackLayout Padding="10">
+
+                                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext}" TextColor="White" HorizontalTextAlignment="Center"/>
+                                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext2}" TextColor="Red" HorizontalTextAlignment="Center" />
+
+                                </VerticalStackLayout>
+
+                            </Frame>
+                        </Grid>
+
+                    </DataTemplate>
+                    
+                </CollectionView.ItemTemplate>
+                
+            </CollectionView>
+
+
+
 
         </Grid>
     </ScrollView>

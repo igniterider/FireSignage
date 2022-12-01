@@ -71,7 +71,6 @@
 	  <Folder Include="Platforms\Android\drawable\" />
 	  <Folder Include="Renderers\" />
 	  <Folder Include="Resources\Images\" />
-	  <Folder Include="Views\SignDisplay\" />
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -164,6 +163,9 @@
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\UserSettings.xaml">
 	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\SignDisplay\DisplayTest.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignDisplay\SignDisplayMain.xaml">
 	    <SubType></SubType>

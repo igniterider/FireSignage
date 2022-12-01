@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace FireSignage.Viewmodels
 {
-    public partial class DeviceSignViewModel : BaseViewModel
+    public partial class DeviceSignViewModel : BaseViewModel, IDrawable
     {
         private Realm signrealm;
         string NameofPage;
@@ -29,7 +29,7 @@ namespace FireSignage.Viewmodels
 
         public DeviceSignViewModel()
         {
-            
+           
             
         }
 
@@ -123,6 +123,13 @@ namespace FireSignage.Viewmodels
             await Shell.Current.GoToAsync("//" + page);
         }
 
+        public void Draw(ICanvas canvas, RectF dirtyRect)
+        {
+            canvas.FontColor = Colors.Black;
+            canvas.FontSize = 30;
+            canvas.DrawString("UBER", 20, 60, 380, 100, HorizontalAlignment.Center, VerticalAlignment.Top);
 
+
+        }
     }
 }

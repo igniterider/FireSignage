@@ -5,15 +5,18 @@
              Title="{Binding Title}"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
+             xmlns:views="clr-namespace:FireSignage.Views.SignDisplay"
              Shell.TabBarIsVisible="False"
              >
+
+    <ContentPage.Resources>
+        <viewmodel:DeviceSignViewModel x:Key="drawable" />
+    </ContentPage.Resources>
 
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
         EventName="Appearing"
         Command="{Binding WatchingCommand}" />
-
-
 
     </ContentPage.Behaviors>
 
@@ -24,7 +27,7 @@
     </ContentPage.BindingContext>
 
     <StackLayout BackgroundColor="White">
-        <Label 
+        <!--<Label 
             Text="{Binding DisplayText}"
             BackgroundColor="Black"
             HeightRequest="300"
@@ -34,9 +37,12 @@
             HorizontalTextAlignment="Center"
             FontSize="80"
             TextColor="Red"
-            FontAutoScalingEnabled="True"/>
+            FontAutoScalingEnabled="True"/>-->
+
+        <GraphicsView Drawable="{StaticResource drawable}"
+                      HeightRequest="500"
+                      WidthRequest="500" />
 
 
-        
     </StackLayout>
 </ContentPage>

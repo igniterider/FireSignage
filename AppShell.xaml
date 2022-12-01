@@ -36,6 +36,11 @@
             ContentTemplate="{DataTemplate signdisplays:SignDisplayMain}"
             Route="SignDisplayMain" />
 
+        <ShellContent
+            Title="DisplayTesting"
+            ContentTemplate="{DataTemplate signdisplays:DisplayTest}"
+            Route="DisplayTest" />
+
 
         <ShellContent
             Title="Create A Sign"
