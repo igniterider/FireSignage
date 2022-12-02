@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\FireSignage.csproj": {}
+    "C:\\Users\\bkjoh\\source\\repos\\firesignage\\FireSignage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\FireSignage.csproj": {
+    "C:\\Users\\bkjoh\\source\\repos\\firesignage\\FireSignage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\FireSignage.csproj",
+        "projectUniqueName": "C:\\Users\\bkjoh\\source\\repos\\firesignage\\FireSignage.csproj",
         "projectName": "FireSignage",
-        "projectPath": "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\FireSignage.csproj",
+        "projectPath": "C:\\Users\\bkjoh\\source\\repos\\firesignage\\FireSignage.csproj",
         "packagesPath": "C:\\Users\\bkjoh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bkjoh\\Source\\Repos\\FireSignage\\obj\\",
+        "outputPath": "C:\\Users\\bkjoh\\source\\repos\\firesignage\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [

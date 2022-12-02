@@ -1,6 +1,9 @@
 ﻿using CommunityToolkit.Mvvm.Input;
+using Microsoft.Maui.Graphics;
 using Realms;
 using Realms.Sync;
+using SkiaSharp;
+using SkiaSharp.Views.Maui;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +13,7 @@ using System.Xml.Linq;
 
 namespace FireSignage.Viewmodels
 {
-    public partial class DeviceSignViewModel : BaseViewModel, IDrawable
+    public partial class DeviceSignViewModel : BaseViewModel
     {
         private Realm signrealm;
         string NameofPage;
@@ -123,12 +126,51 @@ namespace FireSignage.Viewmodels
             await Shell.Current.GoToAsync("//" + page);
         }
 
-        public void Draw(ICanvas canvas, RectF dirtyRect)
-        {
-            canvas.FontColor = Colors.Black;
-            canvas.FontSize = 30;
-            canvas.DrawString("UBER", 20, 60, 380, 100, HorizontalAlignment.Center, VerticalAlignment.Top);
+        //public void Draw(ICanvas canvas, RectF dirtyRect)
+        //{
+        //    string str = "UBER";
+        //    float textWidth = canvas.GetStringSize();
+           
 
+
+
+        //    canvas.FontColor = Colors.Black;
+        //    canvas.FontSize = 30;
+        //    canvas.DrawString("UBER",0,100, HorizontalAlignment.Center, VerticalAlignment.Top);
+
+
+        //}
+
+        public void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
+        {
+            SKImageInfo info = args.Info;
+            SKSurface surface = args.Surface;
+            SKCanvas canvas = surface.Canvas;
+
+            canvas.Clear();
+
+            string str = "UBER";
+
+
+            SKPaint textPaint = new SKPaint
+            {
+
+                Color = SKColors.White
+            };
+
+            // Adjust TextSize property str so text is 95% of screen width
+            float textWidth = textPaint.MeasureText(str);
+            textPaint.TextSize = 0.95f * info.Width * textPaint.TextSize / textWidth;
+
+            // Find the text bounds
+            SKRect textBounds = new SKRect();
+            textPaint.MeasureText(str, ref textBounds);
+
+            float xText = info.Width / 2 - textBounds.MidX;
+
+            float yText1 = info.Height / 3 - textBounds.MidY;
+            // And draw the text for text 1
+            canvas.DrawText(str, xText, yText1 + 50, textPaint);
 
         }
     }
