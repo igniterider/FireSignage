@@ -18,15 +18,15 @@ namespace FireSignage.Renderers
 
             privcanvas = surface.Canvas;
 
-            privcanvas.Clear(FillColor);
+            privcanvas.Clear();
 
-            string str = GetString;
+            string str = "UBER 4";
 
-
+            
             SKPaint textPaint = new SKPaint
             {
 
-                Color = TextColor
+                Color = SKColors.Red                     /*TextColor*/
 
 
             };
