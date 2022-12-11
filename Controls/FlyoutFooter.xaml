@@ -6,7 +6,7 @@
      <StackLayout>
             <Button Text="Logout" Clicked="Button_Clicked_1" Style="{StaticResource GradientButtonStyle}"/>
          
-         <Label Text="Ignite Rider Inc" TextColor="#8b0000" HorizontalTextAlignment="Center" FontSize="Large"/>
+         <Label Text="Ignite Rider Inc" HorizontalTextAlignment="Center"/>
 
      </StackLayout>   
     </ContentView.Content>

@@ -112,6 +112,7 @@
 	  <None Remove="Platforms\Android\drawable\splasha.svg" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
 	  <None Remove="Resources\Images\newlogo1.svg" />
+	  <None Remove="Resources\Raw\logo1.json" />
 	  <None Remove="Resources\Raw\realm.json" />
 	  <None Remove="Views\Settings\" />
 	  <None Remove="Resources\Images\" />

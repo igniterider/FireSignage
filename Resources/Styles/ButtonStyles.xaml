@@ -9,13 +9,15 @@
     <Style x:Key="GradientButtonStyle" TargetType="Button">
         <Setter Property="Background">
             <Setter.Value>
+                
                 <LinearGradientBrush StartPoint="0,0"
                                      EndPoint="1,1">
                    
-                        <GradientStop Offset="0.1" Color="{DynamicResource Tertiary}" />
-                        <GradientStop Offset="1.0" Color="{DynamicResource Secondary}" />
+                        <GradientStop Offset="0.0" Color="{DynamicResource Tertiary}" />
+                        <GradientStop Offset="1.1" Color="{DynamicResource Secondary}" />
                    
                 </LinearGradientBrush>
+               
             </Setter.Value>
         </Setter>
         <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
