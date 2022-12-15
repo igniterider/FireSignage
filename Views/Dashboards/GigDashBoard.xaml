@@ -11,7 +11,7 @@
              xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
              xmlns:local="clr-namespace:FireSignage"
-             >
+             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
     
     
 
@@ -25,63 +25,72 @@
         Command="{Binding GetSignsCommand}" />
 
     </ContentPage.Behaviors>
-        
-        <ScrollView>
-        <Grid  
-        ColumnDefinitions="*,*,*"
-        ColumnSpacing="0"
-        RowDefinitions="15,200,15,*,*,*,*,*,*,*"
-        RowSpacing="5"
-        Margin="5">
+            <VerticalStackLayout>
+                
+            <HorizontalStackLayout Margin="10" Spacing="20">
 
+                <Label Text="WHAT'S PLAYING" TextColor="Black"
+                   HorizontalOptions="Center" 
+                   FontAttributes="Bold" Margin="50,5"/>
 
+                <Picker TextColor="Black" Title="Select Device" FontAttributes="Bold"
+                        HorizontalOptions="EndAndExpand" />
 
-            <Label Text="WHAT'S PLAYING" TextColor="Black" Grid.Row="0"
-                   Grid.ColumnSpan="3" HorizontalOptions="CenterAndExpand"
-                   FontAttributes="Bold"/>
-            
-            <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" Grid.ColumnSpan="3" Grid.Row="1"/>
-
-
-            <VerticalStackLayout Grid.Column="0" Grid.Row="3" >
-                <Picker TextColor="Black" Title="Select Device" FontAttributes="Bold"/>
-
-                <Picker Title="Pick Animations" FontAttributes="Bold" TextColor="Black"/>
-
-            </VerticalStackLayout>
-
-            
-            <VerticalStackLayout Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="3">
-                <Label Text="Edit Screen" FontAttributes="Bold" Grid.ColumnSpan="2" HorizontalOptions="Center"/>
-                <Label BackgroundColor="Black" Grid.ColumnSpan="2"
-                    HeightRequest="100" Margin="5"/>
-            </VerticalStackLayout>
-
-            <HorizontalStackLayout Grid.Row="5" Grid.ColumnSpan="3" Margin="5,20,5,5">
-                <Label Text="Change Name Only" Grid.Column="1" TextColor="Black" FontAttributes="Bold" Padding="10"/>
-                <Entry Text="Name" Placeholder="Name Only         " Grid.Column="1" Grid.ColumnSpan="2"/>
             </HorizontalStackLayout>
 
-            <VerticalStackLayout Grid.Row="6" Grid.Column="0">
-                <Picker Title="Background Color" FontAttributes="Bold" TextColor="Black"/>
+           
 
-                <Picker Title="Text Color" FontAttributes="Bold" TextColor="Black"/>
+            <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
 
-                <Picker Title="Text Size" FontAttributes="Bold" TextColor="Black"/>
+        <HorizontalStackLayout Margin="10">
+            <Label Text="Sign Options" />
+
+        </HorizontalStackLayout>
+
+              <mct:Expander Direction="Down">
+                <mct:Expander.Header>
+                  <Frame BorderColor="DarkRed" >
+                    <Label Text="Edit Screen-----Click Me" FontAttributes="Bold" FontSize="Medium"/>
+                  </Frame>
+
+                </mct:Expander.Header>
+                <mct:Expander.Content>
+                  <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
+                </mct:Expander.Content>
+
+
+              </mct:Expander>
+
+           
+
+        <HorizontalStackLayout Margin="5" Spacing="20">
+            <Label Text="Change Riders Name Only" HorizontalOptions="Start"/>
+
+            <Entry TextColor="Black" FontSize="Small" 
+                   FontAttributes="Bold" Placeholder="____________________" 
+                   HorizontalOptions="CenterAndExpand"/>
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="5" Spacing="10">
+            <VerticalStackLayout>
+                <Label Text="Text Size"/>
+                <Stepper x:Name="stepper1" />
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Picker  Title="Background Color"/>
+                <Picker  Title="Text Color"/>
             </VerticalStackLayout>
 
 
-            <VerticalStackLayout Grid.Row="6" Grid.Column="2">
-                <Button Text="Send Edits" Style="{StaticResource GradientButtonStyle}" Margin="5"/>
-                <Button Text="Switch Back" Style="{StaticResource GradientButtonStyle}" Margin="5"/>
-                
+        </HorizontalStackLayout>
+            
 
 
-            </VerticalStackLayout>
 
-            <Label Text="Choose a sign" FontAttributes="Bold" TextColor="Black" Grid.Row="7" 
-                   Grid.Column="1" HorizontalOptions="CenterAndExpand" Margin="5,35,5,10"/>
-            <CollectionView Grid.Row="8" Grid.ColumnSpan="3" ItemsLayout="HorizontalList" ItemsSource="{Binding GetSigns}">
+
+            <CollectionView ItemsLayout="HorizontalList" ItemsSource="{Binding GetSigns}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:PreMadeSigns">
                         <Grid Padding="10">
@@ -105,7 +114,5 @@
 
 
 
-
-        </Grid>
-    </ScrollView>
+            </VerticalStackLayout>
 </ContentPage>
