@@ -40,52 +40,60 @@
      <FlyoutItem Shell.BackgroundColor="#49687e" FlyoutDisplayOptions="AsMultipleItems" >
 
          <ShellContent
-            Title="Dashboard"
+            Title="Main"
             ContentTemplate="{DataTemplate local:MainPage}"
-            Route="MainPage" />
+            Route="MainPage"
+            />
 
         <ShellContent
-            Title="MainSign"
+            Title="Graphics Sign"
             ContentTemplate="{DataTemplate signdisplays:SignDisplayMain}"
-            Route="SignDisplayMain" />
+            Route="SignDisplayMain"
+            />
 
         <ShellContent
-            Title="DisplayTesting"
+            Title="Display SkView"
             ContentTemplate="{DataTemplate signdisplays:DisplayTest}"
-            Route="DisplayTest" />
+            Route="DisplayTest"
+            />
 
 
         <ShellContent
             Title="Create A Sign"
             ContentTemplate="{DataTemplate views:NewSignTesting}"
-            Route="NewSignTesting" />
+            Route="NewSignTesting"
+            />
 
 
         <ShellContent
-            Title="Page Testing Xaml"
+            Title="OldMainPage"
             ContentTemplate="{DataTemplate testing:Test1}"
-            Route="Test1" />
+            Route="Test1"
+            />
 
-        <!--Deleted Tab-->
+       
         <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"
              FlyoutIcon="{StaticResource Settings}"  >
 
             <ShellContent
             Title="App Settings"
             ContentTemplate="{DataTemplate settings:SettingsPage}"
-            Route="SettingsPage" />
+            Route="SettingsPage"
+            />
 
             <ShellContent
             Title="User Settings"
             ContentTemplate="{DataTemplate settings:UserSettings}"
-            Route="UserSettings" />
+            Route="UserSettings"
+            />
 
             <ShellContent
-            Title="RegistrationSettings"
+            Title="Registration Settings"
             ContentTemplate="{DataTemplate settings:RegisterUserSettings}"
             Route="RegisterUserSettings"
             FlyoutItemIsVisible="False"
-            IsVisible="False"/>
+            IsVisible="False"
+            />
 
             
 
@@ -97,29 +105,34 @@
             <ShellContent
             Title="MainDashboard"
             ContentTemplate="{DataTemplate dashboards:MainDashBoard}"
-            Route="MainDashboard" />
+            Route="MainDashboard"
+                />
+
+            <ShellContent
+            Title="Gig Dashboard"
+            ContentTemplate="{DataTemplate dashboards:GigDashBoard}"
+            Route="GigDashBoard"
+           />
 
             <ShellContent
             Title="Business Dashboard"
             ContentTemplate="{DataTemplate dashboards:BusinessDashBoard}"
-            Route="BusinessDashboard" />
+           />
 
 
 
         </Tab>
 
 
-        <ShellContent
-            Title="Gig Dashboard"
-            ContentTemplate="{DataTemplate dashboards:GigDashBoard}"
-            Route="GigDashBoard" />
+        
 
         <ShellContent
             Title="Device Settings"
             ContentTemplate="{DataTemplate settings:DeviceSettingsPage}"
             Route="DeviceSettingsPage"
             FlyoutItemIsVisible="False"
-            IsVisible="True"/>
+            IsVisible="True"
+            />
 
         
 

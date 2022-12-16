@@ -11,7 +11,8 @@
              xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
              xmlns:local="clr-namespace:FireSignage"
-             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+             xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+            >
     
     
 
@@ -29,11 +30,11 @@
                 
             <HorizontalStackLayout Margin="10" Spacing="20">
 
-                <Label Text="WHAT'S PLAYING" TextColor="Black"
+                <Label Text="WHAT'S PLAYING"
                    HorizontalOptions="Center" 
                    FontAttributes="Bold" Margin="50,5"/>
 
-                <Picker TextColor="Black" Title="Select Device" FontAttributes="Bold"
+            <Picker Title="Select Device" FontAttributes="Bold"
                         HorizontalOptions="EndAndExpand" />
 
             </HorizontalStackLayout>
@@ -42,15 +43,17 @@
 
             <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
 
-        <HorizontalStackLayout Margin="10">
-            <Label Text="Sign Options" />
+       
+            <Label Text="Editing Sign" HorizontalOptions="Center" />
 
-        </HorizontalStackLayout>
+       
 
-              <mct:Expander Direction="Down">
+              <mct:Expander Direction="Down" HorizontalOptions="Center">
                 <mct:Expander.Header>
                   <Frame BorderColor="DarkRed" >
-                    <Label Text="Edit Screen-----Click Me" FontAttributes="Bold" FontSize="Medium"/>
+                    <Label Text="+/-" FontAttributes="Bold" FontSize="Medium" 
+                           HorizontalTextAlignment="Center" HorizontalOptions="Center"
+                           TextColor="Black"/>
                   </Frame>
 
                 </mct:Expander.Header>
@@ -66,7 +69,7 @@
         <HorizontalStackLayout Margin="5" Spacing="20">
             <Label Text="Change Riders Name Only" HorizontalOptions="Start"/>
 
-            <Entry TextColor="Black" FontSize="Small" 
+            <Entry FontSize="Small" 
                    FontAttributes="Bold" Placeholder="____________________" 
                    HorizontalOptions="CenterAndExpand"/>
 
@@ -79,8 +82,18 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout>
-                <Picker  Title="Background Color"/>
-                <Picker  Title="Text Color"/>
+                <Picker HorizontalOptions="Center"
+                        Title="Text Color"
+                        SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                        ItemsSource="{Binding MyColors}"
+                        TitleColor="{Binding SelectedItem}" />
+
+                <Picker HorizontalOptions="Center"
+                        Title="Background Color"
+                        SelectedItem="{Binding SelectedBackItem, Mode=TwoWay}"
+                        ItemsSource="{Binding MyColors}"
+                        TitleColor="{Binding SelectedBackItem}" />
+                
             </VerticalStackLayout>
 
 
@@ -99,7 +112,7 @@
                                 <VerticalStackLayout Padding="10">
 
                                     <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext}" TextColor="White" HorizontalTextAlignment="Center"/>
-                                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext2}" TextColor="Red" HorizontalTextAlignment="Center" />
+                                    <Label VerticalOptions="Center" FontSize="30" Text="{Binding Displaytext2}" TextColor="White" HorizontalTextAlignment="Center" />
 
                                 </VerticalStackLayout>
 

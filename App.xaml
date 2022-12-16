@@ -13,7 +13,9 @@
                 <ResourceDictionary Source="Resources/Styles/ButtonStyles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
+           
 
+           
             <Style TargetType="Label"
                 Class="FlyoutItemLabelStyle">
                 <Setter Property="TextColor"
