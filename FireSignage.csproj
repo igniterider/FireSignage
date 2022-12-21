@@ -111,6 +111,7 @@
 	  <None Remove="Platforms\Android\drawable\maui_splash.xml" />
 	  <None Remove="Platforms\Android\drawable\splasha.svg" />
 	  <None Remove="Platforms\Android\Resources\values\styles.xml" />
+	  <None Remove="Resources\Images\home1.png" />
 	  <None Remove="Resources\Images\newlogo1.svg" />
 	  <None Remove="Resources\Raw\logo1.json" />
 	  <None Remove="Resources\Raw\realm.json" />

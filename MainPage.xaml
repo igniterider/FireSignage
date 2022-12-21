@@ -29,6 +29,12 @@
         <Label Text="Welcome to Display Signs by Ignite Rider Inc" HorizontalOptions="Center" LineBreakMode="WordWrap"
                FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
 
+        <Label Text="Turn any device into a digital sign" 
+               HorizontalOptions="Center" LineBreakMode="WordWrap"
+               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+
+        <Image Source="home1.png" HorizontalOptions="Center"/>
+
         <HorizontalStackLayout Margin="5">
             <Button Text="See All Signs" Style="{StaticResource GradientButtonStyle2}" Command="{Binding NavigateCommand}" />
             <Button Text="Create A New Sign" Style="{StaticResource GradientButtonStyle}" />

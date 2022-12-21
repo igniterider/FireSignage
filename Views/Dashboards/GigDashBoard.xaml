@@ -70,7 +70,7 @@
             <Label Text="Change Riders Name Only" HorizontalOptions="Start"/>
 
             <Entry FontSize="Small" 
-                   FontAttributes="Bold" Placeholder="____________________" 
+                   FontAttributes="Bold" Placeholder="Enter Name " 
                    HorizontalOptions="CenterAndExpand"/>
 
         </HorizontalStackLayout>
@@ -78,10 +78,10 @@
         <HorizontalStackLayout Margin="5" Spacing="10">
             <VerticalStackLayout>
                 <Label Text="Text Size"/>
-                <Stepper x:Name="stepper1" />
+                <Stepper x:Name="stepper1" HeightRequest="50" WidthRequest="100" />
             </VerticalStackLayout>
 
-            <VerticalStackLayout>
+           
                 <Picker HorizontalOptions="Center"
                         Title="Text Color"
                         SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
@@ -94,7 +94,7 @@
                         ItemsSource="{Binding MyColors}"
                         TitleColor="{Binding SelectedBackItem}" />
                 
-            </VerticalStackLayout>
+           
 
 
         </HorizontalStackLayout>
