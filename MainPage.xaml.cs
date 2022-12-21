@@ -1,4 +1,6 @@
-﻿using Syncfusion.Maui.ListView;
+﻿using Microsoft.Maui.Controls;
+using Syncfusion.Maui.ListView;
+using System.Reflection;
 
 namespace FireSignage;
 
@@ -8,7 +10,7 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
-
+       
         
 
         //listView.GroupHeaderTemplate = new DataTemplate(() =>
@@ -31,12 +33,11 @@ public partial class MainPage : ContentPage
         //var group = listView.DataSource.Groups[1];
         //listView.ExpandGroup(group);
         //listView.CollapseGroup(group);
-
-
     }
 
-    
 
+
+   
 }
 
 

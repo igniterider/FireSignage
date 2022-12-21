@@ -23,6 +23,7 @@ public static class MauiProgram
 
             .UseMauiApp<App>()
             .UseSkiaSharp(true)
+            .UseSkiaSharp()
             .UseMauiCommunityToolkit()
             .ConfigureSyncfusionCore()
             .ConfigureFonts(fonts =>

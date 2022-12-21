@@ -99,8 +99,8 @@
 
         </Tab>
 
-        <Tab Title="Dashboards" FlyoutDisplayOptions="AsMultipleItems"
-             FlyoutIcon="{StaticResource BurgerMenu}"  >
+        <!--<Tab Title="Dashboards" FlyoutDisplayOptions="AsMultipleItems"
+             FlyoutIcon="{StaticResource BurgerMenu}"  >-->
 
             <ShellContent
             Title="MainDashboard"
@@ -121,7 +121,7 @@
 
 
 
-        </Tab>
+        <!--</Tab>-->
 
 
         

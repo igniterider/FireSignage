@@ -8,16 +8,43 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
              Shell.TabBarIsVisible="False"
-             xmlns:ListView="clr-namespace:Syncfusion.Maui.ListView;assembly=Syncfusion.Maui.ListView"
-             xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
-             xmlns:local="clr-namespace:FireSignage">
+             Shell.NavBarIsVisible="True"
+             xmlns:local="clr-namespace:FireSignage"
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
 
-    
+
+    <ContentPage.BindingContext>
+        <viewmodel:MainPageViewModel />
+    </ContentPage.BindingContext>
+
     <VerticalStackLayout>
 
-        <Image Source="newlogo1.png" HorizontalOptions="Center" Margin="5"/>
+      <skia:SKLottieView
+                Source="logo1.json"
+                RepeatCount="1"
+                HeightRequest="75"
+                HorizontalOptions="Center"
+                Margin="5"/>
+      
         <Label Text="Welcome to Display Signs by Ignite Rider Inc" HorizontalOptions="Center" LineBreakMode="WordWrap"
                FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
 
+        <HorizontalStackLayout Margin="5">
+            <Button Text="See All Signs" Style="{StaticResource GradientButtonStyle2}" Command="{Binding NavigateCommand}" />
+            <Button Text="Create A New Sign" Style="{StaticResource GradientButtonStyle}" />
+            <Button Text="See Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                    CommandParameter="//GigDashBoard"/>
+
+
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout Margin="10">
+
+            <Button Text="Settings" Style="{StaticResource GradientButtonStyle}" />
+            <Button Text="Devices" Style="{StaticResource GradientButtonStyle2}" />
+            <Button Text="Get Help" Style="{StaticResource GradientButtonStyle}" />
+
+        </HorizontalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>

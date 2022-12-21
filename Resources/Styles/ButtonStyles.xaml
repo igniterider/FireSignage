@@ -13,8 +13,8 @@
                 <LinearGradientBrush StartPoint="0,0"
                                      EndPoint="1,1">
                    
-                        <GradientStop Offset="0.0" Color="{DynamicResource Tertiary}" />
-                        <GradientStop Offset="1.1" Color="{DynamicResource Secondary}" />
+                        <GradientStop Offset="0.0" Color="{DynamicResource Primary}" />
+                        <GradientStop Offset="1.1" Color="{DynamicResource Tertiary}" />
                    
                 </LinearGradientBrush>
                
@@ -37,14 +37,14 @@
                 <LinearGradientBrush StartPoint="0,0"
                                      EndPoint="1,1">
 
-                    <GradientStop Offset="0.0" Color="{DynamicResource Tertiary}" />
+                    <GradientStop Offset="0.0" Color="{DynamicResource White}" />
                     <GradientStop Offset="1.1" Color="{DynamicResource Primary}" />
 
                 </LinearGradientBrush>
 
             </Setter.Value>
         </Setter>
-        <Setter Property="TextColor" Value="{DynamicResource Gray-White}" />
+        <Setter Property="TextColor" Value="{DynamicResource Tertiary}" />
         <Setter Property="FontFamily" Value="Montserrat-SemiBold" />
         <Setter Property="BorderWidth" Value="0" />
         <Setter Property="FontSize" Value="16" />

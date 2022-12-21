@@ -1,10 +1,12 @@
 ﻿using System.Linq;
 using System.Reflection;
+using System.Diagnostics;
 using CommunityToolkit.Mvvm.Input;
 using FireSignage.Models;
 using FireSignage.Services;
 using FireSignage.Views.Settings;
 using FireSignage.Views.SignDisplay;
+using Microsoft.Maui.Controls;
 using Realms;
 using Realms.Sync;
 using User = FireSignage.Models.User;
@@ -15,6 +17,8 @@ namespace FireSignage.Viewmodels;
 
 public partial class PremadeViewModel : BaseViewModel
 {
+   
+
     private Realm newRealm;
     private string idiom;
     private string OS;
@@ -54,6 +58,7 @@ public partial class PremadeViewModel : BaseViewModel
 		premadeService = new PremadeService();
 		MyColors = colors.Keys.ToList();
         GetDeviceInfo();
+        print();
 
     }
 
@@ -323,7 +328,20 @@ public partial class PremadeViewModel : BaseViewModel
         }
 
     }
-	
+
+    
+    private void print()
+    {
+        //string nav = Shell.NavigationProperty.DefaultValue.ToString();
+        //Console.WriteLine("Nav Default Value = " + nav);
+
+
+        string main = Microsoft.Maui.Controls.Page.NavigationProperty.PropertyName.ToString();
+        Console.WriteLine("ShellNav = " + main);
+
+       
+
+    }
 
 }
 
