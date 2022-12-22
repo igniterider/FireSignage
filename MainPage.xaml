@@ -21,7 +21,7 @@
 
       <skia:SKLottieView
                 Source="logo1.json"
-                RepeatCount="1"
+                RepeatCount="0"
                 HeightRequest="75"
                 HorizontalOptions="Center"
                 Margin="5"/>
@@ -29,28 +29,46 @@
         <Label Text="Welcome to Display Signs by Ignite Rider Inc" HorizontalOptions="Center" LineBreakMode="WordWrap"
                FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
 
-        <Label Text="Turn any device into a digital sign" 
-               HorizontalOptions="Center" LineBreakMode="WordWrap"
-               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+        
 
         <Image Source="home1.png" HorizontalOptions="Center"/>
 
-        <HorizontalStackLayout Margin="5">
-            <Button Text="See All Signs" Style="{StaticResource GradientButtonStyle2}" Command="{Binding NavigateCommand}" />
-            <Button Text="Create A New Sign" Style="{StaticResource GradientButtonStyle}" />
-            <Button Text="See Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+        <Label Text="Where any device is a digital sign" 
+               HorizontalOptions="Center" LineBreakMode="WordWrap"
+               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+
+        <HorizontalStackLayout Margin="5" HorizontalOptions="Center">
+            <VerticalStackLayout HorizontalOptions="Center" Margin="5" Spacing="5">
+                <Button Text="Tutorials" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}" 
+                        CommandParameter="//TutorialsPage"/>
+                
+                <Button Text="Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
                     CommandParameter="//GigDashBoard"/>
 
+                <Button Text="Settings" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                    CommandParameter="//SettingsPage"/>
+
+            </VerticalStackLayout>
+
+            <VerticalStackLayout HorizontalOptions="Center" Margin="5" Spacing="5">
+                <Button Text="All Signs" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                        CommandParameter="//AllSigns"/>
+
+                <Button Text="Help" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                        CommandParameter="//HelpPage"/>
+
+                <Button Text="Create a Sign" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                        CommandParameter="//CreateNewSign"/>
+
+            </VerticalStackLayout>
+            
+
 
         </HorizontalStackLayout>
 
-        <HorizontalStackLayout Margin="10">
+        <Label Text="Need a device or mount for your sign?" HorizontalOptions="Center" LineBreakMode="WordWrap" Margin="10"/>
+        <Label Text="Check out our website for great deals unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/> 
 
-            <Button Text="Settings" Style="{StaticResource GradientButtonStyle}" />
-            <Button Text="Devices" Style="{StaticResource GradientButtonStyle2}" />
-            <Button Text="Get Help" Style="{StaticResource GradientButtonStyle}" />
 
-        </HorizontalStackLayout>
-        
     </VerticalStackLayout>
 </ContentPage>

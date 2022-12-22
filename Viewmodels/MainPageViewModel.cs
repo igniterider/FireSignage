@@ -18,6 +18,7 @@ namespace FireSignage.Viewmodels
         
         public MainPageViewModel()
         {
+            Title = "Home";
             
         }
 

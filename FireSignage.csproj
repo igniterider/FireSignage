@@ -135,6 +135,9 @@
 	  <MauiXaml Remove="Resources\Styles\ButtonStyles %28copy%29.xaml" />
 	</ItemGroup>
 	<ItemGroup>
+	  <MauiXaml Update="Views\AllSigns.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Dashboards\BusinessDashBoard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
@@ -142,6 +145,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Dashboards\MainDashBoard.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Settings\DeviceConnect.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\DeviceSettingsPage.xaml">
