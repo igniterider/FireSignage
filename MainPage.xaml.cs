@@ -1,5 +1,6 @@
 ﻿using Microsoft.Maui.Controls;
 using Syncfusion.Maui.ListView;
+using System;
 using System.Reflection;
 
 namespace FireSignage;
@@ -35,9 +36,11 @@ public partial class MainPage : ContentPage
         //listView.CollapseGroup(group);
     }
 
-
-
-   
+    private async void Button_Clicked(object sender, EventArgs e)
+    {
+        var url = "https://www.igniterider.com";
+        await Launcher.OpenAsync(url);
+    }
 }
 
 

@@ -26,13 +26,15 @@
 
     <VerticalStackLayout>
 
-      <skia:SKLottieView
+      <!--<skia:SKLottieView
                 Source="logo1.json"
                 RepeatCount="0"
                 HeightRequest="75"
                 HorizontalOptions="Center"
-                Margin="5"/>
-      
+                Margin="5"/>-->
+
+        <Image Source="newlogo1.png" HorizontalOptions="Center"/>
+
         <Label Text="Welcome to Display Signs by Ignite Rider Inc" HorizontalOptions="Center" LineBreakMode="WordWrap"
                FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
 
@@ -74,7 +76,8 @@
         </HorizontalStackLayout>
 
         <Label Text="Need a device or mount for your sign?" HorizontalOptions="Center" LineBreakMode="WordWrap" Margin="10"/>
-        <Label Text="Check out our website for great deals and unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/> 
+        <Label Text="Check out our website for great deals and unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/>
+        <Button Style="{StaticResource GradientButtonStyle}" Text="Click for Website!" Clicked="Button_Clicked" FontSize="Small"/>
 
 
     </VerticalStackLayout>

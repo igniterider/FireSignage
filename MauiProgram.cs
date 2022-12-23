@@ -11,6 +11,7 @@ using FireSignage.Views.Testing;
 using Microsoft.Extensions.DependencyInjection;
 using FireSignage.Views.LoginFlow;
 using FireSignage.Viewmodels;
+using FireSignage.Views.Dashboards;
 
 namespace FireSignage;
 
@@ -52,8 +53,9 @@ public static class MauiProgram
 
         builder.ConfigureSyncfusionListView();
         builder.Services.AddSingleton<MainPage>();
-        builder.Services.AddSingleton<Test1>();
         builder.Services.AddSingleton<RealmService>();
+        builder.Services.AddSingleton<GigViewModel>();
+        builder.Services.AddSingleton<GigDashBoard>();
         builder.Services.AddSingleton<TabbedLogin>();
         builder.Services.AddSingleton<LoginPageViewModel>();
         return builder.Build();

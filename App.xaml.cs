@@ -71,7 +71,10 @@ public partial class App : Application
         
     }
 
-    
+    protected override void OnSleep()
+    {
+        base.OnSleep();
+    }
 
 
 }

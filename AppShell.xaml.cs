@@ -1,5 +1,6 @@
 ﻿using System.Windows.Input;
 using FireSignage.Views.Dashboards;
+using FireSignage.Views.LoginFlow;
 using FireSignage.Views.Settings;
 using FireSignage.Views.SignDisplay;
 
@@ -24,7 +25,7 @@ public partial class AppShell : Shell
     {
 
         Routes.Add("SignDisplayMain", typeof(SignDisplayMain));
-       
+        Routes.Add("TabbedLogin", typeof(TabbedLogin));
 
         foreach (var item in Routes)
         {

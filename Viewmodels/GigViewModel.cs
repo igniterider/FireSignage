@@ -36,8 +36,7 @@ namespace FireSignage.Viewmodels
 
         public List<CategoriesList> SignCategory { get; set; } = new();
         public List<PreMadeSigns> Rides { get; set; } = new();
-        public List<PreMadeSigns> Business { get; set; } = new();
-        public List<PreMadeSigns> Holiday { get; set; } = new();
+        
         private string categoryname;
         private int devicecount = 0;
 
@@ -56,7 +55,7 @@ namespace FireSignage.Viewmodels
             Title = "Dashboard";
             premadeService = new PremadeService();
             MyColors = colors.Keys.ToList();
-            GetDeviceInfo();
+           
             
 
         }
@@ -150,6 +149,7 @@ namespace FireSignage.Viewmodels
 
 
         //Icommand auto creates instead of writing code for the command and in constructor booo yahhh
+        
 
         [RelayCommand]
         async Task GetSignsAsync()
@@ -202,29 +202,13 @@ namespace FireSignage.Viewmodels
                 IsBusy = true;
                 var signs = await premadeService.GetPreMadeSigns();
                 var ride = signs.Where(n => n.Category == "Rideshare");
-                var business = signs.Where(n => n.Category == "Business");
-                var holiday = signs.Where(n => n.Category == "Holiday");
+                
 
                 foreach (var rides in ride)
                 {
                     Rides.Add(rides);
 
                 }
-
-                foreach (var hol in holiday)
-                {
-
-                    Holiday.Add(hol);
-                }
-
-
-                foreach (var bus in business)
-                {
-                    Business.Add(bus);
-                }
-
-
-
 
             }
             catch (Exception ex)
@@ -246,87 +230,7 @@ namespace FireSignage.Viewmodels
 
         public List<String> userDeviceList = new List<String>();
 
-        private void GetDeviceInfo()
-        {
-            idiom = DeviceInfo.Idiom.ToString();
-            OS = DeviceInfo.Platform.ToString();
-            osVersion = DeviceInfo.Version.ToString();
-            manu = DeviceInfo.Manufacturer;
-            model = DeviceInfo.Model;
-            name = DeviceInfo.Name;
-            screen = DeviceDisplay.MainDisplayInfo.ToString();
-
-
-
-        }
-
-        [RelayCommand]
-        async Task CheckDevices()
-        {
-
-            try
-            {
-
-                var user = App.realmApp.CurrentUser;
-                var partid = App.realmApp.CurrentUser.Id;
-                var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
-                newRealm = await Realm.GetInstanceAsync(config);
-                await newRealm.SyncSession.WaitForDownloadAsync();
-
-
-                var deviceinfo = newRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-                foreach (var dev in deviceinfo.Userdeviceinfo)
-                {
-                    dname = dev.Devicename;
-                    userDeviceList.Add(dname);
-                    Console.WriteLine(dname);
-
-                    if (name == dname)
-                    {
-                        isdevicesign = dev.Deviceissign ?? false;
-                        devicecount++;
-                        Console.WriteLine(name);
-
-                    }
-
-                }
-
-                if (devicecount <= 0)
-                {
-                    bool answer = await Shell.Current.DisplayAlert("Device Not Registered", "Register Now?", "Yes", "No");
-                    if (answer == true)
-                    {
-                        await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
-                        return;
-                    }
-                }
-            }
-
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.ToString());
-                throw;
-            }
-
-            DeviceUse();
-
-        }
-
-        private async void DeviceUse()
-        {
-            if (isdevicesign == true)
-            {
-                await Shell.Current.GoToAsync($"/{nameof(SignDisplayMain)}");
-
-            }
-
-            else if (isdevicesign == false)
-            {
-                await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-
-            }
-
-        }
+        
 
 
     }   
