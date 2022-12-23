@@ -12,12 +12,17 @@
              xmlns:data="clr-namespace:Syncfusion.Maui.DataSource;assembly=Syncfusion.Maui.DataSource"
              xmlns:local="clr-namespace:FireSignage"
              xmlns:mct="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-            >
-    
-    
+             >
+
+    <!--<Shell.TitleView >
+        <StackLayout >
+            <Label Text="{Binding Title}" FontAttributes="Bold" FontSize="20" />
+        </StackLayout>
+    </Shell.TitleView>-->
+
 
     <ContentPage.BindingContext>
-        <viewmodel:PremadeViewModel />
+        <viewmodel:GigViewModel />
     </ContentPage.BindingContext>
 
     <ContentPage.Behaviors>
@@ -26,6 +31,7 @@
         Command="{Binding GetSignsCommand}" />
 
     </ContentPage.Behaviors>
+    <ScrollView>
             <VerticalStackLayout>
                 
             <HorizontalStackLayout Margin="10" Spacing="20">
@@ -41,30 +47,53 @@
 
            
 
-            <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
+          
 
        
-            <Label Text="Editing Sign" HorizontalOptions="Center" />
+           
 
-       
-
-              <mct:Expander Direction="Down" HorizontalOptions="Center">
-                <mct:Expander.Header>
-                  <Frame BorderColor="DarkRed" >
-                    <Label Text="+/-" FontAttributes="Bold" FontSize="Medium" 
-                           HorizontalTextAlignment="Center" HorizontalOptions="Center"
+        <mct:Expander Direction="Down" HorizontalOptions="Start" BackgroundColor="{StaticResource Primary}">
+            <mct:Expander.Header>
+                <Frame BorderColor="DarkRed" BackgroundColor="{StaticResource Primary}" HorizontalOptions="CenterAndExpand">
+                    <Label Text="Easy Screens (Tap Me)" FontAttributes="Bold" FontSize="Medium" 
+                           
                            TextColor="Black"/>
-                  </Frame>
+                </Frame>
+
+            </mct:Expander.Header>
+
+
+            <mct:Expander Direction="Down" BackgroundColor="LightGray">
+
+                <mct:Expander.Header>
+                    <VerticalStackLayout>
+                        <Label Text="What's Showing Now" FontSize="14" FontAttributes="Bold" HorizontalOptions="Center"/>
+                        <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
+                        <Label Text="Editing Screen(Tap Here)"/>
+                    </VerticalStackLayout>
 
                 </mct:Expander.Header>
+
                 <mct:Expander.Content>
-                  <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
+                    <VerticalStackLayout>
+                        <Label Text="Editing Screen" HorizontalOptions="Center"/>
+                        <Label HeightRequest="150" WidthRequest="400" BackgroundColor="Black" HorizontalOptions="Center"/>
+                    </VerticalStackLayout>
+
                 </mct:Expander.Content>
 
 
-              </mct:Expander>
 
-           
+            </mct:Expander>
+
+
+
+
+
+        </mct:Expander>
+
+
+
 
         <HorizontalStackLayout Margin="5" Spacing="20">
             <Label Text="Change Riders Name Only" HorizontalOptions="Start"/>
@@ -98,11 +127,7 @@
 
 
         </HorizontalStackLayout>
-            
-
-
-
-
+                
             <CollectionView ItemsLayout="HorizontalList" ItemsSource="{Binding GetSigns}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:PreMadeSigns">
@@ -128,4 +153,6 @@
 
 
             </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

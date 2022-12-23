@@ -14,8 +14,9 @@
     Shell.FlyoutBehavior="Flyout"
     >
 
+    
 
-     <Shell.FlyoutHeader>
+    <Shell.FlyoutHeader>
        <controls:FlyoutHeader />
     </Shell.FlyoutHeader>
 
@@ -45,31 +46,60 @@
             Route="MainPage"
             />
 
-        <ShellContent
-            Title="Graphics Sign"
-            ContentTemplate="{DataTemplate signdisplays:SignDisplayMain}"
-            Route="SignDisplayMain"
+        <Tab Title="Dashboards" FlyoutDisplayOptions="AsSingleItem"
+             FlyoutIcon="{StaticResource BurgerMenu}" >
+
+            <ShellContent
+            Title="Main Dashboard"
+            ContentTemplate="{DataTemplate dashboards:MainDashBoard}"
+            Route="MainDashboard"
             />
 
-        <ShellContent
-            Title="Display SkView"
-            ContentTemplate="{DataTemplate signdisplays:DisplayTest}"
-            Route="DisplayTest"
-            />
+            <ShellContent
+            Title="Gig Dashboard"
+            ContentTemplate="{DataTemplate dashboards:GigDashBoard}"
+            Route="GigDashBoard"
+           />
+            
+            <ShellContent
+            Title="Business Dashboard"
+            ContentTemplate="{DataTemplate dashboards:BusinessDashBoard}"
+           />
+
+
+
+        </Tab>
+
+        
 
 
         <ShellContent
-            Title="Create A Sign"
+            Title="Create A New Sign"
             ContentTemplate="{DataTemplate views:NewSignTesting}"
             Route="NewSignTesting"
             />
 
-
         <ShellContent
+            Title="Display"
+            ContentTemplate="{DataTemplate signdisplays:SignDisplayMain}"
+            Route="SignDisplayMain"
+            />
+
+        <!--<ShellContent
+            Title="Display SkView"
+            ContentTemplate="{DataTemplate signdisplays:DisplayTest}"
+            Route="DisplayTest"
+            />-->
+
+
+       
+
+
+        <!--<ShellContent
             Title="OldMainPage"
             ContentTemplate="{DataTemplate testing:Test1}"
             Route="Test1"
-            />
+            />-->
 
        
         <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"
@@ -99,32 +129,9 @@
 
         </Tab>
 
-        <!--<Tab Title="Dashboards" FlyoutDisplayOptions="AsMultipleItems"
-             FlyoutIcon="{StaticResource BurgerMenu}"  >-->
-
-            <ShellContent
-            Title="MainDashboard"
-            ContentTemplate="{DataTemplate dashboards:MainDashBoard}"
-            Route="MainDashboard"
-                />
-
-            <ShellContent
-            Title="Gig Dashboard"
-            ContentTemplate="{DataTemplate dashboards:GigDashBoard}"
-            Route="GigDashBoard"
-           />
-
-            <ShellContent
-            Title="Business Dashboard"
-            ContentTemplate="{DataTemplate dashboards:BusinessDashBoard}"
-           />
-
-
-
-        <!--</Tab>-->
-
-
         
+
+
 
         <ShellContent
             Title="Device Settings"

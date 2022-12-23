@@ -10,9 +10,16 @@
              Shell.TabBarIsVisible="False"
              Shell.NavBarIsVisible="True"
              xmlns:local="clr-namespace:FireSignage"
-             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI">
+             xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
+             >
 
 
+    <!--<Shell.TitleView >
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
+            <Label Text="{Binding Title}" HorizontalTextAlignment="Center" Margin="-15,0" FontAttributes="Bold" FontSize="30" />
+        </StackLayout>
+    </Shell.TitleView>-->
+    
     <ContentPage.BindingContext>
         <viewmodel:MainPageViewModel />
     </ContentPage.BindingContext>
@@ -67,7 +74,7 @@
         </HorizontalStackLayout>
 
         <Label Text="Need a device or mount for your sign?" HorizontalOptions="Center" LineBreakMode="WordWrap" Margin="10"/>
-        <Label Text="Check out our website for great deals unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/> 
+        <Label Text="Check out our website for great deals and unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/> 
 
 
     </VerticalStackLayout>
