@@ -54,8 +54,8 @@
                 <Button Text="Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
                     CommandParameter="//GigDashBoard"/>
 
-                <Button Text="Settings" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
-                    CommandParameter="//SettingsPage"/>
+                <Button Text="Getting Started" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                    CommandParameter="//GettingStarted"/>
 
             </VerticalStackLayout>
 

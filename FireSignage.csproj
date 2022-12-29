@@ -147,6 +147,12 @@
 	  <MauiXaml Update="Views\Dashboards\MainDashBoard.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Views\Help\GettingStarted.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Help\SettingUpDevices.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\DeviceConnect.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

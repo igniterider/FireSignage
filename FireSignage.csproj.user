@@ -27,6 +27,12 @@
     <MauiXaml Update="Views\Dashboards\MainDashBoard.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Help\GettingStarted.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Views\Help\SettingUpDevices.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\Settings\DeviceConnect.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

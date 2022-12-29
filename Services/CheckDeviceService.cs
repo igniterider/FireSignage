@@ -59,7 +59,7 @@ namespace FireSignage.Services
             
             var user = App.realmApp.CurrentUser;
             var partid = App.realmApp.CurrentUser.Id;
-            var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
+            var config = new FlexibleSyncConfiguration(App.realmApp.CurrentUser);
             deviceRealm = await Realm.GetInstanceAsync(config);
             await deviceRealm.SyncSession.WaitForDownloadAsync();
 

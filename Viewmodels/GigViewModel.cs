@@ -4,6 +4,7 @@ using FireSignage.Views.Settings;
 using FireSignage.Views.SignDisplay;
 using Realms;
 using Realms.Sync;
+using Realms.Sync.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,8 @@ namespace FireSignage.Viewmodels
     public partial class GigViewModel : BaseViewModel
     {
 
+       
 
-        private Realm newRealm;
         private string idiom;
         private string OS;
         private string osVersion;
@@ -26,13 +27,16 @@ namespace FireSignage.Viewmodels
         private string model;
         private string name;
         private string screen;
-        private string dname;
+        public string dname;
         private bool isdevicesign;
 
         PremadeService premadeService;
 
+       
+
         public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
         public ObservableCollection<String> GetDevices { get; } = new();
+        
 
         public List<CategoriesList> SignCategory { get; set; } = new();
         public List<PreMadeSigns> Rides { get; set; } = new();
@@ -50,13 +54,14 @@ namespace FireSignage.Viewmodels
         private string selectedbackItem;
         private List<String> colors2 = new List<string>();
 
+
         public GigViewModel()
         {
             Title = "Dashboard";
             premadeService = new PremadeService();
             MyColors = colors.Keys.ToList();
-           
-            
+            CreateUserRealm();
+
 
         }
 
@@ -227,10 +232,115 @@ namespace FireSignage.Viewmodels
 
             }
         }
-
-        public List<String> userDeviceList = new List<String>();
-
         
+        public Realm alldataRealm;
+        private Realms.Sync.User _user;
+
+        public IQueryable<User> UsersData { get; private set; }
+        private string selectedDevice;
+
+        public string SelectedDevice
+        {
+            get
+            {
+                return selectedDevice;
+            }
+            set
+            {
+                selectedDevice = value;
+                OnPropertyChanged("SelectedDevice");
+                
+                //Set Current Sign to View and Change
+                Console.WriteLine("Device is set to" +  selectedDevice);
+
+
+            }
+
+
+        }
+
+        [RelayCommand]
+        public void CreateUserRealm()
+        {
+            
+                _user = App.realmApp.CurrentUser;
+                var syncConfig = new FlexibleSyncConfiguration(_user)
+                {
+                    PopulateInitialSubscriptions = (alldataRealm) =>
+                    {
+                        var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
+                        alldataRealm.Subscriptions.Add(usersData);
+
+                    }
+
+
+                };
+
+                alldataRealm = Realm.GetInstance(syncConfig);
+
+            UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
+
+            var deviceinfo = UsersData;
+                foreach (var dev in deviceinfo)
+                {
+                    foreach (var d in dev.Userdeviceinfo)
+                    {
+                        dname = d.Devicename;
+                        
+                        GetDevices.Add(dname);
+                        Console.WriteLine(dname);
+
+                       
+                    }
+                   
+
+                }
+
+
+
+                syncConfig.OnSessionError = (sender, e) =>
+                {
+                    //handle errors here
+                    Console.WriteLine(e.Message);
+                };
+
+            
+
+        }
+
+
+        private void AddSubscriptionsToRealm()
+        {
+            var subscriptions = alldataRealm.Subscriptions;
+            subscriptions.Update(() =>
+            {
+                var defaultSubscription = alldataRealm.All<User>()
+                    .Where(t => t.OwnerId == _user.Id);
+                subscriptions.Add(defaultSubscription);
+            });
+        }
+
+        static EventHandler<Realms.ErrorEventArgs> SessionErrorHandler()
+        {
+            return (session, errorArgs) =>
+            {
+                var sessionException = (SessionException)errorArgs.Exception;
+                switch (sessionException.ErrorCode)
+                {
+                    case ErrorCode.AccessTokenExpired:
+                    case ErrorCode.BadUserAuthentication:
+                        // Ask user for credentials
+                        break;
+                    case ErrorCode.PermissionDenied:
+                        // Tell the user they don't have permissions to work with that Realm
+                        break;
+                    default:
+                        // We have another error. Check the application log for
+                        // details and/or add another `case` statement.
+                        break;
+                }
+            };
+        }
 
 
     }   

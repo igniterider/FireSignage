@@ -30,7 +30,14 @@
         EventName="Appearing"
         Command="{Binding GetSignsCommand}" />
 
+        <!--<toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding CheckDeviceInfoCommand}" />-->
+
+
     </ContentPage.Behaviors>
+
+
     <ScrollView>
             <VerticalStackLayout>
                 
@@ -40,8 +47,8 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold" Margin="50,5"/>
 
-            <Picker Title="Select Device" FontAttributes="Bold"
-                        HorizontalOptions="EndAndExpand" />
+            <Picker Title="Select Device" FontAttributes="Bold" x:Name="devicepicker" ItemsSource="{Binding GetDevices}"
+                        HorizontalOptions="EndAndExpand" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"/>
 
             </HorizontalStackLayout>
 
@@ -127,7 +134,9 @@
 
 
         </HorizontalStackLayout>
-                
+
+           
+
             <CollectionView ItemsLayout="HorizontalList" ItemsSource="{Binding GetSigns}">
                 <CollectionView.ItemTemplate>
                     <DataTemplate x:DataType="model:PreMadeSigns">

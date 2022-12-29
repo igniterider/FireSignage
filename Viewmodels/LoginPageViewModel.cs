@@ -14,7 +14,7 @@ namespace FireSignage.Viewmodels
     public class LoginPageViewModel : LoginViewModel
     {
         #region Fields
-        CheckDeviceService deviceService;
+        
         private string password;
         
 
@@ -31,7 +31,7 @@ namespace FireSignage.Viewmodels
             this.SignUpCommand = new Command(this.SignUpClicked);
             this.ForgotPasswordCommand = new Command(this.ForgotPasswordClicked);
             this.SocialMediaLoginCommand = new Command(this.SocialLoggedIn);
-            deviceService = new CheckDeviceService();
+           
         }
 
         #endregion
