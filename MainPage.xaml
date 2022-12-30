@@ -12,13 +12,6 @@
              xmlns:local="clr-namespace:FireSignage"
              xmlns:skia="clr-namespace:SkiaSharp.Extended.UI.Controls;assembly=SkiaSharp.Extended.UI"
              >
-
-
-    <!--<Shell.TitleView >
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center" >
-            <Label Text="{Binding Title}" HorizontalTextAlignment="Center" Margin="-15,0" FontAttributes="Bold" FontSize="30" />
-        </StackLayout>
-    </Shell.TitleView>-->
     
     <ContentPage.BindingContext>
         <viewmodel:MainPageViewModel />
@@ -33,51 +26,53 @@
                 HorizontalOptions="Center"
                 Margin="5"/>-->
 
-        <Image Source="newlogo1.png" HorizontalOptions="Center"/>
+        <Image Source="newlogo1.png" HorizontalOptions="Center" Margin="0,10,0,5"/>
 
         <Label Text="Welcome to Display Signs by Ignite Rider Inc" HorizontalOptions="Center" LineBreakMode="WordWrap"
-               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White" Margin="5,5,5,5"/>
 
-        
 
-        <Image Source="home1.png" HorizontalOptions="Center"/>
+        <Image Source="home1.png" HorizontalOptions="Center" Margin="5,5,5,5"/>
 
         <Label Text="Where any device is a digital sign" 
                HorizontalOptions="Center" LineBreakMode="WordWrap"
-               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White"/>
+               FontSize="Large" HorizontalTextAlignment="Center" TextColor="White" Margin="5,5,5,5"/>
 
         <HorizontalStackLayout Margin="5" HorizontalOptions="Center">
             <VerticalStackLayout HorizontalOptions="Center" Margin="5" Spacing="5">
-                <Button Text="Tutorials" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}" 
-                        CommandParameter="//TutorialsPage"/>
                 
-                <Button Text="Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
-                    CommandParameter="//GigDashBoard"/>
-
                 <Button Text="Getting Started" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
                     CommandParameter="//GettingStarted"/>
+                
+                <Button Text="Tutorials" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}" 
+                        CommandParameter="//TutorialsPage"/>
+
+                <Button Text="Help" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                        CommandParameter="//HelpPage"/>
+                
 
             </VerticalStackLayout>
 
             <VerticalStackLayout HorizontalOptions="Center" Margin="5" Spacing="5">
+
+                <Button Text="Dashboards" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
+                    CommandParameter="//GigDashBoard"/>
+
                 <Button Text="All Signs" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
                         CommandParameter="//AllSigns"/>
-
-                <Button Text="Help" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
-                        CommandParameter="//HelpPage"/>
-
+                
                 <Button Text="Create a Sign" Style="{StaticResource GradientButtonStyle}" Command="{Binding NavigateCommand}"
                         CommandParameter="//CreateNewSign"/>
 
             </VerticalStackLayout>
             
 
-
         </HorizontalStackLayout>
 
         <Label Text="Need a device or mount for your sign?" HorizontalOptions="Center" LineBreakMode="WordWrap" Margin="10"/>
-        <Label Text="Check out our website for great deals and unique products!!" HorizontalOptions="Center" LineBreakMode="WordWrap"/>
-        <Button Style="{StaticResource GradientButtonStyle}" Text="Click for Website!" Clicked="Button_Clicked" FontSize="Small"/>
+        <Label Text="Check out our website for great deals!!" HorizontalOptions="Center" LineBreakMode="WordWrap" Margin="5"/>
+        <Button Style="{StaticResource GradientButtonStyle}" Text="Click for Website!" Clicked="Button_Clicked" FontSize="Small"
+                Margin="5"/>
 
 
     </VerticalStackLayout>

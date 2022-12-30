@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Net.Http.Json;
 
 
 
@@ -8,7 +7,7 @@ namespace FireSignage.Services
 {
 	public class PremadeService
 	{
-		HttpClient httpClient;			
+				
 
 		public PremadeService()
 		{

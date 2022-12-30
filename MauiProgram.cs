@@ -52,8 +52,9 @@ public static class MauiProgram
 
 
         builder.ConfigureSyncfusionListView();
+        builder.Services.AddTransient<PremadeService>();
         builder.Services.AddSingleton<MainPage>();
-        builder.Services.AddSingleton<RealmService>();
+        builder.Services.AddTransient<RealmService>();
         builder.Services.AddSingleton<GigViewModel>();
         builder.Services.AddSingleton<GigDashBoard>();
         builder.Services.AddSingleton<TabbedLogin>();

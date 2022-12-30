@@ -146,9 +146,6 @@
      </FlyoutItem>
 
 
-        <MenuItem Text="HELP"
-            Command="{Binding HelpCommand}"/>
-
      <Shell.FlyoutFooter>
         <controls:FlyoutFooter />
     </Shell.FlyoutFooter>
