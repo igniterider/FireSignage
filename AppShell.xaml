@@ -146,8 +146,8 @@
      </FlyoutItem>
 
 
-     <Shell.FlyoutFooter>
-        <controls:FlyoutFooter />
+     <Shell.FlyoutFooter >
+        <controls:FlyoutFooter Margin="0,0,0,20" />
     </Shell.FlyoutFooter>
 </Shell>
 

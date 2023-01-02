@@ -46,7 +46,11 @@
                             Placeholder="Enter Email"
                             Text="{Binding Email}"/>
 
-                    </TableSection>
+                        <EntryCell Label="Password"
+                            Placeholder="Enter Password"
+                            Text="{Binding Email}"/>
+
+                        </TableSection>
 
                     
                 </TableRoot>

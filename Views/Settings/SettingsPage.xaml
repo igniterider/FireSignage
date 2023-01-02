@@ -6,28 +6,10 @@
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:viewmodel="clr-namespace:FireSignage.Viewmodels"
              xmlns:controls="clr-namespace:FireSignage.Controls"
-             Shell.TabBarIsVisible="True">
+             Shell.TabBarIsVisible="False">
 
 
-    <ContentPage.ControlTemplate>
-        <ControlTemplate>
-            <StackLayout Spacing="0">
-                <!--  Title View  -->
-                <controls:TitleView Title="Settings">
-                    <controls:TitleView.LeadingView>
-                        <Button
-                            x:Name="backButton"
-                            Command="{TemplateBinding BindingContext.BackButtonCommand}"
-                            CommandParameter="{x:Reference backButton}"
-                            Style="{StaticResource IconButtonStyle}"
-                            Text="{StaticResource Back}" />
-                    </controls:TitleView.LeadingView>
-                </controls:TitleView>
-                <ContentPresenter />
-            </StackLayout>
-        </ControlTemplate>
-    </ContentPage.ControlTemplate>
-
+   
     <ContentPage.BindingContext>
         <viewmodel:SettingsViewModel />
     </ContentPage.BindingContext>
@@ -38,7 +20,7 @@
 
                 <!--  Header label for account setting  -->
                 <Label
-                    Margin="16,64,0,16"
+                    Margin="16,10,0,16"
                     FontFamily="Montserrat-SemiBold"
                     FontSize="14"
                     HorizontalOptions="FillAndExpand"
@@ -107,7 +89,7 @@
                         FontFamily="Montserrat-Medium"
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
-                        Text="Change Password"
+                        Text="Edit Devices"
                         VerticalOptions="Center" />
                     <!--  Navigation icon  -->
                     <Label
@@ -160,7 +142,7 @@
                     HorizontalOptions="FillAndExpand"
                     LineHeight="{OnPlatform Default=-1,
                                             Android=1.25}"
-                    Text="NOTIFICATIONS"
+                    Text="GENERAL"
                     TextColor="{DynamicResource Gray-800}"
                     VerticalOptions="Center"
                     VerticalTextAlignment="Center"
@@ -187,7 +169,7 @@
                         FontFamily="Montserrat-Medium"
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
-                        Text="Notifications"
+                        Text="Device Always On"
                         VerticalOptions="Center" />
                     <!--  Notifications switch  -->
                     <Switch

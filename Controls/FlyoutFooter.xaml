@@ -6,7 +6,10 @@
      <StackLayout>
             <Button Text="Logout" Clicked="Button_Clicked_1" Style="{StaticResource GradientButtonStyle}"/>
          
-            <Label Text="Ignite Rider Inc" HorizontalTextAlignment="Center"/>
+            <Label Text="Ignite Rider Inc" HorizontalTextAlignment="Center" TextColor="{StaticResource Tertiary}" 
+                   FontSize="Medium" FontAttributes="Bold"/>
+         
+         <!--Consider copywrite-->
 
      </StackLayout>   
     </ContentView.Content>

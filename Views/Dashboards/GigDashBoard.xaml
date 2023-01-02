@@ -47,7 +47,7 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold" Margin="50,5"/>
 
-            <Picker Title="Select Device" FontAttributes="Bold" x:Name="devicepicker" ItemsSource="{Binding GetDevices}"
+            <Picker Title="Select Device" FontAttributes="Bold" ItemsSource="{Binding GetDevices}"
                         HorizontalOptions="EndAndExpand" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"/>
 
             </HorizontalStackLayout>

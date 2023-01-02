@@ -10,12 +10,13 @@ using System.Linq;
 using Microsoft.Maui.Controls;
 using Microsoft.VisualBasic;
 using System.Xml.Linq;
+using CommunityToolkit.Maui.Core.Extensions;
 
 namespace FireSignage.Viewmodels
 {
 	public partial class UserSettingsViewModel : BaseViewModel
 	{
-        private Realm userRealm;
+       
         private string password;
         private string fname;
         private string lname;
@@ -67,6 +68,12 @@ namespace FireSignage.Viewmodels
             get { return email; }
         }
 
+        public string Password
+        {
+            set { SetProperty(ref password, value); }
+            get { return password; }
+        }
+
         //Devices
         public string DeviceName
         {
@@ -108,22 +115,22 @@ namespace FireSignage.Viewmodels
         [RelayCommand]
         async Task AddUserInfo()
         {
-            if(userRealm == null)
+            if(alldataRealm == null)
             {
                 var user = App.realmApp.CurrentUser;
                 var partid = App.realmApp.CurrentUser.Id;
                 var config = new FlexibleSyncConfiguration(user);
-                userRealm = await Realm.GetInstanceAsync(config);
-                await userRealm.SyncSession.WaitForDownloadAsync();
+                alldataRealm = await Realm.GetInstanceAsync(config);
+                await alldataRealm.SyncSession.WaitForDownloadAsync();
 
 
-                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-
-                
+                var userinfo = alldataRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
                 
 
-                userRealm.Write(() =>
+                
+
+                alldataRealm.Write(() =>
                 {
 
                     userinfo.Firstname = fname;
@@ -138,8 +145,8 @@ namespace FireSignage.Viewmodels
 
             else 
             {
-                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-                userRealm.Write(() =>
+                var userinfo = alldataRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+                alldataRealm.Write(() =>
                 {
 
                     userinfo.Firstname = fname;
@@ -155,42 +162,55 @@ namespace FireSignage.Viewmodels
             return;
         }
 
+        public Realm alldataRealm;
+        private Realms.Sync.User _user;
+
+        public ObservableCollection<User> UsersData = new ObservableCollection<User>();
 
         [RelayCommand]
-        async Task GetUserInfo()
+        public async Task GetUserInfo()
         {
-            
-                var user = App.realmApp.CurrentUser;
-                var partid = App.realmApp.CurrentUser.Id;
-                var config = new FlexibleSyncConfiguration(user);
-                userRealm = await Realm.GetInstanceAsync(config);
-                await userRealm.SyncSession.WaitForDownloadAsync();
+            _user = App.realmApp.CurrentUser;
+            var syncConfig = new FlexibleSyncConfiguration(_user)
+            {
+                PopulateInitialSubscriptions = (alldataRealm) =>
+                {
+                    var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
+                    alldataRealm.Subscriptions.Add(usersData);
+
+                }
 
 
-            var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+            };
 
-            FName = userinfo.Firstname;
-            LName = userinfo.Lastname;
-            LicPlate = userinfo.Licenseplate;
-            Email = userinfo.Email;
+            alldataRealm = App.realmApp.GetInstance(syncConfig);
 
-           
+            //FName = 
+            //LName = UsersData.Lastname;
+            //LicPlate = UsersData.Licenseplate;
+            //Email = UsersData.Email;
+
+            syncConfig.OnSessionError = (sender, e) =>
+            {
+                //handle errors here
+                Console.WriteLine(e.Message);
+            };
 
         }
 
         [RelayCommand]
         async Task AddDeviceInfo()
         {
-            if (userRealm == null)
+            if (alldataRealm == null)
             {
                 var user = App.realmApp.CurrentUser;
                 var partid = App.realmApp.CurrentUser.Id;
                 var config = new FlexibleSyncConfiguration(user);
-                userRealm = await Realm.GetInstanceAsync(config);
-                await userRealm.SyncSession.WaitForDownloadAsync();
+                alldataRealm = await Realm.GetInstanceAsync(config);
+                await alldataRealm.SyncSession.WaitForDownloadAsync();
 
 
-                var userinfo = userRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
+                var userinfo = alldataRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
 
                 var setdevice = new UserDeviceInfo()
                 {
@@ -208,7 +228,7 @@ namespace FireSignage.Viewmodels
 
 
 
-                userRealm.Write(() =>
+                alldataRealm.Write(() =>
                 {
 
                     
