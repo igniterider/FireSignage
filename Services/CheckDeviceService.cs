@@ -64,14 +64,7 @@ namespace FireSignage.Services
             await deviceRealm.SyncSession.WaitForDownloadAsync();
 
 
-            var deviceinfo = deviceRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-            foreach (var dev in deviceinfo.Userdeviceinfo)
-            {
-                dname = dev.Devicename;
-                userDeviceList.Add(dname);
-                Console.WriteLine(dname);
-                
-            }
+           
 
             
             return userDeviceList;

@@ -145,7 +145,7 @@ namespace FireSignage.Viewmodels
                     
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
 
-                    App.Current.MainPage = new AppShell();
+                   // App.Current.MainPage = new AppShell();
                     await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
 
 
@@ -173,18 +173,14 @@ namespace FireSignage.Viewmodels
             {
                 await App.realmApp.EmailPasswordAuth.RegisterUserAsync(Email, password);
 
-
-                DoRegisterLogin();
-
-
             }
             catch (Exception ex)
             {
                 await App.Current.MainPage.DisplayAlert("Registration Failed", ex.Message, "OK");
             }
 
-            
-            
+            DoRegisterLogin();
+
         }
 
         private async void DoRegisterLogin()
@@ -198,8 +194,8 @@ namespace FireSignage.Viewmodels
 
                     OperationCompeleted?.Invoke(this, EventArgs.Empty);
 
-                    App.Current.MainPage = new AppShell();
-                    await Shell.Current.GoToAsync($"//{nameof(RegisterUserSettings)}");
+                   
+                    await Shell.Current.GoToAsync($"//{nameof(UserSettings)}");
 
                 }
                 else

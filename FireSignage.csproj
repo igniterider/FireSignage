@@ -66,7 +66,6 @@
 	
 	
 	<ItemGroup>
-	  <Folder Include="Models\" />
 	  <Folder Include="Controls\" />
 	  <Folder Include="Platforms\Android\drawable\" />
 	  <Folder Include="Renderers\" />
@@ -159,9 +158,6 @@
 	  <MauiXaml Update="Views\Settings\DeviceSettingsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Settings\RegisterUserSettings.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\SettingsPage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
@@ -182,6 +178,9 @@
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignDisplay\SignDisplayMain.xaml">
 	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Testing\ServiceTesting.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Testing\Test1.xaml">
 	    <Generator>MSBuild:Compile</Generator>

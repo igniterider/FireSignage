@@ -29,18 +29,15 @@ namespace FireSignage.Models
         [MapTo("_password")]
         public string Password { get; set; }
 
-        [MapTo("personalsigns")]
-        public IList<PersonalSigns> Personalsigns { get; }
+        [MapTo("_business")]
+        public string Business { get; set; }
 
-        [MapTo("userdeviceinfo")]
-        public IList<UserDeviceInfo> Userdeviceinfo { get; }
-
-        
         [MapTo("owner_id")]
         [Required]
         public string OwnerId { get; set; }
 
-        
+        [Backlink(nameof(UserDevices.DeviceOwner))]
+        public IQueryable<UserDevices> DevicesOwned { get; }
 
     }
 

@@ -41,6 +41,9 @@ public partial class MainPage : ContentPage
         var url = "https://www.igniterider.com";
         await Launcher.OpenAsync(url);
     }
+
+    
+
 }
 
 

@@ -32,10 +32,10 @@
         </LinearGradientBrush>
     </Shell.FlyoutBackground>
     
-     <!--<ShellItem Route="LoginPage" FlyoutItemIsVisible="False"  >
+     <ShellItem Route="TabbedLogin" FlyoutItemIsVisible="False"  >
         <ShellContent ContentTemplate="{DataTemplate loginflow:TabbedLogin}" Shell.TabBarIsVisible="False" />
 
-    </ShellItem>-->
+    </ShellItem>
    
 
      <FlyoutItem Shell.BackgroundColor="#49687e" FlyoutDisplayOptions="AsMultipleItems" >
@@ -46,9 +46,7 @@
             Route="MainPage"
             />
 
-        <!--<Tab Title="Dashboards" FlyoutDisplayOptions="AsMultipleItems"
-             FlyoutIcon="{StaticResource BurgerMenu}" >-->
-
+      
             <ShellContent
             Title="Main Dashboard"
             ContentTemplate="{DataTemplate dashboards:MainDashBoard}"
@@ -67,12 +65,6 @@
            />
 
 
-
-        <!--</Tab>-->
-
-        
-
-
         <ShellContent
             Title="Create A New Sign"
             ContentTemplate="{DataTemplate views:NewSignTesting}"
@@ -85,27 +77,8 @@
             Route="SignDisplayMain"
             />
 
-        <!--<ShellContent
-            Title="Display SkView"
-            ContentTemplate="{DataTemplate signdisplays:DisplayTest}"
-            Route="DisplayTest"
-            />-->
-
-
        
-
-
-        <!--<ShellContent
-            Title="OldMainPage"
-            ContentTemplate="{DataTemplate testing:Test1}"
-            Route="Test1"
-            />-->
-
-       
-        <Tab Title="Settings" FlyoutDisplayOptions="AsSingleItem"
-             FlyoutIcon="{StaticResource Settings}"  >
-
-            <ShellContent
+        <ShellContent
             Title="App Settings"
             ContentTemplate="{DataTemplate settings:SettingsPage}"
             Route="SettingsPage"
@@ -117,33 +90,27 @@
             Route="UserSettings"
             />
 
-            <ShellContent
-            Title="Registration Settings"
-            ContentTemplate="{DataTemplate settings:RegisterUserSettings}"
-            Route="RegisterUserSettings"
-            FlyoutItemIsVisible="False"
-            IsVisible="False"
-            />
-
-            
-
-        </Tab>
-
         
-
-
 
         <ShellContent
             Title="Device Settings"
             ContentTemplate="{DataTemplate settings:DeviceSettingsPage}"
             Route="DeviceSettingsPage"
-            FlyoutItemIsVisible="False"
-            IsVisible="True"
+            FlyoutItemIsVisible="True"
+            
             />
 
-        
 
-     </FlyoutItem>
+        <ShellContent
+            Title="ServicesTesting"
+            ContentTemplate="{DataTemplate testing:ServiceTesting}"
+            Route="ServiceTesting"
+            FlyoutItemIsVisible="True"
+            
+            />
+
+
+    </FlyoutItem>
 
 
      <Shell.FlyoutFooter >

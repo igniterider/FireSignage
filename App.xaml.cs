@@ -23,14 +23,9 @@ public partial class App : Application
 
         InitializeComponent();
         OnStart();
-        if (realmApp.CurrentUser == null)
-        {
-            MainPage = new TabbedLogin();
-        }
-        else
-        {
-            MainPage = new AppShell();
-        }
+        
+        MainPage = new AppShell();
+        
     }
 
     public static string ImageServerPath { get; } = "https://cdn.syncfusion.com/essential-ui-kit-for-xamarin.forms/common/uikitimages/";
@@ -52,7 +47,7 @@ public partial class App : Application
                 BaseUri = new Uri(baseUrl)
             };
             realmApp = Realms.Sync.App.Create(appConfiguration);
-
+            
            
             
 

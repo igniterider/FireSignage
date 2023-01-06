@@ -19,21 +19,14 @@ public partial class PremadeViewModel : BaseViewModel
 {
    
 
-    private Realm newRealm;
-    private string idiom;
-    private string OS;
-    private string osVersion;
-    private string manu;
-    private string model;
-    private string name;
-    private string screen;
-    private string dname;
+    
+    
     private bool isdevicesign;
 
     PremadeService premadeService;
 
 	public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
-    public ObservableCollection<String> GetDevices { get; } = new();
+    
 
 	public List<CategoriesList> SignCategory { get; set; } = new();
 	public List<PreMadeSigns> Rides { get; set; } = new();
@@ -57,8 +50,8 @@ public partial class PremadeViewModel : BaseViewModel
 		Title = "Dashboard";
 		premadeService = new PremadeService();
 		MyColors = colors.Keys.ToList();
-        GetDeviceInfo();
-        print();
+       
+        
 
     }
 
@@ -245,103 +238,123 @@ public partial class PremadeViewModel : BaseViewModel
 		}
 	}
 
-    public List<String> userDeviceList = new List<String>();
 
-    private void GetDeviceInfo()
-    {
-        idiom = DeviceInfo.Idiom.ToString();
-        OS = DeviceInfo.Platform.ToString();
-        osVersion = DeviceInfo.Version.ToString();
-        manu = DeviceInfo.Manufacturer;
-        model = DeviceInfo.Model;
-        name = DeviceInfo.Name;
-        screen = DeviceDisplay.MainDisplayInfo.ToString();
+    //public Realm alldataRealm;
+    //private Realms.Sync.User _user;
+    //public UserDevices GetUserDevices { get; set; }
+
+    //public IQueryable<User> UsersData { get; private set; }
+
+    //public List<String> userDeviceList = new List<String>();
 
 
+    //[RelayCommand]
+    //public void CreateUserRealm()
+    //{
 
-    }
+    //    _user = App.realmApp.CurrentUser;
+    //    var syncConfig = new FlexibleSyncConfiguration(_user)
+    //    {
+    //        PopulateInitialSubscriptions = (alldataRealm) =>
+    //        {
+    //            var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
+    //            alldataRealm.Subscriptions.Add(usersData);
 
-    [RelayCommand]
-    async Task CheckDevices()
-    {
-      
-        try
-        {
-
-            var user = App.realmApp.CurrentUser;
-            var partid = App.realmApp.CurrentUser.Id;
-            var config = new PartitionSyncConfiguration(partid, App.realmApp.CurrentUser);
-            newRealm = await Realm.GetInstanceAsync(config);
-            await newRealm.SyncSession.WaitForDownloadAsync();
+    //        }
 
 
-            var deviceinfo = newRealm.All<User>().FirstOrDefault(t => t.Id == App.realmApp.CurrentUser.Id);
-            foreach (var dev in deviceinfo.Userdeviceinfo)
-            {
-                dname = dev.Devicename;
-                userDeviceList.Add(dname);
-                Console.WriteLine(dname);
+    //    };
 
-                if (name == dname)
-                {
-                    isdevicesign = dev.Deviceissign ?? false;
-                    devicecount++;
-                    Console.WriteLine(name);
-                    
-                }
+    //    alldataRealm = Realm.GetInstance(syncConfig);
 
-            }
+    //    UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
+    //    GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
 
-            if (devicecount <= 0)
-            {
-                bool answer = await Shell.Current.DisplayAlert("Device Not Registered", "Register Now?", "Yes", "No");
-                if (answer == true)
-                {
-                    await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
-                    return;
-                }
-            }
-        }
 
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.ToString());
-            throw;
-        }
 
-        DeviceUse();
-        
-    }
 
-	private async void DeviceUse()
-    {
-        if(isdevicesign == true)
-        {
-            await Shell.Current.GoToAsync($"/{nameof(SignDisplayMain)}");
+    //    syncConfig.OnSessionError = (sender, e) =>
+    //    {
+    //        //handle errors here
+    //        Console.WriteLine(e.Message);
+    //    };
 
-        }
 
-        else if(isdevicesign == false)
-        {
-            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
 
-        }
-
-    }
+    //}
 
     
-    private void print()
-    {
-        //string nav = Shell.NavigationProperty.DefaultValue.ToString();
-        //Console.WriteLine("Nav Default Value = " + nav);
+
+   
+       
+
+           
+        //    foreach (var dev in deviceinfo.Userdeviceinfo)
+        //    {
+        //        dname = dev.Devicename;
+        //        userDeviceList.Add(dname);
+        //        Console.WriteLine(dname);
+
+        //        if (name == dname)
+        //        {
+        //            isdevicesign = dev.Deviceissign ?? false;
+        //            devicecount++;
+        //            Console.WriteLine(name);
+                    
+        //        }
+
+        //    }
+
+        //    if (devicecount <= 0)
+        //    {
+        //        bool answer = await Shell.Current.DisplayAlert("Device Not Registered", "Register Now?", "Yes", "No");
+        //        if (answer == true)
+        //        {
+        //            await Shell.Current.GoToAsync($"//{nameof(DeviceSettingsPage)}");
+        //            return;
+        //        }
+        //    }
+        
+
+        //catch (Exception ex)
+        //{
+        //    Console.WriteLine(ex.ToString());
+        //    throw;
+        //}
+
+        //DeviceUse();
+        
+    
+
+	//private async void DeviceUse()
+ //   {
+ //       if(isdevicesign == true)
+ //       {
+ //           await Shell.Current.GoToAsync($"/{nameof(SignDisplayMain)}");
+
+ //       }
+
+ //       else if(isdevicesign == false)
+ //       {
+ //           await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+
+ //       }
+
+ //   }
+
+    
+    //private void print()
+    //{
+    //    //string nav = Shell.NavigationProperty.DefaultValue.ToString();
+    //    //Console.WriteLine("Nav Default Value = " + nav);
 
 
-        string main = Microsoft.Maui.Controls.Page.NavigationProperty.PropertyName.ToString();
-        Console.WriteLine("ShellNav = " + main);
+    //    string main = Microsoft.Maui.Controls.Page.NavigationProperty.PropertyName.ToString();
+    //    Console.WriteLine("ShellNav = " + main);
 
        
 
-    }
+    //}
 
 }
 

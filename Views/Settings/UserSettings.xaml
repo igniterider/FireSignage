@@ -7,21 +7,21 @@
              xmlns:viewModel="clr-namespace:FireSignage.Viewmodels"
              xmlns:controls="clr-namespace:FireSignage.Controls"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Shell.TabBarIsVisible="True">
+             Shell.TabBarIsVisible="False">
 
 
-    <ContentPage.Behaviors>
+    <!--<ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
         EventName="Appearing"
         Command="{Binding GetUserInfoCommand}" />
 
          
 
-    </ContentPage.Behaviors>
+    </ContentPage.Behaviors>-->
 
-     <ContentPage.BindingContext>
+     <!--<ContentPage.BindingContext>
         <viewModel:UserSettingsViewModel />
-    </ContentPage.BindingContext>
+    </ContentPage.BindingContext>-->
 
     <VerticalStackLayout Margin="10">
         
@@ -30,25 +30,26 @@
             <TableView Intent="Settings" BackgroundColor="#4D687E">
                 <TableRoot>
                     <TableSection Title="User Information" TextColor="Black">
-                        <EntryCell Label="First Name"
-                            Placeholder="Enter First Name"
-                            Text="{Binding FName}"/>
+                            <EntryCell Label="First Name(required)"
+                            Placeholder="{Binding GetUser.Firstname}"
+                            Text="{Binding FirstName}"/>
 
                         <EntryCell Label="Last Name"
-                                   Placeholder="Enter Last Name"
-                                   Text="{Binding LName}"/>
+                                   Placeholder="{Binding GetUser.Lastname}"
+                                   Text="{Binding LastName}"/>
 
-                        <EntryCell Label="License Plate"
-                            Placeholder="Enter License Plate #"
-                            Text="{Binding LicPlate}"/>
+                        <EntryCell Label="License Plate(optional)"
+                            Placeholder="{Binding GetUser.Licenseplate}"
+                            Text="{Binding LicensePlate}"/>
 
-                        <EntryCell Label="Email"
-                            Placeholder="Enter Email"
+                            <EntryCell Label="Business Name(optional)"
+                                   Placeholder="{Binding GetUser.Business}" Text="{Binding Business}"/>
+
+                            <EntryCell Label="Change Email"
+                            Placeholder="{Binding GetUser.Email}"
                             Text="{Binding Email}"/>
 
-                        <EntryCell Label="Password"
-                            Placeholder="Enter Password"
-                            Text="{Binding Email}"/>
+                        
 
                         </TableSection>
 
@@ -57,14 +58,12 @@
 
             </TableView>
 
-            <Button Text="Submit Changes"
-                    Style="{StaticResource GradientButtonStyle}" FontSize="25"
-                    Padding="5" Margin="0,10,0,0" WidthRequest="245"
-                    Command="{Binding AddUserInfoCommand}"/>
+               
         </VerticalStackLayout>
 
         </Border>
 
+        <Button Text="Finish and Add This Device" Command="{Binding AddDeviceInfoCommand}" HorizontalOptions="Center"/>
         <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
                FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
 

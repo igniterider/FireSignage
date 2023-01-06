@@ -39,10 +39,10 @@
     <MauiXaml Update="Views\Settings\DeviceSettingsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Settings\RegisterUserSettings.xaml">
+    <MauiXaml Update="Views\SignDisplay\DisplayTest.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\SignDisplay\DisplayTest.xaml">
+    <MauiXaml Update="Views\Testing\ServiceTesting.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Views\Testing\Test1.xaml">

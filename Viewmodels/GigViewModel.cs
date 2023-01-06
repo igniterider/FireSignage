@@ -17,9 +17,6 @@ namespace FireSignage.Viewmodels
 {
     public partial class GigViewModel : BaseViewModel
     {
-
-       
-
         private string idiom;
         private string OS;
         private string osVersion;
@@ -31,11 +28,8 @@ namespace FireSignage.Viewmodels
         private bool isdevicesign;
 
         PremadeService premadeService;
-
-       
-
         public ObservableCollection<PreMadeSigns> GetSigns { get; } = new();
-        public ObservableCollection<String> GetDevices { get; } = new();
+        
         
 
         public List<CategoriesList> SignCategory { get; set; } = new();
@@ -235,10 +229,11 @@ namespace FireSignage.Viewmodels
         
         public Realm alldataRealm;
         private Realms.Sync.User _user;
+        public UserDevices GetUserDevices { get; set; }
 
         public IQueryable<User> UsersData { get; private set; }
-        private string selectedDevice;
 
+        private string selectedDevice;
         public string SelectedDevice
         {
             get
@@ -279,26 +274,20 @@ namespace FireSignage.Viewmodels
                 alldataRealm = Realm.GetInstance(syncConfig);
 
             UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
+            GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
 
-            var deviceinfo = UsersData;
-                foreach (var dev in deviceinfo)
-                {
-                    foreach (var d in dev.Userdeviceinfo)
-                    {
-                        dname = d.Devicename;
-                        
-                        GetDevices.Add(dname);
-                        Console.WriteLine(dname);
+            var subs = alldataRealm.Subscriptions.Count();
+            Console.WriteLine("Subs Count = " + subs);
 
-                       
-                    }
-                   
-
-                }
+            var subslist = alldataRealm.Subscriptions.ToList();
+            foreach (var a in subslist)
+            {
+                Console.WriteLine("Sub List = " + a);
+            }
 
 
 
-                syncConfig.OnSessionError = (sender, e) =>
+            syncConfig.OnSessionError = (sender, e) =>
                 {
                     //handle errors here
                     Console.WriteLine(e.Message);

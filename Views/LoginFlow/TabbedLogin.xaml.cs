@@ -5,5 +5,8 @@ public partial class TabbedLogin : ContentPage
 	public TabbedLogin()
 	{
 		InitializeComponent();
+       
 	}
+
+   
 }

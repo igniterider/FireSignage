@@ -21,9 +21,7 @@
     </Shell.TitleView>-->
 
 
-    <ContentPage.BindingContext>
-        <viewmodel:GigViewModel />
-    </ContentPage.BindingContext>
+    
 
     <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
@@ -47,7 +45,7 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold" Margin="50,5"/>
 
-            <Picker Title="Select Device" FontAttributes="Bold" ItemsSource="{Binding GetDevices}"
+            <Picker Title="Select Device" FontAttributes="Bold" ItemsSource="{Binding GetUserDevices.Devicename}"
                         HorizontalOptions="EndAndExpand" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"/>
 
             </HorizontalStackLayout>
