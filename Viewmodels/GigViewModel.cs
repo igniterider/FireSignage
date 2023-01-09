@@ -231,7 +231,9 @@ namespace FireSignage.Viewmodels
         private Realms.Sync.User _user;
         public UserDevices GetUserDevices { get; set; }
 
+        public IQueryable<UserDevices> GetDevices { get; set; }
         public IQueryable<User> UsersData { get; private set; }
+        public List<UserDevices> UserDevices { get; set; }
 
         private string selectedDevice;
         public string SelectedDevice
@@ -258,56 +260,56 @@ namespace FireSignage.Viewmodels
         public void CreateUserRealm()
         {
             
+            if(alldataRealm == null )
+            {
+                Console.WriteLine("Realm subscriptions is null");
                 _user = App.realmApp.CurrentUser;
                 var syncConfig = new FlexibleSyncConfiguration(_user)
                 {
-                    PopulateInitialSubscriptions = (alldataRealm) =>
+                     PopulateInitialSubscriptions = (alldataRealm) =>
                     {
                         var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
                         alldataRealm.Subscriptions.Add(usersData);
 
+                        var userdevices = alldataRealm.All<UserDevices>().Where(n => n.OwnerId == _user.Id);
+                        alldataRealm.Subscriptions.Add(userdevices);
                     }
 
 
                 };
 
                 alldataRealm = Realm.GetInstance(syncConfig);
-
-            UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
-            GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
-
-            var subs = alldataRealm.Subscriptions.Count();
-            Console.WriteLine("Subs Count = " + subs);
-
-            var subslist = alldataRealm.Subscriptions.ToList();
-            foreach (var a in subslist)
-            {
-                Console.WriteLine("Sub List = " + a);
-            }
+                UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
+                GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
+                GetDevices = alldataRealm.All<UserDevices>().Where(t =>t.OwnerId == _user.Id);
 
 
-
-            syncConfig.OnSessionError = (sender, e) =>
+                syncConfig.OnSessionError = (sender, e) =>
                 {
                     //handle errors here
                     Console.WriteLine(e.Message);
                 };
+            }
+            
+               
+            else
+            {
 
+                Console.WriteLine("Subs Count = " + alldataRealm.Subscriptions.Count);
+                alldataRealm = Realm.GetInstance(App.realmApp.CurrentUser.Id);
+                var subs = alldataRealm.Subscriptions;
+                
+                UsersData = alldataRealm.All<User>().Where(t => t.OwnerId == _user.Id);
+                GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
+                GetDevices = alldataRealm.All<UserDevices>().Where(t => t.OwnerId == _user.Id);
+
+            }
+
+            UserDevices = GetDevices.ToList();
             
 
         }
 
-
-        private void AddSubscriptionsToRealm()
-        {
-            var subscriptions = alldataRealm.Subscriptions;
-            subscriptions.Update(() =>
-            {
-                var defaultSubscription = alldataRealm.All<User>()
-                    .Where(t => t.OwnerId == _user.Id);
-                subscriptions.Add(defaultSubscription);
-            });
-        }
 
         static EventHandler<Realms.ErrorEventArgs> SessionErrorHandler()
         {

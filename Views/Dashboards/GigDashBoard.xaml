@@ -45,8 +45,11 @@
                    HorizontalOptions="Center" 
                    FontAttributes="Bold" Margin="50,5"/>
 
-            <Picker Title="Select Device" FontAttributes="Bold" ItemsSource="{Binding GetUserDevices.Devicename}"
+                <Picker Title="Select Device" FontAttributes="Bold" ItemsSource="{Binding UserDevices}" 
+                        ItemDisplayBinding="{Binding Devicename}" 
                         HorizontalOptions="EndAndExpand" SelectedItem="{Binding SelectedDevice, Mode=TwoWay}"/>
+
+                
 
             </HorizontalStackLayout>
 
@@ -159,7 +162,11 @@
 
 
 
-            </VerticalStackLayout>
+            <Label Text="{Binding GetUserDevices.Devicename}" TextColor="Goldenrod"/>
+            
+            <Label Text="{Binding GetDevices.Devicename}" TextColor="Crimson"/>
+
+        </VerticalStackLayout>
 
     </ScrollView>
 </ContentPage>

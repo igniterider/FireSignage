@@ -140,7 +140,8 @@ namespace FireSignage.Viewmodels
 
         }
 
-        private void UpdateUser()
+        [RelayCommand]
+        public void UpdateUser()
         {
             alldataRealm.Write(() =>
             {
@@ -152,25 +153,27 @@ namespace FireSignage.Viewmodels
 
             });
 
-            Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+            DeviceCheck();
         }
 
-        private Task DeviceCheck()
+        [RelayCommand]
+        public void DeviceCheck()
         {
             if(GetUserDevices == null)
             {
                 AddDeviceInfo();
-                return Task.CompletedTask;
+                
             }
             else if(GetUserDevices.Devicename == name && GetUserDevices.DeviceManuf == manu)
             {
-                return Task.CompletedTask;
+                Shell.Current.GoToAsync($"//{nameof(MainPage)}");
+                
 
             }
             else
             {
                 AddDeviceInfo();
-                return Task.CompletedTask;
+                
             }
 
         }

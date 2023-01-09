@@ -24,7 +24,7 @@ public partial class App : Application
         InitializeComponent();
         OnStart();
         
-        MainPage = new AppShell();
+        
         
     }
 
@@ -47,9 +47,15 @@ public partial class App : Application
                 BaseUri = new Uri(baseUrl)
             };
             realmApp = Realms.Sync.App.Create(appConfiguration);
-            
+            if(realmApp.CurrentUser == null)
+            {
+                MainPage = new TabbedLogin();
+            }
            
-            
+            else
+            {
+                MainPage = new AppShell();
+            }
 
         }
         catch (Exception ex)

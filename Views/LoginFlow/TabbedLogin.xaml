@@ -7,6 +7,7 @@
              xmlns:login="clr-namespace:FireSignage.Views.LoginFlow"
              xmlns:control="clr-namespace:FireSignage.Controls"
              Title="Login"
+             xmlns:fontAwesome="clr-namespace:FontAwesome"
              BackgroundColor="{StaticResource Gray300}"
              Shell.NavBarIsVisible="False" Shell.TabBarIsVisible="False">
 
@@ -18,9 +19,10 @@
 
         <Image HorizontalOptions="Center" Source="newlogo1.png" Aspect="AspectFit" Margin="0,20"/>
 
-        
+        <Label Text="Ignite Rider Inc" HorizontalOptions="Center" FontAttributes="Bold" FontSize="30"
+               TextColor="{StaticResource Tertiary}" Margin="0,10"/>
 
-        <Frame BackgroundColor="#4D687E" HasShadow="True" HorizontalOptions="Center" VerticalOptions="Center">
+        <Frame BackgroundColor="{StaticResource Primary}" HasShadow="True" HorizontalOptions="Center" VerticalOptions="Center">
         
 
 
@@ -63,13 +65,32 @@
 
 
                </Grid>
-                        </VerticalStackLayout>
+
+                
+                
+                        
+            </VerticalStackLayout>
                    
 
     </Frame>
 
-        <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
-               FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
+        <Label Text="Or Login With Social Media" HorizontalOptions="Center" Padding="10" FontSize="20"/>
+        <HorizontalStackLayout HorizontalOptions="Center" Margin="10">
 
-  </VerticalStackLayout>
+            <Button ImageSource="{FontImage FontFamily=FontIcons,
+                    Glyph={StaticResource FaceBook},
+                    Size=30}" CornerRadius="20" Margin="10" Padding="15"/>
+
+            
+
+            <Button ImageSource="{FontImage FontFamily=FontIcons,
+                    Glyph={StaticResource Google},
+                    Size=30}" CornerRadius="20" Margin="10" Padding="15"/>
+
+            <Button ImageSource="{FontImage FontFamily=FontIcons,
+                    Glyph={StaticResource Twitter},
+                    Size=30}" CornerRadius="20" Margin="10" Padding="15"/>
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
 </ContentPage>

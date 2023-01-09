@@ -63,7 +63,7 @@
 
         </Border>
 
-        <Button Text="Finish and Add This Device" Command="{Binding AddDeviceInfoCommand}" HorizontalOptions="Center"/>
+        <Button Text="Finish and Add This Device" Command="{Binding UpdateUserCommand}" HorizontalOptions="Center"/>
         <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
                FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
 

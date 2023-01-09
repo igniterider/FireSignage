@@ -32,10 +32,10 @@
         </LinearGradientBrush>
     </Shell.FlyoutBackground>
     
-     <ShellItem Route="TabbedLogin" FlyoutItemIsVisible="False"  >
+     <!--<ShellItem Route="TabbedLogin" FlyoutItemIsVisible="False"  >
         <ShellContent ContentTemplate="{DataTemplate loginflow:TabbedLogin}" Shell.TabBarIsVisible="False" />
 
-    </ShellItem>
+    </ShellItem>-->
    
 
      <FlyoutItem Shell.BackgroundColor="#49687e" FlyoutDisplayOptions="AsMultipleItems" >

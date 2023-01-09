@@ -25,8 +25,8 @@ public partial class AppShell : Shell
     {
 
         Routes.Add("SignDisplayMain", typeof(SignDisplayMain));
-        //Routes.Add("TabbedLogin", typeof(TabbedLogin));
-       // Routes.Add("RegisterUserSettings", typeof(RegisterUserSettings));
+        Routes.Add("TabbedLogin", typeof(TabbedLogin));
+        // Routes.Add("RegisterUserSettings", typeof(RegisterUserSettings));
 
         foreach (var item in Routes)
         {
