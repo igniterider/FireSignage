@@ -32,16 +32,16 @@
             </VerticalStackLayout>
 
             <VerticalStackLayout>
-                <Entry Placeholder="First Name" FontSize="Medium" Text="{Binding FirstName}" x:Name="entryFirst"/>
-                <Entry Placeholder="Last Name" FontSize="Medium" Text="{Binding LastName}" x:Name="entryLast"/>
-                <Entry Placeholder="Business Name" FontSize="Medium" Text="{Binding Business}" x:Name="bus"
-                       ReturnCommand="{Binding ChangeUsersInfoVMCommand}" ReturnCommandParameter="{Binding Source={x:Reference bus}}"/>
+                <Entry Placeholder="First Name" FontSize="Medium" Text="{Binding FirstName}"/>
+                <Entry Placeholder="Last Name" FontSize="Medium" Text="{Binding LastName}" />
+                <Entry Placeholder="Business Name" FontSize="Medium" Text="{Binding Business}"
+                       />
                 <Entry Placeholder="License Plate" FontSize="Medium" Text="{Binding LicensePlate}"/>
 
             </VerticalStackLayout>
         </HorizontalStackLayout>
 
-        <Button Text="Submit Changes" Style="{StaticResource GradientButtonStyle}"/>
+        <Button Text="Submit Changes" Style="{StaticResource GradientButtonStyle}" Command="{Binding ChangeUsersInfoVMCommand}"/>
 
     </VerticalStackLayout>
 </ContentPage>

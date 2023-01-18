@@ -7,7 +7,7 @@ namespace FireSignage.Models
 {
     //User class model
 
-    public class User : RealmObject
+    public partial class User : IRealmObject
     {
         [MapTo("_id")]
         [PrimaryKey]
@@ -36,8 +36,8 @@ namespace FireSignage.Models
         [Required]
         public string OwnerId { get; set; }
 
-        [Backlink(nameof(UserDevices.DeviceOwner))]
-        public IQueryable<UserDevices> DevicesOwned { get; }
+        //[Backlink(nameof(UserDevices.DeviceOwner))]
+        //public IQueryable<UserDevices> DevicesOwned { get; }
 
     }
 

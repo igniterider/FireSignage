@@ -5,7 +5,7 @@ using MongoDB.Bson;
 
 namespace FireSignage.Models
 {
-    public class UserDevices : RealmObject
+    public partial class UserDevices : IRealmObject
     {
         [MapTo("_id")]
         [PrimaryKey]

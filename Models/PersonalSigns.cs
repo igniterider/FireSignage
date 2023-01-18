@@ -8,7 +8,7 @@ namespace FireSignage.Models
 {
     // saved Personal signs for users 
 
-    public class PersonalSigns : EmbeddedObject
+    public partial class PersonalSigns : IRealmObject
     {
         [MapTo("_backgroundcolor")]
         public string Backgroundcolor { get; set; }

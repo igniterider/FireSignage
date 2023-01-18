@@ -10,12 +10,5 @@ public partial class UserView : ContentPage
 		BindingContext = viewModel;
 	}
 
-    void OnEntryCompleted(object sender, EventArgs e)
-    {
-        string fname = ((Entry)sender).Text;
-
-
-		
-		
-    }
+    
 }

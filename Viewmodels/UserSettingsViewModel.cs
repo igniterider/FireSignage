@@ -130,10 +130,10 @@ namespace FireSignage.Viewmodels
         }
 
         [RelayCommand]
-        async Task ChangeUsersInfoVM()
+        public Task ChangeUsersInfoVM()
         {
-            
-            
+            realmservice.ChangeUsersInfo(FirstName, LastName, LicensePlate, Business);
+            return Task.CompletedTask;
         }
 
     }

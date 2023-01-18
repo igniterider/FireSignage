@@ -109,15 +109,19 @@ public partial class RealmService
 
 
 
-    public async Task ChangeUsersInfo()
+    public Task ChangeUsersInfo(string F, string L, string Lic, string busi)
     {
         alldataRealm.Write(() =>
         {
             var myuser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
-
+            myuser.Firstname = F;
+            myuser.Lastname = L;
+            myuser.Licenseplate = Lic;
+            myuser.Business = busi;
 
         });
-            
+          
+        return Task.CompletedTask;
 
     }
 
