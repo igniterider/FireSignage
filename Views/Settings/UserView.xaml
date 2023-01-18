@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FireSignage.Views.Settings.UserView"
+             Title="UserView"
+             xmlns:model="clr-namespace:FireSignage.Models"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+        EventName="Appearing"
+        Command="{Binding GetUsersInfoCommand}" />
+
+
+
+    </ContentPage.Behaviors>
+
+    <VerticalStackLayout Padding="5" Margin="10">
+
+        <HorizontalStackLayout Margin="10">
+            <Label Text="Current" Margin="10,10,70,10" HorizontalOptions="Start" FontAttributes="Bold" TextDecorations="Underline"/>
+            <Label Text="New/Change" Margin="10" HorizontalOptions="End" FontAttributes="Bold" TextDecorations="Underline"/>
+            
+        </HorizontalStackLayout>
+
+        <HorizontalStackLayout >
+            <VerticalStackLayout Padding="10">
+                <Label Text="{Binding FirstName}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding LastName}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding Business}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding LicensePlate}" FontSize="Medium" TextColor="Black" Margin="10"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Entry Placeholder="First Name" FontSize="Medium" Text="{Binding FirstName}" x:Name="entryFirst"/>
+                <Entry Placeholder="Last Name" FontSize="Medium" Text="{Binding LastName}" x:Name="entryLast"/>
+                <Entry Placeholder="Business Name" FontSize="Medium" Text="{Binding Business}" x:Name="bus"
+                       ReturnCommand="{Binding ChangeUsersInfoVMCommand}" ReturnCommandParameter="{Binding Source={x:Reference bus}}"/>
+                <Entry Placeholder="License Plate" FontSize="Medium" Text="{Binding LicensePlate}"/>
+
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <Button Text="Submit Changes" Style="{StaticResource GradientButtonStyle}"/>
+
+    </VerticalStackLayout>
+</ContentPage>

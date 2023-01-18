@@ -51,7 +51,7 @@ namespace FireSignage.Viewmodels
 
         public GigViewModel()
         {
-            Title = "Dashboard";
+           // Title = "Dashboard";
             premadeService = new PremadeService();
             MyColors = colors.Keys.ToList();
             CreateUserRealm();

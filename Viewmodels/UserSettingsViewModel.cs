@@ -12,14 +12,14 @@ using Microsoft.VisualBasic;
 using System.Xml.Linq;
 using CommunityToolkit.Maui.Core.Extensions;
 using System.Collections.Specialized;
+using FireSignage.Services;
 
 namespace FireSignage.Viewmodels
 {
 	public partial class UserSettingsViewModel : BaseViewModel
 	{
         
-        public User GetUser { get; set; }
-        public UserDevices GetUserDevices { get; set; }
+        
         private string idiom;
         private string OS;
         private string osVersion;
@@ -29,6 +29,7 @@ namespace FireSignage.Viewmodels
         private string screen;
         
         private string dname;
+        private string userid;
 
         private string fname;
         private string lname;
@@ -36,11 +37,14 @@ namespace FireSignage.Viewmodels
         private string business;
         private string licplate;
 
+
+        RealmService realmservice;
+
         public UserSettingsViewModel()
         {
-            Title = "User Settings";
-            SetRealms();
-            GetDeviceInfo();
+           // Title = "User Settings";
+            realmservice = new RealmService();
+           
         }
 
         //User Info
@@ -97,129 +101,6 @@ namespace FireSignage.Viewmodels
             get { return idiom; }
         }
 
-       
-        
-       
-
-        private Realm alldataRealm;
-        private Realms.Sync.User _user;
-
-       
-        
-
-        [RelayCommand]
-        public void SetRealms()
-        {
-            _user = App.realmApp.CurrentUser;
-            var syncConfig = new FlexibleSyncConfiguration(_user)
-            {
-                PopulateInitialSubscriptions = (alldataRealm) =>
-                {
-                    var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
-                    var devicedata = alldataRealm.All<UserDevices>().Where(n => n.OwnerId == _user.Id);
-                    alldataRealm.Subscriptions.Add(usersData);
-                    alldataRealm.Subscriptions.Add(devicedata);
-
-                }
-
-
-            };
-
-            alldataRealm =  Realm.GetInstance(syncConfig);
-            
-            GetUser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
-            GetUserDevices = alldataRealm.All<UserDevices>().FirstOrDefault(e => e.OwnerId == _user.Id);
-
-            syncConfig.OnSessionError = (sender, e) =>
-            {
-                //handle errors here
-                Console.WriteLine(e.Message);
-            };
-
-            
-
-        }
-
-        [RelayCommand]
-        public void UpdateUser()
-        {
-            alldataRealm.Write(() =>
-            {
-                var user = alldataRealm.All<User>().FirstOrDefault(n => n.OwnerId == App.realmApp.CurrentUser.Id);
-                user.Firstname = FirstName; 
-                user.Lastname = LastName;
-                user.Licenseplate = LicensePlate;
-                user.Business = Business;
-
-            });
-
-            DeviceCheck();
-        }
-
-        [RelayCommand]
-        public void DeviceCheck()
-        {
-            if(GetUserDevices == null)
-            {
-                AddDeviceInfo();
-                
-            }
-            else if(GetUserDevices.Devicename == name && GetUserDevices.DeviceManuf == manu)
-            {
-                Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-                
-
-            }
-            else
-            {
-                AddDeviceInfo();
-                
-            }
-
-        }
-        
-        private void AddDeviceInfo()
-        {
-            alldataRealm.Write(() =>
-            {
-
-                var device = new UserDevices
-                {
-                    DeviceManuf = manu,
-                    Devicename = name,
-                    DeviceOS = OS,
-                    Devicetype = idiom,
-                    Deviceisonline = true,
-                    OwnerId = App.realmApp.CurrentUser.Id,
-                    DeviceOwner = GetUser,
-                    Devicescreensize = screen
-
-                };
-
-                alldataRealm.Add(device);
-
-            });
-
-           
-
-            Shell.Current.GoToAsync($"//{nameof(MainPage)}");
-            
-        }
-
-        private void GetDeviceInfo()
-        {
-            idiom = DeviceInfo.Idiom.ToString();
-            OS = DeviceInfo.Platform.ToString();
-            osVersion = DeviceInfo.Version.ToString();
-            manu = DeviceInfo.Manufacturer;
-            model = DeviceInfo.Model;
-            name = DeviceInfo.Name;
-            screen = DeviceDisplay.MainDisplayInfo.ToString();
-
-
-
-        }
-
         public event EventHandler<EventArgs> OperationCompeleted;
 
         private void HandleFailure()
@@ -227,6 +108,34 @@ namespace FireSignage.Viewmodels
             App.Current.MainPage.DisplayAlert("Login Failed", "HitOk", "OK");
             //throw new NotImplementedException();
         }
+
+        public ObservableCollection<User> GetUsers { get; } = new ObservableCollection<User>();
+
+        [RelayCommand]
+        async Task GetUsersInfo()
+        {
+            var userinfo = await realmservice.UsersInfo();
+            foreach (var user in userinfo)
+            {
+                GetUsers.Add(user);
+                Console.WriteLine("user = " + user);
+                FirstName = user.Firstname;
+                LastName = user.Lastname;
+                Business = user.Business;
+                LicensePlate = user.Licenseplate;
+                Email = user.Email;
+
+            }
+
+        }
+
+        [RelayCommand]
+        async Task ChangeUsersInfoVM()
+        {
+            
+            
+        }
+
     }
 }
 

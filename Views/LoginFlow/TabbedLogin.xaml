@@ -79,7 +79,7 @@
 
             <Button ImageSource="{FontImage FontFamily=FontIcons,
                     Glyph={StaticResource FaceBook},
-                    Size=30}" CornerRadius="20" Margin="10" Padding="15"/>
+                    Size=30}" CornerRadius="20" Margin="10" Padding="15" />
 
             
 

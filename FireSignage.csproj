@@ -73,27 +73,27 @@
 	
 	<ItemGroup>
 	  <PackageReference Include="MongoDB.Driver" Version="2.18.0" />
-	  <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-	  <PackageReference Include="Realm" Version="10.18.0" />
-	  <PackageReference Include="Realm.Fody" Version="10.18.0">
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+	  <PackageReference Include="Realm" Version="10.19.0" />
+	  <PackageReference Include="Realm.Fody" Version="10.19.0">
 	    <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 	    <PrivateAssets>all</PrivateAssets>
 	  </PackageReference>
-	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="3.0.0" />
-	  <PackageReference Include="CommunityToolkit.Maui" Version="3.0.0" />
-	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0-preview1" />
+	  <PackageReference Include="CommunityToolkit.Maui.Core" Version="3.1.0" />
+	  <PackageReference Include="CommunityToolkit.Maui" Version="3.1.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.1.0-preview3" />
 	  <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
-	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.3.57" />
+	  <PackageReference Include="Syncfusion.Maui.Core" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.TabView" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.ListView" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.Scheduler" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.Sliders" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.DataGrid" Version="20.4.43" />
 	  <PackageReference Include="SampleBrowser.Maui.Base" Version="20.2.38" />
-	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.3.57" />
-	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.3.57" />
-	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.547" />
-	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.547" />
+	  <PackageReference Include="Syncfusion.Maui.Gauges" Version="20.4.43" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.4.43" />
+	  <PackageReference Include="Microsoft.Maui.Dependencies" Version="6.0.548" />
+	  <PackageReference Include="Microsoft.Maui.Extensions" Version="6.0.548" />
 	  <PackageReference Include="SkiaSharp.Views.Maui.Controls" Version="2.88.3" />
 	  <PackageReference Include="SkiaSharp.Views.Maui.Core" Version="2.88.3" />
 	  <PackageReference Include="SkiaSharp.Views.Maui.Controls.Compatibility" Version="2.88.3" />
@@ -102,7 +102,7 @@
 	  <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
 	  <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
 	  <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
-	  <PackageReference Include="Microsoft.Maui.Graphics" Version="7.0.49" />
+	  <PackageReference Include="Microsoft.Maui.Graphics" Version="7.0.52" />
 	</ItemGroup>
 	
 	<ItemGroup>
@@ -172,6 +172,9 @@
 	  </MauiXaml>
 	  <MauiXaml Update="Views\Settings\UserSettings.xaml">
 	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\Settings\UserView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Views\SignDisplay\DisplayTest.xaml">
 	    <Generator>MSBuild:Compile</Generator>

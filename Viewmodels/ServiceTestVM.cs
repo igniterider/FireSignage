@@ -17,20 +17,20 @@ namespace FireSignage.Viewmodels
 
 
 
-        [RelayCommand]
-        public Task GetData()
-        {
-            realmservice.GetDisplayRealm();
-            var getdisplay = realmservice.alldataRealm.All<DisplaySign>().FirstOrDefault(t => t.OwnerId == App.realmApp.CurrentUser.Id);
-            var tdisplay = getdisplay.Displaytext;
-            textDisplay = tdisplay;
-            Console.WriteLine(tdisplay);
-            Console.WriteLine(textDisplay);
-            GetDisplay = realmservice.DisplaySigns;
-            return Task.CompletedTask;
+        //[RelayCommand]
+        //public Task GetData()
+        //{
+            //realmservice.GetDisplayRealm();
+            //var getdisplay = realmservice.alldataRealm.All<DisplaySign>().FirstOrDefault(t => t.OwnerId == App.realmApp.CurrentUser.Id);
+            //var tdisplay = getdisplay.Displaytext;
+            //textDisplay = tdisplay;
+            //Console.WriteLine(tdisplay);
+            //Console.WriteLine(textDisplay);
+            //GetDisplay = realmservice.DisplaySigns;
+            //return Task.CompletedTask;
             
            
-        }
+       // }
 
 
 

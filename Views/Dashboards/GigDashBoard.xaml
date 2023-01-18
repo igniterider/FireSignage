@@ -162,9 +162,7 @@
 
 
 
-            <Label Text="{Binding GetUserDevices.Devicename}" TextColor="Goldenrod"/>
-            
-            <Label Text="{Binding GetDevices.Devicename}" TextColor="Crimson"/>
+           
 
         </VerticalStackLayout>
 

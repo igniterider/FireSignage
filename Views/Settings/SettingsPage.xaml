@@ -346,7 +346,7 @@
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
                         Text="Terms of Service"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" TextColor="{StaticResource Primary}"/>
                     <!--  Navigation icon  -->
                     <Label
                         Grid.Column="2"
@@ -379,7 +379,7 @@
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
                         Text="Privacy and Policy"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" TextColor="{StaticResource Primary}"/>
                     <!--  Navigation icon  -->
                     <Label
                         Grid.Column="2"
@@ -412,7 +412,7 @@
                         HorizontalOptions="Start"
                         Style="{StaticResource TitleLabelStyle}"
                         Text="FAQs"
-                        VerticalOptions="Center" />
+                        VerticalOptions="Center" TextColor="{StaticResource Primary}"/>
                     <!--  Navigation icon  -->
                     <Label
                         Grid.Column="2"

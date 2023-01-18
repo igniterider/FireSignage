@@ -7,61 +7,93 @@
              xmlns:viewModel="clr-namespace:FireSignage.Viewmodels"
              xmlns:controls="clr-namespace:FireSignage.Controls"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
-             Shell.TabBarIsVisible="False">
+             Shell.TabBarIsVisible="False"
+             xmlns:model="clr-namespace:FireSignage.Models">
 
 
-    <!--<ContentPage.Behaviors>
+    <ContentPage.Behaviors>
         <toolkit:EventToCommandBehavior
         EventName="Appearing"
-        Command="{Binding GetUserInfoCommand}" />
+        Command="{Binding GetUsersInfoCommand}" />
 
          
 
-    </ContentPage.Behaviors>-->
+    </ContentPage.Behaviors>
 
      <!--<ContentPage.BindingContext>
         <viewModel:UserSettingsViewModel />
     </ContentPage.BindingContext>-->
 
-    <VerticalStackLayout Margin="10">
+    <VerticalStackLayout>
         
-        <Border BackgroundColor="#4D687E" HeightRequest="450">
-            <VerticalStackLayout>
-            <TableView Intent="Settings" BackgroundColor="#4D687E">
-                <TableRoot>
-                    <TableSection Title="User Information" TextColor="Black">
-                            <EntryCell Label="First Name(required)"
-                            Placeholder="{Binding GetUser.Firstname}"
-                            Text="{Binding FirstName}"/>
+        
+        <Grid ColumnDefinitions="*,*,*"
+              RowDefinitions="20,50,10,50,50,50,50,*">
 
-                        <EntryCell Label="Last Name"
-                                   Placeholder="{Binding GetUser.Lastname}"
-                                   Text="{Binding LastName}"/>
+            <Label Text="Current" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
+            <Label Text="New/Change" FontSize="Small" Grid.Column="2" Grid.Row="1"/>
 
-                        <EntryCell Label="License Plate(optional)"
-                            Placeholder="{Binding GetUser.Licenseplate}"
-                            Text="{Binding LicensePlate}"/>
+            <CollectionView ItemsLayout="VerticalList" ItemsSource="{Binding GetUsers}" Grid.Column="1" Grid.Row="3" Grid.RowSpan="8" Margin="10" >
+                <CollectionView.ItemTemplate >
+                    <DataTemplate x:DataType="model:User" >
 
-                            <EntryCell Label="Business Name(optional)"
-                                   Placeholder="{Binding GetUser.Business}" Text="{Binding Business}"/>
 
-                            <EntryCell Label="Change Email"
-                            Placeholder="{Binding GetUser.Email}"
-                            Text="{Binding Email}"/>
+                        <VerticalStackLayout>
 
-                        
+                            <Label  FontSize="Small" Text="{Binding Firstname}" 
+                                       TextColor="Black" HorizontalTextAlignment="Center"
+                                    Grid.Column="1" Grid.Row="3" Padding="7"/>
+                            
+                            <Label FontSize="Small" Text="{Binding Lastname}" 
+                                       TextColor="White" HorizontalTextAlignment="Center"
+                                    Grid.Column="1" Grid.Row="4" Padding="7"/>
+                            
+                            <Label FontSize="Small" Text="{Binding Email}" 
+                                       TextColor="Red" HorizontalTextAlignment="Center"
+                                    Grid.Column="1" Grid.Row="5" Padding="7"/>
+                            
+                            <Label  FontSize="Small" Text="{Binding Business}" 
+                                       TextColor="Blue" HorizontalTextAlignment="Center"
+                                    Grid.Column="1" Grid.Row="6" Padding="7"/>
 
-                        </TableSection>
 
-                    
-                </TableRoot>
+                        </VerticalStackLayout>
 
-            </TableView>
+
+
+                    </DataTemplate>
+
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+
+            <Label Text="{Binding Firstname}" FontSize="Small" Grid.Column="0" Grid.Row="3"/>
+            
+            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="3" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"
+                    />
+
+
+            <Label Text="Last Name" FontSize="Small" Grid.Column="0" Grid.Row="4"/>
+
+            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="4" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
+
+
+            <Label Text="Email" FontSize="Small" Grid.Column="0" Grid.Row="5"/>
+
+            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="5" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
+
+
+            <Label Text="Business" FontSize="Small" Grid.Column="0" Grid.Row="6"/>
+
+            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="6" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
+
+
+        </Grid>
+        
+       
 
                
-        </VerticalStackLayout>
-
-        </Border>
+        
 
         <Button Text="Finish and Add This Device" Command="{Binding UpdateUserCommand}" HorizontalOptions="Center"/>
         <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"

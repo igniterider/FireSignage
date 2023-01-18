@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FireSignage.Views.LoginFlow;
+using System;
 namespace FireSignage.Viewmodels
 {
     public class SettingsViewModel : BaseViewModel
@@ -140,7 +141,7 @@ namespace FireSignage.Viewmodels
         private async void LogoutClicked(object obj)
         {
             await App.realmApp.CurrentUser.LogOutAsync();
-            await Shell.Current.GoToAsync("//..");
+            await Shell.Current.GoToAsync($"//{nameof(TabbedLogin)}");
 
         }
 

@@ -39,11 +39,11 @@
             "targetAlias": "net7.0-android",
             "projectReferences": {}
           },
-          "net7.0-ios16.0": {
+          "net7.0-ios16.1": {
             "targetAlias": "net7.0-ios",
             "projectReferences": {}
           },
-          "net7.0-maccatalyst15.4": {
+          "net7.0-maccatalyst16.1": {
             "targetAlias": "net7.0-maccatalyst",
             "projectReferences": {}
           },
@@ -64,15 +64,15 @@
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0-preview1, )"
+              "version": "[8.1.0-preview3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -92,15 +92,15 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )"
+              "version": "[7.0.52, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
@@ -108,17 +108,17 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Refractored.MvvmHelpers": {
               "target": "Package",
@@ -146,35 +146,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Xamarin.Android.Glide": {
               "target": "Package",
@@ -183,7 +183,7 @@
             },
             "Xamarin.AndroidX.Browser": {
               "target": "Package",
-              "version": "[1.4.0.2, )",
+              "version": "[1.4.0.3, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Core.SplashScreen": {
@@ -192,32 +192,32 @@
             },
             "Xamarin.AndroidX.Legacy.Support.V4": {
               "target": "Package",
-              "version": "[1.0.0.14, )",
+              "version": "[1.0.0.15, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Lifecycle.LiveData": {
               "target": "Package",
-              "version": "[2.5.1, )",
+              "version": "[2.5.1.1, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Navigation.Common": {
               "target": "Package",
-              "version": "[2.5.2, )",
+              "version": "[2.5.2.1, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Navigation.Fragment": {
               "target": "Package",
-              "version": "[2.5.2, )",
+              "version": "[2.5.2.1, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Navigation.Runtime": {
               "target": "Package",
-              "version": "[2.5.2, )",
+              "version": "[2.5.2.1, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Navigation.UI": {
               "target": "Package",
-              "version": "[2.5.2, )",
+              "version": "[2.5.2.1, )",
               "autoReferenced": true
             },
             "Xamarin.AndroidX.Security.SecurityCrypto": {
@@ -227,12 +227,12 @@
             },
             "Xamarin.Google.Android.Material": {
               "target": "Package",
-              "version": "[1.6.1.1, )",
+              "version": "[1.7.0, )",
               "autoReferenced": true
             },
             "Xamarin.Google.Crypto.Tink.Android": {
               "target": "Package",
-              "version": "[1.7.0, )",
+              "version": "[1.7.0.1, )",
               "autoReferenced": true
             }
           },
@@ -266,20 +266,20 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
-        "net7.0-ios16.0": {
+        "net7.0-ios16.1": {
           "targetAlias": "net7.0-ios",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0-preview1, )"
+              "version": "[8.1.0-preview3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -299,15 +299,15 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )"
+              "version": "[7.0.52, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
@@ -315,17 +315,17 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Refractored.MvvmHelpers": {
               "target": "Package",
@@ -353,35 +353,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             }
           },
           "imports": [
@@ -414,20 +414,20 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         },
-        "net7.0-maccatalyst15.4": {
+        "net7.0-maccatalyst16.1": {
           "targetAlias": "net7.0-maccatalyst",
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0-preview1, )"
+              "version": "[8.1.0-preview3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -447,15 +447,15 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )"
+              "version": "[7.0.52, )"
             },
             "MongoDB.Driver": {
               "target": "Package",
@@ -463,17 +463,17 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Refractored.MvvmHelpers": {
               "target": "Package",
@@ -501,35 +501,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             }
           },
           "imports": [
@@ -568,15 +568,15 @@
           "dependencies": {
             "CommunityToolkit.Maui": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Maui.Core": {
               "target": "Package",
-              "version": "[3.0.0, )"
+              "version": "[3.1.0, )"
             },
             "CommunityToolkit.Mvvm": {
               "target": "Package",
-              "version": "[8.1.0-preview1, )"
+              "version": "[8.1.0-preview3, )"
             },
             "Microsoft.Extensions.Configuration": {
               "target": "Package",
@@ -596,30 +596,30 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.547, )"
+              "version": "[6.0.548, )"
             },
             "Microsoft.Maui.Graphics": {
               "target": "Package",
-              "version": "[7.0.49, )"
+              "version": "[7.0.52, )"
             },
             "Microsoft.Maui.Graphics.Win2D.WinUI.Desktop": {
               "target": "Package",
-              "version": "[7.0.49, )",
+              "version": "[7.0.52, )",
               "autoReferenced": true
             },
             "Microsoft.Windows.SDK.BuildTools": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.0.22621.1, )",
+              "version": "[10.0.22621.755, )",
               "autoReferenced": true
             },
             "Microsoft.WindowsAppSDK": {
               "target": "Package",
-              "version": "[1.1.5, )",
+              "version": "[1.2.221109.1, )",
               "autoReferenced": true
             },
             "MongoDB.Driver": {
@@ -628,17 +628,17 @@
             },
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.1, )"
+              "version": "[13.0.2, )"
             },
             "Realm": {
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Realm.Fody": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[10.18.0, )"
+              "version": "[10.19.0, )"
             },
             "Refractored.MvvmHelpers": {
               "target": "Package",
@@ -666,35 +666,35 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Core": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.DataGrid": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Gauges": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.ListView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Scheduler": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.Sliders": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             },
             "Syncfusion.Maui.TabView": {
               "target": "Package",
-              "version": "[20.3.57, )"
+              "version": "[20.4.43, )"
             }
           },
           "imports": [

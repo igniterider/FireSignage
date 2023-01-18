@@ -2,7 +2,7 @@
 using CommunityToolkit.Maui.Core;
 using FireSignage.Services;
 using Syncfusion.Maui.Core.Hosting;
-using Syncfusion.Maui.ListView.Hosting;
+
 using FireSignage.Views;
 using FireSignage.Controls;
 using FireSignage.Renderers;
@@ -51,12 +51,9 @@ public static class MauiProgram
          });
 
 
-        builder.ConfigureSyncfusionListView();
         builder.Services.AddTransient<PremadeService>();
         builder.Services.AddSingleton<MainPage>();
-        
-        builder.Services.AddSingleton<GigViewModel>();
-        builder.Services.AddSingleton<GigDashBoard>();
+        builder.Services.AddSingleton<MainPageViewModel>();
         builder.Services.AddSingleton<TabbedLogin>();
         builder.Services.AddSingleton<LoginPageViewModel>();
         return builder.Build();

@@ -9,4 +9,6 @@ public partial class UserSettings : ContentPage
 		vm = new UserSettingsViewModel();
 		BindingContext = vm;
 	}
+
+    
 }

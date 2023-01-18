@@ -20,11 +20,10 @@
                     <TableRoot>
                         <TableSection Title="Device Information" TextColor="Black">
                             <EntryCell Label="Device Name"
-                            Placeholder="{Binding DeviceInfo.Name}"
-                            Text="{Binding DeviceName}"/>
+                            Text="{Binding DeviceName}" />
 
                             <ViewCell>
-                                <VerticalStackLayout>
+                                <VerticalStackLayout Padding="10">
                                     <Label Text="{Binding Manuf}"/>
                                     <Label Text="{Binding OperatingSystem}"/>
                                     <Label Text="{Binding DeviceType}"/>

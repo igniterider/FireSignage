@@ -109,6 +109,15 @@
             
             />
 
+        <ShellContent
+            Title="UserView"
+            ContentTemplate="{DataTemplate settings:UserView}"
+            Route="UserView"
+            FlyoutItemIsVisible="True"
+            
+            />
+
+
 
     </FlyoutItem>
 

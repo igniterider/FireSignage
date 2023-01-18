@@ -16,37 +16,38 @@ namespace FireSignage.Services;
 public partial class RealmService
 {
     
-    public Realm alldataRealm;
+    private Realm alldataRealm;
     private Realms.Sync.User _user;
 
     public Models.User GetUser { get; set; }
     public UserDevices GetUserDevices { get; set; }
 
-    public IEnumerable<DisplaySign> DisplaySigns { get; private set; }
+    
 
     public RealmService()
     {
-
+       
 
     }
 
-    public void GetDisplayRealm()
+    async Task GetRealms()
     {
 
-        if (alldataRealm == null) 
-        {
+        
             _user = App.realmApp.CurrentUser;
             var syncConfig = new FlexibleSyncConfiguration(_user);
 
-            alldataRealm = Realm.GetInstance(syncConfig);
+            
             AddSubscriptionsToRealm();
-            DisplaySigns = alldataRealm.All<DisplaySign>();
+
+            alldataRealm = await Realm.GetInstanceAsync(syncConfig);
+
             syncConfig.OnSessionError = (sender, e) =>
             {
                 //handle errors here
                 Console.WriteLine(e.Message);
             };
-        }
+        
 
        
     }
@@ -54,13 +55,20 @@ public partial class RealmService
 
     private void AddSubscriptionsToRealm()
     {
-        var subscriptions = alldataRealm.Subscriptions;
-        subscriptions.Update(() =>
+        var syncConfig = new FlexibleSyncConfiguration(_user)
         {
-            var defaultSubscription = alldataRealm.All<DisplaySign>()
-                .Where(t => t.OwnerId == _user.Id);
-            subscriptions.Add(defaultSubscription);
-        });
+            PopulateInitialSubscriptions = (alldataRealm) =>
+            {
+                var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
+                alldataRealm.Subscriptions.Add(usersData, new SubscriptionOptions() { Name = "AllUserInfo"});
+
+                var userDeviceData = alldataRealm.All<UserDevices>().Where(n => n.OwnerId == _user.Id);
+                alldataRealm.Subscriptions.Add(userDeviceData, new SubscriptionOptions() { Name = "AllUserDevices" });
+
+            }
+
+
+        };
     }
 
     static EventHandler<Realms.ErrorEventArgs> SessionErrorHandler()
@@ -87,43 +95,29 @@ public partial class RealmService
 
     public event EventHandler<EventArgs> OperationCompeleted;
 
-    
 
-    private void HandleFailure()
+
+   List<User> userinfo = new();
+
+   public async Task<List<User>> UsersInfo()
     {
-        App.Current.MainPage.DisplayAlert("Login Failed", "HitOk", "OK");
-        //throw new NotImplementedException();
+        await GetRealms();
+        GetUser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
+        userinfo = alldataRealm.All<User>().Where(e => e.OwnerId == _user.Id).ToList();
+        return userinfo;
     }
 
 
-    [RelayCommand]
-    public void GetUserInfo()
+
+    public async Task ChangeUsersInfo()
     {
-        _user = App.realmApp.CurrentUser;
-        var syncConfig = new FlexibleSyncConfiguration(_user)
+        alldataRealm.Write(() =>
         {
-            PopulateInitialSubscriptions = (alldataRealm) =>
-            {
-                var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
-                alldataRealm.Subscriptions.Add(usersData);
-
-            }
+            var myuser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
 
 
-        };
-
-        alldataRealm = Realm.GetInstance(syncConfig);
-        GetUser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
-
-
-
-
-
-        syncConfig.OnSessionError = (sender, e) =>
-        {
-            //handle errors here
-            Console.WriteLine(e.Message);
-        };
+        });
+            
 
     }
 

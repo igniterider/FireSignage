@@ -39,6 +39,9 @@
     <MauiXaml Update="Views\Settings\DeviceSettingsPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Views\Settings\UserView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Views\SignDisplay\DisplayTest.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
