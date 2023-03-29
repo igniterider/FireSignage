@@ -16,7 +16,8 @@ namespace FireSignage.Viewmodels
         #region Fields
         
         private string password;
-        
+        private string licenseplate = "KGSTEST";
+        private string business = "TestFunction";
 
         #endregion
 

@@ -19,37 +19,60 @@ public partial class RealmService
     private Realm alldataRealm;
     private Realms.Sync.User _user;
 
-    public Models.User GetUser { get; set; }
+    public User GetUser { get; set; }
     public UserDevices GetUserDevices { get; set; }
 
-    
+    public User MyInfo { get; set; }
 
     public RealmService()
     {
-       
+        
 
     }
 
     async Task GetRealms()
     {
-
-        
-            _user = App.realmApp.CurrentUser;
-            var syncConfig = new FlexibleSyncConfiguration(_user);
-
-            
-            AddSubscriptionsToRealm();
-
-            alldataRealm = await Realm.GetInstanceAsync(syncConfig);
-
-            syncConfig.OnSessionError = (sender, e) =>
+        if (alldataRealm == null)
             {
-                //handle errors here
-                Console.WriteLine(e.Message);
-            };
+                _user = App.realmApp.CurrentUser;
+                var syncConfig = new FlexibleSyncConfiguration(_user);
+
+
+                AddSubscriptionsToRealm();
+
+                alldataRealm = await Realm.GetInstanceAsync(syncConfig);
+
+
+                syncConfig.OnSessionError = (sender, e) =>
+                {
+                    //handle errors here
+                    Console.WriteLine(e.Message);
+                };
+            MyInfo = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
+
+        }
+
+
+        else
+        {
+            var config = new FlexibleSyncConfiguration(App.realmApp.CurrentUser);
+            alldataRealm = Realm.GetInstance(config);
+            alldataRealm.Subscriptions.Update(() =>
+            {
+                var usersData = alldataRealm.All<User>().Where(n => n.OwnerId == _user.Id);
+                alldataRealm.Subscriptions.Add(usersData, new SubscriptionOptions() { Name = "AllUserInfo" });
+
+                var userDeviceData = alldataRealm.All<UserDevices>().Where(n => n.OwnerId == _user.Id);
+                alldataRealm.Subscriptions.Add(userDeviceData, new SubscriptionOptions() { Name = "AllUserDevices" });
+            });
+            
+            await alldataRealm.Subscriptions.WaitForSynchronizationAsync();
+            MyInfo = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
+
+        }
+
         
 
-       
     }
 
 
@@ -104,6 +127,7 @@ public partial class RealmService
         await GetRealms();
         GetUser = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
         userinfo = alldataRealm.All<User>().Where(e => e.OwnerId == _user.Id).ToList();
+       // MyInfo = alldataRealm.All<User>().FirstOrDefault(e => e.OwnerId == _user.Id);
         return userinfo;
     }
 

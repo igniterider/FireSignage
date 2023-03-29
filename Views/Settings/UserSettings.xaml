@@ -8,7 +8,8 @@
              xmlns:controls="clr-namespace:FireSignage.Controls"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              Shell.TabBarIsVisible="False"
-             xmlns:model="clr-namespace:FireSignage.Models">
+             xmlns:model="clr-namespace:FireSignage.Models"
+             xmlns:inputLayout="clr-namespace:Syncfusion.Maui.Core;assembly=Syncfusion.Maui.Core">
 
 
     <ContentPage.Behaviors>
@@ -25,81 +26,44 @@
     </ContentPage.BindingContext>-->
 
     <VerticalStackLayout>
-        
-        
-        <Grid ColumnDefinitions="*,*,*"
-              RowDefinitions="20,50,10,50,50,50,50,*">
+        <inputLayout:SfTextInputLayout Hint="First Name" 
+                               ContainerType="Outlined"
+                               OutlineCornerRadius="8"
+                               Stroke="{StaticResource Tertiary}"
+                               ContainerBackground="{StaticResource White}">
+            <Entry Text="{Binding VMUser.Firstname}" Placeholder="{Binding VMUser.Firstname}"/>
+        </inputLayout:SfTextInputLayout>
 
-            <Label Text="Current" FontSize="Small" Grid.Column="1" Grid.Row="1"/>
-            <Label Text="New/Change" FontSize="Small" Grid.Column="2" Grid.Row="1"/>
+        <inputLayout:SfTextInputLayout Hint="Last Name" 
+                               ContainerType="Outlined"
+                               OutlineCornerRadius="8"
+                               ContainerBackground="{StaticResource White}"
+                                       Stroke="{StaticResource Tertiary}">
+            <Entry Text="{Binding VMuser.Lastname}" Placeholder="{Binding Lastname}"/>
+        </inputLayout:SfTextInputLayout>
 
-            <CollectionView ItemsLayout="VerticalList" ItemsSource="{Binding GetUsers}" Grid.Column="1" Grid.Row="3" Grid.RowSpan="8" Margin="10" >
-                <CollectionView.ItemTemplate >
-                    <DataTemplate x:DataType="model:User" >
-
-
-                        <VerticalStackLayout>
-
-                            <Label  FontSize="Small" Text="{Binding Firstname}" 
-                                       TextColor="Black" HorizontalTextAlignment="Center"
-                                    Grid.Column="1" Grid.Row="3" Padding="7"/>
-                            
-                            <Label FontSize="Small" Text="{Binding Lastname}" 
-                                       TextColor="White" HorizontalTextAlignment="Center"
-                                    Grid.Column="1" Grid.Row="4" Padding="7"/>
-                            
-                            <Label FontSize="Small" Text="{Binding Email}" 
-                                       TextColor="Red" HorizontalTextAlignment="Center"
-                                    Grid.Column="1" Grid.Row="5" Padding="7"/>
-                            
-                            <Label  FontSize="Small" Text="{Binding Business}" 
-                                       TextColor="Blue" HorizontalTextAlignment="Center"
-                                    Grid.Column="1" Grid.Row="6" Padding="7"/>
+        <inputLayout:SfTextInputLayout Hint="Business" 
+                               ContainerType="Outlined"
+                               OutlineCornerRadius="8"
+                               ContainerBackground="{StaticResource White}"
+                                       Stroke="{StaticResource Tertiary}">
 
 
-                        </VerticalStackLayout>
+            <Entry Text="{Binding Business}" Placeholder="{Binding GetUsers.Business}"/>
+        </inputLayout:SfTextInputLayout>
+
+        <inputLayout:SfTextInputLayout Hint="License Plate" 
+                               ContainerType="Outlined"
+                               OutlineCornerRadius="8"
+                               ContainerBackground="{StaticResource White}"
+                                       Stroke="{StaticResource Tertiary}">
+
+
+            <Entry Text="{Binding LicensePlate}"/>
+        </inputLayout:SfTextInputLayout>
 
 
 
-                    </DataTemplate>
-
-                </CollectionView.ItemTemplate>
-
-            </CollectionView>
-
-            <Label Text="{Binding Firstname}" FontSize="Small" Grid.Column="0" Grid.Row="3"/>
-            
-            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="3" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"
-                    />
-
-
-            <Label Text="Last Name" FontSize="Small" Grid.Column="0" Grid.Row="4"/>
-
-            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="4" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
-
-
-            <Label Text="Email" FontSize="Small" Grid.Column="0" Grid.Row="5"/>
-
-            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="5" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
-
-
-            <Label Text="Business" FontSize="Small" Grid.Column="0" Grid.Row="6"/>
-
-            <Entry Placeholder="Enter New" Grid.Column="2" Grid.Row="6" TextColor="Black" PlaceholderColor="Black" FontSize="Medium"/>
-
-
-        </Grid>
-        
-       
-
-               
-        
-
-        <Button Text="Finish and Add This Device" Command="{Binding UpdateUserCommand}" HorizontalOptions="Center"/>
-        <Label Text="All information is stored securely and never shared. Some info is used only for making signs easier and quicker to use!" FontAttributes="Bold"
-               FontSize="15" HorizontalOptions="CenterAndExpand" LineBreakMode="WordWrap" Margin="15,20,5,15"/>
-
- 
 
     </VerticalStackLayout>
 </ContentPage>

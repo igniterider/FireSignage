@@ -8,8 +8,12 @@ namespace FireSignage.Models
 {
     // saved Personal signs for users 
 
-    public partial class PersonalSigns : IRealmObject
+    public class PersonalSigns 
     {
+        [MapTo("_id")]
+        [PrimaryKey]
+        public ObjectId Id { get; set; } = ObjectId.GenerateNewId();
+
         [MapTo("_backgroundcolor")]
         public string Backgroundcolor { get; set; }
 

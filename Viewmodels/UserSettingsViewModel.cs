@@ -37,14 +37,14 @@ namespace FireSignage.Viewmodels
         private string business;
         private string licplate;
 
-
+        public User VMUser { get;  }
         RealmService realmservice;
 
         public UserSettingsViewModel()
         {
            // Title = "User Settings";
             realmservice = new RealmService();
-           
+            VMUser = realmservice.MyInfo;
         }
 
         //User Info
@@ -66,7 +66,7 @@ namespace FireSignage.Viewmodels
             set { SetProperty(ref email, value);}
             get { return email; } }
 
-        public string Business
+        public string Business1
         { 
             set { SetProperty(ref business, value); }
             get { return business; } }
@@ -115,24 +115,25 @@ namespace FireSignage.Viewmodels
         async Task GetUsersInfo()
         {
             var userinfo = await realmservice.UsersInfo();
+           
             foreach (var user in userinfo)
             {
                 GetUsers.Add(user);
-                Console.WriteLine("user = " + user);
-                FirstName = user.Firstname;
-                LastName = user.Lastname;
-                Business = user.Business;
-                LicensePlate = user.Licenseplate;
-                Email = user.Email;
+                
+                //FirstName = user.Firstname;
+                //LastName = user.Lastname;
+                //Business1 = user.Business;
+                //LicensePlate = user.Licenseplate;
+                //Email = user.Email;
 
             }
-
+           
         }
 
         [RelayCommand]
         public Task ChangeUsersInfoVM()
         {
-            realmservice.ChangeUsersInfo(FirstName, LastName, LicensePlate, Business);
+            realmservice.ChangeUsersInfo(FirstName, LastName, LicensePlate, Business1);
             return Task.CompletedTask;
         }
 

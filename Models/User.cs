@@ -36,8 +36,8 @@ namespace FireSignage.Models
         [Required]
         public string OwnerId { get; set; }
 
-        //[Backlink(nameof(UserDevices.DeviceOwner))]
-        //public IQueryable<UserDevices> DevicesOwned { get; }
+        [Backlink(nameof(UserDevices.DeviceOwner))]
+        public IQueryable<UserDevices> DevicesOwned { get; }
 
     }
 

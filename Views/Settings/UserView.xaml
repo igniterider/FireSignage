@@ -25,10 +25,10 @@
 
         <HorizontalStackLayout >
             <VerticalStackLayout Padding="10">
-                <Label Text="{Binding FirstName}" FontSize="Medium" TextColor="Black" Margin="10"/>
-                <Label Text="{Binding LastName}" FontSize="Medium" TextColor="Black" Margin="10"/>
-                <Label Text="{Binding Business}" FontSize="Medium" TextColor="Black" Margin="10"/>
-                <Label Text="{Binding LicensePlate}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding GetUsers.Firstname}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding Lastname}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding Business1}" FontSize="Medium" TextColor="Black" Margin="10"/>
+                <Label Text="{Binding VMUser.Licenseplate}" FontSize="Medium" TextColor="Black" Margin="10"/>
             </VerticalStackLayout>
 
             <VerticalStackLayout>
